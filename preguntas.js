@@ -2620,6 +2620,2620 @@ const bancoPreguntas = [
         ],
         respuestaCorrecta: 1,
         explicacion: "Base Legal: Ordenanza 04-2023. Es un proceso de reflexión sobre la práctica evaluativa para asegurar su calidad y objetividad."
+    },
+
+
+    {
+        id: 201,
+        categoria: "Evaluación Nivel Inicial",
+        pregunta: "Según la Ordenanza 04-2023, ¿cuál es la escala oficial para registrar la valoración de los indicadores de logro en el Nivel Inicial?",
+        opciones: [
+            "A) 0 a 100 puntos.",
+            "B) Logrado (L), En Proceso (EP) y Todavía no Logrado (TNL).",
+            "C) Excelente, Muy Bueno, Bueno e Insuficiente.",
+            "D) Aprobado y Reprobado."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. El Nivel Inicial evalúa de forma cualitativa basándose en el progreso del niño respecto a los indicadores."
+    },
+    {
+        id: 202,
+        categoria: "Promoción Nivel Inicial",
+        pregunta: "En el Nivel Inicial, si un niño no ha alcanzado la mayoría de los indicadores de logro al finalizar el año escolar, el protocolo establece que:",
+        opciones: [
+            "A) Debe repetir el grado para nivelarse.",
+            "B) La promoción es automática; el niño avanza al grado siguiente según su edad cronológica.",
+            "C) Se le debe realizar una prueba extraordinaria de conocimiento.",
+            "D) Debe permanecer en el centro en horario extendido obligatoriamente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La promoción en el Nivel Inicial es automática por edad, garantizando la permanencia en su grupo de pares."
+    },
+    {
+        id: 203,
+        categoria: "Rol de la Psicóloga - NEAE",
+        pregunta: "Ante la sospecha de una Necesidad Específica de Apoyo Educativo (NEAE) en un niño de Pre-Primario, ¿cuál es la primera acción de la psicóloga según la Ordenanza 05-2024?",
+        opciones: [
+            "A) Referir inmediatamente a un neurólogo externo.",
+            "B) Realizar una evaluación psicopedagógica inicial para identificar barreras y diseñar apoyos.",
+            "C) Solicitar a los padres que cambien al niño a un centro de educación especial.",
+            "D) Esperar a que el niño llegue a Primaria para intervenir."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. La detección temprana y la evaluación psicopedagógica en el centro son el primer paso para la inclusión."
+    },
+    {
+        id: 204,
+        categoria: "Ley 136-03",
+        pregunta: "Si un niño de Inicial llega al centro con hematomas sospechosos de maltrato físico, la Ley 136-03 obliga al personal a:",
+        opciones: [
+            "A) Interrogar al niño frente a sus padres.",
+            "B) Notificar de inmediato a las autoridades competentes (CONANI o Fiscalía) bajo principio de confidencialidad.",
+            "C) No intervenir para no perder la confianza de la familia.",
+            "D) Aplicar una sanción administrativa al padre cuando vaya a recoger al niño."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 136-03. El personal educativo es garante de derechos y tiene el deber de denuncia ante sospecha de abuso."
+    },
+    {
+        id: 205,
+        categoria: "Alfabetización Inicial",
+        pregunta: "La Ordenanza 01-2023 sobre Alfabetización Inicial en la Etapa Oportuna, destaca que el Nivel Inicial debe centrarse en:",
+        opciones: [
+            "A) Enseñar a escribir frases complejas y párrafos.",
+            "B) El desarrollo de la conciencia fonológica y el contacto con el mundo escrito de forma lúdica.",
+            "C) Evaluar con exámenes escritos mensuales.",
+            "D) Prohibir el uso de imágenes para que solo vean letras."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023. Se busca crear las bases del lenguaje y la alfabetización funcional desde el juego."
+    },
+    {
+        id: 206,
+        categoria: "Ética Profesional",
+        pregunta: "Según la Orden Departamental 22-2023, un comportamiento ético de la psicóloga hacia los padres de Nivel Inicial es:",
+        opciones: [
+            "A) Compartir los diagnósticos de los niños en el grupo de WhatsApp de padres.",
+            "B) Mantener la confidencialidad de la información privada de las familias obtenida en entrevistas.",
+            "C) Aceptar regalos costosos para priorizar la atención de un niño.",
+            "D) Dar consejos legales sobre procesos de divorcio."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023 y Código de Ética. El secreto profesional y la imparcialidad son pilares del personal docente y administrativo."
+    },
+    {
+        id: 207,
+        categoria: "Ordenanza 05-2023",
+        pregunta: "Un niño de 5 años presenta conductas disruptivas constantes (muerde o empuja). Según las Normas de Convivencia, la respuesta debe ser:",
+        opciones: [
+            "A) Suspenderlo por 3 días para que reflexione en casa.",
+            "B) Aplicar medidas educativas acordes a su nivel de desarrollo, priorizando el diálogo y la orientación.",
+            "C) Expulsarlo definitivamente del centro.",
+            "D) Dejarlo solo en el patio como castigo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2023. En el Nivel Inicial las medidas son estrictamente formativas y proporcionales a la edad."
+    },
+    {
+        id: 208,
+        categoria: "Constitución Dominicana",
+        pregunta: "El Artículo 63 de la Constitución establece que la educación es un derecho de toda persona. En el caso del Nivel Inicial, el Estado tiene la obligación de:",
+        opciones: [
+            "A) Cobrar una cuota mínima para mantenimiento.",
+            "B) Garantizar su gratuidad y universalidad, especialmente en el último año (Pre-Primario).",
+            "C) Solo permitir la inscripción de niños con excelente conducta.",
+            "D) Dejar la educación inicial exclusivamente en manos del sector privado."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Constitución Dominicana, Art. 63. El Estado debe garantizar la oferta pública gratuita para el Nivel Inicial."
+    },
+    {
+        id: 209,
+        categoria: "Gestión Escolar",
+        pregunta: "Según la Ordenanza 03-2025, los organismos de participación de los padres en el Nivel Inicial buscan:",
+        opciones: [
+            "A) Decidir qué maestra debe ser contratada o despedida.",
+            "B) Colaborar con el bienestar de los niños y fortalecer el vínculo escuela-familia.",
+            "C) Administrar la nómina del centro educativo.",
+            "D) Organizar rifas para beneficio personal de la directiva."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 03-2025. Los organismos como la APMAE son de apoyo y participación comunitaria, no de gestión administrativa directa."
+    },
+    {
+        id: 210,
+        categoria: "Desarrollo Infantil",
+        pregunta: "Como psicóloga de Inicial, al observar el desarrollo motor, usted identifica que un niño no realiza pinza digital. Este indicador pertenece principalmente a la dimensión:",
+        opciones: [
+            "A) Cognitiva.",
+            "B) Motricidad Fina.",
+            "C) Socio-afectiva.",
+            "D) Lingüística."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Diseño Curricular Nivel Inicial. La pinza digital es un hito clave de la motricidad fina evaluada en el registro."
+    },
+    {
+        id: 211,
+        categoria: "Ley 5-13 Discapacidad",
+        pregunta: "La Ley 5-13 prohíbe a los centros educativos:",
+        opciones: [
+            "A) Pedir el acta de nacimiento.",
+            "B) Negar la matriculación a un niño por su condición de discapacidad física o cognitiva.",
+            "C) Realizar actos de bandera.",
+            "D) Tener psicólogos en el centro."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 5-13. La negativa de inscripción por discapacidad constituye un acto de discriminación sancionado por ley."
+    },
+    {
+        id: 212,
+        categoria: "Función Pública",
+        pregunta: "Un psicólogo escolar del sistema público que falta tres días consecutivos al centro sin causa justificada incurre en:",
+        opciones: [
+            "A) Una falta leve con amonestación verbal.",
+            "B) El abandono de cargo, según la Ley 41-08 de Función Pública.",
+            "C) Un derecho adquirido por antigüedad.",
+            "D) Nada, si luego repone las horas el sábado."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08. El cumplimiento del horario es un deber sagrado del servidor público."
+    },
+    {
+        id: 213,
+        categoria: "Evaluación Diagnóstica",
+        pregunta: "¿En qué momento del año escolar se debe aplicar la evaluación diagnóstica en el Nivel Inicial?",
+        opciones: [
+            "A) Solo al final del año.",
+            "B) Al inicio del año escolar para conocer los saberes previos y el estado de desarrollo.",
+            "C) Únicamente cuando el director lo solicite.",
+            "D) Después de cada recreo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La diagnóstica es el punto de partida para la planificación docente y la intervención psicopedagógica."
+    },
+    {
+        id: 214,
+        categoria: "Inclusión Educativa",
+        pregunta: "La Ordenanza 05-2024 define los 'Ajustes Curriculares' como:",
+        opciones: [
+            "A) Hacer un examen más fácil para que el niño no llore.",
+            "B) Modificaciones en los elementos del currículo para dar respuesta a las necesidades de aprendizaje del estudiante.",
+            "C) Eliminar las materias que al niño no le gustan.",
+            "D) Cambiar al niño de aula cada mes."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. Los ajustes garantizan que el estudiante con NEAE pueda acceder a los mismos aprendizajes que sus compañeros."
+    },
+    {
+        id: 215,
+        categoria: "Derecho a la Información",
+        pregunta: "Si un padre solicita ver el Registro de Grado para conocer el progreso de su hijo, el centro basado en la Ley 200-04 debe:",
+        opciones: [
+            "A) Negarlo porque es un documento secreto del maestro.",
+            "B) Facilitar el acceso a la información que concierne estrictamente a su hijo.",
+            "C) Cobrarle una tarifa por la consulta.",
+            "D) Decirle que espere al final del año."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 200-04. Los padres tienen derecho a acceder a la información académica de sus tutelados."
+    },
+    {
+        id: 216,
+        categoria: "Manual de Convivencia",
+        pregunta: "En el Nivel Inicial, la estrategia principal para resolver conflictos entre pares es:",
+        opciones: [
+            "A) El aislamiento en la dirección.",
+            "B) La mediación del adulto y el aprendizaje de la empatía.",
+            "C) La anotación en el expediente para futura expulsión.",
+            "D) Ignorar el conflicto para que aprendan solos."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Manual de Convivencia y Ordenanza 05-2023. En Inicial los conflictos son oportunidades de aprendizaje socioemocional."
+    },
+    {
+        id: 217,
+        categoria: "Código de Ética",
+        pregunta: "La Orden Departamental 22-2023 prohíbe al personal educativo el uso de celulares para:",
+        opciones: [
+            "A) Llamar a una ambulancia en una emergencia.",
+            "B) Grabar o fotografiar a los estudiantes menores de edad sin autorización oficial y fines pedagógicos.",
+            "C) Usar la calculadora en clases de matemáticas.",
+            "D) Revisar el calendario escolar."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023. Protege la imagen y privacidad de los niños, niñas y adolescentes."
+    },
+    {
+        id: 218,
+        categoria: "Estrategia Nacional de Desarrollo",
+        pregunta: "La Ley 1-12 (END) plantea como objetivo para la educación:",
+        opciones: [
+            "A) Que todos los estudiantes sean militares.",
+            "B) Lograr una educación de calidad que forme ciudadanos críticos y capaces de integrarse a la sociedad del conocimiento.",
+            "C) Reducir los días de clase para ahorrar presupuesto.",
+            "D) Que los padres den las clases en lugar de los maestros."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 1-12. Busca la transformación social a través de un sistema educativo moderno y eficiente."
+    },
+    {
+        id: 219,
+        categoria: "Alfabetización Inicial",
+        pregunta: "En la Política Nacional de Alfabetización (01-2023), el psicólogo apoya principalmente en:",
+        opciones: [
+            "A) Comprar los libros de texto.",
+            "B) Identificar barreras cognitivas o emocionales que dificulten el proceso de adquisición de la lectura y escritura.",
+            "C) Limpiar la biblioteca del centro.",
+            "D) Dar clases de lengua española todos los días."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023. El psicólogo es parte clave del equipo que asegura el éxito de la alfabetización oportuna."
+    },
+    {
+        id: 220,
+        categoria: "Relaciones Internacionales",
+        pregunta: "El Artículo 26 de la Declaración Universal de los Derechos Humanos, citado en la normativa dominicana, establece que:",
+        opciones: [
+            "A) La educación es solo para los que pueden pagarla.",
+            "B) Toda persona tiene derecho a la educación, la cual debe ser gratuita al menos en la instrucción elemental.",
+            "C) Los niños no tienen derecho a opinar.",
+            "D) La educación debe ser solo técnica."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Art. 26 Derechos Humanos. Es el fundamento internacional del derecho a la educación que asume la República Dominicana."
+    },
+
+
+
+    {
+        id: 221,
+        categoria: "Evaluación Nivel Inicial",
+        pregunta: "En el Nivel Inicial, ¿cómo se concibe el error del niño durante el proceso de aprendizaje según la Ordenanza 04-2023?",
+        opciones: [
+            "A) Como una falta de capacidad cognitiva.",
+            "B) Como una oportunidad para que el docente y el psicólogo reorienten la enseñanza y el apoyo.",
+            "C) Como un motivo para bajar la calificación en el Registro de Grado.",
+            "D) Como algo que debe evitarse mediante el castigo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La evaluación en Inicial es procesual y el error es parte natural del desarrollo que guía la intervención."
+    },
+    {
+        id: 222,
+        categoria: "Inclusión Educativa",
+        pregunta: "La Ordenanza 05-2024 establece que el 'Diseño Universal para el Aprendizaje' (DUA) debe ser aplicado para:",
+        opciones: [
+            "A) Solo estudiantes con discapacidad visual.",
+            "B) Todos los estudiantes, eliminando barreras desde la planificación inicial.",
+            "C) Estudiantes que tengan problemas de conducta únicamente.",
+            "D) Los niños que no pagan la mensualidad en colegios privados."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. El DUA es un enfoque inclusivo para que todos los niños aprendan juntos según sus ritmos."
+    },
+    {
+        id: 223,
+        categoria: "Código de Ética",
+        pregunta: "Si un familiar de un estudiante le ofrece dinero a la psicóloga para 'limpiar' un expediente conductual, según la Orden Departamental 22-2023, esto se considera:",
+        opciones: [
+            "A) Una muestra de gratitud aceptable.",
+            "B) Un acto de soborno y una falta gravísima al Código de Ética.",
+            "C) Un ingreso extra por servicios profesionales.",
+            "D) Un préstamo que debe devolverse al mes."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023. La integridad y la honestidad son irrenunciables para el personal del MINERD."
+    },
+    {
+        id: 224,
+        categoria: "Desarrollo Socioemocional",
+        pregunta: "En el Nivel Inicial, el proceso de 'Socialización' es evaluado principalmente para observar:",
+        opciones: [
+            "A) Si el niño sabe leer el abecedario.",
+            "B) La capacidad de relacionarse con otros, respetar turnos y expresar emociones de forma adecuada.",
+            "C) Si el niño sabe correr 100 metros.",
+            "D) La rapidez con la que el niño termina la merienda."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Diseño Curricular Nivel Inicial. El desarrollo socio-afectivo es un eje central de la evaluación cualitativa."
+    },
+    {
+        id: 225,
+        categoria: "Ley 136-03",
+        pregunta: "El derecho a la 'Integridad Personal' del niño en la Ley 136-03 implica que ningún personal escolar puede:",
+        opciones: [
+            "A) Ponerle tareas en casa.",
+            "B) Someterlo a castigos físicos, humillaciones o tratos degradantes.",
+            "C) Pedirle que guarde silencio en la biblioteca.",
+            "D) Evaluar su rendimiento académico."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 136-03, Art. 12. Se prohíbe cualquier forma de violencia como método de disciplina."
+    },
+    {
+        id: 226,
+        categoria: "Evaluación Nivel Inicial",
+        pregunta: "¿Qué instrumento es fundamental para que la psicóloga de Inicial registre las observaciones de comportamientos atípicos o sobresalientes?",
+        opciones: [
+            "A) El examen trimestral.",
+            "B) El anecdotario o diario de observación.",
+            "C) La factura de inscripción.",
+            "D) El carnet de vacunación."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. Las técnicas de observación y registro son las más adecuadas para el Nivel Inicial."
+    },
+    {
+        id: 227,
+        categoria: "Gestión Administrativa",
+        pregunta: "Según la Ley 41-08, la 'Evaluación del Desempeño' del personal docente y administrativo tiene como fin:",
+        opciones: [
+            "A) Identificar a quién despedir por razones políticas.",
+            "B) Promover la mejora continua, identificar necesidades de capacitación y otorgar incentivos.",
+            "C) Humillar al personal frente a los padres.",
+            "D) Eliminar las vacaciones de verano."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08 de Función Pública. La evaluación es una herramienta de desarrollo profesional."
+    },
+    {
+        id: 228,
+        categoria: "Derecho a la Educación",
+        pregunta: "La Ordenanza 05-2023 establece que la educación debe ser 'Asequible'. Esto significa que:",
+        opciones: [
+            "A) Solo los niños inteligentes pueden entrar.",
+            "B) El Estado debe garantizar cupos y recursos suficientes para toda la población infantil.",
+            "C) Los padres deben pagar el transporte escolar.",
+            "D) Las escuelas solo deben estar en las ciudades grandes."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2023 y Art. 63 Constitución. El Estado tiene la obligación de crear la oferta educativa."
+    },
+    {
+        id: 229,
+        categoria: "Atención a la Diversidad",
+        pregunta: "Cuando un niño de Inicial presenta una discapacidad severa que requiere apoyos que el centro ordinario no puede ofrecer, la psicóloga debe:",
+        opciones: [
+            "A) Expulsar al niño.",
+            "B) Coordinar con el CAD (Centro de Atención a la Diversidad) para una evaluación y posible escolarización en un centro de Educación Especial.",
+            "C) Decirle a la maestra que lo ignore.",
+            "D) Dejar que el niño se quede en su casa sin estudiar."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. El tránsito a la educación especial es una medida excepcional basada en el bienestar del niño."
+    },
+    {
+        id: 230,
+        categoria: "Alfabetización Inicial",
+        pregunta: "En el marco de la Ordenanza 01-2023, ¿cuál es el papel de la familia en la alfabetización?",
+        opciones: [
+            "A) Enseñar a leer al niño antes de que entre a la escuela.",
+            "B) Fomentar el hábito de la lectura en casa y participar en las actividades propuestas por el centro.",
+            "C) Comprar libros de caligrafía obligatoriamente.",
+            "D) No involucrarse para no confundir al niño."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023. La corresponsabilidad familia-escuela es clave para el éxito educativo."
+    },
+    {
+        id: 231,
+        categoria: "Convivencia Escolar",
+        pregunta: "Una 'Falta Grave' según las normas de convivencia en un contexto administrativo (personal adulto) sería:",
+        opciones: [
+            "A) Llegar 2 minutos tarde un día.",
+            "B) Incumplir con el registro de las evaluaciones de los estudiantes de forma reiterada.",
+            "C) Usar un lapicero azul en lugar de negro.",
+            "D) Saludar cordialmente al portero."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2023 y Ley 41-08. El incumplimiento de los deberes técnicos es una falta que afecta el proceso educativo."
+    },
+    {
+        id: 232,
+        categoria: "Ética y Redes Sociales",
+        pregunta: "La Orden Departamental 22-2023 prohíbe que el personal del centro mantenga con los estudiantes:",
+        opciones: [
+            "A) Conversaciones grupales sobre tareas.",
+            "B) Relaciones de amistad íntima o comunicaciones privadas por redes sociales fuera de fines educativos.",
+            "C) Contacto visual durante las clases.",
+            "D) Reuniones con los padres presentes."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023. Busca prevenir el acoso y mantener la distancia profesional adecuada."
+    },
+    {
+        id: 233,
+        categoria: "Estrategia Nacional de Desarrollo",
+        pregunta: "Uno de los indicadores de éxito de la Ley 1-12 (END) para el 2030 en educación es:",
+        opciones: [
+            "A) Que el 100% de los niños terminen el nivel primario con competencias básicas de lecto-escritura y matemática.",
+            "B) Que no existan escuelas públicas.",
+            "C) Que los uniformes cambien de color cada año.",
+            "D) Que todos los psicólogos sean directores."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Legal: Ley 1-12 END 2030. El objetivo es la calidad educativa medida en aprendizajes concretos."
+    },
+    {
+        id: 234,
+        categoria: "Organismos de Participación",
+        pregunta: "La Ordenanza 03-2025 define que la Junta de Centro es el organismo encargado de:",
+        opciones: [
+            "A) Solo limpiar el centro educativo.",
+            "B) Gestionar los recursos económicos y velar por el mantenimiento del centro educativo.",
+            "C) Dar clases de psicología.",
+            "D) Elegir al Ministro de Educación."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 03-2025 y Ley 66-97. La descentralización se ejecuta a través de las Juntas de Centro."
+    },
+    {
+        id: 235,
+        categoria: "Evaluación Nivel Inicial",
+        pregunta: "Cuando un indicador de logro aparece como 'TNL' (Todavía No Logrado) al final de un periodo en Inicial, la psicóloga debe sugerir:",
+        opciones: [
+            "A) Repetición del grado.",
+            "B) Estrategias de apoyo diferenciadas y seguimiento psicopedagógico para fortalecer esa área.",
+            "C) Que el niño se retire del centro.",
+            "D) No hacer nada, el niño aprenderá solo cuando crezca."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La evaluación diagnóstica y continua sirve para ajustar el apoyo, no para sancionar."
+    },
+    {
+        id: 236,
+        categoria: "Ley 200-04",
+        pregunta: "Según la Ley de Libre Acceso a la Información Pública, las instituciones educativas deben publicar:",
+        opciones: [
+            "A) Las fotos de los niños llorando.",
+            "B) El presupuesto recibido y la ejecución de los gastos (vía Junta de Centro).",
+            "C) Las contraseñas de los correos de los maestros.",
+            "D) La dirección de la casa de todos los empleados."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 200-04. La transparencia financiera es obligatoria en la gestión pública."
+    },
+    {
+        id: 237,
+        categoria: "Constitución Dominicana",
+        pregunta: "El derecho a la libertad de conciencia y de cultos en las escuelas (Art. 45 de la Constitución) significa que:",
+        opciones: [
+            "A) La escuela puede obligar a todos a ser de una sola religión.",
+            "B) Se debe respetar la creencia religiosa de los niños y sus familias sin discriminación.",
+            "C) No se permite hablar de Dios en ninguna escuela.",
+            "D) Solo los niños católicos pueden inscribirse."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Constitución Dominicana y Ley 66-97. El sistema educativo respeta la libertad religiosa."
+    },
+    {
+        id: 238,
+        categoria: "Atención Primaria en Salud Escolar",
+        pregunta: "Si un niño de Inicial presenta una dificultad visual evidente (se acerca mucho a los libros), el protocolo de la psicóloga es:",
+        opciones: [
+            "A) Operar al niño en el centro.",
+            "B) Informar a la familia y coordinar la referencia a un servicio de salud oftalmológica para diagnóstico.",
+            "C) Comprarle unos lentes en el mercado.",
+            "D) Sentarlo en la última fila."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024 (Inclusión). La detección de barreras físicas/sensoriales es parte del rol de apoyo educativo."
+    },
+    {
+        id: 239,
+        categoria: "Ley 5-13 Discapacidad",
+        pregunta: "El principio de 'Igualdad de Oportunidades' en la Ley 5-13 significa que los niños con discapacidad:",
+        opciones: [
+            "A) Tienen derecho a los mismos servicios educativos de calidad que los demás, con los apoyos necesarios.",
+            "B) Deben tener una escuela diferente lejos de los demás niños.",
+            "C) No deben ser evaluados.",
+            "D) Tienen permiso para llegar tarde todos los días."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Legal: Ley 5-13. Busca la inclusión plena en igualdad de condiciones."
+    },
+    {
+        id: 240,
+        categoria: "Evaluación Nivel Inicial",
+        pregunta: "En el Registro de Grado del Nivel Inicial, la sección de 'Observaciones' sirve para:",
+        opciones: [
+            "A) Escribir chismes sobre la familia.",
+            "B) Anotar datos relevantes sobre el contexto, salud o ritmos de aprendizaje que expliquen el progreso del niño.",
+            "C) Dibujar caricaturas cuando el maestro está aburrido.",
+            "D) Solo poner la fecha de cumpleaños."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. Es una herramienta cualitativa vital para la continuidad del proceso educativo."
+    },
+
+    {
+        id: 241,
+        categoria: "Inclusión Educativa",
+        pregunta: "Según la Ordenanza 05-2024, ¿cuál es el documento donde se registran formalmente los ajustes curriculares individuales para un niño con NEAE en Inicial?",
+        opciones: [
+            "A) En el cuaderno de tareas del niño.",
+            "B) En el Plan de Apoyo a la Diversidad (PAD) o expediente psicopedagógico.",
+            "C) En una hoja suelta pegada en la puerta del aula.",
+            "D) No se registran, se dicen de forma verbal."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. Los ajustes deben estar documentados para garantizar el seguimiento técnico y pedagógico."
+    },
+    {
+        id: 242,
+        categoria: "Evaluación Nivel Inicial",
+        pregunta: "La evaluación en el Nivel Inicial se caracteriza por ser 'Globalizadora' porque:",
+        opciones: [
+            "A) Evalúa a todos los niños del mundo por igual.",
+            "B) Considera todas las dimensiones del desarrollo del niño (cognitiva, emocional, física, social) de forma integrada.",
+            "C) Solo evalúa si el niño sabe usar el globo terráqueo.",
+            "D) Se realiza una sola vez al año de forma general."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. En Inicial no se dividen las competencias como materias aisladas, sino como un desarrollo integral."
+    },
+    {
+        id: 243,
+        categoria: "Ley 136-03",
+        pregunta: "El principio de 'Corresponsabilidad' en la Ley 136-03 establece que la protección de los niños es obligación de:",
+        opciones: [
+            "A) Solo la Policía Nacional.",
+            "B) La familia, la escuela, la comunidad y el Estado.",
+            "C) Solo de los padres biológicos.",
+            "D) Exclusivamente del psicólogo escolar."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 136-03. Todos los actores de la sociedad deben velar por el cumplimiento de los derechos del menor."
+    },
+    {
+        id: 244,
+        categoria: "Convivencia Escolar",
+        pregunta: "Si un docente de Inicial le grita palabras despectivas a un estudiante frente al curso, según la Ordenanza 05-2023 esto es una falta:",
+        opciones: [
+            "A) Leve, se resuelve con una disculpa.",
+            "B) Grave o Muy Grave, dependiendo del daño psicológico y la reincidencia.",
+            "C) Inexistente, ya que el docente tiene derecho a disciplinar.",
+            "D) Administrativa que solo compete al director."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2023 y Orden Departamental 22-2023. El maltrato verbal está estrictamente prohibido y sancionado."
+    },
+    {
+        id: 245,
+        categoria: "Desarrollo Evolutivo",
+        pregunta: "Como psicóloga de Inicial, usted sabe que el juego simbólico (jugar a la casita, al doctor) es un indicador de:",
+        opciones: [
+            "A) Falta de atención en clase.",
+            "B) Desarrollo cognitivo y capacidad de representación de la realidad.",
+            "C) Que el niño necesita más horas de caligrafía.",
+            "D) Pereza por parte de la maestra."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Diseño Curricular Nivel Inicial. El juego simbólico es vital para el desarrollo de funciones superiores en la etapa preoperacional."
+    },
+    {
+        id: 246,
+        categoria: "Ley 41-08 Función Pública",
+        pregunta: "Un derecho de la psicóloga como servidora pública de carrera, según la Ley 41-08, es:",
+        opciones: [
+            "A) Elegir sus propios horarios de entrada y salida.",
+            "B) Recibir capacitación continua y participar en los sistemas de incentivos por desempeño.",
+            "C) Nombrar a sus familiares en el mismo centro.",
+            "D) Negarse a trabajar con niños que no le caigan bien."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08. La ley protege el derecho al desarrollo profesional y la estabilidad basada en el mérito."
+    },
+    {
+        id: 247,
+        categoria: "Código de Ética",
+        pregunta: "La Orden Departamental 22-2023 indica que la relación entre el personal del centro y los estudiantes debe basarse en:",
+        opciones: [
+            "A) La familiaridad extrema y el afecto físico constante.",
+            "B) El respeto mutuo, la distancia profesional y la protección de la integridad del menor.",
+            "C) La autoridad absoluta del docente sin derecho a réplica.",
+            "D) La indiferencia para evitar problemas legales."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023. Define límites claros para prevenir situaciones de riesgo o abuso de poder."
+    },
+    {
+        id: 248,
+        categoria: "Evaluación Diagnóstica",
+        pregunta: "Durante la evaluación diagnóstica en Inicial, si se detecta un retraso significativo en el lenguaje, la psicóloga debe:",
+        opciones: [
+            "A) Recomendar que el niño no hable en clase.",
+            "B) Realizar una entrevista con los padres y sugerir una evaluación especializada (terapia de habla).",
+            "C) Decirle a la maestra que el niño es 'lento'.",
+            "D) No intervenir hasta que el niño cumpla 7 años."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. La intervención temprana es la clave para reducir las barreras de aprendizaje futuras."
+    },
+    {
+        id: 249,
+        categoria: "Ley 66-97",
+        pregunta: "La Ley General de Educación 66-97 establece que el patrimonio del centro educativo es:",
+        opciones: [
+            "A) Propiedad privada del director.",
+            "B) Bien público y debe ser cuidado por toda la comunidad educativa.",
+            "C) Propiedad de la APMAE únicamente.",
+            "D) Responsabilidad solo del sereno o portero."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 66-97. Los recursos y la planta física son propiedad del Estado para el servicio de la comunidad."
+    },
+    {
+        id: 250,
+        categoria: "Inclusión Educativa",
+        pregunta: "Según la Ordenanza 05-2024, ¿cuál es el rol del equipo de gestión frente a un estudiante con discapacidad?",
+        opciones: [
+            "A) Buscar la forma de que se traslade a otro centro rápidamente.",
+            "B) Garantizar la accesibilidad física y los apoyos pedagógicos necesarios en el centro.",
+            "C) Ignorar la condición para que el niño se sienta 'normal'.",
+            "D) Cobrarle una cuota extra por atención personalizada."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. El centro tiene la obligación de adaptarse al estudiante, no al revés."
+    },
+    {
+        id: 251,
+        categoria: "Alfabetización Inicial",
+        pregunta: "La 'Etapa Oportuna' descrita en la Ordenanza 01-2023 se refiere a que el niño debe estar plenamente alfabetizado al finalizar:",
+        opciones: [
+            "A) El Nivel Inicial.",
+            "B) El Tercer Grado de Primaria.",
+            "C) El Sexto Grado de Primaria.",
+            "D) El Bachillerato."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023. La meta país es que a los 8 años (3ero primaria) todos los niños lean y escriban con fluidez."
+    },
+    {
+        id: 252,
+        categoria: "Gestión de Riesgos",
+        pregunta: "En el Nivel Inicial, ante un simulacro de sismo, la psicóloga escolar apoya principalmente en:",
+        opciones: [
+            "A) Grabar el video para las redes sociales.",
+            "B) La contención emocional de los niños para evitar crisis de pánico y asegurar una evacuación tranquila.",
+            "C) Salir primero para dar el ejemplo.",
+            "D) Quedarse en la oficina revisando expedientes."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Manual de Gestión de Riesgos MINERD. El apoyo psicosocial es fundamental en situaciones de emergencia."
+    },
+    {
+        id: 253,
+        categoria: "Ordenanza 03-2025",
+        pregunta: "La participación de la familia en la evaluación de los niños de Inicial se realiza mediante:",
+        opciones: [
+            "A) La entrega de informes de progreso y entrevistas periódicas de retroalimentación.",
+            "B) Dejar que los padres pongan la nota en el Registro.",
+            "C) No informar nada a los padres para no estresarlos.",
+            "D) Publicar las notas en el mural de la entrada."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Legal: Ordenanza 04-2023 y 03-2025. La comunicación familia-escuela sobre el progreso es un derecho y un deber."
+    },
+    {
+        id: 254,
+        categoria: "Constitución Dominicana",
+        pregunta: "El Artículo 63 de la Constitución establece que la familia es:",
+        opciones: [
+            "A) Un actor secundario en la educación.",
+            "B) La primera responsable de la educación de sus hijos, con apoyo del Estado.",
+            "C) Quien decide si el niño va o no a la escuela sin dar explicaciones.",
+            "D) La encargada de comprar los uniformes al Ministerio."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Constitución Dominicana. Define la prioridad de la familia en la formación de los menores."
+    },
+    {
+        id: 255,
+        categoria: "Evaluación Nivel Inicial",
+        pregunta: "En el Nivel Inicial, ¿se aplican exámenes de fin de año para determinar si el niño pasa de curso?",
+        opciones: [
+            "A) Sí, son obligatorios según la Ley 66-97.",
+            "B) No, la evaluación es continua y la promoción es por edad.",
+            "C) Solo si el niño tiene mala conducta.",
+            "D) Solo en los colegios privados."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. Se prohíbe el uso de exámenes estandarizados de aprobación/reprobación en Inicial."
+    },
+    {
+        id: 256,
+        categoria: "Ley 200-04",
+        pregunta: "Según la Ley de Libre Acceso a la Información, una respuesta de la institución ante una solicitud de información debe darse en un plazo máximo de:",
+        opciones: [
+            "A) 24 horas.",
+            "B) 15 días hábiles (con posibilidad de prórroga en casos complejos).",
+            "C) Un año.",
+            "D) No hay plazo legal."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 200-04. Establece tiempos claros para garantizar la transparencia."
+    },
+    {
+        id: 257,
+        categoria: "Ética y Regalos",
+        pregunta: "El Código de Ética del MINERD prohíbe que los psicólogos reciban beneficios de proveedores de servicios (ej. centros de terapia) por:",
+        opciones: [
+            "A) Referirles estudiantes del centro educativo.",
+            "B) Saludarles en la calle.",
+            "C) Asistir a conferencias gratuitas organizadas por ellos.",
+            "D) Leer sus folletos informativos."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Legal: Código de Ética y Orden Departamental 22-2023. El tráfico de influencias y el beneficio personal son faltas graves."
+    },
+    {
+        id: 258,
+        categoria: "Estrategia Nacional de Desarrollo",
+        pregunta: "La Ley 1-12 busca que el sistema educativo dominicano fomente:",
+        opciones: [
+            "A) La memorización de datos históricos solamente.",
+            "B) El pensamiento crítico, la creatividad y los valores éticos.",
+            "C) La obediencia ciega a los superiores.",
+            "D) La competencia agresiva entre estudiantes."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 1-12. Son los pilares del ciudadano que requiere la Estrategia Nacional."
+    },
+    {
+        id: 259,
+        categoria: "Atención a la Diversidad",
+        pregunta: "Un niño con Aptitudes Sobresalientes (Talento) en Inicial, según la Ordenanza 05-2024, requiere:",
+        opciones: [
+            "A) Que lo pasen a 5to de Primaria de inmediato.",
+            "B) Actividades de enriquecimiento curricular que desafíen sus capacidades dentro de su grupo de edad.",
+            "C) Que le pongan a limpiar el aula para que no se aburra.",
+            "D) No necesita nada porque ya es inteligente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. La alta capacidad también es una NEAE que requiere atención diferenciada."
+    },
+    {
+        id: 260,
+        categoria: "Rol del Psicólogo - Convivencia",
+        pregunta: "En la resolución de un conflicto entre dos familias de Inicial, la postura de la psicóloga debe ser:",
+        opciones: [
+            "A) Apoyar a la familia que tenga más dinero.",
+            "B) Imparcial, mediadora y siempre buscando el interés superior del niño.",
+            "C) No involucrarse en absoluto.",
+            "D) Decidir quién tiene la razón y castigar a la otra parte."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2023 y Manual de Convivencia. La neutralidad y la mediación son funciones técnicas de la unidad de orientación."
+    },
+
+    {
+        id: 261,
+        categoria: "Evaluación Nivel Inicial",
+        pregunta: "Cuando un niño de Inicial muestra un avance significativo en un indicador pero aún necesita apoyo intermitente, ¿qué valoración corresponde según la Ordenanza 04-2023?",
+        opciones: [
+            "A) Logrado (L).",
+            "B) En Proceso (EP).",
+            "C) Todavía No Logrado (TNL).",
+            "D) 75 puntos."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. 'En Proceso' se usa cuando el niño muestra la conducta o habilidad con ayuda o de manera inconstante."
+    },
+    {
+        id: 262,
+        categoria: "Inclusión y NEAE",
+        pregunta: "Usted recibe un niño con un diagnóstico de Autismo en Inicial. Según la Ordenanza 05-2024, la primera respuesta del centro debe ser:",
+        opciones: [
+            "A) Solicitar una sombra pagada por los padres de forma obligatoria.",
+            "B) Aplicar el Diseño Universal para el Aprendizaje (DUA) y realizar los ajustes curriculares necesarios.",
+            "C) Decir que el centro no está preparado y referir a otro lugar.",
+            "D) Poner al niño en un aula aparte para no distraer a los demás."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. La educación inclusiva obliga al centro a realizar ajustes razonables para garantizar el acceso al currículo."
+    },
+    {
+        id: 263,
+        categoria: "Protección Infantil",
+        pregunta: "Un padre de familia se presenta al centro de Inicial en estado de embriaguez a retirar a su hijo. ¿Cuál es el protocolo correcto basándose en la Ley 136-03?",
+        opciones: [
+            "A) Entregar al niño para evitar conflictos con el padre.",
+            "B) Retener al niño por su seguridad, contactar a otro tutor autorizado y, si es necesario, a las autoridades (CONANI/Policía).",
+            "C) Llamar a la prensa para denunciar el hecho.",
+            "D) Cobrarle una multa al padre antes de entregarle al niño."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 136-03 y Protocolos de Cultura de Paz. El interés superior y la integridad física del niño son la prioridad absoluta."
+    },
+    {
+        id: 264,
+        categoria: "Función Pública",
+        pregunta: "Según la Ley 41-08, ¿cuál de estos es un deber de la psicóloga escolar?",
+        opciones: [
+            "A) Realizar proselitismo político dentro del centro educativo.",
+            "B) Denunciar ante sus superiores o autoridades competentes cualquier acto de corrupción que tenga conocimiento.",
+            "C) Cobrar consultas privadas a los padres del mismo centro donde labora.",
+            "D) Ausentarse sin avisar si no tiene casos pendientes."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08. La denuncia de actos ilícitos y la probidad son deberes éticos del servidor público."
+    },
+    {
+        id: 265,
+        categoria: "Evaluación Nivel Inicial",
+        pregunta: "¿Cuál es el propósito fundamental de la evaluación en el Nivel Inicial de acuerdo con la Ordenanza 04-2023?",
+        opciones: [
+            "A) Seleccionar a los niños más brillantes para un grupo especial.",
+            "B) Recoger información relevante para retroalimentar el proceso de enseñanza y potenciar el desarrollo integral.",
+            "C) Certificar que el niño ya sabe leer antes de ir a Primaria.",
+            "D) Clasificar a los niños según su nivel económico."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La evaluación es formativa y busca mejorar el aprendizaje, no etiquetar al niño."
+    },
+    {
+        id: 266,
+        categoria: "Relación Escuela-Familia",
+        pregunta: "La Ordenanza 03-2025 establece que los padres tienen derecho a ser informados sobre la evaluación de sus hijos:",
+        opciones: [
+            "A) Solo si el niño va a reprobar.",
+            "B) De manera periódica, sistemática y clara sobre los avances y dificultades.",
+            "C) Solo una vez al año al finalizar el ciclo.",
+            "D) Solo si pagan la cuota de la APMAE."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 03-2025. La transparencia en el progreso educativo es un derecho de los tutores legales."
+    },
+    {
+        id: 267,
+        categoria: "Código de Ética",
+        pregunta: "La Orden Departamental 22-2023 prohíbe al personal docente y administrativo en el Nivel Inicial:",
+        opciones: [
+            "A) Abrazar a un niño de forma afectiva y protectora frente a testigos.",
+            "B) Besar a los estudiantes en la boca o tener cualquier contacto físico de carácter erótico o inapropiado.",
+            "C) Cantar canciones infantiles con los niños.",
+            "D) Ayudar a un niño a abrocharse los zapatos."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023. Establece límites de contacto físico para prevenir abusos y proteger la integridad del menor."
+    },
+    {
+        id: 268,
+        categoria: "Estrategia Nacional de Desarrollo",
+        pregunta: "En relación a la Ley 1-12, la formación en valores en el Nivel Inicial busca crear ciudadanos:",
+        opciones: [
+            "A) Que solo obedezcan sin preguntar.",
+            "B) Responsables, solidarios y con respeto a los derechos humanos y la identidad nacional.",
+            "C) Que prefieran vivir en otros países.",
+            "D) Que solo se interesen por el dinero."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 1-12 END 2030. La formación ciudadana empieza desde la primera infancia."
+    },
+    {
+        id: 269,
+        categoria: "Detección Temprana",
+        pregunta: "Un niño de 4 años en el centro no establece contacto visual y no responde a su nombre. La psicóloga, bajo un enfoque preventivo, debe considerar esto como:",
+        opciones: [
+            "A) Un comportamiento normal de timidez.",
+            "B) Una señal de alerta que requiere observación detallada y posible referimiento a evaluación diagnóstica.",
+            "C) Una falta de respeto que debe ser sancionada.",
+            "D) Un signo de que el niño es muy independiente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Guía de señales de alerta del MINERD. La detección temprana es responsabilidad del psicólogo escolar."
+    },
+    {
+        id: 270,
+        categoria: "Convivencia Escolar",
+        pregunta: "Según la Ordenanza 05-2023, cuando ocurre un conflicto en Inicial, la medida a aplicar debe ser 'Restaurativa'. Esto significa:",
+        opciones: [
+            "A) Que el niño que hizo algo malo debe ser humillado públicamente.",
+            "B) Que se busca reparar el daño, aprender de la situación y restaurar la armonía en el grupo.",
+            "C) Que el niño debe pagar los materiales que rompió de su bolsillo.",
+            "D) Que el niño debe ser cambiado de aula inmediatamente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2023. El enfoque restaurativo prioriza el aprendizaje social sobre el castigo punitivo."
+    },
+    {
+        id: 271,
+        categoria: "Transparencia (Ley 200-04)",
+        pregunta: "La Ley 200-04 garantiza que cualquier ciudadano puede solicitar al centro educativo información sobre:",
+        opciones: [
+            "A) La vida privada de los profesores.",
+            "B) El uso de los recursos del fondo de descentralización entregados a la Junta de Centro.",
+            "C) Los expedientes psicológicos confidenciales de los niños.",
+            "D) Las notas personales que la psicóloga toma en su diario privado."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 200-04. La información financiera pública es de libre acceso, la información personal sensible es protegida."
+    },
+    {
+        id: 272,
+        categoria: "Evaluación Nivel Inicial",
+        pregunta: "El Registro de Grado de Nivel Inicial debe completarse de manera:",
+        opciones: [
+            "A) Mensual, sin importar si hay cambios.",
+            "B) Sistemática y continua, reflejando el progreso real observado en el niño.",
+            "C) Al final del año, basándose en la memoria del docente.",
+            "D) Solo cuando el distrito educativo anuncie una supervisión."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La veracidad y sistematicidad del registro garantizan una evaluación justa."
+    },
+    {
+        id: 273,
+        categoria: "Constitución Dominicana",
+        pregunta: "El Artículo 63 de la Constitución Dominicana indica que la erradicación del analfabetismo es:",
+        opciones: [
+            "A) Tarea exclusiva de las iglesias.",
+            "B) Una obligación del Estado.",
+            "C) Opcional para los ayuntamientos.",
+            "D) Responsabilidad solo de los padres que no saben leer."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Constitución Dominicana, Art. 63. Es un mandato constitucional erradicar el analfabetismo en toda la población."
+    },
+    {
+        id: 274,
+        categoria: "Inclusión Educativa",
+        pregunta: "La Ordenanza 05-2024 prohíbe el uso de términos despectivos o etiquetas para referirse a estudiantes con discapacidad. El término correcto es:",
+        opciones: [
+            "A) Enfermito.",
+            "B) Estudiante con discapacidad o estudiante con NEAE.",
+            "C) Niño especial.",
+            "D) Minusválido."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024 y Ley 5-13. Se debe utilizar un lenguaje basado en derechos y respeto a la persona."
+    },
+    {
+        id: 275,
+        categoria: "Ley 66-97",
+        pregunta: "Según la Ley 66-97, el sistema educativo dominicano se fundamenta en principios:",
+        opciones: [
+            "A) Militares y de control social.",
+            "B) Cristianos, democráticos y de justicia social.",
+            "C) Exclusivamente tecnológicos.",
+            "D) De competencia económica."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 66-97. Define la filosofía que sustenta la educación nacional."
+    },
+    {
+        id: 276,
+        categoria: "Desarrollo del Lenguaje",
+        pregunta: "Un niño de Inicial que presenta dificultades para pronunciar la 'rr' a los 4 años, la psicóloga debe saber que:",
+        opciones: [
+            "A) Es una falta grave de aprendizaje.",
+            "B) Puede ser parte del proceso normal de adquisición fonológica, pero debe observarse.",
+            "C) Debe ser reprobado inmediatamente.",
+            "D) Ya debería hablar como un adulto."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Desarrollo evolutivo del lenguaje. El fonema 'rr' es uno de los últimos en adquirirse (hacia los 5-6 años)."
+    },
+    {
+        id: 277,
+        categoria: "Ordenanza 01-2023",
+        pregunta: "La Política Nacional de Alfabetización Inicial prioriza que el aprendizaje sea 'Significativo'. Esto ocurre cuando:",
+        opciones: [
+            "A) El niño memoriza muchas palabras sin entenderlas.",
+            "B) El niño conecta los nuevos conocimientos con sus experiencias previas y su entorno.",
+            "C) El niño copia 20 páginas de un libro.",
+            "D) El niño recibe un premio por cada letra aprendida."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023 y Enfoque Constructivista del currículo."
+    },
+    {
+        id: 278,
+        categoria: "Ética Profesional",
+        pregunta: "Si una psicóloga escolar de Inicial nota que un docente está siendo negligente con la higiene de los niños, su deber según el Código de Ética es:",
+        opciones: [
+            "A) Ignorarlo para no buscarse problemas con el compañero.",
+            "B) Conversar con el docente de forma asertiva y, si no hay cambio, informar al equipo de gestión para proteger el bienestar del niño.",
+            "C) Contárselo a los padres en la salida de forma secreta.",
+            "D) Publicarlo en su estado de Facebook sin decir nombres."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Código de Ética y Orden Departamental 22-2023. El bienestar del estudiante prima sobre la camaradería profesional."
+    },
+    {
+        id: 279,
+        categoria: "Administración Educativa",
+        pregunta: "La 'Descentralización Educativa' mencionada en la Ley 66-97 busca:",
+        opciones: [
+            "A) Que el Ministro de Educación haga todo el trabajo solo.",
+            "B) Transferir poder de decisión y recursos a las regiones, distritos y centros educativos para una gestión más eficiente.",
+            "C) Que cada escuela se mande sola sin seguir las leyes del MINERD.",
+            "D) Eliminar el Ministerio de Educación."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 66-97. Es el modelo que permite que las comunidades participen en la gestión escolar."
+    },
+    {
+        id: 280,
+        categoria: "Evaluación Nivel Inicial",
+        pregunta: "¿Qué significa que la evaluación en Inicial sea 'Continua'?",
+        opciones: [
+            "A) Que el niño tiene que estar tomando exámenes todo el día.",
+            "B) Que se realiza durante todo el proceso de enseñanza-aprendizaje, no solo al final.",
+            "C) Que la maestra no puede dejar de escribir nunca.",
+            "D) Que el niño nunca sale a recreo para que lo evalúen."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La evaluación es parte intrínseca del día a día pedagógico."
+   },
+
+    {
+        id: 281,
+        categoria: "Evaluación Nivel Inicial",
+        pregunta: "En el Nivel Inicial, el informe de progreso que se entrega a la familia debe estar redactado en un lenguaje:",
+        opciones: [
+            "A) Altamente técnico y médico para demostrar profesionalismo.",
+            "B) Claro, sencillo y descriptivo, resaltando los logros y las áreas que requieren apoyo.",
+            "C) Inglés, para preparar a los niños para el futuro.",
+            "D) Códigos numéricos que solo el psicólogo entienda."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. El objetivo es que la familia comprenda el desarrollo del niño para colaborar en su proceso."
+    },
+    {
+        id: 282,
+        categoria: "Inclusión Educativa",
+        pregunta: "La Ordenanza 05-2024 establece que la 'Educación Inclusiva' implica:",
+        opciones: [
+            "A) Crear escuelas especiales en cada barrio para separar a los niños.",
+            "B) Transformar el sistema educativo para eliminar barreras y asegurar la participación de todos sin discriminación.",
+            "C) Inscribir a los niños con discapacidad pero dejarlos en una esquina sin hacer nada.",
+            "D) Que solo los niños con NEAE asistan a la escuela tres días a la semana."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. La inclusión es un derecho humano que exige cambios sistémicos para la equidad."
+    },
+    {
+        id: 283,
+        categoria: "Ley 136-03",
+        pregunta: "Si un psicólogo escolar identifica que un niño de inicial es víctima de negligencia grave por parte de sus padres (falta de alimentación o higiene extrema), debe:",
+        opciones: [
+            "A) No hacer nada porque es un problema privado de la familia.",
+            "B) Intervenir orientando a la familia y, de persistir, reportar a las autoridades de protección (CONANI).",
+            "C) Adoptar al niño de manera informal.",
+            "D) Expulsar al niño del centro para evitar mala imagen."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 136-03. La negligencia es una forma de maltrato por omisión que debe ser abordada por el sistema de protección."
+    },
+    {
+        id: 284,
+        categoria: "Función Pública (Ley 41-08)",
+        pregunta: "¿Cuál de las siguientes es una 'Prohibición' para los servidores públicos según la Ley 41-08?",
+        opciones: [
+            "A) Tomar vacaciones en el periodo escolar correspondiente.",
+            "B) Solicitar o aceptar gratificaciones, dádivas u obsequios a cambio de servicios propios de su cargo.",
+            "C) Participar en talleres de capacitación del MINERD.",
+            "D) Afiliarse a un sindicato docente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08. El soborno y el cohecho son faltas gravísimas que conllevan la destitución."
+    },
+    {
+        id: 285,
+        categoria: "Gestión Escolar",
+        pregunta: "Según la Ordenanza 03-2025, el Consejo Estudiantil es un organismo de participación. En el Nivel Inicial, este se fomenta principalmente para:",
+        opciones: [
+            "A) Organizar huelgas contra la dirección.",
+            "B) Iniciar el aprendizaje de la vida democrática y la expresión de opiniones de forma organizada.",
+            "C) Que los niños elijan qué merienda se va a comprar.",
+            "D) Sustituir el trabajo de los maestros."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 03-2025 y Ley 66-97. La formación ciudadana comienza con la participación temprana."
+    },
+    {
+        id: 286,
+        categoria: "Ética Profesional",
+        pregunta: "Ante un caso de divorcio conflictivo donde ambos padres disputan la tutoría, la psicóloga de Inicial debe:",
+        opciones: [
+            "A) Elegir al padre que mejor le caiga.",
+            "B) Mantener la neutralidad, enfocarse en el bienestar emocional del niño y basarse solo en documentos legales oficiales (sentencias).",
+            "C) No dejar que el niño entre al centro hasta que los padres se arreglen.",
+            "D) Testificar en favor de la madre sin que un juez se lo pida."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Código de Ética y Orden Departamental 22-2023. La actuación del psicólogo debe ser técnica, legal e imparcial."
+    },
+    {
+        id: 287,
+        categoria: "Evaluación Nivel Inicial",
+        pregunta: "La 'Evaluación Formativa' en el Nivel Inicial se realiza:",
+        opciones: [
+            "A) Solo cuando el niño se porta mal.",
+            "B) Durante todo el proceso para ajustar las estrategias pedagógicas a las necesidades del niño.",
+            "C) Únicamente mediante exámenes de opción múltiple.",
+            "D) Al final de cada ciclo de 6 años."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. Permite tomar decisiones a tiempo para no esperar al final del año."
+    },
+    {
+        id: 288,
+        categoria: "Inclusión y DUA",
+        pregunta: "En el Diseño Universal para el Aprendizaje (DUA), proporcionar 'Múltiples Formas de Expresión' significa:",
+        opciones: [
+            "A) Que todos los niños deben hablar tres idiomas.",
+            "B) Permitir que los niños demuestren lo aprendido de diferentes maneras (dibujo, señas, lenguaje oral, etc.).",
+            "C) Que el aula debe tener muchos juguetes diferentes.",
+            "D) Que la psicóloga debe hablar en voz alta siempre."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. Reconoce que cada niño tiene diferentes habilidades para comunicar sus logros."
+    },
+    {
+        id: 289,
+        categoria: "Derecho a la Información",
+        pregunta: "La Ley 200-04 indica que si la información solicitada ya está disponible en la página web institucional, el centro debe:",
+        opciones: [
+            "A) Negar la respuesta.",
+            "B) Indicar al solicitante el enlace o fuente exacta donde puede consultarla.",
+            "C) Imprimirla y cobrar por las copias.",
+            "D) Ignorar la solicitud."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 200-04. Facilita el acceso rápido a la información pública existente."
+    },
+    {
+        id: 290,
+        categoria: "Estrategia Nacional de Desarrollo",
+        pregunta: "La Ley 1-12 (END) busca que la República Dominicana sea un país donde:",
+        opciones: [
+            "A) No sea necesario ir a la escuela.",
+            "B) Exista igualdad de oportunidades y justicia social para todos los ciudadanos.",
+            "C) Solo los ricos tengan acceso a la tecnología.",
+            "D) El sistema educativo sea el más caro del mundo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 1-12. La educación es el motor principal para lograr la equidad social planteada en la END."
+    },
+    {
+        id: 291,
+        categoria: "Código de Ética",
+        pregunta: "La Orden Departamental 22-2023 establece que el personal educativo que tenga conocimiento de una falta ética de un compañero y lo oculte:",
+        opciones: [
+            "A) Es un buen compañero.",
+            "B) Incurre en una falta por omisión y puede ser sancionado.",
+            "C) Recibirá un premio por lealtad.",
+            "D) No tiene responsabilidad alguna."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023. El encubrimiento de faltas graves daña la institucionalidad y la seguridad de los niños."
+    },
+    {
+        id: 292,
+        categoria: "Convivencia Escolar",
+        pregunta: "En el Nivel Inicial, la 'Disciplina Positiva' se basa en:",
+        opciones: [
+            "A) Dejar que los niños hagan lo que quieran sin límites.",
+            "B) Establecer límites claros basados en el respeto, la firmeza y el cariño, sin violencia.",
+            "C) Premiar con dulces cada vez que un niño se queda sentado.",
+            "D) Usar el miedo como herramienta de control."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2023. Busca el desarrollo de la autorregulación en el niño."
+    },
+    {
+        id: 293,
+        categoria: "Ley 5-13 Discapacidad",
+        pregunta: "La Ley 5-13 establece que los edificios escolares deben cumplir con normas de:",
+        opciones: [
+            "A) Decoración de lujo.",
+            "B) Accesibilidad universal (rampas, baños adaptados, etc.).",
+            "C) Tener solo dos pisos.",
+            "D) Colores azul y blanco obligatoriamente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 5-13. El entorno físico no debe ser una barrera para el acceso a la educación."
+    },
+    {
+        id: 294,
+        categoria: "Evaluación Nivel Inicial",
+        pregunta: "¿Quién es el responsable directo de completar el Registro de Grado en el Nivel Inicial?",
+        opciones: [
+            "A) El conserje del centro.",
+            "B) La docente de aula, con el apoyo y orientación de la psicóloga.",
+            "C) Los padres de familia en las reuniones trimestrales.",
+            "D) El digitador del distrito educativo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La docente es quien observa el día a día, pero la psicóloga orienta sobre casos especiales."
+    },
+    {
+        id: 295,
+        categoria: "Constitución Dominicana",
+        pregunta: "El derecho a la libertad de expresión (Art. 49) en el contexto escolar significa que:",
+        opciones: [
+            "A) Los niños pueden decir palabras obscenas.",
+            "B) Los estudiantes tienen derecho a expresar sus ideas y opiniones libremente, acorde a su etapa de desarrollo.",
+            "C) El director puede prohibir que los psicólogos hablen con los padres.",
+            "D) No se puede criticar ninguna decisión del Ministerio."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Constitución Dominicana. La libertad de expresión es un derecho fundamental que se educa en la escuela."
+    },
+    {
+        id: 296,
+        categoria: "Inclusión y NEAE",
+        pregunta: "Un niño con 'Dificultades Específicas de Aprendizaje' (DEA) en Inicial suele presentar señales en:",
+        opciones: [
+            "A) El tamaño de sus zapatos.",
+            "B) El desarrollo del lenguaje, la percepción visual o la coordinación motora.",
+            "C) Su preferencia por colores oscuros.",
+            "D) La cantidad de agua que bebe."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. Estas son funciones básicas que impactarán el aprendizaje posterior de la lectura y el cálculo."
+    },
+    {
+        id: 297,
+        categoria: "Ordenanza 01-2023",
+        pregunta: "La Política Nacional de Alfabetización considera que la lectura es un proceso de:",
+        opciones: [
+            "A) Construcción de significados, no solo decodificación de letras.",
+            "B) Repetición de sonidos en voz alta.",
+            "C) Copiado de textos del libro a la mascota.",
+            "D) Adorno para la biblioteca."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Legal: Ordenanza 01-2023. Leer implica comprender y usar el lenguaje para comunicarse."
+    },
+    {
+        id: 298,
+        categoria: "Ley 66-97",
+        pregunta: "El Consejo Nacional de Educación es el organismo que:",
+        opciones: [
+            "A) Solo se encarga de limpiar las escuelas.",
+            "B) Dicta las políticas educativas generales y aprueba las ordenanzas.",
+            "C) Paga los sueldos de los maestros directamente.",
+            "D) Vende los uniformes escolares."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 66-97. Es la máxima autoridad en materia de política educativa en el país."
+    },
+    {
+        id: 299,
+        categoria: "Manual de Convivencia",
+        pregunta: "Cuando se aplica una medida educativa en el Nivel Inicial, la prioridad es:",
+        opciones: [
+            "A) Que el niño pase vergüenza para que no lo repita.",
+            "B) La protección de los derechos del niño y su formación integral.",
+            "C) Que los padres paguen una multa económica.",
+            "D) Que el niño sea suspendido por un mes."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2023. El enfoque es siempre pedagógico y de respeto a la dignidad humana."
+    },
+    {
+        id: 300,
+        categoria: "Evaluación de Desempeño",
+        pregunta: "La evaluación de desempeño para una psicóloga escolar busca fundamentalmente:",
+        opciones: [
+            "A) Crear miedo entre el personal.",
+            "B) Fortalecer la calidad del servicio educativo mediante la retroalimentación y la mejora de las competencias profesionales.",
+            "C) Eliminar los puestos de psicología en los centros.",
+            "D) Solo contar cuántas horas estuvo sentada en la oficina."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08 y reglamentos del MINERD. Es un proceso de crecimiento institucional y personal."
+    },
+
+    {
+        id: 301,
+        categoria: "Evaluación de Desempeño",
+        pregunta: "Durante su Evaluación de Desempeño, se le presenta un caso donde una docente de Pre-Primario le exige aplicar una prueba de coeficiente intelectual (CI) a un niño de 5 años porque 'aprende lento'. Según la Ordenanza 05-2024, su respuesta técnica debe ser:",
+        opciones: [
+            "A) Aplicar la prueba inmediatamente para complacer a la docente.",
+            "B) Explicar que la evaluación en Inicial es ecológica y procesual, priorizando la identificación de barreras y no la medición de un CI estático.",
+            "C) Referir al niño al psiquiatra para que él aplique la prueba.",
+            "D) Decirle a la docente que el niño no tiene solución."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. El modelo inclusivo dominicano rechaza el enfoque clínico/médico (etiquetas de CI) en favor del modelo social (identificar barreras en el entorno)."
+    },
+    {
+        id: 302,
+        categoria: "Ordenanza 01-2023 (Alfabetización)",
+        pregunta: "Una docente de Kínder (4 años) castiga a un niño dejándolo sin recreo porque no sabe escribir su nombre completo con letra cursiva. Como psicóloga, usted interviene basándose en:",
+        opciones: [
+            "A) Felicitar a la maestra por su exigencia.",
+            "B) La Ordenanza 01-2023, que establece que la alfabetización inicial es un proceso lúdico y emergente, y las normas de convivencia prohíben suprimir el recreo.",
+            "C) Sugerir que el niño copie su nombre 100 veces.",
+            "D) Citar a los padres para decirles que el niño fracasará."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023 y 05-2023. Exigir habilidades no acordes a la etapa evolutiva genera frustración; quitar el recreo es una medida prohibida."
+    },
+    {
+        id: 303,
+        categoria: "Ley 136-03",
+        pregunta: "Usted nota que una niña de 4 años acude al centro con el mismo uniforme sucio toda la semana y presenta bajo peso severo. El director le sugiere 'no meterse en problemas familiares'. Su deber legal es:",
+        opciones: [
+            "A) Obedecer al director por respeto a la jerarquía.",
+            "B) Documentar el caso, intervenir con la familia y, de no haber cambios, notificar al Sistema Nacional de Protección (CONANI), pues es negligencia (Ley 136-03).",
+            "C) Comprarle comida a escondidas.",
+            "D) Burlarse de la niña frente al curso."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 136-03. El deber de denuncia ante el maltrato u omisión de cuidados es obligatorio e indelegable para el personal escolar."
+    },
+    {
+        id: 304,
+        categoria: "Ordenanza 04-2023 (Registro de Grado)",
+        pregunta: "En la reunión de evaluación del primer periodo, la maestra le informa que pondrá 'Todavía No Logrado' (TNL) a la mayoría de los niños para que los padres 'se asusten y ayuden más'. Su orientación debe ser:",
+        opciones: [
+            "A) Apoyar la estrategia para integrar a las familias.",
+            "B) Recordar que la evaluación debe ser ética y objetiva, reflejando el progreso real, no usarse como herramienta de castigo o presión.",
+            "C) Decirle que mejor ponga números rojos.",
+            "D) Cambiar las notas usted misma sin avisarle a la maestra."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La evaluación tiene un carácter ético y formativo, no punitivo."
+    },
+    {
+        id: 305,
+        categoria: "Inclusión (Ordenanza 05-2024)",
+        pregunta: "Al planificar los 'Ajustes Curriculares' para un estudiante sordo en el Nivel Inicial, la estrategia principal en el aula ordinaria debe ser:",
+        opciones: [
+            "A) Obligarlo a hablar oralmente sin usar señas.",
+            "B) Incorporar apoyos visuales, material concreto y promover el aprendizaje básico de Lengua de Señas Dominicana (LSD) en el entorno.",
+            "C) Dejarlo dibujando todo el día para que no moleste.",
+            "D) Pedirle a la madre que se quede con él en el aula."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. El entorno debe proveer los medios de comunicación alternativos o aumentativos que requiera el estudiante."
+    },
+    {
+        id: 306,
+        categoria: "Código de Ética",
+        pregunta: "En una fiesta de cumpleaños fuera del horario escolar, los padres de un estudiante de su centro le invitan a tomar bebidas alcohólicas con ellos y subir fotos a Instagram. Según la Orden Departamental 22-2023:",
+        opciones: [
+            "A) Puede hacerlo porque es fuera del horario de trabajo.",
+            "B) Debe declinar, ya que el personal educativo debe mantener una imagen de decoro y distancia profesional dentro y fuera de la escuela.",
+            "C) Puede hacerlo solo si no lleva el uniforme del MINERD.",
+            "D) Puede hacerlo si las fotos duran solo 24 horas."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023. El código regula la imagen pública y las relaciones extralaborales que puedan comprometer la figura de autoridad y respeto."
+    },
+    {
+        id: 307,
+        categoria: "Evaluación Diagnóstica",
+        pregunta: "¿Qué técnica es la más pertinente y válida para que la psicóloga evalúe la motricidad gruesa de un grupo de niños de 3 años en su etapa diagnóstica?",
+        opciones: [
+            "A) Un examen escrito de opción múltiple.",
+            "B) La observación sistemática durante actividades de juego guiado en el patio o área de psicomotricidad.",
+            "C) Una entrevista a solas en el departamento de orientación.",
+            "D) Pedirles que lean un cuento."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Currículo de Nivel Inicial y Ordenanza 04-2023. La observación en contextos naturales de juego es la principal técnica de recolección de datos."
+    },
+    {
+        id: 308,
+        categoria: "Convivencia (05-2023)",
+        pregunta: "Un niño de Pre-Primario muerde frecuentemente a sus compañeros. La madre de un niño agredido exige la expulsión del agresor. Su proceder como psicóloga es:",
+        opciones: [
+            "A) Expulsar al niño agresor para evitar demandas.",
+            "B) Explicar a la madre que en Inicial las medidas son formadoras, no punitivas, y aplicar un plan de modificación conductual con la familia del agresor.",
+            "C) Permitir que la madre agredida le grite al niño agresor.",
+            "D) Decirle a la maestra que amarre al niño agresor a la silla."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2023. Protege el derecho a la educación de todos los menores; en Inicial no existe la expulsión como medida disciplinaria."
+    },
+    {
+        id: 309,
+        categoria: "Función Pública (Ley 41-08)",
+        pregunta: "Durante el horario laboral, el director le pide que salga del centro para ir a un mitin político del partido de gobierno. Según la Ley 41-08, usted debe:",
+        opciones: [
+            "A) Ir con entusiasmo para asegurar su puesto.",
+            "B) Negarse, ya que está prohibido realizar proselitismo político durante la jornada laboral.",
+            "C) Ir pero quedarse escondida en la parte de atrás.",
+            "D) Obligar a los maestros a ir también."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08. El ejercicio de la función pública es apartidista y el proselitismo en horario laboral es falta grave."
+    },
+    {
+        id: 310,
+        categoria: "Constitución Art. 63",
+        pregunta: "Una familia inmigrante indocumentada intenta inscribir a su hijo de 5 años en el centro. El director se niega por falta de papeles. Según el Art. 63 de la Constitución y las normativas del MINERD, usted aconseja:",
+        opciones: [
+            "A) Apoyar al director porque los extranjeros no tienen derechos.",
+            "B) Recordar que el derecho a la educación es universal; se inscribe al niño y se le da un código temporal escolar mientras regularizan.",
+            "C) Llamar a migración inmediatamente.",
+            "D) Cobrarles en dólares para aceptarlo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Art. 63 Constitución y normativas de inscripción MINERD. El derecho a la educación prima sobre el estatus migratorio del menor."
+    },
+    {
+        id: 311,
+        categoria: "Participación Familiar (03-2025)",
+        pregunta: "Al conformar el Comité de Curso en un aula de Pre-Primario, la docente sugiere elegir solo a madres que no trabajen para que 'tengan tiempo'. Su intervención técnica, basada en la Ordenanza 03-2025, es:",
+        opciones: [
+            "A) Estar de acuerdo, es más práctico.",
+            "B) Promover que la elección sea democrática e inclusiva, permitiendo la participación de padres, madres o tutores independientemente de su ocupación.",
+            "C) Imponer a dedo quiénes serán del comité.",
+            "D) Prohibir que se forme el comité."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 03-2025. La participación debe ser democrática, equitativa y sin discriminación."
+    },
+    {
+        id: 312,
+        categoria: "Ley 5-13 (Discapacidad)",
+        pregunta: "El centro está organizando el acto cívico del 27 de febrero. Un niño con parálisis cerebral en silla de ruedas es dejado en el aula 'para que no se acalore'. Esto constituye:",
+        opciones: [
+            "A) Una medida de protección adecuada.",
+            "B) Un acto de exclusión y discriminación contrario a la Ley 5-13.",
+            "C) Una decisión exclusiva de la maestra de educación física.",
+            "D) Un favor para la madre del niño."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 5-13 y Ordenanza 05-2024. Los estudiantes con discapacidad tienen derecho a participar en todas las actividades socioculturales del centro."
+    },
+    {
+        id: 313,
+        categoria: "Rol del Psicólogo - Planificación",
+        pregunta: "En las comunidades de aprendizaje (grupos pedagógicos), el rol de la psicóloga de Inicial frente a la planificación docente es:",
+        opciones: [
+            "A) Dictarle a la maestra lo que tiene que hacer.",
+            "B) Asesorar en la incorporación del DUA y en estrategias para atender los diferentes ritmos y estilos de aprendizaje de los niños.",
+            "C) Revisar la ortografía de la planificación exclusivamente.",
+            "D) No participar porque eso es trabajo solo de la coordinadora."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Funciones del Departamento de Orientación y Psicología MINERD. El apoyo psicopedagógico en la planificación garantiza la atención a la diversidad."
+    },
+    {
+        id: 314,
+        categoria: "Ley 200-04 (Transparencia)",
+        pregunta: "Una organización comunitaria solicita formalmente el POA (Plan Operativo Anual) del centro educativo. La respuesta institucional adecuada es:",
+        opciones: [
+            "A) Entregarlo, ya que es un documento de carácter público y planificación institucional.",
+            "B) Negarlo argumentando confidencialidad de Estado.",
+            "C) Entregar solo la portada.",
+            "D) Cobrar 10,000 pesos por la información."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Legal: Ley 200-04. Los planes operativos y presupuestos de instituciones públicas son de libre acceso."
+    },
+    {
+        id: 315,
+        categoria: "Evaluación Nivel Inicial",
+        pregunta: "Si en el segundo periodo de evaluación (mitad de año) un niño de Inicial tiene casi todos sus indicadores en 'TNL', el protocolo del equipo de gestión y psicología es:",
+        opciones: [
+            "A) Enviar una carta de expulsión preventiva.",
+            "B) Activar un plan de intervención psicopedagógica, realizar ajustes en el aula y tener tutorías con la familia.",
+            "C) Esperar a junio a ver si mejora milagrosamente.",
+            "D) Regalarle los indicadores ('L') para que los padres no se quejen."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La evaluación procesual sirve precisamente para activar apoyos a tiempo y evitar rezagos."
+    },
+    {
+        id: 316,
+        categoria: "Ley 1-12 (Estrategia Nacional)",
+        pregunta: "La Estrategia Nacional de Desarrollo al 2030 promueve en el Nivel Inicial la política de:",
+        opciones: [
+            "A) Reducir la inversión en la primera infancia.",
+            "B) La atención integral a la primera infancia (ej. INAIPI) y la universalización de la educación inicial de calidad.",
+            "C) Privatizar todos los Kínder.",
+            "D) Eliminar el desayuno escolar."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 1-12. El Eje Estratégico 2 prioriza la educación desde la primera infancia como base del desarrollo humano."
+    },
+    {
+        id: 317,
+        categoria: "Código de Ética",
+        pregunta: "Una maestra de su centro publica un video en TikTok donde los niños de su aula aparecen bailando una canción con letras explícitas. Según la Orden Departamental 22-2023, esto es:",
+        opciones: [
+            "A) Excelente para promover el talento artístico.",
+            "B) Una falta grave por exponer la imagen de menores sin consentimiento y usar material no pedagógico y moralmente inapropiado.",
+            "C) Permitido si los niños están de espaldas.",
+            "D) Problema exclusivo de los padres."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023. La hipersexualización infantil y la exposición mediática sin fin educativo son severamente sancionadas."
+    },
+    {
+        id: 318,
+        categoria: "Desarrollo Evolutivo",
+        pregunta: "Un indicador clave del desarrollo socio-emocional que usted esperaría observar y evaluar en un niño de 5 años (Pre-Primario) es:",
+        opciones: [
+            "A) Capacidad para resolver ecuaciones de primer grado.",
+            "B) Reconocer y nombrar emociones básicas propias y ajenas, mostrando incipiente empatía.",
+            "C) Leer 100 palabras por minuto sin equivocarse.",
+            "D) Quedarse sentado sin moverse durante 4 horas."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Currículo de Nivel Inicial. El desarrollo de la inteligencia emocional es un pilar en esta etapa."
+    },
+    {
+        id: 319,
+        categoria: "Convivencia (Rutas de Actuación)",
+        pregunta: "Ante un posible caso de Abuso Sexual Infantil (ASI) detectado por un cambio abrupto en los dibujos y conducta de una niña de Inicial, la psicóloga DEBE:",
+        opciones: [
+            "A) Confrontar directamente al presunto abusador.",
+            "B) Aplicar la ruta de actuación del MINERD: asegurar a la niña, no revictimizar con preguntas repetitivas, y derivar el caso a la fiscalía/CONANI inmediatamente.",
+            "C) Llamar a los padres a una reunión grupal.",
+            "D) Ocultar el caso por falta de pruebas médicas."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Protocolos de Cultura de Paz MINERD y Ley 136-03. La escuela no investiga, detecta y deriva a las autoridades judiciales."
+    },
+    {
+        id: 320,
+        categoria: "Evaluación Nivel Inicial",
+        pregunta: "En el contexto de la evaluación, el Portafolio en el Nivel Inicial se utiliza para:",
+        opciones: [
+            "A) Guardar basura del aula.",
+            "B) Evidenciar el proceso y progreso del niño a través de la recopilación sistemática de sus producciones y trabajos.",
+            "C) Mostrar solo los trabajos que están perfectos.",
+            "D) Dárselo al director para que decida quién pasa de curso."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. El portafolio es un instrumento cualitativo que muestra la evolución cronológica del aprendizaje."
+    },
+
+    {
+        id: 321,
+        categoria: "Inclusión y DUA",
+        pregunta: "Un estudiante de Kínder tiene Trastorno por Déficit de Atención e Hiperactividad (TDAH). Una medida basada en el DUA para la gestión del aula sería:",
+        opciones: [
+            "A) Sentarlo castigado frente a la pared.",
+            "B) Alternar actividades pasivas con actividades de movimiento, y estructurar el tiempo con apoyos visuales (agendas pictóricas).",
+            "C) Quitarle el recreo hasta que termine la tarea.",
+            "D) Exigirle a los padres que lo mediquen para aceptarlo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. El DUA busca modificar el entorno y la metodología (ej. agendas visuales) para facilitar la participación."
+    },
+    {
+        id: 322,
+        categoria: "Ley 41-08 (Derechos)",
+        pregunta: "Una psicóloga del MINERD solicita una licencia por maternidad. Según el marco legal dominicano, este derecho le otorga un descanso remunerado de:",
+        opciones: [
+            "A) 2 semanas.",
+            "B) 14 semanas (según las últimas modificaciones del Ministerio de Administración Pública y OIT).",
+            "C) 1 año completo.",
+            "D) No tiene derecho si es de nuevo ingreso."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08 y resoluciones del MAP. Es un derecho fundamental de las servidoras públicas."
+    },
+    {
+        id: 323,
+        categoria: "Ordenanza 01-2023",
+        pregunta: "En la Alfabetización Inicial, el concepto de 'Ambiente Letrado' en el aula de Nivel Inicial significa:",
+        opciones: [
+            "A) Que el aula no tenga dibujos, solo letras negras.",
+            "B) Que el espacio esté intencionalmente organizado con rótulos funcionales, cuentos accesibles y carteles elaborados junto a los niños.",
+            "C) Que la maestra obligue a leer desde el primer día.",
+            "D) Comprar láminas caras y no dejar que los niños las toquen."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023. El ambiente letrado promueve la inmersión natural y significativa en la cultura escrita."
+    },
+    {
+        id: 324,
+        categoria: "Ley 136-03 (Derecho al Juego)",
+        pregunta: "El Artículo 18 de la Ley 136-03 consagra el derecho al descanso, esparcimiento, juego y actividades recreativas. En el centro educativo, esto se garantiza al:",
+        opciones: [
+            "A) Eliminar los recreos para tener más horas de matemáticas.",
+            "B) Considerar el juego como la principal estrategia pedagógica en Inicial y proteger los tiempos de recreo.",
+            "C) Dejar que los niños jueguen en la calle sin supervisión.",
+            "D) Cobrar una cuota para usar los juegos del patio."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 136-03 y Diseño Curricular de Inicial. El juego es un derecho y el motor del aprendizaje en la primera infancia."
+    },
+    {
+        id: 325,
+        categoria: "Código de Ética",
+        pregunta: "Usted descubre que el director del centro está alterando los datos de la edad de los niños en el SIGERD (Sistema de Gestión) para poder matricularlos antes de tiempo. Su acción ética es:",
+        opciones: [
+            "A) Guardar silencio porque él es el jefe.",
+            "B) Reportar la irregularidad al Distrito Educativo (Departamento de Orientación o Supervisión), ya que es una falsificación de documentos oficiales.",
+            "C) Ayudarle a alterar los documentos para ser su amiga.",
+            "D) Publicarlo anónimamente en redes sociales."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023 y Ley 41-08. El encubrimiento de fraude es una falta grave que conlleva responsabilidad compartida."
+    },
+    {
+        id: 326,
+        categoria: "Participación Familiar (03-2025)",
+        pregunta: "El rol principal de la Asamblea General de la APMAE al inicio del año escolar es:",
+        opciones: [
+            "A) Decidir qué niños pueden inscribirse.",
+            "B) Elegir la Directiva de la Asociación de Padres, Madres y Tutores, y aprobar el plan de trabajo anual.",
+            "C) Recaudar dinero obligatoriamente para pagarle a los maestros.",
+            "D) Criticar la vestimenta de las maestras."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 03-2025. Es el máximo órgano de participación familiar y funciona de forma democrática."
+    },
+    {
+        id: 327,
+        categoria: "Evaluación Nivel Inicial",
+        pregunta: "¿Qué técnica cualitativa permite a la psicóloga y docente registrar un evento inusual o significativo del comportamiento de un niño en un momento específico?",
+        opciones: [
+            "A) El examen estandarizado.",
+            "B) El Registro Anecdótico.",
+            "C) La rúbrica sumativa.",
+            "D) El pase de lista."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. El registro anecdótico capta situaciones contextuales que explican conductas o avances."
+    },
+    {
+        id: 328,
+        categoria: "Ley 66-97",
+        pregunta: "Según el Estatuto del Docente y la Ley 66-97, ¿cómo se logra el ingreso a la carrera docente (incluyendo orientadores y psicólogos)?",
+        opciones: [
+            "A) Por designación política directa del Ministro.",
+            "B) Mediante la superación de un Concurso de Oposición que evalúa competencias profesionales.",
+            "C) Por recomendación de un amigo que trabaje en el distrito.",
+            "D) Pagando una cuota de ingreso al sindicato."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 66-97 y Estatuto Docente. El mérito y la capacidad son los únicos criterios para el ingreso al sistema público."
+    },
+    {
+        id: 329,
+        categoria: "Inclusión y Transición",
+        pregunta: "Cuando un niño con una NEAE asociada a discapacidad pasa de Pre-Primario a Primero de Primaria, la psicóloga de Inicial debe:",
+        opciones: [
+            "A) Romper su expediente para proteger su privacidad.",
+            "B) Coordinar un proceso de 'Transición' con el equipo de Primaria, transfiriendo su Plan de Apoyo a la Diversidad (PAD) para garantizar la continuidad.",
+            "C) Desearle buena suerte y olvidarse del caso.",
+            "D) Recomendarle a los padres que lo dejen en Inicial un año más por pena."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. La transición articulada evita la interrupción de los apoyos psicopedagógicos entre niveles."
+    },
+    {
+        id: 330,
+        categoria: "Constitución (Derecho a la Intimidad)",
+        pregunta: "El Artículo 44 de la Constitución protege el derecho a la intimidad y el honor personal. En el contexto escolar de Inicial, esto impide que el personal:",
+        opciones: [
+            "A) Salude a los niños por su nombre.",
+            "B) Divulgue información clínica, familiar o psicológica del estudiante sin autorización de los tutores (salvo requerimiento judicial).",
+            "C) Llame a los padres por teléfono.",
+            "D) Entregue el informe de notas en un sobre cerrado."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Constitución Art. 44 y Ley 136-03. El secreto profesional y la confidencialidad son mandatos constitucionales."
+    },
+    {
+        id: 331,
+        categoria: "Convivencia (Tipificación de Faltas)",
+        pregunta: "Una docente abandona el aula de niños de 3 años por 20 minutos para ir a hablar por celular, dejándolos solos. Según las normas disciplinarias laborales del MINERD, esto es:",
+        opciones: [
+            "A) Una falta leve.",
+            "B) Una falta grave o muy grave por abandono de funciones que pone en riesgo inminente la integridad de los menores.",
+            "C) Un derecho a su hora libre.",
+            "D) Una costumbre aceptable."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08 y Ordenanza 05-2023. La negligencia en la supervisión de la primera infancia es altamente penada."
+    },
+    {
+        id: 332,
+        categoria: "Ordenanza 01-2023 (Alfabetización)",
+        pregunta: "El enfoque curricular para enseñar a leer y escribir en el nivel inicial dominicano NO es:",
+        opciones: [
+            "A) Constructivista.",
+            "B) Funcional y comunicativo.",
+            "C) Mecanicista y repetitivo (ej. planas de 'ma me mi mo mu').",
+            "D) Lúdico y experiencial."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Ordenanza 01-2023. Se ha superado el método silábico tradicional en favor de la comprensión del sentido de los textos."
+    },
+    {
+        id: 333,
+        categoria: "Evaluación de Desempeño",
+        pregunta: "Al momento de ser evaluada su competencia de 'Liderazgo y Relaciones Interpersonales', los evaluadores observarán si usted:",
+        opciones: [
+            "A) Trabaja completamente aislada en su oficina.",
+            "B) Fomenta un clima de colaboración, maneja constructivamente los conflictos y se integra activamente al trabajo de la comunidad educativa.",
+            "C) Grita para imponer su autoridad.",
+            "D) Solo habla con el director."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Estándares Profesionales y del Desempeño (MINERD). El trabajo en equipo es una competencia cardinal."
+    },
+    {
+        id: 334,
+        categoria: "Ley 200-04 (Acceso a la Información)",
+        pregunta: "Si un padre solicita copias de los cheques de pago de la Junta de Centro, ¿el director puede negarse argumentando que los padres no son auditores?",
+        opciones: [
+            "A) Sí, la contabilidad es privada.",
+            "B) No, todo ciudadano tiene derecho a escrutar el manejo de los fondos públicos asignados al centro (Ley 200-04).",
+            "C) Sí, porque los padres no saben de finanzas.",
+            "D) Solo si la APMAE lo autoriza."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 200-04 y Manual de Juntas Descentralizadas. Transparencia total en el uso del presupuesto."
+    },
+    {
+        id: 335,
+        categoria: "Rol del Psicólogo - Familia",
+        pregunta: "En una 'Escuela de Padres' (espacio de formación) del Nivel Inicial, un tema altamente pertinente propuesto por la psicóloga sería:",
+        opciones: [
+            "A) Historia de la Revolución Francesa.",
+            "B) Pautas de crianza positiva, límites con amor y prevención del abuso infantil.",
+            "C) Cómo invertir en la bolsa de valores.",
+            "D) Técnicas avanzadas de química orgánica."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Manual de Orientación y Psicología MINERD. El apoyo psicosocial a la crianza previene factores de riesgo."
+    },
+    {
+        id: 336,
+        categoria: "Código de Ética",
+        pregunta: "Una maestra le comenta en confianza que un padre soltero de su curso le está invitando a salir románticamente y ella quiere aceptar. Según la Orden Departamental 22-2023, usted le orienta que:",
+        opciones: [
+            "A) Acepte porque encontrar pareja es difícil.",
+            "B) Se abstenga, pues el código prohíbe las relaciones de carácter sexo-afectivo con padres o tutores de los estudiantes mientras estén en el centro.",
+            "C) Salgan pero a escondidas.",
+            "D) Le pida regalos costosos."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023. Protege la objetividad pedagógica y evita conflictos de intereses o favoritismos."
+    },
+    {
+        id: 337,
+        categoria: "Ley 5-13 Discapacidad",
+        pregunta: "Según la Convención sobre los Derechos de las Personas con Discapacidad y la Ley 5-13, ¿quién debe adaptarse en el proceso educativo?",
+        opciones: [
+            "A) El niño debe curarse para poder entrar a la escuela.",
+            "B) La escuela y el sistema educativo deben proveer los ajustes y eliminar las barreras para acoger al niño.",
+            "C) Los padres deben buscar una escuela especial siempre.",
+            "D) La sociedad no tiene que hacer nada."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 5-13. Consagra el modelo social de la discapacidad: la barrera está en el entorno, no en el individuo."
+    },
+    {
+        id: 338,
+        categoria: "Evaluación Nivel Inicial",
+        pregunta: "Si la rúbrica de evaluación indica que un niño 'Logrado' (L) arma rompecabezas de 20 piezas, y un niño logra armar uno de 10 piezas con ayuda, su calificación es:",
+        opciones: [
+            "A) Excelente.",
+            "B) En Proceso (EP) o Todavía No Logrado (TNL), dependiendo de la frecuencia de la ayuda y la edad evolutiva.",
+            "C) Reprobado.",
+            "D) 50 puntos."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La valoración cualitativa mide la aproximación a la meta esperada (indicador)."
+    },
+    {
+        id: 339,
+        categoria: "Desarrollo del Niño",
+        pregunta: "En la primera infancia, la 'Lateralidad' (preferencia por usar más el lado derecho o izquierdo del cuerpo) suele definirse claramente alrededor de los:",
+        opciones: [
+            "A) 6 meses de nacido.",
+            "B) 4 a 5 años de edad.",
+            "C) 15 años.",
+            "D) Nunca se define."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Hitos del desarrollo psicomotor (Currículo Nivel Inicial). Es fundamental no forzar al niño a usar una mano específica antes de tiempo."
+    },
+    {
+        id: 340,
+        categoria: "Estrategia Nacional de Desarrollo",
+        pregunta: "El enfoque de 'Equidad de Género' transversalizado en la Ley 1-12 aplicado al Nivel Inicial significa que:",
+        opciones: [
+            "A) Solo las niñas pueden jugar con muñecas.",
+            "B) Se promueve la igualdad de oportunidades y trato, evitando estereotipos de género desde los primeros años de vida.",
+            "C) Los niños varones son más inteligentes.",
+            "D) Se debe separar a niños y niñas en aulas distintas."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 1-12 y Currículo. La educación debe deconstruir roles sociales discriminatorios desde el preescolar."
+    },
+
+
+    {
+        id: 341,
+        categoria: "Ley 136-03 (Derecho a la Identidad)",
+        pregunta: "Un niño de 5 años asiste al centro, pero su madre no tiene Acta de Nacimiento. La Ley 136-03 y las normas del MINERD dictan que la escuela debe:",
+        opciones: [
+            "A) Echar al niño a la calle.",
+            "B) Inscribirlo provisionalmente y orientar/acompañar a la madre en el proceso de declaración tardía a través de las instituciones competentes.",
+            "C) Llamar a la policía para que arreste a la madre.",
+            "D) Cobrarle una mensualidad."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 136-03. El derecho a la identidad y el nombre es inalienable, y la escuela actúa como ente garante facilitando la ruta institucional."
+    },
+    {
+        id: 342,
+        categoria: "Convivencia y Cultura de Paz",
+        pregunta: "En una discusión entre maestras frente a los niños de Kínder, una de ellas lanza un cuaderno. La psicóloga debe intervenir considerando que:",
+        opciones: [
+            "A) Es algo normal por el estrés.",
+            "B) Constituye una falta grave al clima escolar, violando la Ordenanza 05-2023, y es un pésimo modelaje de resolución de conflictos para los menores.",
+            "C) Solo debe intervenir si el cuaderno golpea a un niño.",
+            "D) Debe grabar un video y enviarlo por WhatsApp."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2023 y Código de Ética. El personal adulto debe ser el principal modelo de autorregulación emocional."
+    },
+    {
+        id: 343,
+        categoria: "Ordenanza 05-2024 (Inclusión)",
+        pregunta: "El 'Ajuste Curricular Significativo' se diferencia del 'No Significativo' en que el Significativo:",
+        opciones: [
+            "A) Solo cambia el color del lápiz.",
+            "B) Modifica los indicadores de logro o competencias fundamentales adaptándolos a las posibilidades del estudiante, y se registra formalmente en el PAD.",
+            "C) Significa que el niño no va a clases.",
+            "D) Lo aprueba el Presidente de la República."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. Los ajustes significativos alteran la complejidad de lo que se enseña y evalúa."
+    },
+    {
+        id: 344,
+        categoria: "Evaluación de Desempeño",
+        pregunta: "En la evaluación de desempeño, el portafolio profesional de la psicóloga debe contener evidencias de:",
+        opciones: [
+            "A) Sus recibos de compra de ropa.",
+            "B) Planificación anual, informes psicopedagógicos (protegiendo identidad), actas de escuelas de padres y registros de acompañamiento docente.",
+            "C) Fotos de sus vacaciones.",
+            "D) Exámenes de matemáticas que aplicó."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Instrumentos de Evaluación de Desempeño MINERD. El portafolio es la evidencia empírica de su labor técnica."
+    },
+    {
+        id: 345,
+        categoria: "Ley 41-08 (Régimen Disciplinario)",
+        pregunta: "Una amonestación escrita a una servidora pública de carrera (como una psicóloga escolar) procede cuando:",
+        opciones: [
+            "A) Asesina a alguien.",
+            "B) Comete faltas de segundo grado, como reincidir en ausencias injustificadas, tras haber agotado las amonestaciones verbales.",
+            "C) Llega 1 minuto tarde una sola vez.",
+            "D) Hace bien su trabajo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08. El régimen disciplinario es progresivo: amonestación verbal, escrita, suspensión y destitución."
+    },
+    {
+        id: 346,
+        categoria: "Ley 66-97 (Fines de la Educación)",
+        pregunta: "Según el Artículo 5 de la Ley 66-97, uno de los fines de la educación dominicana es:",
+        opciones: [
+            "A) Formar personas dependientes del Estado.",
+            "B) Formar ciudadanos amantes de su familia y de su Patria, conscientes de sus deberes, derechos y libertades.",
+            "C) Promover la cultura de otros países por encima de la dominicana.",
+            "D) Enseñar a los niños a trabajar en fábricas desde los 5 años."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 66-97. La identidad nacional y la formación ciudadana son pilares teleológicos del sistema."
+    },
+    {
+        id: 347,
+        categoria: "Evaluación Nivel Inicial",
+        pregunta: "Al finalizar el año escolar, el docente de Pre-Primario debe elaborar un informe final que sintetice los logros del niño. La psicóloga acompaña este proceso verificando que:",
+        opciones: [
+            "A) El informe tenga mínimo 50 páginas.",
+            "B) Exista coherencia entre lo registrado durante los tres periodos evaluativos y el perfil de egreso descrito en el informe final.",
+            "C) El informe solo mencione las cosas malas del niño.",
+            "D) Todos los niños tengan exactamente el mismo informe copiado y pegado."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La objetividad y la personalización del informe cualitativo garantizan una transición adecuada a Primaria."
+    },
+    {
+        id: 348,
+        categoria: "Código de Ética",
+        pregunta: "Un orientador de un centro educativo privado cercano le ofrece una comisión de dinero por cada estudiante que usted, desde el centro público, le refiera a su consulta vespertina. Su accionar debe ser:",
+        opciones: [
+            "A) Aceptar la oferta para ganar dinero extra.",
+            "B) Rechazar la oferta tajantemente, ya que la Orden Departamental 22-2023 y la Ley 41-08 prohíben recibir beneficios económicos por el ejercicio del cargo o generar conflictos de interés.",
+            "C) Aceptar pero pedir que le pague en efectivo para no dejar rastro.",
+            "D) Referir a todos los niños posibles para ganar más."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023. El tráfico de influencias y el cohecho violan el principio de probidad."
+    },
+    {
+        id: 349,
+        categoria: "Ordenanza 01-2023 (Alfabetización)",
+        pregunta: "Según las orientaciones curriculares, la 'Conciencia Fonológica' en el Nivel Inicial se desarrolla a través de:",
+        opciones: [
+            "A) Repetir reglas gramaticales teóricas.",
+            "B) Juegos con rimas, separación oral de sílabas a través de palmadas y canciones que manipulan los sonidos del habla.",
+            "C) Exámenes de dictado sorpresa.",
+            "D) Ver televisión en silencio."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023 y Diseño Curricular. Es el pilar fundamental pre-lector que se trabaja desde los 3 años."
+    },
+    {
+        id: 350,
+        categoria: "Participación Familiar (03-2025)",
+        pregunta: "La Junta de Centro es el organismo descentralizado que administra los fondos operativos. ¿La APMAE tiene representación en la Junta de Centro?",
+        opciones: [
+            "A) No, el dinero solo lo maneja el director.",
+            "B) Sí, los padres tienen representación con voz y voto para garantizar la transparencia y la participación de la comunidad.",
+            "C) Solo pueden ir de oyentes pero no opinar.",
+            "D) Sí, pero solo los padres que aporten dinero a la escuela."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 03-2025 y Reglamento de Juntas Descentralizadas. La cogestión es obligatoria."
+    },
+    {
+        id: 351,
+        categoria: "Inclusión y Equidad",
+        pregunta: "La diferencia principal entre 'Integración' e 'Inclusión' según la normativa del MINERD (05-2024) es:",
+        opciones: [
+            "A) Son exactamente lo mismo.",
+            "B) La integración pide que el niño se adapte a la escuela; la Inclusión exige que la escuela se transforme para atender a la diversidad de todos los niños.",
+            "C) La inclusión es solo para escuelas privadas.",
+            "D) La integración es obligatoria, la inclusión es opcional."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. El paradigma dominicano actual es inclusivo, garantizando que el diseño del entorno sea accesible desde el inicio."
+    },
+    {
+        id: 352,
+        categoria: "Ley 136-03 (Derecho a la Educación)",
+        pregunta: "Una adolescente queda embarazada. El director de la escuela quiere expulsarla 'para que no sea mal ejemplo' para los niños de Inicial. La ley establece que:",
+        opciones: [
+            "A) El director tiene razón, debe ser expulsada.",
+            "B) Es ilegal. El Estado prohíbe la expulsión por embarazo, debiendo garantizar modalidades de estudio que aseguren su permanencia en el sistema (Ley 136-03).",
+            "C) Debe pagar una multa para seguir estudiando.",
+            "D) Solo puede estudiar de noche."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 136-03 y normativas del MINERD. La discriminación por embarazo está expresamente prohibida y sancionada."
+    },
+    {
+        id: 353,
+        categoria: "Evaluación Diagnóstica Inicial",
+        pregunta: "Durante las dos primeras semanas de adaptación (evaluación diagnóstica), una niña de 3 años llora inconsolablemente cuando la madre se va. La acción psicopedagógica pertinente es:",
+        opciones: [
+            "A) Castigar a la niña por inmadura.",
+            "B) Trabajar el apego seguro, permitir la entrada escalonada de la familia y brindar contención emocional, ya que es una reacción evolutiva esperable (ansiedad de separación).",
+            "C) Obligar a la madre a irse corriendo.",
+            "D) Encerrar a la niña sola hasta que se calme."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Documento de Apoyo de Nivel Inicial (Periodo de Adaptación). El acompañamiento socioemocional es clave para la transición del hogar a la escuela."
+    },
+    {
+        id: 354,
+        categoria: "Constitución Dominicana",
+        pregunta: "El derecho al 'Libre Desarrollo de la Personalidad' (Art. 43 de la Constitución) en la escuela implica:",
+        opciones: [
+            "A) Que el niño puede romper los muebles de la escuela.",
+            "B) El respeto a la individualidad, ritmos y formas de ser de cada estudiante, sin discriminación ni imposición de modelos estandarizados opresivos.",
+            "C) Que los docentes no pueden poner reglas.",
+            "D) Que no hay horarios de entrada ni salida."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Constitución Art. 43. Protege la autonomía y dignidad en la construcción del ser humano."
+    },
+    {
+        id: 355,
+        categoria: "Normas de Convivencia (05-2023)",
+        pregunta: "El proceso de mediación en conflictos escolares, establecido en las normativas, tiene como característica principal ser:",
+        opciones: [
+            "A) Un juicio público con jurado.",
+            "B) Un proceso voluntario, imparcial y confidencial donde las partes buscan soluciones con la ayuda de un tercero neutral (como la psicóloga).",
+            "C) Una obligación donde el director dicta la sentencia.",
+            "D) Una reunión para insultarse ordenadamente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2023. La mediación es el núcleo de la resolución pacífica de conflictos escolares."
+    },
+    {
+        id: 356,
+        categoria: "Evaluación de Desempeño",
+        pregunta: "Si en su Evaluación de Desempeño obtiene una calificación en la escala de 'Insuficiente', la Ley 41-08 y los reglamentos del MINERD establecen que:",
+        opciones: [
+            "A) Será ascendida a directora.",
+            "B) Será sometida a un programa intensivo de capacitación y desarrollo profesional, y si en la siguiente evaluación vuelve a fallar, procede la desvinculación.",
+            "C) Recibirá un aumento salarial.",
+            "D) No pasa nada, todo sigue igual."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08. La evaluación busca mejorar, pero la insuficiencia reiterada conlleva la pérdida del estatus de carrera."
+    },
+    {
+        id: 357,
+        categoria: "Evaluación Nivel Inicial",
+        pregunta: "¿Qué papel juega la Autoevaluación en los niños de Nivel Inicial (Pre-Primario) según la Ordenanza 04-2023?",
+        opciones: [
+            "A) Ninguno, son muy pequeños para autoevaluarse.",
+            "B) Es fundamental; se promueve a través de asambleas, preguntas metacognitivas simples ('¿Qué aprendimos hoy?', '¿Cómo te sentiste?') para desarrollar su autonomía.",
+            "C) Se usa para que ellos mismos se pongan la nota final.",
+            "D) Solo sirve para perder tiempo de clases."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La metacognición y autorregulación inician en la primera infancia con el acompañamiento docente."
+    },
+    {
+        id: 358,
+        categoria: "Ley 200-04 y Privacidad",
+        pregunta: "Un periodista invoca la Ley de Libre Acceso a la Información para solicitar los nombres y direcciones de todos los estudiantes del centro para una nota de prensa. ¿Qué procede?",
+        opciones: [
+            "A) Entregar los datos rápidamente para no ser multado.",
+            "B) Denegar la solicitud amparándose en que la Ley 200-04 exceptúa el acceso a datos personales cuya divulgación pueda invadir la intimidad y poner en riesgo a los menores (Art. 18).",
+            "C) Entregar solo los de las niñas.",
+            "D) Pedirle al periodista que pague por la lista."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 200-04 (Excepciones) y Ley 136-03. La protección de los datos de menores es absoluta frente al escrutinio público."
+    },
+    {
+        id: 359,
+        categoria: "Orden Departamental 22-2023",
+        pregunta: "La prohibición de 'Uso de lenguaje inapropiado' hacia los estudiantes incluye específicamente:",
+        opciones: [
+            "A) Hablarles en voz suave.",
+            "B) El uso de apodos, sarcasmos, gritos, groserías o comentarios humillantes que vulneren su autoestima y dignidad humana.",
+            "C) Corregir un error de matemáticas.",
+            "D) Pedirles que hagan una fila ordenada."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023. El maltrato psicológico y verbal está erradicado por norma de las prácticas docentes."
+    },
+    {
+        id: 360,
+        categoria: "Rol de la Psicóloga (Integral)",
+        pregunta: "De acuerdo a los lineamientos del MINERD, el modelo de intervención en Orientación y Psicología debe ser predominantemente:",
+        opciones: [
+            "A) Clínico, reactivo y enfocado solo en el niño problema.",
+            "B) Preventivo, proactivo, sistémico (involucrando familia y docentes) y enfocado en el desarrollo integral de toda la comunidad educativa.",
+            "C) Administrativo, solo llenando formularios en la oficina.",
+            "D) Punitivo, decidiendo los castigos diarios."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Manual Operativo del Departamento de Orientación y Psicología MINERD. El modelo psicopedagógico nacional prioriza la prevención."
+    },
+
+    {
+        id: 361,
+        categoria: "Inclusión (Ordenanza 05-2024)",
+        pregunta: "Un niño de 4 años presenta conductas compatibles con el Espectro Autista (TEA), pero no tiene diagnóstico médico. La docente se niega a realizar ajustes hasta que los padres traigan un certificado. Su postura técnica es:",
+        opciones: [
+            "A) Darle la razón a la docente para evitar errores médicos.",
+            "B) Aplicar los ajustes razonables basados en las barreras observadas de inmediato, ya que la Ordenanza 05-2024 establece que la atención a la diversidad no está condicionada a un diagnóstico clínico.",
+            "C) Suspender al niño hasta que tenga el diagnóstico.",
+            "D) Realizar los ajustes solo si los padres pagan una evaluación privada."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. El centro debe responder a la necesidad educativa detectada pedagógicamente, sin esperar el trámite clínico."
+    },
+    {
+        id: 362,
+        categoria: "Ética Profesional (22-2023)",
+        pregunta: "Usted recibe una queja de que una docente de Inicial usa su celular para chatear durante la 'Siesta' o el 'Descanso' de los niños, descuidando la vigilancia. ¿Cómo procede usted como parte del equipo de gestión?",
+        opciones: [
+            "A) No hace nada, es el tiempo libre de la maestra.",
+            "B) Aborda a la docente y le recuerda que, según el Código de Ética, el personal debe garantizar la seguridad y supervisión continua de los menores sin distracciones tecnológicas.",
+            "C) Le pide que le preste el cargador.",
+            "D) Publica la queja en el grupo de WhatsApp de los padres."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023. La supervisión en Inicial es ininterrumpida por la vulnerabilidad de la edad."
+    },
+    {
+        id: 363,
+        categoria: "Evaluación (Ordenanza 04-2023)",
+        pregunta: "En el Registro de Grado de Inicial, el apartado 'Observaciones' debe utilizarse para:",
+        opciones: [
+            "A) Escribir que el niño es 'malo' o 'molesto'.",
+            "B) Describir de forma objetiva hechos significativos que expliquen el progreso del niño o las barreras que enfrenta, evitando juicios de valor.",
+            "C) Anotar si la madre debe dinero al centro.",
+            "D) Dejarlo en blanco para no trabajar de más."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. El registro es un documento técnico-legal; las observaciones deben ser profesionales y descriptivas."
+    },
+    {
+        id: 364,
+        categoria: "Ley 136-03",
+        pregunta: "Un niño de 5 años le cuenta que su padrastro le obliga a trabajar vendiendo golosinas en el semáforo por las tardes. Usted debe:",
+        opciones: [
+            "A) Felicitar al niño por ser emprendedor.",
+            "B) Activar inmediatamente el protocolo de protección por Trabajo Infantil, notificando al CONANI y al Ministerio de Trabajo.",
+            "C) Decirle al niño que no lo haga más.",
+            "D) No intervenir porque ocurre fuera de la escuela."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 136-03. El trabajo infantil es una violación grave a los derechos fundamentales y la escuela debe denunciarlo."
+    },
+    {
+        id: 365,
+        categoria: "Desarrollo Organizacional",
+        pregunta: "¿Qué documento orienta las acciones de prevención y apoyo emocional que la psicóloga ejecutará durante todo el año escolar?",
+        opciones: [
+            "A) El libro de cuentos del aula.",
+            "B) El Plan Anual de Orientación y Psicología, alineado al Proyecto Educativo de Centro (PEC).",
+            "C) La lista de merienda.",
+            "D) El horario de limpieza del centro."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Manual operativo de Orientación y Psicología. Toda acción debe estar planificada y responder a las necesidades del centro."
+    },
+    {
+        id: 366,
+        categoria: "Convivencia (05-2023)",
+        pregunta: "Una docente le pide 'una técnica' para que los niños de 3 años dejen de moverse tanto y se queden callados por una hora. Su respuesta técnica es:",
+        opciones: [
+            "A) Sugerirles que les ponga una película larga.",
+            "B) Explicar que evolutivamente los niños de esa edad necesitan movimiento y que las actividades deben ser cortas, dinámicas y variadas.",
+            "C) Recomendarles que les dé un dulce si se callan.",
+            "D) Decirle que les grite fuerte."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Psicología del Desarrollo y Currículo de Inicial. La inmovilidad prolongada es contraria al desarrollo natural en la primera infancia."
+    },
+    {
+        id: 367,
+        categoria: "Ley 41-08",
+        pregunta: "Si una psicóloga escolar es evaluada dos veces consecutivas con 'Satisfactorio' (en lugar de Excelente), ¿tiene derecho a bonos por desempeño?",
+        opciones: [
+            "A) No, solo los Excelentes cobran.",
+            "B) Sí, la escala de 'Satisfactorio' hacia arriba da derecho a los beneficios e incentivos previstos en la ley.",
+            "C) Solo si el director quiere dárselo.",
+            "D) Debe renunciar por no ser excelente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08 y reglamentos de incentivos. El desempeño satisfactorio cumple con las expectativas institucionales."
+    },
+    {
+        id: 368,
+        categoria: "Alfabetización (01-2023)",
+        pregunta: "La 'Lectura en Voz Alta' por parte de la docente o psicóloga a los niños de Inicial tiene como fin principal:",
+        opciones: [
+            "A) Que los niños se duerman.",
+            "B) Desarrollar el placer por la lectura, el vocabulario y la comprensión de estructuras narrativas.",
+            "C) Que los niños aprendan a leer solos en una semana.",
+            "D) Cumplir con un requisito del Ministerio."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023. Es una estrategia clave de modelado y fomento de la alfabetización emergente."
+    },
+    {
+        id: 369,
+        categoria: "Derechos Humanos / Constitución",
+        pregunta: "El principio de 'Interés Superior del Niño' significa que:",
+        opciones: [
+            "A) Los niños mandan sobre los adultos.",
+            "B) En toda decisión que afecte a un menor, se debe priorizar lo que más beneficie su desarrollo integral y sus derechos.",
+            "C) Los padres siempre tienen la razón.",
+            "D) La escuela puede hacer lo que quiera si es por el bien del niño."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Constitución Dominicana y Ley 136-03. Es el principio rector de toda actuación con menores."
+    },
+    {
+        id: 370,
+        categoria: "Inclusión y Tecnología",
+        pregunta: "En el marco de la Ordenanza 05-2024, el uso de software de comunicación para un niño con discapacidad motora severa se considera:",
+        opciones: [
+            "A) Un gasto innecesario.",
+            "B) Una Tecnología de Apoyo (Producto de Apoyo) necesaria para garantizar su derecho a la expresión.",
+            "C) Un juguete para que se distraiga.",
+            "D) Algo que solo debe usarse en la casa."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. El acceso a la tecnología es parte de los apoyos para la eliminación de barreras."
+    },
+    {
+        id: 371,
+        categoria: "Gestión de Riesgos",
+        pregunta: "Ante un sismo durante el horario escolar, la prioridad de la psicóloga es:",
+        opciones: [
+            "A) Salir corriendo la primera para pedir ayuda.",
+            "B) Colaborar en la evacuación calmada de los niños hacia el punto de encuentro y brindar primeros auxilios psicológicos post-evento.",
+            "C) Quedarse debajo de su escritorio hasta que alguien la busque.",
+            "D) Llamar a los padres para que vengan en medio del sismo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Protocolos de Gestión de Riesgos MINERD. El personal debe modelar la calma y guiar a los más vulnerables."
+    },
+    {
+        id: 372,
+        categoria: "Participación Familiar",
+        pregunta: "Si una familia se niega sistemáticamente a asistir a las convocatorias para tratar el rezago de su hijo, usted debe:",
+        opciones: [
+            "A) Rendirse y no llamarlos más.",
+            "B) Documentar las ausencias, realizar una visita domiciliaria si es posible, y agotar las rutas de apoyo antes de reportar por falta de compromiso parental.",
+            "C) Expulsar al niño por culpa de los padres.",
+            "D) Ponerle notas excelentes para que no tengan que venir."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 03-2025. Se debe agotar el acompañamiento y la búsqueda de la familia."
+    },
+    {
+        id: 373,
+        categoria: "Evaluación (04-2023)",
+        pregunta: "Un indicador de logro en Inicial dice: 'Agrupa objetos por dos criterios (color y forma)'. Un niño solo lo hace por color. Su valoración es:",
+        opciones: [
+            "A) Logrado (L).",
+            "B) En Proceso (EP).",
+            "C) Todavía No Logrado (TNL).",
+            "D) Deficiente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. 'En Proceso' indica que ya domina una parte del indicador pero necesita seguir trabajando para completarlo."
+    },
+    {
+        id: 374,
+        categoria: "Código de Ética",
+        pregunta: "Un psicólogo escolar publica en sus estados de WhatsApp críticas negativas sobre la inteligencia de los padres de sus estudiantes. Esto viola el principio de:",
+        opciones: [
+            "A) Libertad de cátedra.",
+            "B) Respeto, decoro y confidencialidad profesional (Orden Departamental 22-2023).",
+            "C) Honestidad financiera.",
+            "D) Higiene personal."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023. El respeto a la dignidad de la familia es obligatorio."
+    },
+    {
+        id: 375,
+        categoria: "Ley 66-97 (Gratuidad)",
+        pregunta: "Una maestra de Pre-Primario pide a los padres una cuota mensual de 500 pesos para comprar materiales que el MINERD no envió. ¿Es esto legal?",
+        opciones: [
+            "A) Sí, si es por el bien de los niños.",
+            "B) No, la educación pública es gratuita y obligatoria; cualquier requerimiento económico es ilegal (Ley 66-97).",
+            "C) Sí, si lo aprueba la APMAE.",
+            "D) Solo si le dan recibo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 66-97 y Constitución. No se puede condicionar el servicio educativo a pagos de ninguna especie."
+    },
+    {
+        id: 376,
+        categoria: "Liderazgo en el Centro",
+        pregunta: "Cuando hay un conflicto entre dos docentes que afecta el clima del aula de Inicial, el papel de la psicóloga es:",
+        opciones: [
+            "A) Elegir un bando y defenderlo.",
+            "B) Facilitar un proceso de mediación para restaurar la armonía y asegurar que el conflicto no afecte a los niños.",
+            "C) Ignorar el problema porque no son niños.",
+            "D) Contarle el chisme a los otros maestros."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Funciones del orientador/psicólogo. La convivencia escolar incluye las relaciones entre adultos."
+    },
+    {
+        id: 377,
+        categoria: "Investigación-Acción",
+        pregunta: "La psicóloga observa que en el recreo hay muchos accidentes. Decide investigar por qué ocurre y proponer un 'Recreo Divertido y Seguro'. Esto se llama:",
+        opciones: [
+            "A) Perder el tiempo.",
+            "B) Innovación educativa e investigación-acción para la mejora del clima escolar.",
+            "C) Vigilar a los conserjes.",
+            "D) Terapia de grupo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Estándares de desempeño. El profesional debe proponer soluciones basadas en la evidencia de su entorno."
+    },
+    {
+        id: 378,
+        categoria: "Estrategia Nacional de Desarrollo",
+        pregunta: "La END 2030 busca que la formación de los estudiantes incluya el uso ético de las TIC. En Inicial esto se traduce en:",
+        opciones: [
+            "A) Que cada niño tenga un celular propio.",
+            "B) Introducción gradual a recursos digitales educativos bajo supervisión docente pedagógica.",
+            "C) No usar tecnología nunca hasta los 18 años.",
+            "D) Aprender a programar en Java a los 4 años."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 1-12. El uso pedagógico y supervisado de las TIC inicia desde la educación temprana."
+    },
+    {
+        id: 379,
+        categoria: "Inclusión y Género",
+        pregunta: "Un niño de Inicial quiere jugar en el área de 'Dramatización' (la casita) y la maestra lo saca diciendo que 'eso es de niñas'. Usted interviene porque:",
+        opciones: [
+            "A) La casita es muy pequeña para él.",
+            "B) El juego simbólico no tiene género y se debe promover la igualdad de oportunidades (Ley 1-12).",
+            "C) Quiere que el niño aprenda a cocinar de verdad.",
+            "D) No tiene nada más que hacer."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Currículo Inicial y END. La escuela debe romper estereotipos limitantes."
+    },
+    {
+        id: 380,
+        categoria: "Evaluación Final",
+        pregunta: "¿Cuál es el fin último de que usted sea evaluada en su desempeño?",
+        opciones: [
+            "A) Que la despidan.",
+            "B) Identificar fortalezas y necesidades de capacitación para elevar la calidad del sistema educativo.",
+            "C) Comparar quién es la mejor psicóloga del distrito.",
+            "D) Llenar papeles que nadie lee."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08. La evaluación es para el desarrollo y la excelencia institucional."
+    },
+
+    {
+        id: 381,
+        categoria: "Inclusión (PAD)",
+        pregunta: "El 'Plan de Apoyo a la Diversidad' (PAD) es un documento que:",
+        opciones: [
+            "A) Solo llena la maestra de educación especial.",
+            "B) Elabora la docente con apoyo de la psicóloga para planificar los ajustes y apoyos específicos de un estudiante con NEAE.",
+            "C) Se entrega a los padres para que ellos eduquen al niño.",
+            "D) Es opcional si el niño se porta bien."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. El PAD es la herramienta formal de planificación inclusiva."
+    },
+    {
+        id: 382,
+        categoria: "Ley 136-03 (Disciplina)",
+        pregunta: "Un directivo del centro propone crear un 'cuarto de reflexión' (aislamiento) para los niños de Inicial que muerden. Según la Ley 136-03:",
+        opciones: [
+            "A) Es una excelente idea pedagógica.",
+            "B) Es una violación a la integridad psíquica y está prohibido como método disciplinario.",
+            "C) Solo puede usarse si tiene aire acondicionado.",
+            "D) Se puede usar si el psicólogo está adentro también."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 136-03 y Ordenanza 05-2023. El aislamiento y los tratos crueles o degradantes son ilegales."
+    },
+    {
+        id: 383,
+        categoria: "Ética (Denuncia)",
+        pregunta: "Usted observa que una colega psicóloga está cobrando a los padres por aplicarles pruebas que son gratuitas por el MINERD. Su deber es:",
+        opciones: [
+            "A) Pedirle una parte del dinero.",
+            "B) Reportar el hecho a la Dirección y al Distrito, ya que es una falta ética y legal gravísima (Ley 41-08).",
+            "C) Quedarse callada para no ser 'chivata'.",
+            "D) Aconsejarle que suba el precio."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08 y Código de Ética. El aprovechamiento del cargo para beneficio económico es causa de destitución."
+    },
+    {
+        id: 384,
+        categoria: "Evaluación (04-2023)",
+        pregunta: "En el Nivel Inicial, un niño que no asiste al menos al 80% de las clases sin justificación válida:",
+        opciones: [
+            "A) Pasa de curso automáticamente.",
+            "B) Podría estar en riesgo de no promover, aunque en Inicial la promoción es casi automática, se debe reportar la negligencia familiar.",
+            "C) Es expulsado del país.",
+            "D) Se le regala un premio por asistencia."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La asistencia es obligatoria y su falta es señal de alerta para el equipo de psicología."
+    },
+    {
+        id: 385,
+        categoria: "Protocolos de Cultura de Paz",
+        pregunta: "En una pelea física entre dos niños de 5 años, la primera acción de la psicóloga es:",
+        opciones: [
+            "A) Grabar el video para evidencia.",
+            "B) Separarlos físicamente con cuidado, asegurar que no haya lesiones y calmar emocionalmente a ambos antes de investigar.",
+            "C) Gritarles para que se asusten y se detengan.",
+            "D) Llamar a la policía."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Protocolos de Cultura de Paz. La contención y seguridad física es la prioridad inmediata."
+    },
+    {
+        id: 386,
+        categoria: "Ley 200-04",
+        pregunta: "La Ley de Libre Acceso a la Información Pública promueve el principio de 'Publicidad', el cual indica que:",
+        opciones: [
+            "A) Hay que pagar anuncios en TV.",
+            "B) Toda información en poder del Estado se presume pública, salvo las excepciones legales.",
+            "C) Solo los políticos pueden saber lo que pasa.",
+            "D) Las escuelas deben ser secretas."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 200-04. Es un pilar de la democracia y la transparencia."
+    },
+    {
+        id: 387,
+        categoria: "Estrategia Nacional de Desarrollo",
+        pregunta: "Dentro de la END 2030, el objetivo de 'Educación de Calidad' para el Nivel Inicial se mide principalmente por:",
+        opciones: [
+            "A) La cantidad de niños que saben inglés.",
+            "B) El desarrollo de las competencias fundamentales y el bienestar integral de los niños.",
+            "C) Que todos los niños tengan uniformes nuevos.",
+            "D) Que la escuela sea de cristal."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 1-12. La calidad se define por el logro de competencias para la vida."
+    },
+    {
+        id: 388,
+        categoria: "Hitos del Desarrollo",
+        pregunta: "A los 5 años, un niño debería ser capaz de realizar cuál de estas tareas de autocuidado:",
+        opciones: [
+            "A) Cocinar su propio desayuno.",
+            "B) Ir al baño solo, lavarse las manos y vestirse con poca ayuda.",
+            "C) Conducir una bicicleta por la avenida.",
+            "D) Administrar su dinero de la merienda para el mes."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Currículo de Inicial. La autonomía en el autocuidado es un indicador clave de madurez en Pre-Primario."
+    },
+    {
+        id: 389,
+        categoria: "Código de Ética (Regalos)",
+        pregunta: "Un padre muy agradecido le lleva un perfume de 10,000 pesos como regalo personal a la psicóloga. Según la normativa:",
+        opciones: [
+            "A) Debe aceptarlo porque es un regalo de corazón.",
+            "B) Debe declinarlo amablemente, explicando que el código prohíbe aceptar obsequios de valor económico significativo de los usuarios.",
+            "C) Debe aceptarlo y rifarlo en el centro.",
+            "D) Debe pedirle que mejor le dé el dinero en efectivo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08 y Orden Departamental 22-2023. Evita el favoritismo o la percepción de soborno."
+    },
+    {
+        id: 390,
+        categoria: "Evaluación (04-2023)",
+        pregunta: "¿Cuál de estos NO es un instrumento de evaluación en el Nivel Inicial?",
+        opciones: [
+            "A) Pauta de observación.",
+            "B) Registro de grado.",
+            "C) Prueba nacional escrita estandarizada.",
+            "D) Portafolio."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Ordenanza 04-2023. En Inicial no existen las pruebas nacionales; la evaluación es puramente cualitativa."
+    },
+    {
+        id: 391,
+        categoria: "Inclusión y Comunidad",
+        pregunta: "La psicóloga organiza una charla sobre 'Aceptación de la Diversidad' para toda la comunidad. Esto responde a la función de:",
+        opciones: [
+            "A) Perder el tiempo de clase.",
+            "B) Sensibilización y creación de culturas inclusivas (Ordenanza 05-2024).",
+            "C) Buscar votos para el director.",
+            "D) Reemplazar a la maestra de sociales."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. La inclusión requiere educar no solo al niño, sino a todo el entorno."
+    },
+    {
+        id: 392,
+        categoria: "Ley 66-97 (Estructura)",
+        pregunta: "El órgano encargado de la participación de los maestros en la gestión escolar a través de la representación sindical es:",
+        opciones: [
+            "A) El Senado de la República.",
+            "B) La ADP (Asociación Dominicana de Profesores) reconocida por la ley.",
+            "C) El club de madres.",
+            "D) La junta de vecinos."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 66-97. Reconoce la libertad de asociación profesional."
+    },
+    {
+        id: 393,
+        categoria: "Salud Mental Escolar",
+        pregunta: "Un niño de 4 años presenta mutismo selectivo (no habla en la escuela pero sí en casa). Su intervención inicial es:",
+        opciones: [
+            "A) Obligarlo a hablar frente a todos para que pierda el miedo.",
+            "B) Crear un ambiente de confianza, usar comunicación no verbal y coordinar con un especialista externo para manejo de ansiedad.",
+            "C) Ignorarlo hasta que decida hablar.",
+            "D) Castigarlo sin merienda por no saludar."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Guía de intervenciones psicopedagógicas. El mutismo selectivo es un trastorno de ansiedad y requiere empatía, no presión."
+    },
+    {
+        id: 394,
+        categoria: "Derecho a la Recreación",
+        pregunta: "La directora decide convertir el patio de juegos en un parqueo para los maestros. Usted interviene alegando que:",
+        opciones: [
+            "A) Los carros se van a ensuciar.",
+            "B) Se está violando el derecho al juego y esparcimiento de los niños (Ley 136-03) y el diseño curricular de Inicial.",
+            "C) No hay problema, los niños pueden jugar en el aula.",
+            "D) Solo si le dejan un espacio para su carro."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 136-03. El espacio físico para el juego es una garantía del desarrollo infantil."
+    },
+    {
+        id: 395,
+        categoria: "Constitución (Igualdad)",
+        pregunta: "El Artículo 39 de la Constitución prohíbe la discriminación. Si un centro rechaza a un niño por tener el cabello largo o ricitos, está:",
+        opciones: [
+            "A) Aplicando normas de higiene correctas.",
+            "B) Incurriendo en un acto de discriminación ilegal que vulnera el derecho a la educación y la libre personalidad.",
+            "C) Siguiendo las órdenes del Ministerio.",
+            "D) Educando en valores tradicionales."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Constitución Art. 39 y fallos del Tribunal Constitucional. El aspecto físico no puede ser barrera para la educación."
+    },
+    {
+        id: 396,
+        categoria: "Ética (Relación con Colegas)",
+        pregunta: "Una colega psicóloga le pide que le pase las respuestas de su evaluación de desempeño por chat. Su respuesta debe ser:",
+        opciones: [
+            "A) Pasárselas para ser solidaria.",
+            "B) Negarse, ya que la evaluación es personal, ética y busca reflejar la realidad profesional de cada uno.",
+            "C) Cobrarle por las respuestas.",
+            "D) Pasarle respuestas incorrectas a propósito."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023. La integridad en los procesos de evaluación es un deber ético."
+    },
+    {
+        id: 397,
+        categoria: "Alfabetización (01-2023)",
+        pregunta: "¿A qué edad promedio se espera que un niño en el sistema dominicano inicie formalmente el contacto con la cultura escrita a través de su nombre propio?",
+        opciones: [
+            "A) A los 10 años.",
+            "B) Desde los 3 años (Nivel Inicial) de forma significativa y lúdica.",
+            "C) Solo en la universidad.",
+            "D) Cuando aprenda a hablar perfectamente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023. El nombre propio es la primera 'palabra con sentido' que el niño aprende a reconocer y producir."
+    },
+    {
+        id: 398,
+        categoria: "Ley 41-08 (Servicio al Ciudadano)",
+        pregunta: "El principio de 'Cortesía' en la Ley 41-08 obliga a la psicóloga a:",
+        opciones: [
+            "A) Invitar a café a todos los que lleguen.",
+            "B) Tratar con amabilidad, respeto y diligencia a los padres, estudiantes y compañeros.",
+            "C) No decir nunca que 'no' a un favor.",
+            "D) Sonreír aunque no quiera."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08. El buen trato es un deber del servidor público."
+    },
+    {
+        id: 399,
+        categoria: "Evaluación de Desempeño (Meta)",
+        pregunta: "La meta de que usted alcance el nivel de 'Excelente' en esta evaluación es:",
+        opciones: [
+            "A) Ganar más dinero solamente.",
+            "B) Garantizar que los niños del Nivel Inicial reciban el mejor apoyo psicopedagógico posible para su éxito escolar.",
+            "C) Ser la favorita del Distrito.",
+            "D) Que le den más vacaciones."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Referencia: Visión del MINERD. El centro de todo el sistema es el aprendizaje y bienestar del estudiante."
+    },
+    {
+        id: 400,
+        categoria: "Reflexión Profesional",
+        pregunta: "Al terminar estas 400 preguntas, la psicóloga escolar demuestra:",
+        opciones: [
+            "A) Que tiene mucha paciencia.",
+            "B) Un alto nivel de compromiso con su actualización legal, curricular y ética para su evaluación de desempeño.",
+            "C) Que sabe usar mucho la computadora.",
+            "D) Que ya no necesita estudiar más nunca."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "La preparación constante es la marca de un profesional de excelencia. ¡Mucho éxito en su evaluación!"
     }
 ];
 
