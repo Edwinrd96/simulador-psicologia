@@ -1,0 +1,127 @@
+/* Variables de color de alto contraste */
+:root {
+    --minerd-blue: #003876;
+    --minerd-gold: #f9b233;
+    --success-dark: #1b5e20;
+    --danger-dark: #b71c1c;
+    --bg-card: #ffffff;
+}
+
+/* Clases de utilidad para el Motor JS */
+.minerd-bg { background-color: var(--minerd-blue) !important; color: white !important; }
+.minerd-text { color: var(--minerd-blue) !important; }
+
+/* BOTÓN DE OPCIÓN: Dinamismo y Alineación */
+.option-btn {
+    width: 100%;
+    text-align: left;
+    padding: 16px 20px;
+    margin-bottom: 8px;
+    background-color: var(--bg-card);
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #374151;
+    transition: all 0.2s ease-in-out;
+    display: block;
+    cursor: pointer;
+}
+
+/* INTERACCIÓN: Hover (Dinamismo visual) */
+.option-btn:hover:not(:disabled) {
+    border-color: var(--minerd-blue);
+    background-color: #f0f7ff;
+    transform: translateX(5px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* ESTADO SELECCIONADO (Vital para tu motor JS) */
+.option-btn.selected {
+    background-color: #e0e7ff !important;
+    border-color: var(--minerd-blue) !important;
+    color: var(--minerd-blue) !important;
+    font-weight: 600;
+    box-shadow: inset 0 0 0 1px var(--minerd-blue);
+}
+
+/* REVISIÓN FINAL (Resultados) */
+.correct-answer {
+    background-color: #ecfdf5 !important;
+    border: 2px solid var(--success-dark) !important;
+    color: var(--success-dark) !important;
+}
+
+.wrong-answer {
+    background-color: #fef2f2 !important;
+    border: 2px solid var(--danger-dark) !important;
+    color: var(--danger-dark) !important;
+}
+
+/* Scrollbar elegante para el contenedor */
+.overflow-y-auto::-webkit-scrollbar {
+    width: 6px;
+}
+.overflow-y-auto::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+
+/* Menú lateral organizado en 5 columnas */
+#questions-nav {
+    display: grid;
+    /* Crea 5 columnas de igual tamaño */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 5px;
+}
+
+.nav-num-btn {
+    /* Quitamos el ancho fijo para que se adapte a la columna del grid */
+    width: 100%; 
+    aspect-ratio: 1 / 1; /* Hace que sean cuadraditos perfectos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+    background: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Estado Actual (Azul MINERD) */
+.nav-num-btn.current {
+    background-color: #003876;
+    color: white;
+    border-color: #003876;
+    box-shadow: 0 2px 4px rgba(0, 56, 118, 0.3);
+}
+
+/* Ya respondida (Verde suave) */
+.nav-num-btn.answered {
+    background-color: #dcfce7; 
+    border-color: #86efac;
+    color: #166534;
+}
+/* Pregunta que se está viendo ahora */
+.nav-num-btn.current {
+    border-color: #003876;
+    background-color: #003876;
+    color: white;
+    box-shadow: 0 0 8px rgba(0,56,118,0.4);
+}
+
+/* Pregunta que ya fue respondida */
+.nav-num-btn.answered {
+    background-color: #e0e7ff;
+    border-color: #a5b4fc;
+    color: #4338ca;
+}
+
+.nav-num-btn:hover {
+    transform: scale(1.1);
+    border-color: #003876;
+}
