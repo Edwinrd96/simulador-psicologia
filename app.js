@@ -14,6 +14,7 @@ const quizScreen = document.getElementById('quiz-screen');
 const startScreen = document.getElementById('start-screen');
 const resultScreen = document.getElementById('result-screen');
 const navContainer = document.getElementById('questions-nav');
+const timerDisplay = document.getElementById('timer');
 
 // --- EVENTOS ---
 startBtn.onclick = iniciarExamen;
@@ -21,17 +22,22 @@ nextBtn.onclick = siguientePregunta;
 prevBtn.onclick = anteriorPregunta;
 restartBtn.onclick = () => window.location.reload();
 
+// --- FUNCIONES PRINCIPALES ---
 function iniciarExamen() {
+    // 1. Preparar preguntas
     const barajadas = [...bancoPreguntas].sort(() => Math.random() - 0.5);
     preguntasSeleccionadas = barajadas.slice(0, 35);
     
+    // 2. Cambiar pantallas
     startScreen.classList.add('hidden');
     quizScreen.classList.remove('hidden');
     
-    iniciarTimer();
+    // 3. ¡ARRANCAR EL RELOJ!
+    iniciarTimer(); 
+    
+    // 4. Mostrar primera pregunta
     mostrarPregunta();
 }
-
 function mostrarPregunta() {
     const pregunta = preguntasSeleccionadas[indiceActual];
     
@@ -49,30 +55,46 @@ function mostrarPregunta() {
     const container = document.getElementById('options-container');
     container.innerHTML = '';
     
+    // Estado del botón Siguiente
     if (respuestasUsuario[indiceActual] !== undefined) activarBoton(); 
     else desactivarBoton();
 
     pregunta.opciones.forEach((opc, i) => {
         const btn = document.createElement('button');
+        // Si esta opción es la que el usuario ya eligió, le ponemos la clase 'selected'
         btn.className = `option-btn ${respuestasUsuario[indiceActual] === i ? 'selected' : ''}`;
         btn.textContent = opc;
-        btn.onclick = () => {
-            respuestasUsuario[indiceActual] = i;
-            mostrarPregunta(); // Refresca para marcar selección
-        };
+        btn.onclick = () => seleccionarOpcion(i, btn);
         container.appendChild(btn);
     });
 
     actualizarMenuLateral();
 }
 
+function seleccionarOpcion(index, btnReferencia) {
+    respuestasUsuario[indiceActual] = index;
+    
+    // Actualizar visualmente las opciones en pantalla
+    const todosBotones = document.querySelectorAll('.option-btn');
+    todosBotones.forEach(b => b.classList.remove('selected'));
+    btnReferencia.classList.add('selected');
+    
+    // Actualizar el menú lateral (poner en verde) y activar botón
+    actualizarMenuLateral();
+    activarBoton(); 
+}
+
 function actualizarMenuLateral() {
     navContainer.innerHTML = '';
     preguntasSeleccionadas.forEach((_, i) => {
         const btn = document.createElement('button');
+        // Lógica de colores: 'current' para la actual, 'answered' para las completadas
         btn.className = `nav-num-btn ${i === indiceActual ? 'current' : ''} ${respuestasUsuario[i] !== undefined ? 'answered' : ''}`;
         btn.textContent = i + 1;
-        btn.onclick = () => { indiceActual = i; mostrarPregunta(); };
+        btn.onclick = () => { 
+            indiceActual = i; 
+            mostrarPregunta(); 
+        };
         navContainer.appendChild(btn);
     });
 }
@@ -81,6 +103,8 @@ function siguientePregunta() {
     if (indiceActual < 34) {
         indiceActual++;
         mostrarPregunta();
+        // Scroll al inicio de la pregunta en móviles
+        window.scrollTo(0,0);
     } else {
         finalizarExamen();
     }
@@ -93,21 +117,54 @@ function anteriorPregunta() {
     }
 }
 
-// MODIFICACIÓN: Selección de opción con actualización inmediata
-function seleccionarOpcion(index, btnReferencia) {
-    respuestasUsuario[indiceActual] = index;
+// --- TIMER DINÁMICO ---
+function iniciarTimer() {
+    // Limpiamos cualquier intervalo previo por seguridad
+    if (intervaloTimer) clearInterval(intervaloTimer);
     
-    // Actualizar visualmente las opciones
-    const todosBotones = optionsContainer.querySelectorAll('.option-btn');
-    todosBotones.forEach(b => b.classList.remove('selected'));
-    btnReferencia.classList.add('selected');
-    
-    // ¡IMPORTANTE! Actualizar el menú lateral para que se ponga verde
-    actualizarMenuLateral();
-    activarBoton(); 
+    // Ejecutar una vez al inicio para que no espere 1 segundo en aparecer
+    actualizarDisplayTimer();
+
+    intervaloTimer = setInterval(() => {
+        if (tiempoRestante > 0) {
+            tiempoRestante--;
+            actualizarDisplayTimer();
+            manejarAlertasVisuales();
+        } else {
+            clearInterval(intervaloTimer);
+            finalizarExamen();
+        }
+    }, 1000);
 }
 
-// MODIFICACIÓN: Revisión Técnica Dinámica
+function actualizarDisplayTimer() {
+    const timerDisplay = document.getElementById('timer');
+    if (!timerDisplay) return; // Seguridad por si el elemento no existe
+
+    const min = Math.floor(tiempoRestante / 60);
+    const seg = tiempoRestante % 60;
+    
+    // Formato 00:00 siempre con dos dígitos
+    timerDisplay.textContent = `${min.toString().padStart(2, '0')}:${seg.toString().padStart(2, '0')}`;
+}
+
+function manejarAlertasVisuales() {
+    const timerDisplay = document.getElementById('timer');
+    if (!timerDisplay) return;
+
+    if (tiempoRestante <= 60) {
+        // Crítico: Rojo y parpadeo (1 min)
+        timerDisplay.className = "text-4xl font-mono font-black timer-critical";
+    } else if (tiempoRestante <= 300) {
+        // Advertencia: Naranja (5 min)
+        timerDisplay.className = "text-4xl font-mono font-black timer-warning";
+    } else {
+        // Normal: Azul
+        timerDisplay.className = "text-4xl font-mono font-black text-[#003876]";
+    }
+}
+
+// --- RESULTADOS ---
 function finalizarExamen() {
     clearInterval(intervaloTimer);
     quizScreen.classList.add('hidden');
@@ -122,12 +179,11 @@ function finalizarExamen() {
         const esCorrecta = respuestaUser === p.respuestaCorrecta;
         if (esCorrecta) puntos++;
         
-        // Creamos una tarjeta dinámica
         const statusColor = esCorrecta ? 'border-green-500 bg-green-50' : 'border-red-500 bg-red-50';
         const icon = esCorrecta ? '✅' : '❌';
         
         review.innerHTML += `
-            <div class="review-card ${statusColor} p-5 rounded-lg shadow-sm border mb-4">
+            <div class="review-card ${statusColor} p-5 rounded-lg shadow-sm border mb-4 border-l-8">
                 <div class="flex justify-between items-start mb-2">
                     <span class="font-bold text-gray-700">Pregunta ${i+1}</span>
                     <span>${icon}</span>
@@ -152,7 +208,6 @@ function finalizarExamen() {
             </div>`;
     });
 
-    // Puntuación con barra de éxito
     const porcentaje = ((puntos / 35) * 100).toFixed(1);
     document.getElementById('final-score').textContent = `${puntos} / 35`;
     document.getElementById('score-percentage').innerHTML = `
@@ -161,25 +216,16 @@ function finalizarExamen() {
         </div>
         <p class="text-gray-500">${puntos >= 25 ? '¡Excelente! Estás listo para el concurso.' : 'Te recomendamos seguir repasando los marcos legales.'}</p>
     `;
+    window.scrollTo(0,0);
 }
 
 // --- HELPERS ---
 function activarBoton() {
     nextBtn.disabled = false;
-    nextBtn.className = "bg-[#003876] text-white font-bold py-2 px-8 rounded-lg shadow-md";
+    nextBtn.className = "bg-[#003876] text-white font-bold py-2 px-8 rounded-lg shadow-md cursor-pointer hover:bg-blue-800 transition-all";
 }
 
 function desactivarBoton() {
     nextBtn.disabled = true;
-    nextBtn.className = "bg-gray-300 text-gray-500 font-bold py-2 px-8 rounded-lg";
-}
-
-function iniciarTimer() {
-    intervaloTimer = setInterval(() => {
-        tiempoRestante--;
-        const min = Math.floor(tiempoRestante / 60);
-        const seg = tiempoRestante % 60;
-        document.getElementById('timer').textContent = `${min}:${seg < 10 ? '0' : ''}${seg}`;
-        if (tiempoRestante <= 0) finalizarExamen();
-    }, 1000);
+    nextBtn.className = "bg-gray-300 text-gray-500 font-bold py-2 px-8 rounded-lg cursor-not-allowed";
 }
