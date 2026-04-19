@@ -5,46 +5,108 @@
     --success-dark: #1b5e20;
     --danger-dark: #b71c1c;
     --bg-card: #ffffff;
+    --gray-light: #f8fafc;
+    --border-color: #e2e8f0;
 }
 
-/* Clases de utilidad para el Motor JS */
-.minerd-bg { background-color: var(--minerd-blue) !important; color: white !important; }
-.minerd-text { color: var(--minerd-blue) !important; }
+/* Estilos Base */
+body {
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
 
-/* BOTÓN DE OPCIÓN: Dinamismo y Alineación */
+/* Clases de utilidad */
+.minerd-bg { 
+    background-color: var(--minerd-blue) !important; 
+    color: white !important; 
+}
+.minerd-text { 
+    color: var(--minerd-blue) !important; 
+}
+
+/* --- CONTENEDOR DE OPCIONES --- */
 .option-btn {
     width: 100%;
     text-align: left;
     padding: 16px 20px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     background-color: var(--bg-card);
-    border: 2px solid #e5e7eb;
-    border-radius: 10px;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
     font-size: 1rem;
     color: #374151;
     transition: all 0.2s ease-in-out;
-    display: block;
+    display: flex;
+    align-items: center;
     cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
 }
 
-/* INTERACCIÓN: Hover (Dinamismo visual) */
 .option-btn:hover:not(:disabled) {
     border-color: var(--minerd-blue);
     background-color: #f0f7ff;
-    transform: translateX(5px);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transform: translateX(4px);
 }
 
-/* ESTADO SELECCIONADO (Vital para tu motor JS) */
 .option-btn.selected {
-    background-color: #e0e7ff !important;
+    background-color: #eef2ff !important;
     border-color: var(--minerd-blue) !important;
     color: var(--minerd-blue) !important;
     font-weight: 600;
-    box-shadow: inset 0 0 0 1px var(--minerd-blue);
 }
 
-/* REVISIÓN FINAL (Resultados) */
+/* --- NAVEGACIÓN LATERAL --- */
+#questions-nav {
+    display: grid;
+    /* 5 columnas en PC, 7 en móvil para ahorrar espacio vertical */
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+    padding: 12px;
+}
+
+@media (min-width: 768px) {
+    #questions-nav {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 8px;
+    }
+}
+
+.nav-num-btn {
+    width: 100%; /* Se adapta al grid */
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: white;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.nav-num-btn:hover {
+    border-color: var(--minerd-blue);
+    background-color: #f1f5f9;
+}
+
+/* Estados de los botones de navegación */
+.nav-num-btn.current { 
+    background-color: var(--minerd-blue) !important; 
+    color: white !important;
+    border-color: var(--minerd-blue);
+    box-shadow: 0 0 0 2px rgba(0, 56, 118, 0.2);
+}
+
+.nav-num-btn.answered { 
+    background-color: #22c55e !important; 
+    color: white !important;
+    border-color: #16a34a;
+}
+
+/* --- REVISIÓN Y RESULTADOS --- */
 .correct-answer {
     background-color: #ecfdf5 !important;
     border: 2px solid var(--success-dark) !important;
@@ -57,89 +119,46 @@
     color: var(--danger-dark) !important;
 }
 
-/* Scrollbar elegante para el contenedor */
-.overflow-y-auto::-webkit-scrollbar {
-    width: 6px;
-}
-.overflow-y-auto::-webkit-scrollbar-thumb {
-    background: #cbd5e1;
-    border-radius: 10px;
-}
-
-
-/* Menú lateral organizado en 5 columnas */
-#questions-nav {
-    display: grid;
-    /* Crea 5 columnas de igual tamaño */
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 20px;
-    padding: 5px;
-}
-
-/* Menú de Navegación Lateral */
-#questions-nav {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 8px;
-    padding: 10px;
-}
-
-.nav-num-btn {
-    /* Tamaño fijo bloqueado */
-    width: 42px; 
-    height: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    border: 1px solid #e2e8f0;
-    background: white;
-    font-size: 0.9rem;
-    font-weight: bold;
-    transition: all 0.2s ease;
-}
-
-/* Colores de estado */
-.nav-num-btn.current { 
-    background-color: #003876 !important; 
-    color: white !important;
-    border-color: #003876;
-}
-
-.nav-num-btn.answered { 
-    background-color: #22c55e !important; /* Verde MINERD */
-    color: white !important;
-    border-color: #16a34a;
-}
-
-/* Revisión Técnica Dinámica */
 .review-card {
-    border-left-width: 6px;
-    transition: transform 0.2s;
-}
-.review-card:hover {
-    transform: translateX(5px);
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 6px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 1rem;
 }
 
-
-/* Estilo base del timer */
+/* --- TIMER Y ANIMACIONES --- */
 #timer {
     text-shadow: 1px 1px 0px rgba(0,0,0,0.05);
 }
 
-/* Alerta Naranja (menos de 5 min) */
 .timer-warning {
-    color: #f97316 !important; /* Naranja fuerte */
+    color: #f97316 !important;
 }
 
-/* Alerta Roja Crítica (menos de 1 min) */
 .timer-critical {
-    color: #ef4444 !important; /* Rojo */
+    color: #ef4444 !important;
     animation: alert-pulse 1s infinite;
 }
 
 @keyframes alert-pulse {
-    0% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.7; transform: scale(1.05); }
-    100% { opacity: 1; transform: scale(1); }
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); opacity: 0.8; }
+    100% { transform: scale(1); }
+}
+
+/* --- SCROLLBAR --- */
+.custom-scroll::-webkit-scrollbar {
+    width: 5px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
 }
