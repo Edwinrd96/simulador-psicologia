@@ -1313,6 +1313,1313 @@ const bancoPreguntas = [
         ],
         respuestaCorrecta: 1,
         explicacion: "Base Legal: Es el cimiento de todo el sistema educativo nacional. La 66-97 garantiza el derecho de todos los habitantes a la educación."
+    },
+
+    {
+        id: 101,
+        categoria: "Ética Profesional",
+        pregunta: "Un orientador recibe un obsequio costoso de parte de los padres de un estudiante poco antes de la entrega de informes de evaluación. Según el Código de Ética (Orden Departamental 22-2023), usted debe:",
+        opciones: [
+            "A) Aceptar el regalo para no ofender la amabilidad de la familia.",
+            "B) Rechazar el regalo cortésmente, ya que el personal educativo tiene prohibido recibir dádivas que comprometan su imparcialidad.",
+            "C) Aceptarlo y donarlo a la dirección del centro educativo.",
+            "D) Recibirlo solo si el estudiante tiene excelentes calificaciones."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023. El Código de Ética prohíbe al personal docente y administrativo aceptar regalos o beneficios que puedan interpretarse como un conflicto de interés o favoritismo."
+    },
+    {
+        id: 102,
+        categoria: "Derecho Constitucional",
+        pregunta: "De acuerdo con el Artículo 63 de la Constitución Dominicana, la educación tiene como objeto:",
+        opciones: [
+            "A) La formación de mano de obra técnica para el sector privado.",
+            "B) La formación integral del ser humano a lo largo de toda la vida y la formación de ciudadanos libres, críticos y creativos.",
+            "C) Únicamente la alfabetización inicial en el primer ciclo de primaria.",
+            "D) El cumplimiento de los objetivos de los partidos políticos de turno."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Constitución de la República Dominicana, Art. 63. Define la educación como un derecho humano y establece sus fines esenciales de desarrollo integral y ciudadanía."
+    },
+    {
+        id: 103,
+        categoria: "Evaluación de Aprendizajes",
+        pregunta: "La Ordenanza 04-2023 establece que la evaluación de los aprendizajes en los niveles Inicial, Primario y Secundario debe ser:",
+        opciones: [
+            "A) Sumativa y centrada solo en los exámenes finales.",
+            "B) Un proceso pedagógico, sistemático, participativo, continuo y basado en competencias.",
+            "C) Un método para clasificar a los estudiantes según su inteligencia.",
+            "D) Responsabilidad exclusiva del psicólogo escolar y no del docente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. Esta norma redefine el sistema de evaluación para alinearlo con el currículo por competencias vigente."
+    },
+    {
+        id: 104,
+        categoria: "Protección de Menores",
+        pregunta: "Un psicólogo escolar detecta sospechas fundadas de abuso sexual en un menor. Según la Ley 136-03, ¿cuál es el protocolo obligatorio?",
+        opciones: [
+            "A) Confrontar a la familia antes de cualquier reporte externo.",
+            "B) Realizar una terapia psicológica profunda para confirmar antes de denunciar.",
+            "C) Notificar de inmediato al Ministerio Público o a la Fiscalía de Niños, Niñas y Adolescentes.",
+            "D) Solicitar autorización previa al Director del Distrito Educativo."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Ley 136-03 (Código para el Sistema de Protección). La denuncia es obligatoria e inmediata ante la sospecha de vulneración de derechos, prevaleciendo el Interés Superior del Niño."
+    },
+    {
+        id: 105,
+        categoria: "Inclusión Educativa",
+        pregunta: "Según la Ordenanza 05-2024, si un centro educativo no posee rampas o materiales adaptados para un estudiante con discapacidad, el centro debe:",
+        opciones: [
+            "A) Sugerir a los padres que busquen un centro con mejores condiciones.",
+            "B) Gestionar y aplicar los Ajustes Razonables y apoyos necesarios para garantizar la educación inclusiva.",
+            "C) Exonerar al estudiante de asistir a clases presenciales.",
+            "D) Esperar a que el Ministerio de Educación realice una remodelación general del plantel."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. Establece los lineamientos para la educación inclusiva, obligando al sistema a adaptarse a la diversidad del alumnado."
+    },
+    {
+        id: 106,
+        categoria: "Participación Familiar",
+        pregunta: "La reciente Ordenanza 03-2025 establece que el organismo base para la participación de los padres en el aula es:",
+        opciones: [
+            "A) La Junta de Centro.",
+            "B) El Comité de Curso de Padres, Madres y Tutores.",
+            "C) El Consejo de Estudiantes.",
+            "D) La Asociación de Ex-alumnos."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 03-2025. Regula la participación de la familia, colocando al Comité de Curso como la célula fundamental de apoyo al docente guía."
+    },
+    {
+        id: 107,
+        categoria: "Función Pública",
+        pregunta: "Un orientador abandona su puesto de trabajo por tres días consecutivos sin justificación legal. Según la Ley 41-08 de Función Pública, esto se tipifica como:",
+        opciones: [
+            "A) Una falta leve.",
+            "B) Una falta grave que puede dar lugar a la destitución.",
+            "C) Un derecho del trabajador por estrés laboral.",
+            "D) Una acción que solo requiere reposición del tiempo perdido."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08 de Función Pública. El abandono injustificado del cargo es una violación directa a los deberes del servidor público."
+    },
+    {
+        id: 108,
+        categoria: "Transparencia",
+        pregunta: "Un grupo de ciudadanos solicita información sobre el uso de los fondos descentralizados de un centro educativo. Según la Ley 200-04, el centro debe:",
+        opciones: [
+            "A) Negar la información por ser de seguridad institucional.",
+            "B) Entregar la información solicitada en el plazo legal, garantizando el libre acceso a los datos públicos.",
+            "C) Cobrar una tarifa especial por el servicio de búsqueda.",
+            "D) Solicitar que la persona explique para qué usará la información."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 200-04 de Libre Acceso a la Información Pública. Establece que toda institución que reciba fondos del Estado debe rendir cuentas a cualquier ciudadano que lo solicite."
+    },
+    {
+        id: 109,
+        categoria: "Alfabetización",
+        pregunta: "La Ordenanza 01-2023 prioriza la Política Nacional de Alfabetización Inicial para asegurar que los niños dominen la lectura y escritura en:",
+        opciones: [
+            "A) El Nivel Inicial solamente.",
+            "B) La Etapa Oportuna (primer ciclo del Nivel Primario).",
+            "C) El primer año del Nivel Secundario.",
+            "D) Programas de educación de adultos exclusivamente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023. El foco del MINERD es garantizar que el aprendizaje de la lengua escrita ocurra en los grados 1ro, 2do y 3ro de primaria."
+    },
+    {
+        id: 110,
+        categoria: "Discapacidad",
+        pregunta: "La Ley 5-13 sobre Discapacidad en RD establece que el Ministerio de Educación debe garantizar:",
+        opciones: [
+            "A) Escuelas separadas para cada tipo de discapacidad.",
+            "B) El acceso, permanencia y progreso de las personas con discapacidad en un sistema educativo inclusivo.",
+            "C) La exención de impuestos para los padres de niños con discapacidad.",
+            "D) Únicamente becas para estudios en el extranjero."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 5-13. Esta ley fundamenta el derecho a la no discriminación y la obligación de adaptar los entornos educativos."
+    },
+    {
+        id: 111,
+        categoria: "Ética y Relaciones",
+        pregunta: "Según la Orden Departamental 22-2023, ¿cuál de estas acciones está prohibida para el personal docente?",
+        opciones: [
+            "A) Realizar tutorías académicas grupales en el aula.",
+            "B) Transportar estudiantes en vehículos privados sin autorización previa y justificación de emergencia.",
+            "C) Participar en las reuniones de la APMAE.",
+            "D) Colaborar con el psicólogo en el seguimiento de un caso."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023 (Código de Ética). Establece límites claros para evitar situaciones de riesgo o interpretaciones de abuso de poder."
+    },
+    {
+        id: 112,
+        categoria: "Desarrollo Nacional",
+        pregunta: "El cuarto eje estratégico de la Estrategia Nacional de Desarrollo 2030 (Ley 1-12) se enfoca en:",
+        opciones: [
+            "A) La construcción de nuevos aeropuertos.",
+            "B) Una sociedad de producción y consumo ambientalmente sostenible.",
+            "C) La exportación de minerales.",
+            "D) La privatización del servicio eléctrico."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 1-12. El cuarto eje de la END busca la sostenibilidad ambiental y la adaptación al cambio climático como base del desarrollo."
+    },
+    {
+        id: 113,
+        categoria: "Evaluación y Promoción",
+        pregunta: "Bajo la Ordenanza 04-2023, si un estudiante de Primaria no logra los aprendizajes requeridos tras las estrategias de recuperación pedagógica, se debe:",
+        opciones: [
+            "A) Promoverlo automáticamente por su edad.",
+            "B) Realizar un informe detallado y aplicar la normativa de permanencia o promoción correspondiente.",
+            "C) Suspenderlo del centro educativo.",
+            "D) Obligarlo a tomar clases nocturnas."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. Regula la promoción basada en el logro de competencias e indicadores definidos en el diseño curricular."
+    },
+    {
+        id: 114,
+        categoria: "Derechos Humanos",
+        pregunta: "El Artículo 26 de la Declaración Universal de los Derechos Humanos, vinculado al Artículo 63 constitucional, establece que la educación debe:",
+        opciones: [
+            "A) Ser gratuita, al menos en la instrucción elemental y fundamental.",
+            "B) Ser obligatoria solo para los varones.",
+            "C) Depender de la posición económica de los padres.",
+            "D) Centrarse solo en la formación militar."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Legal: Declaración Universal de los Derechos Humanos. Establece la gratuidad y obligatoriedad de la enseñanza básica como un derecho universal."
+    },
+    {
+        id: 115,
+        categoria: "Necesidades Específicas",
+        pregunta: "La Ordenanza 04-2018 norma los servicios para estudiantes con Necesidades Específicas de Apoyo Educativo (NEAE). ¿Cuál es su objetivo principal?",
+        opciones: [
+            "A) Identificar a los estudiantes con dificultades para retirarlos del sistema regular.",
+            "B) Establecer normas para la atención a la diversidad y asegurar ajustes curriculares.",
+            "C) Crear un currículo totalmente distinto para estos estudiantes.",
+            "D) Delegar la responsabilidad total en los padres."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2018. Es la norma pionera en regular cómo el currículo debe ser flexible para atender a la diversidad."
+    },
+    {
+        id: 116,
+        categoria: "Convivencia Escolar",
+        pregunta: "Un estudiante agrede físicamente a un compañero provocándole una lesión. Según las Normas del Sistema Educativo Dominicano (Ordenanza 05-2023), esta falta es:",
+        opciones: [
+            "A) Leve.",
+            "B) Grave.",
+            "C) Muy Grave.",
+            "D) Un conflicto menor entre pares."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Ordenanza 05-2023. La violencia física que atenta contra la integridad de los miembros de la comunidad educativa es calificada como Falta Muy Grave."
+    },
+    {
+        id: 117,
+        categoria: "Estructura del Sistema",
+        pregunta: "La Ley 66-97 establece que el organismo superior de decisión en materia de política educativa en la República Dominicana es:",
+        opciones: [
+            "A) El Congreso Nacional.",
+            "B) El Consejo Nacional de Educación.",
+            "C) La ADP (Asociación Dominicana de Profesores).",
+            "D) El Despacho de la Primera Dama."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 66-97, Art. 76. El Consejo Nacional de Educación es el máximo órgano de dirección del sistema educativo preuniversitario."
+    },
+    {
+        id: 118,
+        categoria: "Participación Comunitaria",
+        pregunta: "Según la Ordenanza 03-2025, ¿cuál es la función de la APMAE respecto a los recursos del centro?",
+        opciones: [
+            "A) Gastar el dinero de la Junta de Centro a su discreción.",
+            "B) Colaborar con la fiscalización y el apoyo a la ejecución de los planes del centro.",
+            "C) Establecer cuotas obligatorias a los padres para pagar maestros.",
+            "D) Administrar las cuentas bancarias personales de los docentes."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 03-2025. La Asociación de Padres, Madres, Amigos y Tutores de la Escuela tiene un rol de apoyo y vigilancia, no de administración directa del presupuesto del Estado."
+    },
+    {
+        id: 119,
+        categoria: "Evaluación por Competencias",
+        pregunta: "Bajo la Ordenanza 04-2023, la evaluación que se realiza al inicio de un proceso para conocer los saberes previos se denomina:",
+        opciones: [
+            "A) Evaluación Sumativa.",
+            "B) Evaluación Diagnóstica.",
+            "C) Evaluación Final.",
+            "D) Examen Completivo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La evaluación diagnóstica es fundamental para ajustar la planificación docente a la realidad del grupo."
+    },
+    {
+        id: 120,
+        categoria: "Código de Ética",
+        pregunta: "Si un psicólogo escolar es testigo de un acto de corrupción administrativa en el centro, según el Código de Ética y la Ley 41-08, debe:",
+        opciones: [
+            "A) Callar para evitar conflictos con sus compañeros.",
+            "B) Denunciar el hecho ante las autoridades superiores siguiendo los canales institucionales.",
+            "C) Publicarlo en redes sociales de forma anónima.",
+            "D) Renunciar inmediatamente sin decir nada."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08 y Orden Departamental 22-2023. Los servidores públicos tienen el deber ético y legal de denunciar irregularidades que afecten el patrimonio público."
+    },
+
+
+    {
+        id: 121,
+        categoria: "Ética Profesional",
+        pregunta: "Según la Orden Departamental 22-2023, ¿cuál es el protocolo a seguir si un docente necesita comunicarse con un estudiante vía WhatsApp por un tema académico urgente?",
+        opciones: [
+            "A) Escribirle directamente al número personal del estudiante en cualquier horario.",
+            "B) Hacerlo preferiblemente a través del grupo oficial del curso o mediante el contacto con el padre, madre o tutor legal.",
+            "C) Pedirle al estudiante que borre la conversación después de leerla.",
+            "D) Está estrictamente prohibido usar WhatsApp, incluso para temas académicos."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023. El Código de Ética establece que la comunicación debe ser transparente y a través de los canales institucionales o tutores para evitar la privacidad inadecuada con menores."
+    },
+    {
+        id: 122,
+        categoria: "Evaluación de Aprendizajes",
+        pregunta: "De acuerdo con la Ordenanza 04-2023, ¿qué sucede con un estudiante que no logra los indicadores de logro mínimos después de las estrategias de recuperación?",
+        opciones: [
+            "A) Es promovido automáticamente por el principio de flexibilidad.",
+            "B) El docente debe realizar ajustes en su planificación y ofrecer nuevas oportunidades de aprendizaje según los criterios de promoción vigentes.",
+            "C) Se le asigna una calificación de 70 para que pueda pasar de grado.",
+            "D) Debe abandonar el centro educativo y buscar una escuela técnica."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La evaluación es procesual y el sistema obliga a agotar todas las estrategias pedagógicas antes de decidir la permanencia o promoción."
+    },
+    {
+        id: 123,
+        categoria: "Derechos de la Infancia",
+        pregunta: "La Ley 136-03 define el 'Interés Superior del Niño' como:",
+        opciones: [
+            "A) El derecho de los padres a decidir sobre la vida de sus hijos sin intervención del Estado.",
+            "B) El principio que obliga a que toda decisión que afecte a un menor deba priorizar su bienestar y derechos fundamentales.",
+            "C) La obligación de que los niños tengan las calificaciones más altas del curso.",
+            "D) El derecho de los niños a no recibir correcciones disciplinarias de ningún tipo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 136-03. Este principio es transversal a toda la normativa dominicana y obliga a jueces, docentes y psicólogos a decidir siempre lo más beneficioso para el menor."
+    },
+    {
+        id: 124,
+        categoria: "Inclusión Educativa",
+        pregunta: "La Ordenanza 05-2024 define las 'Barreras para el Aprendizaje y la Participación' (BAP) como:",
+        opciones: [
+            "A) La falta de inteligencia de algunos estudiantes.",
+            "B) Factores del entorno (físico, curricular o actitudinal) que dificultan el acceso pleno a la educación en igualdad de condiciones.",
+            "C) El muro perimetral que rodea los centros educativos.",
+            "D) La resistencia de los padres a inscribir a sus hijos en la escuela."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. El enfoque inclusivo moderno se centra en eliminar las barreras del contexto en lugar de ver la 'discapacidad' como un problema del estudiante."
+    },
+    {
+        id: 125,
+        categoria: "Participación Comunitaria",
+        pregunta: "Según la Ordenanza 03-2025, ¿cuál es la vigencia de la directiva de la Asociación de Padres, Madres, Amigos y Tutores de la Escuela (APMAE)?",
+        opciones: [
+            "A) 1 año.",
+            "B) 2 años.",
+            "C) 4 años.",
+            "D) Es vitalicia mientras tengan hijos en la escuela."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 03-2025. La nueva normativa establece periodos de 2 años para permitir la renovación y participación democrática de las familias."
+    },
+    {
+        id: 126,
+        categoria: "Gestión Administrativa",
+        pregunta: "La Ley 41-08 establece que los servidores públicos (incluyendo docentes) tienen derecho a una licencia por matrimonio de:",
+        opciones: [
+            "A) 1 día laborable.",
+            "B) 3 días laborables.",
+            "C) 5 días laborables.",
+            "D) 15 días calendario."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Ley 41-08 de Función Pública. Es un derecho establecido para todos los servidores públicos del Estado Dominicano."
+    },
+    {
+        id: 127,
+        categoria: "Legislación Educativa",
+        pregunta: "La Ley 66-97 establece que la Educación Inicial es obligatoria para el último año, el cual corresponde a la edad de:",
+        opciones: [
+            "A) 3 años.",
+            "B) 4 años.",
+            "C) 5 años.",
+            "D) 6 años."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Ley 66-97. Aunque el Nivel Inicial comienza antes, el Estado dominicano garantiza la obligatoriedad y gratuidad del último año (Pre-primario)."
+    },
+    {
+        id: 128,
+        categoria: "Transparencia",
+        pregunta: "Si un ciudadano solicita información pública y el centro educativo no responde en un plazo de 15 días hábiles, según la Ley 200-04 se produce:",
+        opciones: [
+            "A) La cancelación automática de la solicitud.",
+            "B) El silencio administrativo positivo, y el ciudadano puede reclamar ante el Tribunal Superior Administrativo.",
+            "C) Una multa automática para el portero del centro.",
+            "D) El cierre temporal del centro educativo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 200-04. El incumplimiento del plazo de respuesta genera responsabilidad legal para el funcionario a cargo."
+    },
+    {
+        id: 129,
+        categoria: "Ética Escolar",
+        pregunta: "Un psicólogo escolar observa que un compañero docente humilla verbalmente a un estudiante frente a la clase. ¿Cuál es su deber según la Orden Departamental 22-2023?",
+        opciones: [
+            "A) No intervenir para no dañar la relación con su compañero.",
+            "B) Reportar el incidente a la dirección y orientar al docente sobre el trato digno y el Código de Ética.",
+            "C) Humillar al docente para que sienta lo que sintió el alumno.",
+            "D) Decirle al estudiante que no le preste atención."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023. El personal debe velar por la integridad emocional de los estudiantes y reportar cualquier conducta que vulnere su dignidad."
+    },
+    {
+        id: 130,
+        categoria: "Alfabetización Inicial",
+        pregunta: "La Política Nacional de Alfabetización Inicial (Ordenanza 01-2023) se enfoca principalmente en fortalecer:",
+        opciones: [
+            "A) El aprendizaje de lenguas extranjeras en primaria.",
+            "B) La comprensión lectora, la producción de textos y el pensamiento lógico-matemático en el primer ciclo.",
+            "C) El uso de redes sociales en el aula.",
+            "D) La caligrafía artística únicamente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023. Esta política busca saldar la deuda histórica de aprendizaje de lectura y escritura en los grados iniciales."
+    },
+    {
+        id: 131,
+        categoria: "Constitución y Educación",
+        pregunta: "El Artículo 63 de la Constitución establece que el Estado tiene la obligación de garantizar la gratuidad de la educación en los niveles:",
+        opciones: [
+            "A) Inicial y Primario únicamente.",
+            "B) Primario y Secundario únicamente.",
+            "C) Inicial, Primario y Secundario.",
+            "D) Desde el nivel inicial hasta el nivel doctoral."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Constitución Dominicana, Art. 63. El Estado garantiza la educación preuniversitaria gratuita y obligatoria."
+    },
+    {
+        id: 132,
+        categoria: "Sistema de Evaluación",
+        pregunta: "Según la Ordenanza 04-2023, la calificación mínima para promover una asignatura en el Nivel Secundario es de:",
+        opciones: [
+            "A) 60 puntos.",
+            "B) 65 puntos.",
+            "C) 70 puntos.",
+            "D) 80 puntos."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Ordenanza 04-2023. Se mantiene el criterio de 70 puntos como el mínimo aprobatorio para el Nivel Secundario."
+    },
+    {
+        id: 133,
+        categoria: "Convivencia Escolar",
+        pregunta: "Un estudiante es encontrado con un arma blanca en su mochila. Según las Normas del Sistema Educativo (05-2023), esto se clasifica como:",
+        opciones: [
+            "A) Falta Leve.",
+            "B) Falta Grave.",
+            "C) Falta Muy Grave.",
+            "D) No es una falta si no la usó."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Ordenanza 05-2023. La posesión de objetos peligrosos (armas blancas, de fuego, etc.) pone en riesgo la seguridad colectiva y es una Falta Muy Grave."
+    },
+    {
+        id: 134,
+        categoria: "Derechos Humanos",
+        pregunta: "El Artículo 26 de la Declaración Universal de Derechos Humanos establece que los padres tienen derecho preferente a:",
+        opciones: [
+            "A) Recibir un sueldo por enviar a sus hijos a la escuela.",
+            "B) Escoger el tipo de educación que habrá de darse a sus hijos.",
+            "C) Castigar físicamente a sus hijos en presencia de los maestros.",
+            "D) No enviar a sus hijos a la escuela si así lo desean."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Art. 26 de la Declaración de DD.HH. Reconoce la libertad de las familias para elegir el centro y enfoque educativo."
+    },
+    {
+        id: 135,
+        categoria: "Función Pública",
+        pregunta: "Según la Ley 41-08, los servidores de carrera administrativa solo pueden ser destituidos por:",
+        opciones: [
+            "A) Cambio de gobierno o partido político.",
+            "B) Decisión arbitraria del director del centro.",
+            "C) Causas legales justificadas y siguiendo el debido proceso.",
+            "D) No caerle bien a la comunidad educativa."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Ley 41-08. La estabilidad laboral es un derecho del servidor de carrera, protegiéndolo de despidos políticos."
+    },
+    {
+        id: 136,
+        categoria: "Ordenanza 05-2024",
+        pregunta: "¿Qué es el DUA dentro del marco de la Educación Inclusiva?",
+        opciones: [
+            "A) Documento Único de Alumno.",
+            "B) Diseño Universal para el Aprendizaje, que busca crear currículos accesibles para todos desde el inicio.",
+            "C) Departamento de Unidades Académicas.",
+            "D) Derecho Universal al Alimento."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. El DUA es el enfoque pedagógico recomendado para atender la diversidad en el aula ordinaria."
+    },
+    {
+        id: 137,
+        categoria: "Planificación Estratégica",
+        pregunta: "La Ley 1-12 (Estrategia Nacional de Desarrollo) establece que para el año 2030, la República Dominicana debe ser:",
+        opciones: [
+            "A) Una potencia militar regional.",
+            "B) Una sociedad democrática, cohesionada, territorialmente equilibrada y que garantiza igualdad de oportunidades.",
+            "C) Un país donde solo se hable inglés.",
+            "D) Una economía basada únicamente en la agricultura."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 1-12. Define la visión de nación a largo plazo como un país socialmente justo y desarrollado."
+    },
+    {
+        id: 138,
+        categoria: "Estructura Educativa",
+        pregunta: "Según la Ley 66-97, el sistema educativo preuniversitario se divide en los siguientes niveles:",
+        opciones: [
+            "A) Básico, Medio y Superior.",
+            "B) Inicial, Primario y Secundario.",
+            "C) Maternal, Primario y Técnico.",
+            "D) Pre-escolar, Escolar y Liceo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 66-97 (actualizada por estructura actual). Los tres niveles fundamentales son Inicial, Primario y Secundario."
+    },
+    {
+        id: 139,
+        categoria: "Participación Comunitaria",
+        pregunta: "Bajo la Ordenanza 03-2025, ¿quién preside la Junta de Centro Educativo?",
+        opciones: [
+            "A) El presidente de la APMAE.",
+            "B) El Director del Centro Educativo.",
+            "C) El Alcalde de la comunidad.",
+            "D) El representante de los docentes."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 03-2025. El director es la máxima autoridad ejecutiva y preside la junta como órgano descentralizado."
+    },
+    {
+        id: 140,
+        categoria: "Justificación Técnica",
+        pregunta: "Un docente decide no evaluar a un estudiante con autismo porque 'no entiende nada'. ¿Qué principio de la Ordenanza 05-2023 y 05-2024 viola?",
+        opciones: [
+            "A) El principio de ahorro de tiempo docente.",
+            "B) El principio de equidad y el derecho a una evaluación adaptada a las necesidades del estudiante.",
+            "C) El principio de autonomía pedagógica.",
+            "D) Ninguno, el docente tiene la razón si el alumno no habla."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanzas 05-2023 y 05-2024. Todo estudiante tiene derecho a ser evaluado mediante los ajustes curriculares necesarios según su condición."
+    },
+
+    {
+        id: 141,
+        categoria: "Convivencia Escolar",
+        pregunta: "Un estudiante de secundaria es sorprendido consumiendo bebidas alcohólicas dentro del plantel. Según la Ordenanza 05-2023, esta conducta se considera una:",
+        opciones: [
+            "A) Falta Leve.",
+            "B) Falta Grave.",
+            "C) Falta Muy Grave.",
+            "D) Falta de respeto simple."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Ordenanza 05-2023. El consumo, posesión o promoción de sustancias prohibidas (alcohol, tabaco, drogas) dentro de los centros educativos es una Falta Muy Grave."
+    },
+    {
+        id: 142,
+        categoria: "Evaluación de Aprendizajes",
+        pregunta: "Según la Ordenanza 04-2023, ¿cuál es la función de la 'Evaluación Formativa' durante el proceso de enseñanza?",
+        opciones: [
+            "A) Poner una nota definitiva al final de cada mes.",
+            "B) Identificar progresos, dificultades y ajustar la intervención pedagógica mientras el aprendizaje ocurre.",
+            "C) Determinar si el estudiante aprueba o reprueba el año.",
+            "D) Comparar el rendimiento de un estudiante con el de sus compañeros."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La evaluación formativa no busca calificar, sino regular el proceso de aprendizaje y enseñanza en tiempo real."
+    },
+    {
+        id: 143,
+        categoria: "Legislación Educativa",
+        pregunta: "La Ley 66-97 establece que el 'Gasto Público Anual en Educación' no debe ser inferior al:",
+        opciones: [
+            "A) 2% del PIB o el 10% del gasto público total.",
+            "B) 4% del PIB o el 16% del gasto público total, de ambos el que sea mayor.",
+            "C) 5% del PIB fijado por la Constitución.",
+            "D) 3% del PIB según el Banco Mundial."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 66-97. Es el mandato legal que fundamenta el presupuesto educativo dominicano."
+    },
+    {
+        id: 144,
+        categoria: "Código de Ética",
+        pregunta: "Usted se entera de que un colega docente utiliza a los estudiantes para realizar compras personales fuera del centro durante el horario de clases. Según la Orden Departamental 22-2023, esto es:",
+        opciones: [
+            "A) Una muestra de confianza docente-estudiante.",
+            "B) Una violación al Código de Ética que prohíbe el uso de estudiantes para fines personales o domésticos.",
+            "C) Permitido si el estudiante tiene permiso escrito de sus padres.",
+            "D) Una falta leve que solo requiere reporte verbal."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023. El personal educativo debe garantizar la seguridad y el tiempo académico de los menores, prohibiéndose su uso para tareas personales."
+    },
+    {
+        id: 145,
+        categoria: "Inclusión y Discapacidad",
+        pregunta: "Bajo la Ley 5-13 y la Ordenanza 05-2024, ¿qué son los 'Ajustes Curriculares Individualizados' (ACI)?",
+        opciones: [
+            "A) Un currículo especial para que el estudiante no tenga que estudiar lo mismo que los demás.",
+            "B) Modificaciones y adaptaciones en los elementos del currículo para dar respuesta a las NEAE de un estudiante.",
+            "C) La eliminación de los exámenes para los estudiantes con discapacidad.",
+            "D) Un documento para justificar que el estudiante no puede aprender."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. Los ACI permiten que el estudiante acceda al mismo currículo que sus pares mediante los apoyos necesarios."
+    },
+    {
+        id: 146,
+        categoria: "Función Pública",
+        pregunta: "Según la Ley 41-08, ¿cuál de los siguientes es un deber de los servidores públicos?",
+        opciones: [
+            "A) Realizar actividades proselitistas en el lugar de trabajo.",
+            "B) Desempeñar con dedicación y honestidad las funciones a su cargo.",
+            "C) Delegar sus funciones en personas ajenas a la institución.",
+            "D) Recibir gratificaciones por agilizar trámites de los ciudadanos."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08 de Función Pública. La honestidad y dedicación son principios rectores del servicio civil."
+    },
+    {
+        id: 147,
+        categoria: "Participación Comunitaria",
+        pregunta: "La Ordenanza 03-2025 indica que la participación de las familias en la gestión escolar es:",
+        opciones: [
+            "A) Opcional según lo decida el Director del centro.",
+            "B) Un derecho y un deber constitucional y legal para fortalecer la calidad educativa.",
+            "C) Solo para los padres que pagan la cuota de la APMAE.",
+            "D) Limitada únicamente a la firma de boletines de notas."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 03-2025. Esta nueva norma refuerza que la gestión educativa es compartida entre escuela, familia y comunidad."
+    },
+    {
+        id: 148,
+        categoria: "Alfabetización",
+        pregunta: "En el marco de la Ordenanza 01-2023, ¿cuál es el papel del equipo de orientación y psicología en la alfabetización?",
+        opciones: [
+            "A) Enseñar a leer y escribir directamente en lugar del maestro.",
+            "B) Identificar de forma temprana barreras de aprendizaje y brindar apoyo psicopedagógico a los estudiantes rezagados.",
+            "C) Sancionar a los estudiantes que no aprenden al ritmo del grupo.",
+            "D) Evaluar solo a los estudiantes que terminan el bachillerato."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023. El apoyo psicopedagógico es vital para la política de alfabetización inicial oportuna."
+    },
+    {
+        id: 149,
+        categoria: "Derecho a la Información",
+        pregunta: "Según la Ley 200-04, si una información solicitada ya está disponible en la página web de la institución, la autoridad debe:",
+        opciones: [
+            "A) Ignorar la solicitud.",
+            "B) Indicar al solicitante la fuente, dirección o sitio exacto donde puede acceder a la información.",
+            "C) Obligar al ciudadano a ir presencialmente a buscarla.",
+            "D) Cobrar por el diseño de la página web."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 200-04. Se busca la eficiencia en el acceso; si es público y digital, se facilita el enlace directo."
+    },
+    {
+        id: 150,
+        categoria: "Convivencia Escolar",
+        pregunta: "Un estudiante falta a clases de manera recurrente sin causa justificada. Según la Ordenanza 05-2023, esto es una:",
+        opciones: [
+            "A) Falta Leve.",
+            "B) Falta Grave.",
+            "C) Falta Muy Grave.",
+            "D) Situación que no le compete a la escuela."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Legal: Ordenanza 05-2023. La impuntualidad y la inasistencia injustificada se consideran Faltas Leves, pero requieren seguimiento para evitar el abandono escolar."
+    },
+    {
+        id: 151,
+        categoria: "Sistema de Evaluación",
+        pregunta: "¿Qué técnica de evaluación es priorizada por la Ordenanza 04-2023 para evaluar competencias en el Nivel Secundario?",
+        opciones: [
+            "A) El dictado y la repetición de textos.",
+            "B) El uso de rúbricas, listas de cotejo, portafolios y resolución de problemas.",
+            "C) La memorización de fechas históricas.",
+            "D) Únicamente los exámenes de selección múltiple."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. El enfoque por competencias exige instrumentos que evidencien el desempeño real del estudiante."
+    },
+    {
+        id: 152,
+        categoria: "Ley 136-03",
+        pregunta: "Bajo la Ley 136-03, la 'Disciplina Escolar' debe ser:",
+        opciones: [
+            "A) Administrada mediante castigos físicos moderados.",
+            "B) Compatible con la dignidad del niño y sus derechos fundamentales, prohibiendo el maltrato físico y psicológico.",
+            "C) Responsabilidad única de la policía escolar.",
+            "D) Aplicada solo en casos de extrema urgencia."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 136-03. Prohíbe cualquier forma de disciplina que degrade o violente la integridad del menor."
+    },
+    {
+        id: 153,
+        categoria: "Inclusión Educativa",
+        pregunta: "La Ordenanza 04-2018 establece que el Centro de Atención a la Diversidad (CAD) tiene como función:",
+        opciones: [
+            "A) Sacar a los estudiantes con discapacidad de las aulas regulares.",
+            "B) Asesorar y acompañar a los centros educativos en la implementación de apoyos para estudiantes con NEAE.",
+            "C) Decidir qué niños pueden estudiar y cuáles no.",
+            "D) Administrar las becas de los estudiantes de secundaria."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2018. El CAD es el soporte técnico para que la inclusión sea una realidad en los centros."
+    },
+    {
+        id: 154,
+        categoria: "Estrategia Nacional",
+        pregunta: "Uno de los objetivos de la Ley 1-12 (END) en materia de educación es:",
+        opciones: [
+            "A) Universalizar la educación inicial, primaria y secundaria con calidad.",
+            "B) Reducir el número de docentes para ahorrar recursos.",
+            "C) Privatizar la educación universitaria.",
+            "D) Sustituir los libros impresos por tabletas sin supervisión pedagógica."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Legal: Ley 1-12. Busca la cobertura universal y la calidad educativa como derecho fundamental."
+    },
+    {
+        id: 155,
+        categoria: "Constitución Dominicana",
+        pregunta: "Según el Art. 63, ¿quién tiene el derecho y la responsabilidad primaria de la educación de sus hijos?",
+        opciones: [
+            "A) El Estado dominicano.",
+            "B) El Ministerio de Educación.",
+            "C) La familia.",
+            "D) Los tribunales de niños, niñas y adolescentes."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Constitución Dominicana. Reconoce a la familia como el núcleo inicial de la educación y el Estado como garante del servicio."
+    },
+    {
+        id: 156,
+        categoria: "Ética Profesional",
+        pregunta: "Un orientador difunde fotos de un estudiante que cometió una falta en un grupo de WhatsApp de amigos. Según la Orden Departamental 22-2023, esto es:",
+        opciones: [
+            "A) Una forma de alertar a la sociedad.",
+            "B) Una falta grave que viola el derecho a la intimidad, la imagen del menor y el deber de confidencialidad.",
+            "C) Permitido si el estudiante no se ve bien en la foto.",
+            "D) Solo una falta leve si no hubo mala intención."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023 y Ley 136-03. La protección de la imagen y la privacidad del menor es sagrada y su violación conlleva sanciones legales y éticas."
+    },
+    {
+        id: 157,
+        categoria: "Ordenanza 05-2024",
+        pregunta: "¿Qué establece la Ordenanza 05-2024 respecto al currículo dominicano?",
+        opciones: [
+            "A) Que es rígido y no admite cambios.",
+            "B) Que debe ser flexible y abierto para permitir los ajustes necesarios a favor de la inclusión.",
+            "C) Que solo se puede modificar cada 20 años.",
+            "D) Que es exclusivo para personas sin discapacidad."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. La flexibilidad curricular es la clave para atender a la diversidad en el aula inclusiva."
+    },
+    {
+        id: 158,
+        categoria: "Gestión Escolar",
+        pregunta: "Según la Ley 66-97, ¿quién preside el Consejo Nacional de Educación?",
+        opciones: [
+            "A) El Presidente de la República.",
+            "B) El Ministro de Educación.",
+            "C) El Director Ejecutivo del INABIMA.",
+            "D) El presidente de la Cámara de Diputados."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 66-97. El Ministro de Educación dirige este órgano máximo del sistema."
+    },
+    {
+        id: 159,
+        categoria: "Participación Comunitaria",
+        pregunta: "Bajo la Ordenanza 03-2025, ¿cuál es el propósito de la 'Escuela de Padres y Madres'?",
+        opciones: [
+            "A) Que los padres vuelvan a cursar el bachillerato.",
+            "B) Proporcionar un espacio de formación y reflexión para fortalecer las competencias parentales y el apoyo al aprendizaje.",
+            "C) Recaudar fondos para la construcción de aulas.",
+            "D) Elegir al nuevo director del centro."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 03-2025. Es un componente estratégico para que la familia sepa cómo acompañar el proceso educativo de sus hijos."
+    },
+    {
+        id: 160,
+        categoria: "Sistema de Evaluación",
+        pregunta: "En el Nivel Primario, según la Ordenanza 04-2023, el informe que se entrega a los padres para comunicar los resultados se llama:",
+        opciones: [
+            "A) Acta de Calificaciones.",
+            "B) Informe de Aprendizaje.",
+            "C) Récord de Notas.",
+            "D) Certificado de Aptitud."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. El nombre busca reflejar que lo que se comunica es el progreso en el aprendizaje, no solo números."
+    },
+
+
+    {
+        id: 161,
+        categoria: "Convivencia Escolar",
+        pregunta: "Un estudiante altera o falsifica las calificaciones en su Informe de Aprendizaje. Según la Ordenanza 05-2023, esta acción es una:",
+        opciones: [
+            "A) Falta Leve.",
+            "B) Falta Grave.",
+            "C) Falta Muy Grave.",
+            "D) Acción sin importancia si el estudiante tiene buenas notas."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Ordenanza 05-2023. El fraude documental y la alteración de documentos oficiales del sistema educativo se tipifican como una Falta Muy Grave."
+    },
+    {
+        id: 162,
+        categoria: "Función Pública",
+        pregunta: "Según la Ley 41-08, ¿cuál de las siguientes es una falta de tercer grado que conlleva la destitución del cargo?",
+        opciones: [
+            "A) Incumplimiento del horario de trabajo por primera vez.",
+            "B) La comisión de actos de acoso sexual en el ámbito laboral.",
+            "C) No usar el uniforme de la institución.",
+            "D) Tomar café fuera del tiempo de descanso."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08 de Función Pública. El acoso sexual es una falta gravísima que implica la separación inmediata del servicio público y procesos legales."
+    },
+    {
+        id: 163,
+        categoria: "Evaluación de Aprendizajes",
+        pregunta: "La Ordenanza 04-2023 establece que en el Nivel Primario, los resultados de la evaluación se expresan de manera:",
+        opciones: [
+            "A) Numérica exclusivamente (0-100).",
+            "B) Literal y descriptiva mediante niveles de desempeño e indicadores de logro.",
+            "C) Por colores (Rojo, Amarillo y Verde).",
+            "D) Solo mediante el promedio general al final del año."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. Se prioriza la descripción cualitativa del avance del estudiante sobre la simple asignación de un número en los primeros niveles."
+    },
+    {
+        id: 164,
+        categoria: "Educación Inclusiva",
+        pregunta: "De acuerdo con la Ordenanza 05-2024, el término 'Población con Necesidades Específicas de Apoyo Educativo (NEAE)' incluye a:",
+        opciones: [
+            "A) Solo estudiantes con discapacidad física.",
+            "B) Estudiantes con discapacidad, trastornos del aprendizaje, altas capacidades intelectuales y condiciones de vulnerabilidad.",
+            "C) Únicamente estudiantes que no hablan español.",
+            "D) Estudiantes que han repetido más de dos veces el mismo grado."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. El concepto de NEAE es amplio y busca proteger a cualquier estudiante que requiera apoyos distintos a los habituales."
+    },
+    {
+        id: 165,
+        categoria: "Participación Comunitaria",
+        pregunta: "La Ordenanza 03-2025 establece que los fondos que recibe la Junta de Centro deben ser ejecutados de acuerdo con:",
+        opciones: [
+            "A) El criterio personal del Director.",
+            "B) El Proyecto Educativo de Centro (PEC) y el Plan Operativo Anual (POA).",
+            "C) Las peticiones directas de los vecinos de la comunidad.",
+            "D) Las órdenes del sindicato de maestros."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 03-2025. La transparencia financiera obliga a que cada peso gastado esté vinculado a las metas pedagógicas planificadas."
+    },
+    {
+        id: 166,
+        categoria: "Ética Profesional",
+        pregunta: "Un docente castiga a un grupo de estudiantes dejándolos sin recreo o sin almuerzo escolar. Según el Código de Ética (22-2023), esta medida es:",
+        opciones: [
+            "A) Una técnica de disciplina efectiva.",
+            "B) Una falta ética, ya que no se puede privar a los estudiantes de sus derechos básicos como la alimentación o el descanso.",
+            "C) Permitida si el curso está muy indisciplinado.",
+            "D) Solo permitida si el director firma una autorización."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023 y Manuales de Convivencia. Las sanciones deben ser pedagógicas y nunca vulnerar derechos fundamentales del menor."
+    },
+    {
+        id: 167,
+        categoria: "Legislación Educativa",
+        pregunta: "La Ley 66-97 indica que la educación es un servicio público que tiene como fin:",
+        opciones: [
+            "A) El enriquecimiento de los dueños de colegios privados.",
+            "B) El desarrollo de la conciencia nacional y el respeto a los símbolos patrios.",
+            "C) La formación de atletas de alto rendimiento solamente.",
+            "D) Que todos los ciudadanos piensen de la misma manera."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 66-97. Uno de los fines de la educación dominicana es el fortalecimiento de la identidad y los valores patrios."
+    },
+    {
+        id: 168,
+        categoria: "Transparencia",
+        pregunta: "Según la Ley 200-04, ¿quién es el responsable final de garantizar el acceso a la información en una institución pública?",
+        opciones: [
+            "A) El encargado de seguridad.",
+            "B) La máxima autoridad ejecutiva de la institución (en este caso, el Director).",
+            "C) El Ministerio de Hacienda.",
+            "D) La secretaria de recepción."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 200-04. La responsabilidad legal recae sobre el titular de la institución, quien debe asegurar que el Oficial de Acceso a la Información cumpla sus funciones."
+    },
+    {
+        id: 169,
+        categoria: "Código de Ética",
+        pregunta: "La Orden Departamental 22-2023 prohíbe al personal docente y administrativo tener relaciones sentimentales con estudiantes. Si esto ocurre, la sanción es:",
+        opciones: [
+            "A) Un traslado a otro centro educativo.",
+            "B) Una suspensión de 15 días.",
+            "C) La destitución inmediata y puesta a disposición de la justicia.",
+            "D) Un llamado de atención escrito."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Orden Departamental 22-2023 y Ley 136-03. Es una violación gravísima a la integridad del menor y a la ética profesional, con implicaciones penales."
+    },
+    {
+        id: 170,
+        categoria: "Evaluación y Promoción",
+        pregunta: "En el Nivel Secundario, la Ordenanza 04-2023 establece que el estudiante que repruebe hasta dos asignaturas debe:",
+        opciones: [
+            "A) Repetir el año completo automáticamente.",
+            "B) Ir a pruebas completivas en las fechas establecidas.",
+            "C) Ser promovido y recuperar las asignaturas el año siguiente.",
+            "D) Tomar clases de verano pagadas."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. Se mantiene el sistema de pruebas completivas para aquellos que no alcanzaron el mínimo de 70 puntos durante el año."
+    },
+    {
+        id: 171,
+        categoria: "Convivencia Armoniosa",
+        pregunta: "El 'Acoso Escolar' o Bullying, según la Ordenanza 05-2023, debe ser manejado mediante:",
+        opciones: [
+            "A) La expulsión definitiva de ambos estudiantes.",
+            "B) Un protocolo de mediación, apoyo psicológico y medidas restaurativas.",
+            "C) Ignorar el conflicto si ocurre fuera del aula.",
+            "D) Dejar que los estudiantes resuelvan sus problemas solos."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2023. La normativa busca la solución pacífica de conflictos y la reeducación de los involucrados."
+    },
+    {
+        id: 172,
+        categoria: "Derechos Humanos",
+        pregunta: "La Declaración Universal de Derechos Humanos (Art. 26) establece que la instrucción técnica y profesional habrá de ser:",
+        opciones: [
+            "A) Generalizada y accesible a todos en función de los méritos.",
+            "B) Limitada a una élite de la sociedad.",
+            "C) Solo para quienes puedan pagarla.",
+            "D) Obligatoria para todos los ciudadanos hasta los 30 años."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Legal: Declaración Universal de DD.HH. Establece que mientras la básica es obligatoria, la técnica/superior debe ser accesible por mérito."
+    },
+    {
+        id: 173,
+        categoria: "Alfabetización Inicial",
+        pregunta: "La Política Nacional de Alfabetización Inicial (01-2023) enfatiza que los docentes deben utilizar:",
+        opciones: [
+            "A) Libros de texto de hace 20 años.",
+            "B) Diversas estrategias y recursos que respeten los ritmos de aprendizaje de cada niño.",
+            "C) Solo el método de la copia del pizarrón.",
+            "D) Una sola metodología estándar para todo el país."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023. La flexibilidad metodológica es clave para lograr que ningún niño se quede atrás en la alfabetización."
+    },
+    {
+        id: 174,
+        categoria: "Discapacidad",
+        pregunta: "Según la Ley 5-13, ¿qué porcentaje de vacantes en el sector público debe ser reservado para personas con discapacidad?",
+        opciones: [
+            "A) No menos del 2%.",
+            "B) No menos del 5%.",
+            "C) No menos del 10%.",
+            "D) El porcentaje es opcional según la institución."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 5-13 sobre Discapacidad. Esta ley fomenta la inclusión laboral en las instituciones del Estado."
+    },
+    {
+        id: 175,
+        categoria: "Función Pública",
+        pregunta: "Un servidor público tiene derecho a una licencia por fallecimiento de un pariente cercano (padres, hijos, cónyuge) de:",
+        opciones: [
+            "A) 1 día.",
+            "B) 3 días laborables.",
+            "C) 5 días laborables.",
+            "D) Una semana completa."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08. Es un derecho de licencia con goce de sueldo ante situaciones de duelo familiar."
+    },
+    {
+        id: 176,
+        categoria: "Participación Comunitaria",
+        pregunta: "Bajo la Ordenanza 03-2025, el Consejo de Curso es un organismo de participación formado por:",
+        opciones: [
+            "A) Solo los padres del curso.",
+            "B) Los estudiantes del curso y su docente guía.",
+            "C) El director y los maestros del grado.",
+            "D) Los vecinos más cercanos a la escuela."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 03-2025. El Consejo de Curso es el espacio donde los estudiantes ejercen su derecho a la participación y democracia escolar."
+    },
+    {
+        id: 177,
+        categoria: "Ordenanza 05-2024",
+        pregunta: "El enfoque de 'Educación Inclusiva' según la Ordenanza 05-2024 implica que:",
+        opciones: [
+            "A) El alumno debe cambiar para encajar en la escuela.",
+            "B) La escuela debe transformarse para responder a la diversidad de todos los alumnos.",
+            "C) Solo se aceptan niños con discapacidad si hay cupo.",
+            "D) Los niños con NEAE deben estar en un aula aparte todo el día."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. Se basa en el modelo social de la discapacidad, donde el entorno es el que debe adaptarse."
+    },
+    {
+        id: 178,
+        categoria: "Constitución Dominicana",
+        pregunta: "El Artículo 63 establece que la inversión del Estado en educación, ciencia y tecnología debe ser:",
+        opciones: [
+            "A) Reducida en tiempos de crisis económica.",
+            "B) Creciente y sostenida, en correspondencia con los niveles de desempeño macroeconómico.",
+            "C) Fija sin importar el crecimiento del país.",
+            "D) Dependiente de préstamos internacionales solamente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Constitución Dominicana. Protege la inversión educativa como un pilar estratégico del Estado."
+    },
+    {
+        id: 179,
+        categoria: "Evaluación Técnica",
+        pregunta: "Según la Ordenanza 04-2023, los indicadores de logro son:",
+        opciones: [
+            "A) Las tareas que el alumno hace en casa.",
+            "B) Señales o evidencias que permiten observar el nivel de dominio de las competencias.",
+            "C) El número de páginas que tiene el libro de texto.",
+            "D) Las asistencias del estudiante al centro."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. Son los referentes que usa el docente para evaluar de manera objetiva el progreso del alumno."
+    },
+    {
+        id: 180,
+        categoria: "Convivencia Escolar",
+        pregunta: "Un docente que utiliza el castigo físico como método de corrección está violando:",
+        opciones: [
+            "A) La Ley 136-03 y la Ordenanza 05-2023.",
+            "B) Solo las reglas internas de su centro.",
+            "C) Únicamente el contrato con el Ministerio.",
+            "D) Ninguna ley, si el padre le dio permiso."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Legal: Ley 136-03 y Ordenanza 05-2023. El maltrato físico está prohibido por ley y es causa de sanciones graves o penales."
+    },
+    
+    {
+        id: 181,
+        categoria: "Ética Profesional",
+        pregunta: "Un docente publica en sus redes sociales personales críticas ofensivas hacia la dirección del centro y sus colegas. Según la Orden Departamental 22-2023, esto se considera:",
+        opciones: [
+            "A) Uso legítimo de la libertad de expresión.",
+            "B) Una violación al Código de Ética que exige respeto y decoro hacia los miembros de la comunidad educativa.",
+            "C) Una falta leve que no tiene consecuencias.",
+            "D) Permitido si las críticas son ciertas."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Orden Departamental 22-2023. El personal debe mantener una conducta pública y digital que no lesione la imagen del sistema educativo ni la integridad de sus compañeros."
+    },
+    {
+        id: 122,
+        categoria: "Inclusión Educativa",
+        pregunta: "La Ordenanza 05-2024 establece que la 'Evaluación Psicopedagógica' debe ser utilizada para:",
+        opciones: [
+            "A) Clasificar a los estudiantes en 'aptos' y 'no aptos'.",
+            "B) Identificar las capacidades, barreras y apoyos específicos que requiere un estudiante con NEAE.",
+            "C) Justificar la expulsión de un estudiante conflictivo.",
+            "D) Exonerar al estudiante de cursar las materias de matemáticas y lengua."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. Es una herramienta diagnóstica para diseñar los ajustes y apoyos necesarios, nunca para segregar."
+    },
+    {
+        id: 183,
+        categoria: "Participación Comunitaria",
+        pregunta: "Según la Ordenanza 03-2025, ¿qué organismo representa a los estudiantes en el manejo de los conflictos y la mejora del centro?",
+        opciones: [
+            "A) El Consejo de Estudiantes.",
+            "B) El Comité de Disciplina de los Padres.",
+            "C) La Junta Municipal.",
+            "D) El sindicato de maestros."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Legal: Ordenanza 03-2025. El Consejo de Estudiantes es el órgano de representación democrática del alumnado en la gestión escolar."
+    },
+    {
+        id: 184,
+        categoria: "Legislación Educativa",
+        pregunta: "La Ley 66-97 define que la 'Educación No Formal' es aquella que:",
+        opciones: [
+            "A) Se imparte en las universidades.",
+            "B) Tiene por objeto ofrecer conocimientos y capacitación sin sujeción a los grados del sistema formal.",
+            "C) No requiere ningún tipo de evaluación.",
+            "D) Es solo para personas que no terminaron la primaria."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 66-97. Es un subsistema flexible destinado a la capacitación técnica y social de los ciudadanos."
+    },
+    {
+        id: 185,
+        categoria: "Función Pública",
+        pregunta: "Bajo la Ley 41-08, si un servidor público considera que una orden de un superior es manifiestamente ilegal, debe:",
+        opciones: [
+            "A) Cumplirla sin cuestionar.",
+            "B) Objetarla por escrito ante el superior que la emitió o la autoridad correspondiente.",
+            "C) Renunciar inmediatamente.",
+            "D) Hacer lo contrario a lo que se le pidió sin avisar."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 41-08. El servidor público tiene el deber de no cumplir órdenes que violen la ley, protegiendo la integridad de la administración pública."
+    },
+    {
+        id: 186,
+        categoria: "Evaluación de Aprendizajes",
+        pregunta: "La Ordenanza 04-2023 introduce los 'Registros de Grado' actualizados. ¿Cuál es su utilidad principal?",
+        opciones: [
+            "A) Guardar las excusas médicas de los estudiantes.",
+            "B) Consignar de forma sistemática el seguimiento de los indicadores de logro y el progreso de los estudiantes.",
+            "C) Llevar el control de los uniformes entregados.",
+            "D) Anotar los nombres de los padres que no asisten a reuniones."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. El registro es el documento oficial donde se evidencia la evaluación procesual y el desarrollo de competencias."
+    },
+    {
+        id: 187,
+        categoria: "Convivencia Escolar",
+        pregunta: "Un estudiante es víctima de ciberacoso por parte de un compañero fuera del horario escolar. ¿Qué establece la Ordenanza 05-2023 sobre la intervención del centro?",
+        opciones: [
+            "A) El centro no interviene porque ocurrió fuera de la escuela.",
+            "B) El centro debe intervenir si el acoso afecta la convivencia o el clima escolar y el bienestar del estudiante.",
+            "C) Es un problema exclusivo de la policía nacional.",
+            "D) Se debe expulsar a ambos para evitar problemas en el centro."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2023. Las normas de convivencia extienden su protección a situaciones externas que repercutan en el entorno educativo y emocional del alumno."
+    },
+    {
+        id: 188,
+        categoria: "Estrategia Nacional",
+        pregunta: "La Ley 1-12 (END) propone que la educación dominicana debe fomentar:",
+        opciones: [
+            "A) Una cultura de ahorro y emprendimiento.",
+            "B) El pensamiento crítico, la innovación y el respeto a la diversidad.",
+            "C) La dependencia de los subsidios estatales.",
+            "D) El estudio exclusivo de carreras tradicionales como medicina y derecho."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 1-12. Son pilares para transformar la sociedad dominicana hacia una economía del conocimiento."
+    },
+    {
+        id: 189,
+        categoria: "Derecho a la Información",
+        pregunta: "Según la Ley 200-04, la solicitud de información puede ser rechazada si:",
+        opciones: [
+            "A) El director está muy ocupado.",
+            "B) La información solicitada afecta la seguridad nacional o la privacidad de datos personales de menores.",
+            "C) El ciudadano no tiene título universitario.",
+            "D) La información es de hace más de dos años."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 200-04. Existen excepciones legales para proteger derechos superiores como la seguridad del Estado o la intimidad de las personas."
+    },
+    {
+        id: 190,
+        categoria: "Legislación Escolar",
+        pregunta: "La Ordenanza 05-2023 clasifica como 'Falta Grave' el incumplimiento de:",
+        opciones: [
+            "A) Llegar 5 minutos tarde una vez al mes.",
+            "B) El uso reiterado de celulares o dispositivos electrónicos para fines ajenos al aprendizaje en el aula.",
+            "C) Olvidar un libro en la casa.",
+            "D) Pedir permiso para ir al baño."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2023. El uso disruptivo de la tecnología que afecta el proceso de enseñanza es una falta grave sujeta a medidas correctivas."
+    },
+    {
+        id: 191,
+        categoria: "Inclusión y Apoyo",
+        pregunta: "Según la Ordenanza 04-2018, los 'Servicios de Apoyo a la Educación Inclusiva' deben estar conformados por:",
+        opciones: [
+            "A) Solo personal de seguridad.",
+            "B) Orientadores, psicólogos y docentes de apoyo pedagógico.",
+            "C) Miembros de la comunidad que sepan de carpintería.",
+            "D) Médicos especialistas externos únicamente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2018. Define el equipo multidisciplinario necesario para garantizar la atención a la diversidad."
+    },
+    {
+        id: 192,
+        categoria: "Alfabetización",
+        pregunta: "La Ordenanza 01-2023 establece que la alfabetización es una responsabilidad de:",
+        opciones: [
+            "A) Solo el maestro de lengua española.",
+            "B) Toda la comunidad educativa y el sistema en su conjunto.",
+            "C) La familia de forma exclusiva en el hogar.",
+            "D) Las instituciones de educación superior solamente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023. Se define como un compromiso sistémico para garantizar el éxito escolar futuro."
+    },
+    {
+        id: 193,
+        categoria: "Código de Ética",
+        pregunta: "Bajo la Orden Departamental 22-2023, el personal del centro debe evitar 'Relaciones de Intimidad' con:",
+        opciones: [
+            "A) Estudiantes, ex-estudiantes menores de edad y padres de familia si afecta su imparcialidad.",
+            "B) Solo estudiantes de su propia aula.",
+            "C) Sus propios hijos que estudian en el centro.",
+            "D) Nadie, la vida privada no está regulada."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Legal: Orden Departamental 22-2023. Establece perímetros de seguridad ética para proteger a los menores y la integridad del servicio educativo."
+    },
+    {
+        id: 194,
+        categoria: "Sistema de Evaluación",
+        pregunta: "En el Nivel Secundario (Ordenanza 04-2023), ¿qué ocurre si un estudiante reprueba una asignatura en las pruebas extraordinarias?",
+        opciones: [
+            "A) Debe repetir el grado completo.",
+            "B) Tiene derecho a una tercera oportunidad inmediata.",
+            "C) Debe cursarla de nuevo en la modalidad de tutoría o según disponga la norma de permanencia.",
+            "D) Se le regalan los puntos para evitar el abandono escolar."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Ordenanza 04-2023. Regula la trayectoria del estudiante asegurando que los aprendizajes no logrados sean completados."
+    },
+    {
+        id: 195,
+        categoria: "Participación Comunitaria",
+        pregunta: "La Ordenanza 03-2025 prohíbe explícitamente que los organismos de participación (como APMAE):",
+        opciones: [
+            "A) Realicen reuniones en el centro.",
+            "B) Participen en actividades partidistas o de proselitismo político dentro del centro educativo.",
+            "C) Ayuden a pintar la escuela.",
+            "D) Sugieran mejoras pedagógicas."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 03-2025. Los organismos de participación deben ser neutrales y enfocarse únicamente en el bienestar educativo."
+    },
+    {
+        id: 196,
+        categoria: "Ordenanza 05-2024",
+        pregunta: "El principio de 'Equidad' en la educación inclusiva significa:",
+        opciones: [
+            "A) Darle a todos exactamente lo mismo.",
+            "B) Dar a cada uno lo que necesita para garantizar la igualdad de oportunidades y resultados.",
+            "C) Que todos los estudiantes deben comprar el mismo uniforme.",
+            "D) Que todos deben obtener la misma calificación sin importar su esfuerzo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. La equidad reconoce la diversidad y aplica apoyos diferenciados para lograr la justicia educativa."
+    },
+    {
+        id: 197,
+        categoria: "Constitución Dominicana",
+        pregunta: "Según el Art. 63, la educación superior es competencia del Estado, pero su gestión debe basarse en:",
+        opciones: [
+            "A) La autonomía universitaria y la libertad de cátedra.",
+            "B) El control total del gobierno central sobre los programas.",
+            "C) La prohibición de la investigación científica.",
+            "D) Que solo se imparta en la capital del país."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Legal: Constitución Dominicana. Protege la libertad académica y la autogestión de las universidades."
+    },
+    {
+        id: 198,
+        categoria: "Legislación Educativa",
+        pregunta: "La Ley 66-97 clasifica a los docentes como:",
+        opciones: [
+            "A) Trabajadores manuales.",
+            "B) Profesionales de la educación encargados de impartir enseñanza y dirigir el proceso de aprendizaje.",
+            "C) Empleados administrativos de apoyo.",
+            "D) Contratistas temporales del Estado."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 66-97. Reconoce el estatus profesional del docente y sus responsabilidades directas en el aula."
+    },
+    {
+        id: 199,
+        categoria: "Manuales de Convivencia",
+        pregunta: "Si un estudiante comete una falta muy grave, la medida educativa debe ser aplicada por:",
+        opciones: [
+            "A) El docente solo en su aula.",
+            "B) El Equipo de Gestión y el Consejo Escolar de Centro, garantizando el derecho a la defensa.",
+            "C) El presidente de la junta de vecinos.",
+            "D) El psicólogo sin avisar a los padres."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2023. Asegura el debido proceso y la participación de los órganos de gestión en las sanciones más delicadas."
+    },
+    {
+        id: 200,
+        categoria: "Evaluación Técnica",
+        pregunta: "La Ordenanza 04-2023 establece que la 'Metaevaluación' es:",
+        opciones: [
+            "A) El examen final de todo el sistema educativo.",
+            "B) La evaluación de los propios procesos e instrumentos de evaluación para mejorarlos.",
+            "C) Una evaluación que se hace en el espacio exterior.",
+            "D) La calificación que ponen los padres a los maestros."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. Es un proceso de reflexión sobre la práctica evaluativa para asegurar su calidad y objetividad."
     }
 ];
 

@@ -6,121 +6,116 @@
     <title>Simulador MINERD - Orientación y Psicología</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Estilos rápidos en caso de que el CSS falle */
-        .minerd-bg { background-color: #003876; }
-        .minerd-text { color: #003876; }
-        .custom-scroll::-webkit-scrollbar { width: 6px; }
-        .custom-scroll::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
-    </style>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans min-h-screen flex flex-col">
+<body class="bg-gray-100 min-h-screen flex flex-col">
 
-    <header class="minerd-bg text-white p-4 shadow-md flex justify-between items-center">
-        <div>
-            <h1 class="text-xl font-bold">MINERD</h1>
-            <p class="text-xs opacity-80">Concurso de Oposición - Psicología Escolar</p>
+    <header class="minerd-bg p-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-xl font-bold">MINERD</h1>
+                <p class="text-xs opacity-80 uppercase">Concurso de Oposición - Psicología Escolar</p>
+            </div>
         </div>
     </header>
 
-    <main class="flex-grow container mx-auto p-4 md:p-6 max-w-6xl flex items-center justify-center">
+    <main class="flex-grow container mx-auto p-2 md:p-6 max-w-6xl flex items-center justify-center">
         
         <div id="start-screen" class="bg-white rounded-xl shadow-lg p-8 w-full max-w-2xl text-center">
-            <h2 class="text-3xl font-bold text-[#003876] mb-4">Evaluación Técnico-Profesional</h2>
-            <p class="text-gray-600 mb-6">Prueba de Juicio Situacional basada en el marco legal dominicano (Ley 66-97, Ley 136-03, Ordenanza 02-2016).</p>
+            <h2 class="text-3xl font-bold minerd-text mb-4 text-center">Evaluación Técnico-Profesional</h2>
+            <p class="text-gray-600 mb-6 text-center">Prueba de Juicio Situacional basada en el marco legal dominicano.</p>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 text-left">
-                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100 text-left">
                     <p class="font-bold text-blue-800">Preguntas</p>
-                    <p class="text-sm text-gray-600">35 seleccionadas al azar</p>
+                    <p class="text-sm text-gray-600">35 seleccionadas</p>
                 </div>
-                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100 text-left">
                     <p class="font-bold text-blue-800">Tiempo</p>
-                    <p class="text-sm text-gray-600">52 min, 30 seg</p>
+                    <p class="text-sm text-gray-600">52:30 min</p>
                 </div>
-                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100 text-left">
                     <p class="font-bold text-blue-800">Modalidad</p>
                     <p class="text-sm text-gray-600">Cierre automático</p>
                 </div>
             </div>
             
-            <button id="start-btn" class="minerd-bg hover:bg-blue-800 text-white font-bold py-4 px-10 rounded-lg shadow-md transition-all text-lg">
+            <button id="start-btn" class="minerd-bg py-4 px-10 rounded-lg shadow-md transition-all text-lg font-bold w-full md:w-auto">
                 Comenzar Prueba
             </button>
         </div>
 
-        <div id="quiz-screen" class="hidden bg-white rounded-xl shadow-lg w-full flex flex-col md:flex-row h-[85vh] overflow-hidden">
+        <div id="quiz-screen" class="hidden bg-white rounded-xl shadow-lg w-full flex flex-col md:flex-row overflow-hidden border border-gray-200">
             
-            <div class="w-full md:w-72 bg-gray-50 border-r border-gray-200 flex flex-col">
-                <div class="p-4 border-b border-gray-200 bg-white">
-                    <h3 class="text-sm font-bold text-[#003876] uppercase tracking-wider text-center">Navegación</h3>
+            <aside class="w-full md:w-72 bg-gray-50 border-b md:border-b-0 md:border-r border-gray-200 flex flex-col">
+                <div class="p-4 bg-white border-b border-gray-200 flex justify-between items-center md:block">
+                    <h3 class="text-sm font-bold minerd-text uppercase tracking-widest text-center">Navegación</h3>
                 </div>
                 
-                <div id="questions-nav" class="p-4 grid grid-cols-5 gap-2 overflow-y-auto">
+                <div id="questions-nav" class="overflow-y-auto max-h-40 md:max-h-full custom-scroll">
                     </div>
 
-                <div class="px-4 py-6 bg-white border-y border-gray-100 flex flex-col items-center justify-center">
-                    <span class="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em] mb-1">Tiempo Restante</span>
-                    <div id="timer" class="text-4xl font-mono font-black text-[#003876] tabular-nums transition-all duration-300">
+                <div class="p-6 bg-white border-t border-gray-100 flex flex-col items-center">
+                    <span class="text-[10px] font-bold text-gray-400 uppercase mb-1">Tiempo Restante</span>
+                    <div id="timer" class="text-4xl font-mono font-black minerd-text">
                         52:30
                     </div>
                 </div>
 
-                <div class="p-4 bg-gray-50 mt-auto">
-                    <div class="flex items-center gap-2 text-[10px] text-gray-400 uppercase font-bold">
+                <div class="hidden md:block p-4 mt-auto border-t border-gray-100">
+                    <div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase">
                         <div class="w-3 h-3 bg-white border border-gray-300 rounded"></div> Pendiente
                     </div>
-                    <div class="flex items-center gap-2 text-[10px] text-gray-400 uppercase font-bold mt-1">
+                    <div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase mt-1">
                         <div class="w-3 h-3 bg-green-500 rounded"></div> Completada
                     </div>
                 </div>
-            </div>
+            </aside>
 
-            <div class="flex-grow flex flex-col p-6 overflow-hidden">
-                <div class="mb-6">
-                    <div class="flex justify-between items-center mb-2">
-                        <span id="question-counter" class="text-lg font-bold text-[#003876]">Pregunta 1 de 35</span>
-                        <span id="category-badge" class="bg-blue-100 text-[#003876] px-3 py-1 rounded-full text-xs font-bold uppercase">Categoría</span>
+            <section class="flex-grow flex flex-col p-4 md:p-8 overflow-hidden">
+                <div class="mb-4">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-2 mb-2">
+                        <span id="question-counter" class="text-lg font-bold minerd-text">Pregunta 1 de 35</span>
+                        <span id="category-badge" class="bg-blue-100 minerd-text px-3 py-1 rounded-full text-[10px] font-bold uppercase w-fit">CATEGORÍA</span>
                     </div>
-                    <div class="w-full bg-gray-200 rounded-full h-2">
-                        <div id="progress-bar" class="minerd-bg h-2 rounded-full transition-all" style="width: 0%"></div>
+                    <div class="w-full bg-gray-200 rounded-full h-1.5">
+                        <div id="progress-bar" class="minerd-bg h-1.5 rounded-full transition-all" style="width: 0%"></div>
                     </div>
                 </div>
 
                 <div class="flex-grow overflow-y-auto pr-2 custom-scroll">
-                    <div class="bg-blue-50 border-l-4 border-[#003876] p-6 mb-8 rounded-r-lg shadow-sm">
-                        <p id="question-text" class="text-xl text-gray-800 font-semibold leading-relaxed"></p>
+                    <div class="bg-blue-50 border-l-4 border-[#003876] p-4 md:p-6 mb-6 rounded-r-lg">
+                        <p id="question-text" class="text-lg md:text-xl text-gray-800 font-semibold leading-relaxed"></p>
                     </div>
                     
-                    <div id="options-container" class="space-y-4">
+                    <div id="options-container">
                         </div>
                 </div>
 
-                <div class="mt-6 pt-4 border-t border-gray-200 flex justify-between items-center">
-                    <button id="prev-btn" class="flex items-center gap-2 text-gray-600 font-bold py-2 px-4 hover:text-[#003876] transition-colors">
+                <div class="mt-4 pt-4 border-t border-gray-200 flex justify-between items-center">
+                    <button id="prev-btn" class="flex items-center gap-2 text-gray-600 font-bold hover:minerd-text transition-colors">
                         <span>←</span> Anterior
                     </button>
-                    <button id="next-btn" class="bg-gray-300 text-gray-500 cursor-not-allowed font-bold py-2 px-8 rounded-lg transition-all" disabled>
+                    <button id="next-btn" class="bg-gray-300 text-gray-500 font-bold py-2 px-10 rounded-lg transition-all" disabled>
                         Siguiente
                     </button>
                 </div>
-            </div>
+            </section>
         </div>
 
         <div id="result-screen" class="hidden bg-white rounded-xl shadow-lg w-full max-w-5xl overflow-hidden overflow-y-auto max-h-[90vh]">
-            <div class="minerd-bg text-white p-8 text-center">
-                <h2 class="text-3xl font-bold mb-2">Resultados de la Evaluación</h2>
+            <div class="minerd-bg p-8 text-center text-white">
+                <h2 class="text-3xl font-bold mb-2">Resultados</h2>
                 <div class="text-5xl font-black mb-2" id="final-score">0/35</div>
                 <div id="score-percentage" class="text-lg opacity-90"></div>
             </div>
             
             <div class="p-6 md:p-8">
-                <h3 class="font-bold text-xl mb-4 border-b pb-2">Revisión Técnica</h3>
+                <h3 class="font-bold text-xl mb-4 border-b pb-2 minerd-text">Revisión Técnica</h3>
                 <div id="review-container" class="space-y-6">
                     </div>
 
                 <div class="mt-10 text-center">
-                    <button id="restart-btn" class="minerd-bg hover:bg-blue-800 text-white font-bold py-4 px-12 rounded-lg shadow-md transition-all">
+                    <button id="restart-btn" class="minerd-bg py-4 px-12 rounded-lg shadow-md font-bold w-full md:w-auto">
                         Volver al Inicio
                     </button>
                 </div>
