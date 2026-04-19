@@ -76,52 +76,47 @@
     padding: 5px;
 }
 
+/* Menú de Navegación Lateral */
+#questions-nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    padding: 10px;
+}
+
 .nav-num-btn {
-    /* Quitamos el ancho fijo para que se adapte a la columna del grid */
-    width: 100%; 
-    aspect-ratio: 1 / 1; /* Hace que sean cuadraditos perfectos */
+    /* Tamaño fijo bloqueado */
+    width: 42px; 
+    height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 6px;
-    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
     background: white;
-    font-size: 0.85rem;
-    font-weight: 600;
-    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
     transition: all 0.2s ease;
 }
 
-/* Estado Actual (Azul MINERD) */
-.nav-num-btn.current {
-    background-color: #003876;
-    color: white;
+/* Colores de estado */
+.nav-num-btn.current { 
+    background-color: #003876 !important; 
+    color: white !important;
     border-color: #003876;
-    box-shadow: 0 2px 4px rgba(0, 56, 118, 0.3);
 }
 
-/* Ya respondida (Verde suave) */
-.nav-num-btn.answered {
-    background-color: #dcfce7; 
-    border-color: #86efac;
-    color: #166534;
-}
-/* Pregunta que se está viendo ahora */
-.nav-num-btn.current {
-    border-color: #003876;
-    background-color: #003876;
-    color: white;
-    box-shadow: 0 0 8px rgba(0,56,118,0.4);
+.nav-num-btn.answered { 
+    background-color: #22c55e !important; /* Verde MINERD */
+    color: white !important;
+    border-color: #16a34a;
 }
 
-/* Pregunta que ya fue respondida */
-.nav-num-btn.answered {
-    background-color: #e0e7ff;
-    border-color: #a5b4fc;
-    color: #4338ca;
+/* Revisión Técnica Dinámica */
+.review-card {
+    border-left-width: 6px;
+    transition: transform 0.2s;
 }
-
-.nav-num-btn:hover {
-    transform: scale(1.1);
-    border-color: #003876;
+.review-card:hover {
+    transform: translateX(5px);
 }

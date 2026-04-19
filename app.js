@@ -1,133 +1,87 @@
-// --- CONFIGURACIÓN TÉCNICA ---
-const TOTAL_PREGUNTAS_EXAMEN = 35;
-const TIEMPO_EXAMEN_MINUTOS = 52;
-const TIEMPO_EXAMEN_SEGUNDOS = 30;
-
-// --- VARIABLES DE ESTADO ---
+// --- ESTADO ---
 let preguntasSeleccionadas = [];
 let indiceActual = 0;
 let respuestasUsuario = {};
-let tiempoRestante = (TIEMPO_EXAMEN_MINUTOS * 60) + TIEMPO_EXAMEN_SEGUNDOS;
+let tiempoRestante = (52 * 60) + 30;
 let intervaloTimer;
 
-// --- REFERENCIAS AL DOM ---
-const startScreen = document.getElementById('start-screen');
-const quizScreen = document.getElementById('quiz-screen');
-const resultScreen = document.getElementById('result-screen');
+// --- ELEMENTOS ---
 const startBtn = document.getElementById('start-btn');
 const nextBtn = document.getElementById('next-btn');
-const prevBtn = document.getElementById('prev-btn'); // Asegúrate de que este ID exista en tu HTML
+const prevBtn = document.getElementById('prev-btn');
 const restartBtn = document.getElementById('restart-btn');
-const questionText = document.getElementById('question-text');
-const optionsContainer = document.getElementById('options-container');
-const questionCounter = document.getElementById('question-counter');
-const categoryBadge = document.getElementById('category-badge');
-const progressBar = document.getElementById('progress-bar');
-const timerContainer = document.getElementById('timer-container');
-const timerDisplay = document.getElementById('timer');
+const quizScreen = document.getElementById('quiz-screen');
+const startScreen = document.getElementById('start-screen');
+const resultScreen = document.getElementById('result-screen');
 const navContainer = document.getElementById('questions-nav');
 
 // --- EVENTOS ---
-startBtn.addEventListener('click', iniciarExamen);
-nextBtn.addEventListener('click', siguientePregunta);
-prevBtn.addEventListener('click', anteriorPregunta);
-restartBtn.addEventListener('click', () => window.location.reload());
+startBtn.onclick = iniciarExamen;
+nextBtn.onclick = siguientePregunta;
+prevBtn.onclick = anteriorPregunta;
+restartBtn.onclick = () => window.location.reload();
 
-// --- FUNCIONES DE NAVEGACIÓN ---
 function iniciarExamen() {
-    const bancoAleatorio = shuffleArray(bancoPreguntas);
-    preguntasSeleccionadas = bancoAleatorio.slice(0, Math.min(TOTAL_PREGUNTAS_EXAMEN, bancoPreguntas.length));
+    const barajadas = [...bancoPreguntas].sort(() => Math.random() - 0.5);
+    preguntasSeleccionadas = barajadas.slice(0, 35);
     
     startScreen.classList.add('hidden');
     quizScreen.classList.remove('hidden');
-    timerContainer.classList.remove('hidden');
     
     iniciarTimer();
     mostrarPregunta();
 }
 
 function mostrarPregunta() {
-    const preguntaActual = preguntasSeleccionadas[indiceActual];
+    const pregunta = preguntasSeleccionadas[indiceActual];
     
-    // 1. Textos y Contador
-    questionCounter.textContent = `Pregunta ${indiceActual + 1} de ${preguntasSeleccionadas.length}`;
-    categoryBadge.textContent = preguntaActual.categoria;
-    questionText.textContent = preguntaActual.pregunta;
+    // UI Básica
+    document.getElementById('question-counter').textContent = `Pregunta ${indiceActual + 1} de 35`;
+    document.getElementById('category-badge').textContent = pregunta.categoria;
+    document.getElementById('question-text').textContent = pregunta.pregunta;
+    document.getElementById('progress-bar').style.width = `${((indiceActual + 1) / 35) * 100}%`;
+
+    // Botones Navegación
+    prevBtn.style.visibility = indiceActual === 0 ? 'hidden' : 'visible';
+    nextBtn.textContent = indiceActual === 34 ? 'Finalizar Examen' : 'Siguiente';
+
+    // Opciones
+    const container = document.getElementById('options-container');
+    container.innerHTML = '';
     
-    // 2. Barra de Progreso (basada en el índice actual)
-    const progress = ((indiceActual + 1) / preguntasSeleccionadas.length) * 100;
-    progressBar.style.width = `${progress}%`;
-    
-    // 3. Actualizar Menú Numérico
-    actualizarNavegacionNumerica();
+    if (respuestasUsuario[indiceActual] !== undefined) activarBoton(); 
+    else desactivarBoton();
 
-    // 4. Control de Botones (Anterior / Siguiente)
-    // Ocultar "Anterior" si es la primera pregunta
-    prevBtn.style.visibility = (indiceActual === 0) ? 'hidden' : 'visible';
-    
-    // Texto del botón principal
-    nextBtn.textContent = (indiceActual === preguntasSeleccionadas.length - 1) ? 'Finalizar Examen' : 'Siguiente';
-
-    // 5. Render de Opciones
-    optionsContainer.innerHTML = '';
-    let yaRespondida = respuestasUsuario[indiceActual] !== undefined;
-
-    if (!yaRespondida) {
-        desactivarBotonSiguiente();
-    } else {
-        activarBotonSiguiente();
-    }
-
-    preguntaActual.opciones.forEach((opcion, index) => {
+    pregunta.opciones.forEach((opc, i) => {
         const btn = document.createElement('button');
-        btn.className = 'option-btn';
-        if (respuestasUsuario[indiceActual] === index) btn.classList.add('selected');
-        
-        btn.textContent = opcion;
-        btn.onclick = () => seleccionarOpcion(index, btn);
-        optionsContainer.appendChild(btn);
+        btn.className = `option-btn ${respuestasUsuario[indiceActual] === i ? 'selected' : ''}`;
+        btn.textContent = opc;
+        btn.onclick = () => {
+            respuestasUsuario[indiceActual] = i;
+            mostrarPregunta(); // Refresca para marcar selección
+        };
+        container.appendChild(btn);
     });
+
+    actualizarMenuLateral();
 }
 
-function actualizarNavegacionNumerica() {
+function actualizarMenuLateral() {
     navContainer.innerHTML = '';
-    preguntasSeleccionadas.forEach((_, index) => {
+    preguntasSeleccionadas.forEach((_, i) => {
         const btn = document.createElement('button');
-        btn.className = 'nav-num-btn';
-        if (index === indiceActual) btn.classList.add('current');
-        if (respuestasUsuario[index] !== undefined) btn.classList.add('answered');
-        
-        btn.textContent = index + 1;
-        btn.onclick = () => {
-            indiceActual = index;
-            mostrarPregunta();
-        };
+        btn.className = `nav-num-btn ${i === indiceActual ? 'current' : ''} ${respuestasUsuario[i] !== undefined ? 'answered' : ''}`;
+        btn.textContent = i + 1;
+        btn.onclick = () => { indiceActual = i; mostrarPregunta(); };
         navContainer.appendChild(btn);
     });
 }
 
-function seleccionarOpcion(index, btnReferencia) {
-    respuestasUsuario[indiceActual] = index;
-    
-    const todosBotones = optionsContainer.querySelectorAll('.option-btn');
-    todosBotones.forEach(b => b.classList.remove('selected'));
-    btnReferencia.classList.add('selected');
-    
-    actualizarNavegacionNumerica();
-    activarBotonSiguiente();
-}
-
 function siguientePregunta() {
-    // Verificamos si estamos ANTES de la última pregunta
-    if (indiceActual < preguntasSeleccionadas.length - 1) {
+    if (indiceActual < 34) {
         indiceActual++;
         mostrarPregunta();
-        // Hacemos scroll hacia arriba en el contenedor de la pregunta por si era larga
-        const scrollContainer = document.querySelector('.overflow-y-auto');
-        if(scrollContainer) scrollContainer.scrollTop = 0;
     } else {
-        // SI ES LA ÚLTIMA: Ejecutamos el cierre
-        console.log("Finalizando examen..."); // Para depuración
         finalizarExamen();
     }
 }
@@ -139,24 +93,93 @@ function anteriorPregunta() {
     }
 }
 
-// --- UTILIDADES ---
-function activarBotonSiguiente() {
+// MODIFICACIÓN: Selección de opción con actualización inmediata
+function seleccionarOpcion(index, btnReferencia) {
+    respuestasUsuario[indiceActual] = index;
+    
+    // Actualizar visualmente las opciones
+    const todosBotones = optionsContainer.querySelectorAll('.option-btn');
+    todosBotones.forEach(b => b.classList.remove('selected'));
+    btnReferencia.classList.add('selected');
+    
+    // ¡IMPORTANTE! Actualizar el menú lateral para que se ponga verde
+    actualizarMenuLateral();
+    activarBoton(); 
+}
+
+// MODIFICACIÓN: Revisión Técnica Dinámica
+function finalizarExamen() {
+    clearInterval(intervaloTimer);
+    quizScreen.classList.add('hidden');
+    resultScreen.classList.remove('hidden');
+    
+    let puntos = 0;
+    const review = document.getElementById('review-container');
+    review.innerHTML = '';
+
+    preguntasSeleccionadas.forEach((p, i) => {
+        const respuestaUser = respuestasUsuario[i];
+        const esCorrecta = respuestaUser === p.respuestaCorrecta;
+        if (esCorrecta) puntos++;
+        
+        // Creamos una tarjeta dinámica
+        const statusColor = esCorrecta ? 'border-green-500 bg-green-50' : 'border-red-500 bg-red-50';
+        const icon = esCorrecta ? '✅' : '❌';
+        
+        review.innerHTML += `
+            <div class="review-card ${statusColor} p-5 rounded-lg shadow-sm border mb-4">
+                <div class="flex justify-between items-start mb-2">
+                    <span class="font-bold text-gray-700">Pregunta ${i+1}</span>
+                    <span>${icon}</span>
+                </div>
+                <p class="text-gray-800 font-medium mb-3">${p.pregunta}</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
+                    <div class="p-2 rounded ${esCorrecta ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}">
+                        <strong>Tu respuesta:</strong><br>
+                        ${respuestaUser !== undefined ? p.opciones[respuestaUser] : 'No respondida'}
+                    </div>
+                    ${!esCorrecta ? `
+                    <div class="p-2 rounded bg-blue-100 text-blue-800">
+                        <strong>Respuesta correcta:</strong><br>
+                        ${p.opciones[p.respuestaCorrecta]}
+                    </div>` : ''}
+                </div>
+                
+                <div class="mt-3 text-xs text-gray-500 bg-white p-2 rounded border italic">
+                    <strong>Justificación técnica:</strong> ${p.explicacion}
+                </div>
+            </div>`;
+    });
+
+    // Puntuación con barra de éxito
+    const porcentaje = ((puntos / 35) * 100).toFixed(1);
+    document.getElementById('final-score').textContent = `${puntos} / 35`;
+    document.getElementById('score-percentage').innerHTML = `
+        <div class="text-2xl font-bold ${puntos >= 25 ? 'text-green-600' : 'text-red-600'}">
+            ${porcentaje}% de Precisión
+        </div>
+        <p class="text-gray-500">${puntos >= 25 ? '¡Excelente! Estás listo para el concurso.' : 'Te recomendamos seguir repasando los marcos legales.'}</p>
+    `;
+}
+
+// --- HELPERS ---
+function activarBoton() {
     nextBtn.disabled = false;
-    nextBtn.className = "minerd-bg text-white font-bold py-2 px-6 rounded-lg transition-all cursor-pointer hover:bg-blue-800 shadow-md";
+    nextBtn.className = "bg-[#003876] text-white font-bold py-2 px-8 rounded-lg shadow-md";
 }
 
-function desactivarBotonSiguiente() {
+function desactivarBoton() {
     nextBtn.disabled = true;
-    nextBtn.className = "bg-gray-300 text-gray-500 cursor-not-allowed font-bold py-2 px-6 rounded-lg transition-all";
+    nextBtn.className = "bg-gray-300 text-gray-500 font-bold py-2 px-8 rounded-lg";
 }
 
-function shuffleArray(array) {
-    return [...array].sort(() => Math.random() - 0.5);
+function iniciarTimer() {
+    intervaloTimer = setInterval(() => {
+        tiempoRestante--;
+        const min = Math.floor(tiempoRestante / 60);
+        const seg = tiempoRestante % 60;
+        document.getElementById('timer').textContent = `${min}:${seg < 10 ? '0' : ''}${seg}`;
+        if (tiempoRestante <= 0) finalizarExamen();
+    }, 1000);
 }
-
-// --- TIMER Y RESULTADOS (Mantén tus funciones actuales de Timer y ProcesarResultados) ---
-function iniciarTimer() { /* Tu código actual */ }
-function actualizarDisplayTimer() { /* Tu código actual */ }
-function finalizarExamen() { /* Tu código actual */ }
-function procesarResultados() { /* Tu código actual */ }
-function generarRecomendaciones(stats) { /* Tu código actual */ }
