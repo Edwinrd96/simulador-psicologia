@@ -3971,7 +3971,7 @@ const bancoPrimaria = [
 
 
     {
-        id: 3001,
+        id: 301,
         categoria: "Alfabetización",
         pregunta: "En una evaluación diagnóstica, una maestra de 2do grado identifica que un estudiante se encuentra en la etapa presilábica, escribiendo pseudoletras sin correspondencia sonora. ¿Cuál es la decisión pedagógica más adecuada para propiciar su avance?",
         opciones: [
@@ -3984,7 +3984,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 01-2023. La alfabetización inicial es un proceso constructivo. La enseñanza debe partir de textos significativos (como el nombre propio) para generar conflicto cognitivo y avance hacia la etapa silábica, descartando prácticas mecánicas o derivaciones prematuras sin apoyo pedagógico previo."
     },
     {
-        id: 3002,
+        id: 302,
         categoria: "Evaluación",
         pregunta: "Al finalizar el segundo periodo, los padres de un estudiante de 4to grado reclaman que su hijo tiene 'I' (Iniciado) en varios indicadores de Logro de Lengua Española y exigen que se le asigne 'Logrado' porque él completó todas las tareas en el cuaderno. ¿Cómo debe proceder la maestra?",
         opciones: [
@@ -3997,7 +3997,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 04-2023. El sistema de evaluación es criterial y formativo. Las evidencias (portafolios, rúbricas) justifican el nivel de dominio (L, EP, I). La comunicación con la familia debe ser transparente y orientada a establecer acuerdos para la mejora continua, no a ceder ante presiones."
     },
     {
-        id: 3003,
+        id: 303,
         categoria: "Inclusión",
         pregunta: "Un estudiante de 5to grado con diagnóstico de TDAH tiene dificultades para mantener la atención en tareas prolongadas, dejando frecuentemente las producciones escritas a medias. ¿Cuál es el ajuste razonable más pertinente según el enfoque de educación inclusiva?",
         opciones: [
@@ -4010,7 +4010,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 05-2024. Los Ajustes Razonables y el DUA (Diseño Universal para el Aprendizaje) buscan derribar barreras sin disminuir la expectativa de aprendizaje. Fragmentar la tarea y permitir pausas responde a su necesidad neurobiológica sin excluirlo ni castigarlo."
     },
     {
-        id: 3004,
+        id: 304,
         categoria: "Ética",
         pregunta: "Durante el recreo, dos estudiantes de 6to grado se enfrascan en una pelea física. La maestra interviene y los separa de inmediato sin que haya lesiones graves. Según la normativa disciplinaria, ¿cuál es el siguiente paso correcto?",
         opciones: [
@@ -4023,7 +4023,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ley 136-03 y Manual de Convivencia (OD 22-2023). Se prohíbe la suspensión como primera medida si niega el derecho a la educación (salvo casos gravísimos estipulados). La prioridad es la integridad, el debido proceso (escucha activa), la mediación y las medidas disciplinarias de carácter formativo, no punitivo."
     },
     {
-        id: 3005,
+        id: 305,
         categoria: "Planificación",
         pregunta: "Al diseñar una Unidad de Aprendizaje en 3er grado, la maestra debe asegurar la articulación de las áreas. ¿Cuál es el punto de partida normativo para lograr esta integración con el enfoque por competencias?",
         opciones: [
@@ -4036,7 +4036,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Adecuación Curricular 2023. La Situación de Aprendizaje es la estrategia por excelencia para dar sentido y contexto a los aprendizajes, permitiendo que los estudiantes apliquen saberes de diversas áreas para resolver un problema o alcanzar un producto."
     },
     {
-        id: 3006,
+        id: 306,
         categoria: "Evaluación",
         pregunta: "Al finalizar el grado, un estudiante domina conceptualmente un tema de Matemáticas (sabe las reglas de la división), pero procedimentalmente comete errores constantes y actitudinalmente se rinde rápido. ¿Cómo se debe registrar el Indicador de Logro?",
         opciones: [
@@ -4049,7 +4049,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 04-2023. Una competencia no está 'Lograda' si solo se domina la parte conceptual. Requiere saber, saber hacer y saber ser. Al evidenciar dominio parcial, se valora como En Proceso (EP) para continuar el acompañamiento."
     },
     {
-        id: 3007,
+        id: 307,
         categoria: "Ética",
         pregunta: "Una maestra nota que un estudiante de 1er grado tiene moretones repetidos en los brazos y el niño comenta con temor que 'se portó mal en casa'. ¿Cuál es el deber ético e inexcusable de la docente?",
         opciones: [
@@ -4062,7 +4062,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ley 136-03 (Código del Menor) y protocolos del MINERD. El docente es garante de derechos y tiene la obligación de denunciar sospechas de abuso. Debe hacerse por la vía institucional (Orientación/Dirección) para proteger al menor y evitar revictimización o entorpecimiento legal."
     },
     {
-        id: 3008,
+        id: 308,
         categoria: "Gestión del Aprendizaje",
         pregunta: "Durante una clase de Ciencias de la Naturaleza en 4to grado, los estudiantes muestran apatía e indisciplina porque consideran que el tema 'El Sistema Digestivo' es aburrido. ¿Qué acción pedagógica demuestra una gestión efectiva del aprendizaje?",
         opciones: [
@@ -4075,7 +4075,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Adecuación Curricular (Enfoque Constructivista). El docente es un mediador. La motivación y el clima de aula son responsabilidad compartida. Ante la desmotivación, se debe flexibilizar la estrategia didáctica, promoviendo el rol activo del estudiante."
     },
     {
-        id: 3009,
+        id: 309,
         categoria: "Alfabetización",
         pregunta: "Un niño de 3er grado lee de manera silabeante, lo que afecta drásticamente su comprensión lectora. Al evaluar el caso, la maestra decide implementar estrategias de fluidez. ¿Cuál de las siguientes acciones es la correcta?",
         opciones: [
@@ -4088,7 +4088,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 01-2023 y enfoque de Prácticas Sociales del Lenguaje. La fluidez se logra mediante el modelaje y la repetición lúdica y con propósito (lectura en eco/teatro). Exponerlo al grupo genera ansiedad y retroceso (filtro afectivo alto)."
     },
     {
-        id: 3010,
+        id: 310,
         categoria: "Inclusión",
         pregunta: "En una sección de 6to grado hay un estudiante usuario de silla de ruedas. La clase de Educación Física requiere realizar un circuito de saltos y carreras. ¿Cómo debe proceder el maestro?",
         opciones: [
@@ -4101,7 +4101,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 05-2024. La inclusión exige participación, no solo presencia o roles pasivos. Adaptar la actividad mediante ajustes razonables garantiza su derecho al aprendizaje motor y a la socialización en igualdad de condiciones."
     },
     {
-        id: 3011,
+        id: 311,
         categoria: "Planificación",
         pregunta: "El equipo docente de un centro educativo decide implementar la estrategia de 'Proyectos Participativos de Aula'. ¿Cuál es el rol principal de los estudiantes en el diseño de este tipo de proyecto?",
         opciones: [
@@ -4114,7 +4114,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Adecuación Curricular 2023. Los Proyectos Participativos de Aula (PPA) tienen como esencia la agencia del estudiante. Surgen de las necesidades sentidas del grupo, promoviendo ciudadanía, autonomía y competencias fundamentales."
     },
     {
-        id: 3012,
+        id: 312,
         categoria: "Evaluación",
         pregunta: "Según la Ordenanza 04-2023, la evaluación de las competencias se fundamenta en la recogida de evidencias. ¿Cuál es la herramienta idónea para organizar y registrar el progreso del estudiante de forma sistemática?",
         opciones: [
@@ -4127,7 +4127,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 04-2023. La evaluación por competencias exige pluralidad de técnicas e instrumentos. El portafolio recoge las producciones, y las rúbricas/escalas valoran el nivel de desempeño de manera objetiva frente a los indicadores."
     },
     {
-        id: 3013,
+        id: 313,
         categoria: "Ética",
         pregunta: "Una maestra observa que un padre retira frecuentemente a su hijo al mediodía para ponerlo a trabajar en un negocio informal, afectando gravemente su asistencia y rendimiento. ¿Qué indica el marco legal dominicano?",
         opciones: [
@@ -4140,7 +4140,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ley 136-03. El interés superior del niño y el derecho a la educación priman sobre cualquier autoridad parental. El trabajo infantil que interfiere con la escuela es ilegal y la institución educativa es la primera red legal de protección y alerta."
     },
     {
-        id: 3014,
+        id: 314,
         categoria: "Gestión del Aprendizaje",
         pregunta: "Al abordar la comprensión lectora en 5to grado, el docente nota que los niños decodifican bien, pero no logran inferir información implícita en los textos. ¿Qué estrategia es la más efectiva para superar este obstáculo?",
         opciones: [
@@ -4153,7 +4153,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Enfoque Textual, Funcional y Comunicativo. La inferencia no se desarrolla por mecanicismo (copia/dictado), sino enseñando explícitamente estrategias de comprensión (hacer hipótesis, buscar pistas contextuales, dialogar sobre el texto)."
     },
     {
-        id: 3015,
+        id: 315,
         categoria: "Alfabetización",
         pregunta: "En el 1er ciclo de primaria, un docente observa que algunos estudiantes invierten las letras al escribir (ej. 'b' por 'd'). Según la normativa y el enfoque psicogenético, ¿cómo debe interpretarse este fenómeno en la etapa de apropiación inicial?",
         opciones: [
@@ -4166,7 +4166,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 01-2023. En las etapas iniciales de lectura y escritura (1er ciclo), la inversión de grafías (escritura en espejo) es una etapa evolutiva normal que se va superando mediante experiencias ricas en lectoescritura, no patologizando al niño prematuramente."
     },
     {
-        id: 3016,
+        id: 316,
         categoria: "Planificación",
         pregunta: "La profesora de Ciencias Sociales de 6to grado decide utilizar el Eje Transversal 'Desarrollo Personal y Profesional' en su planificación. ¿Cómo debe evidenciarse este eje de manera efectiva en la secuencia didáctica?",
         opciones: [
@@ -4179,7 +4179,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Adecuación Curricular 2023. Los Ejes Transversales no son temas aislados ni trámites de formato; son grandes problemáticas sociales o temas de desarrollo humano que deben permear y dar contexto a las actividades de aprendizaje de las áreas académicas."
     },
     {
-        id: 3017,
+        id: 317,
         categoria: "Convivencia",
         pregunta: "Un grupo de alumnos de 5to grado excluye sistemáticamente a un compañero recién llegado al país, burlándose de su acento. ¿Qué acción docente se alinea con la disciplina positiva y las normas de convivencia?",
         opciones: [
@@ -4192,7 +4192,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Manual de Convivencia Escolar. El bullying o acoso por xenofobia requiere intervención proactiva y formativa. El círculo de diálogo (práctica restaurativa) aborda la raíz del problema creando conciencia y empatía grupal, en lugar de evadir (cambiar de aula) o aplicar castigos ineficaces."
     },
     {
-        id: 3018,
+        id: 318,
         categoria: "Evaluación",
         pregunta: "Al aplicar la evaluación diagnóstica al inicio del año escolar en 3er grado, la maestra recopila resultados heterogéneos. ¿Cuál es la finalidad normativa principal de esta evaluación?",
         opciones: [
@@ -4205,7 +4205,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 04-2023. La evaluación diagnóstica tiene carácter estrictamente formativo y orientador (nunca sumativo ni calificador). Su fin es obtener datos para la toma de decisiones pedagógicas y la adaptación de la enseñanza."
     },
     {
-        id: 3019,
+        id: 319,
         categoria: "Inclusión",
         pregunta: "Llega al aula de 4to grado un estudiante que presenta mutismo selectivo (habla fluidamente en casa, pero no en la escuela). La planificación exige exposiciones orales individuales. ¿Cómo procede éticamente el docente?",
         opciones: [
@@ -4218,7 +4218,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 05-2024 (Ajustes Razonables). Forzar a un estudiante con mutismo selectivo agrava el trastorno por ansiedad. El DUA permite múltiples formas de acción y expresión; el medio (hablar en público) puede ajustarse si se demuestra el conocimiento del tema (grabación), mientras se trabaja el área afectiva paralelamente."
     },
     {
-        id: 3020,
+        id: 320,
         categoria: "Comportamiento Profesional",
         pregunta: "Se descubre que una maestra de 2do grado completó los registros de grado inventando valoraciones ('L', 'EP', 'I') al final del año porque no sistematizó la evaluación continua. ¿Qué principio normativo y ético está infringiendo gravemente?",
         opciones: [
@@ -4232,7 +4232,7 @@ const bancoPrimaria = [
     },
     
     {
-        id: 3021,
+        id: 321,
         categoria: "Evaluación",
         pregunta: "Una estudiante de 2do grado demuestra una excelente fluidez y comprensión lectora al participar en clase de forma oral, pero cuando la maestra le aplica una prueba escrita de comprensión, la niña se bloquea y deja la hoja en blanco. ¿Qué decisión evaluativa procede según la normativa vigente?",
         opciones: [
@@ -4245,7 +4245,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 04-2023. La evaluación por competencias es multimodal y flexible. El docente debe utilizar una diversidad de técnicas e instrumentos. Si el indicador de logro (comprensión) se evidencia oralmente, exigir exclusivamente la vía escrita penaliza el formato, no la competencia."
     },
     {
-        id: 3022,
+        id: 322,
         categoria: "Inclusión",
         pregunta: "En una aula de 1er grado, un niño con Trastorno del Espectro Autista (TEA) se tapa los oídos, llora y se esconde debajo de la mesa cada vez que suena el timbre del recreo. ¿Cuál es el ajuste razonable primario que debe implementar la maestra?",
         opciones: [
@@ -4258,7 +4258,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 05-2024 (Educación Inclusiva). Las personas con TEA suelen presentar hipersensibilidad sensorial. El Diseño Universal para el Aprendizaje (DUA) y los ajustes razonables exigen modificar el entorno o brindar apoyos (audífonos, anticipación) para eliminar la barrera del entorno, garantizando su bienestar sin excluirlo."
     },
     {
-        id: 3023,
+        id: 323,
         categoria: "Alfabetización",
         pregunta: "En 3er grado, un estudiante escribe sus producciones mezclando letras de molde (imprenta) y cursivas en la misma palabra. Su letra es legible y sus textos tienen coherencia. ¿Cuál debe ser la intervención de la docente?",
         opciones: [
@@ -4271,7 +4271,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 01-2023 (Alfabetización Inicial). El enfoque es funcional y comunicativo. La prioridad es que el estudiante produzca textos con sentido y propósito. La hibridación de letras (imprenta/cursiva) no es un error conceptual, siempre que la escritura cumpla su función comunicativa y sea legible."
     },
     {
-        id: 3024,
+        id: 324,
         categoria: "Planificación",
         pregunta: "Al iniciar el año escolar en 5to grado, la evaluación diagnóstica revela que el 70% del curso no domina la división por una cifra, un pre-requisito para el tema de fracciones contemplado en la primera Unidad de Aprendizaje. ¿Qué debe hacer el maestro?",
         opciones: [
@@ -4284,7 +4284,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Adecuación Curricular 2023. La planificación debe ser flexible y contextualizada. Los resultados de la evaluación diagnóstica tienen carácter vinculante para la toma de decisiones pedagógicas, obligando al docente a nivelar los saberes previos antes de introducir mayores niveles de complejidad."
     },
     {
-        id: 3025,
+        id: 325,
         categoria: "Ética",
         pregunta: "A finales del año escolar, una madre se acerca a la maestra de 4to grado y le ofrece un 'regalo de agradecimiento' a cambio de que le modifique una valoración de 'EP' a 'L' en Matemáticas a su hijo para que pueda estar en el cuadro de honor. ¿Cómo debe proceder la docente?",
         opciones: [
@@ -4297,7 +4297,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Estatuto del Docente y Ética Profesional. El docente debe mantener una conducta intachable, rechazando cualquier intento de soborno o coerción. La evaluación debe basarse estrictamente en el mérito académico (evidencias del registro de grado) y nunca en favores o compensaciones."
     },
     {
-        id: 3026,
+        id: 326,
         categoria: "Gestión del Aprendizaje",
         pregunta: "Durante un trabajo colaborativo en 6to grado, la maestra nota que en un grupo un solo estudiante hace todo el trabajo mientras los demás conversan de otros temas. ¿Qué estrategia pedagógica corrige efectivamente esta dinámica?",
         opciones: [
@@ -4310,7 +4310,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Enfoque Constructivista y Competencia de Trabajo Colaborativo (Adecuación Curricular 2023). El trabajo en grupo no es simplemente 'sentarlos juntos'. Requiere estructurar la interdependencia positiva mediante roles claros, fomentando la corresponsabilidad y la participación equitativa."
     },
     {
-        id: 3027,
+        id: 327,
         categoria: "Convivencia",
         pregunta: "En 3er grado, un alumno constantemente interrumpe la clase hablando en voz alta sin levantar la mano, lo que desconcentra a sus compañeros. En el marco de la disciplina positiva, ¿cuál es la mejor intervención?",
         opciones: [
@@ -4323,7 +4323,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Manual de Convivencia Escolar y OD 22-2023. El conductismo punitivo (humillaciones, exclusión) está prohibido. La disciplina positiva se basa en el establecimiento de rutinas claras, la extinción de conductas disruptivas (no prestando atención al grito) y el refuerzo positivo sistemático de la conducta deseada."
     },
     {
-        id: 3028,
+        id: 328,
         categoria: "Evaluación",
         pregunta: "Durante la entrega de informes de progreso (boletines), varios padres de 1er grado expresan molestia porque no entienden las letras (L, EP, I) y exigen calificaciones numéricas del 1 al 100. ¿Cuál es la respuesta institucional de la maestra?",
         opciones: [
@@ -4336,7 +4336,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 04-2023. La evaluación en el Nivel Primario es cualitativa y criterial (Logrado, En Proceso, Iniciado). La familia es un actor clave, por lo que el docente tiene el deber pedagógico de formarlos en la comprensión del modelo de evaluación por competencias y el valor de las evidencias."
     },
     {
-        id: 3029,
+        id: 329,
         categoria: "Inclusión",
         pregunta: "Una docente de 5to grado tiene en su aula a una estudiante con baja visión severa (no ceguera total). La estudiante se esfuerza, pero no logra copiar a tiempo de la pizarra. ¿Qué ajuste razonable debe aplicarse inmediatamente?",
         opciones: [
@@ -4349,7 +4349,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 05-2024. Los estudiantes con baja visión se benefician de ajustes de acceso (macrotipos, ubicación, contraste, iluminación) y apoyos verbales (DUA). Reducir los indicadores o derivarla a educación especial vulnera su derecho a una educación regular inclusiva y equitativa."
     },
     {
-        id: 3030,
+        id: 330,
         categoria: "Alfabetización",
         pregunta: "En 2do grado, la maestra observa que un estudiante escribe 'elperrocorre' todo junto. Desde la perspectiva de la alfabetización inicial, este fenómeno se conoce como hiposegmentación. ¿Qué actividad ayuda a corregir esto de manera constructiva?",
         opciones: [
@@ -4362,7 +4362,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 01-2023. La hiposegmentación es común cuando el niño aún no diferencia la cadena hablada (que es continua) de la escrita (que requiere blancos). Las estrategias de conciencia léxica (contar palabras oralmente, usar fichas) ayudan a materializar el concepto de 'palabra' antes del trazo."
     },
     {
-        id: 3031,
+        id: 331,
         categoria: "Planificación",
         pregunta: "La maestra de 4to grado desea planificar utilizando el Eje Transversal 'Salud y Bienestar' en el área de Lengua Española. ¿Qué actividad evidencia una correcta integración de este eje según el enfoque por competencias?",
         opciones: [
@@ -4375,7 +4375,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Adecuación Curricular 2023. La integración de los Ejes Transversales debe movilizar las competencias específicas del área. En Lengua Española, el eje debe abordarse produciendo y comprendiendo textos (instructivos, informativos) con propósito y significado."
     },
     {
-        id: 3032,
+        id: 332,
         categoria: "Ética",
         pregunta: "Al terminar su jornada, una maestra de 6to grado escucha a un grupo de sus estudiantes planificando una pelea a la salida, a dos cuadras del recinto escolar. ¿Cuál es la responsabilidad de la docente?",
         opciones: [
@@ -4388,7 +4388,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Código del Menor (Ley 136-03) y Manual de Convivencia. El deber de cuidado y la responsabilidad ética del docente no terminan estrictamente en el portón físico si tiene conocimiento previo de un riesgo inminente a la integridad física de sus estudiantes. Debe alertar a las autoridades correspondientes."
     },
     {
-        id: 3033,
+        id: 333,
         categoria: "Gestión del Aprendizaje",
         pregunta: "La maestra de 2do grado observa que las transiciones entre las asignaturas (ej. de Matemática a Lengua Española) son caóticas; los niños corren, gritan y tardan 15 minutos en acomodarse. ¿Cuál es la solución pedagógica adecuada?",
         opciones: [
@@ -4401,7 +4401,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Criterios de Gestión de Aula. El tiempo pedagógico es valioso. Las transiciones caóticas se deben a la falta de rutinas establecidas. Las dinámicas de anclaje (canciones, conteos) proveen predictibilidad y ayudan a la autorregulación infantil sin recurrir a gritos ni amenazas."
     },
     {
-        id: 3034,
+        id: 334,
         categoria: "Evaluación",
         pregunta: "En 5to grado, el profesor aplica una estrategia de coevaluación tras unas exposiciones. Nota que los estudiantes se califican entre ellos con la máxima puntuación ('Logrado') simplemente por amistad, sin importar los errores. ¿Cómo se corrige esta práctica?",
         opciones: [
@@ -4414,7 +4414,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 04-2023. La coevaluación es obligatoria y desarrolla el pensamiento crítico y ético. No funciona si se deja a la subjetividad total; el docente debe andamiar el proceso entregando instrumentos (rúbricas/listas de cotejo) y enseñando a dar retroalimentación basada en evidencias."
     },
     {
-        id: 3035,
+        id: 335,
         categoria: "Inclusión",
         pregunta: "Un alumno de 3er grado posee Altas Capacidades (superdotación). Termina las tareas en la mitad del tiempo que sus compañeros y luego comienza a interrumpir la clase por aburrimiento. ¿Qué respuesta educativa corresponde?",
         opciones: [
@@ -4440,7 +4440,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Adecuación Curricular 2023. El currículo dominicano es prescriptivo en sus competencias e indicadores. Los libros de texto son medios y recursos de apoyo (mediadores del aprendizaje), pero nunca sustituyen al Diseño Curricular ni determinan la planificación contextualizada."
     },
     {
-        id: 3037,
+        id: 337,
         categoria: "Convivencia",
         pregunta: "En el aula de 4to grado se ha perdido un estuche valioso. Un alumno acusa directamente a otro de haberlo robado basándose en rumores. La situación está generando hostilidad grupal. ¿Qué medida asertiva debe tomar el docente?",
         opciones: [
@@ -4453,7 +4453,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Manual de Convivencia Escolar. El cacheo público de mochilas vulnera la dignidad y privacidad del menor. Las acusaciones sin pruebas (difamación) deben manejarse mediante el debido proceso, indagación discreta y mediación, garantizando la presunción de inocencia y el respeto mutuo."
     },
     {
-        id: 3038,
+        id: 338,
         categoria: "Alfabetización",
         pregunta: "Para iniciar el proceso de alfabetización, un maestro de 1er grado dedica las primeras semanas exclusivamente a que los niños reconozcan que la palabra 'mariposa' tiene cuatro golpes de voz (ma-ri-po-sa) y busquen rimas. ¿Qué habilidad precursora está desarrollando?",
         opciones: [
@@ -4466,7 +4466,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 01-2023. La conciencia fonológica (capacidad de identificar y manipular los sonidos del lenguaje oral) es el principal predictor del éxito en la alfabetización inicial. Jugar con rimas y segmentación silábica prepara el cerebro para la decodificación posterior."
     },
     {
-        id: 3039,
+        id: 339,
         categoria: "Evaluación",
         pregunta: "Un estudiante de 6to grado de un contexto socioeconómico vulnerable no entregó el informe de investigación final porque requería acceso a internet y su familia no tiene recursos. El resto del curso sí lo entregó. ¿Cómo procede el docente desde un enfoque de equidad?",
         opciones: [
@@ -4479,7 +4479,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 04-2023 y principios de Equidad e Inclusión. La evaluación no debe penalizar la desigualdad socioeconómica. Si el estudiante carece de medios en casa, la escuela debe compensar esa brecha garantizando el acceso a los recursos (laboratorio TIC o biblioteca) para que pueda demostrar su competencia."
     },
     {
-        id: 3040,
+        id: 340,
         categoria: "Comportamiento Profesional",
         pregunta: "Al entregar una prueba de Matemática corregida en 5to grado, un estudiante levanta la mano y le demuestra al profesor, con respeto y argumentos lógicos, que un problema calificado como incorrecto estaba, en realidad, bien resuelto mediante otro método. ¿Cuál es la actitud ética del docente?",
         opciones: [
@@ -4493,7 +4493,7 @@ const bancoPrimaria = [
     },
 
     {
-        id: 3041,
+        id: 341,
         categoria: "Evaluación",
         pregunta: "Al corregir los cuadernos de 3er grado, la maestra nota que un estudiante ha logrado resolver problemas matemáticos complejos, pero su caligrafía es muy deficiente y hay tachaduras. ¿Cómo debe proceder la valoración del indicador de resolución de problemas según la Ordenanza 04-2023?",
         opciones: [
@@ -4506,7 +4506,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 04-2023. La evaluación por competencias exige valorar cada competencia según sus propios criterios. Si el indicador evalúa razonamiento lógico-matemático, la caligrafía no debe penalizar ese logro específico; esta última debe ser abordada desde la competencia comunicativa."
     },
     {
-        id: 3042,
+        id: 342,
         categoria: "Alfabetización",
         pregunta: "Una maestra de 1er grado implementa la 'Lectura de Etiquetas' de productos comunes que los niños traen de casa. ¿Cuál es el propósito pedagógico fundamental de esta actividad según la Ordenanza 01-2023?",
         opciones: [
@@ -4519,7 +4519,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 01-2023. El enfoque funcional y comunicativo parte de textos reales. Leer etiquetas permite al niño en etapa inicial hacer predicciones sobre el contenido del texto basándose en el contexto (lectura no convencional), un paso previo vital para la alfabetización."
     },
     {
-        id: 3043,
+        id: 343,
         categoria: "Inclusión",
         pregunta: "Un estudiante de 4to grado con discapacidad motora en las manos utiliza un software de dictado por voz para realizar sus producciones de Lengua Española. ¿Cómo debe ser considerada esta acción por el docente?",
         opciones: [
@@ -4532,7 +4532,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 05-2024. Los ajustes razonables incluyen el uso de tecnologías de apoyo. La competencia es 'producción escrita' (capacidad de organizar ideas y sintaxis), no el acto motor del trazo, por lo que el dictado por voz es una evidencia válida."
     },
     {
-        id: 3044,
+        id: 344,
         categoria: "Ética",
         pregunta: "La dirección del centro le solicita a una maestra de 5to grado que imparta tutorías remuneradas los sábados a sus propios estudiantes que están en riesgo de reprobar. ¿Es esta práctica éticamente correcta según la normativa docente dominicana?",
         opciones: [
@@ -4545,7 +4545,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Código de Ética y Estatuto Docente. El cobro por tutorías a los propios alumnos del docente está prohibido por ética profesional, ya que puede condicionar la evaluación objetiva y crear privilegios basados en la capacidad económica de la familia."
     },
     {
-        id: 3045,
+        id: 345,
         categoria: "Planificación",
         pregunta: "Al planificar una unidad sobre 'La Comunidad' en 2do grado, la maestra decide realizar una visita al ayuntamiento local. ¿A qué componente del diseño curricular pertenece esta actividad?",
         opciones: [
@@ -4558,7 +4558,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Adecuación Curricular 2023. Las visitas o excursiones pedagógicas son estrategias didácticas que permiten el aprendizaje por descubrimiento y la inserción del estudiante en el entorno, facilitando el aprendizaje significativo."
     },
     {
-        id: 3046,
+        id: 346,
         categoria: "Evaluación",
         pregunta: "Un estudiante de 6to grado ha faltado al 25% de las clases de un periodo por enfermedad justificada, pero ha entregado todos los trabajos. ¿Qué establece la normativa sobre la promoción respecto a la asistencia?",
         opciones: [
@@ -4571,7 +4571,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 04-2023. Aunque se requiere un 80% de asistencia, las ausencias justificadas (salud) deben ser tratadas con flexibilidad pedagógica, priorizando la demostración de las competencias sobre el conteo punitivo de días."
     },
     {
-        id: 3047,
+        id: 347,
         categoria: "Inclusión",
         pregunta: "En 3er grado hay una estudiante con Albinismo que sufre de fotofobia (sensibilidad extrema a la luz). ¿Cuál es la medida de gestión de aula más adecuada para ella?",
         opciones: [
@@ -4584,7 +4584,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 05-2024. Los ajustes razonables para estudiantes con condiciones visuales específicas incluyen la gestión del entorno (iluminación) y el permiso para usar apoyos personales (lentes/gorra) que garanticen su comodidad y acceso al aprendizaje."
     },
     {
-        id: 3048,
+        id: 348,
         categoria: "Gestión del Aprendizaje",
         pregunta: "Un grupo de 5to grado muestra dificultades para trabajar en equipo, terminando siempre en discusiones. La maestra decide implementar la estrategia de 'Mediación de Pares'. ¿Qué busca lograr primordialmente?",
         opciones: [
@@ -4597,7 +4597,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Manual de Convivencia y Adecuación Curricular (Competencia Ética y Ciudadana). La mediación de pares es una estrategia formativa que empodera a los estudiantes en la cultura de paz y resolución pacífica de conflictos."
     },
     {
-        id: 3049,
+        id: 349,
         categoria: "Alfabetización",
         pregunta: "Durante la etapa de escritura silábica-alfabética, un niño escribe 'MAIPOSA' (omitiendo la 'R'). ¿Cómo debe reaccionar la maestra ante este 'error'?",
         opciones: [
@@ -4610,7 +4610,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 01-2023. En la alfabetización inicial, las omisiones son parte del proceso de construcción del sistema de escritura. La retroalimentación debe ser constructiva, promoviendo la reflexión sobre el sonido-grafía (conciencia fonológica) sin penalizar el error como fracaso."
     },
     {
-        id: 3050,
+        id: 350,
         categoria: "Planificación",
         pregunta: "Al seleccionar los medios y recursos para una unidad de Ciencias de la Naturaleza, ¿cuál debe ser el criterio principal de la maestra de 4to grado?",
         opciones: [
@@ -4623,7 +4623,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Adecuación Curricular 2023. Los recursos deben servir como mediadores del aprendizaje. Su selección depende de la intención pedagógica y de su capacidad para movilizar competencias de manera efectiva en el contexto específico de los alumnos."
     },
     {
-        id: 3051,
+        id: 351,
         categoria: "Evaluación",
         pregunta: "Un docente de 6to grado decide utilizar el 'Registro Anecdótico' para evaluar. ¿Qué tipo de información debe asentar en este instrumento para que sea válido profesionalmente?",
         opciones: [
@@ -4636,7 +4636,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 04-2023. El registro anecdótico es una técnica de observación. Su validez radica en la objetividad de la descripción del hecho (incidente crítico o avance notable) para luego realizar un análisis pedagógico que oriente la intervención."
     },
     {
-        id: 3052,
+        id: 352,
         categoria: "Inclusión",
         pregunta: "Llega un estudiante de 2do grado que habla una lengua extranjera y no domina el español. ¿Cuál es la primera acción que debe tomar la maestra de grado?",
         opciones: [
@@ -4649,7 +4649,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 05-2024 y Enfoque de Derechos. La barrera lingüística no debe ser causa de exclusión. El docente debe adaptar su comunicación y fomentar un ambiente de respeto a la identidad cultural del estudiante mientras facilita la adquisición del español."
     },
     {
-        id: 3053,
+        id: 353,
         categoria: "Alfabetización",
         pregunta: "En una actividad de 'Escritura Colectiva' en 1er grado, la maestra escribe en la pizarra lo que los niños le dictan sobre un paseo. ¿Qué está modelando principalmente con esta estrategia?",
         opciones: [
@@ -4662,7 +4662,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 01-2023. La escritura a través del maestro es una estrategia potente de alfabetización donde el docente actúa como 'escriba', permitiendo que los niños se centren en la composición del mensaje mientras observan las convenciones del sistema escrito."
     },
     {
-        id: 3054,
+        id: 354,
         categoria: "Planificación",
         pregunta: "Al diseñar una 'Situación de Aprendizaje', una maestra incluye: el contexto, el problema o reto, la estrategia, las actividades y el producto esperado. ¿Qué elemento falta para que esté completa según la Adecuación Curricular?",
         opciones: [
@@ -4675,7 +4675,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Adecuación Curricular 2023. Una Situación de Aprendizaje debe tener una intención pedagógica clara, conectando el reto del contexto con las competencias que se pretenden desarrollar (el 'para qué')."
     },
     {
-        id: 3055,
+        id: 355,
         categoria: "Ética",
         pregunta: "Una maestra de 3er grado se da cuenta de que el refrigerio escolar llegó en mal estado (leche cortada). ¿Cuál es su acción inmediata según su rol profesional?",
         opciones: [
@@ -4688,7 +4688,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ley 136-03 y protocolos de salud escolar. El docente tiene un deber de cuidado sobre la salud física de sus estudiantes. Distribuir alimentos en mal estado es una negligencia grave contra la integridad del menor."
     },
     {
-        id: 3056,
+        id: 356,
         categoria: "Evaluación",
         pregunta: "En 4to grado, la maestra utiliza la 'Autoevaluación'. Un estudiante que no trabajó nada se califica con la nota máxima. ¿Qué debe hacer la maestra para que esta estrategia sea efectiva?",
         opciones: [
@@ -4701,7 +4701,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 04-2023. La autoevaluación es un proceso de metacognición. Cuando no coincide con la realidad, el docente debe intervenir como mediador para que el estudiante aprenda a valorar su propio desempeño con honestidad basándose en criterios y evidencias."
     },
     {
-        id: 3057,
+        id: 357,
         categoria: "Gestión del Aprendizaje",
         pregunta: "Para trabajar la resolución de conflictos en 6to grado, la maestra propone un 'Juego de Roles' donde los estudiantes representan una discusión por un turno de juego. ¿Cuál es la ventaja pedagógica de esta técnica?",
         opciones: [
@@ -4714,7 +4714,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Estrategias de aprendizaje (Adecuación Curricular). El juego de roles es una estrategia de aprendizaje socioemocional que permite el ensayo de conductas sociales y el desarrollo de la competencia comunicativa y ciudadana."
     },
     {
-        id: 3058,
+        id: 358,
         categoria: "Inclusión",
         pregunta: "Un estudiante de 1er grado presenta dificultades severas de lenguaje oral (dislalia). Los compañeros se burlan cuando habla. ¿Qué acción debe priorizar la maestra?",
         opciones: [
@@ -4727,7 +4727,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 05-2024 y Manual de Convivencia. La inclusión implica eliminar barreras actitudinales (la burla) y brindar apoyos específicos. La maestra debe ser modelo de aceptación y facilitadora de apoyos externos necesarios."
     },
     {
-        id: 3059,
+        id: 359,
         categoria: "Planificación",
         pregunta: "La maestra de 5to grado integra el uso de tablets proporcionadas por el MINERD para que los estudiantes investiguen sobre el relieve dominicano. ¿Bajo qué competencia fundamental se ampara principalmente esta acción?",
         opciones: [
@@ -4740,7 +4740,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Adecuación Curricular 2023. El uso de herramientas digitales para la investigación, selección de información y resolución de problemas está directamente vinculado a la Competencia Científica y Tecnológica."
     },
     {
-        id: 3060,
+        id: 360,
         categoria: "Evaluación",
         pregunta: "Al finalizar un proyecto sobre 'Plantas Medicinales' en 2do grado, los estudiantes presentan un huerto escolar. ¿Qué tipo de evaluación se está realizando en este momento de cierre?",
         opciones: [
@@ -4754,7 +4754,7 @@ const bancoPrimaria = [
     },
 
     {
-        id: 3061,
+        id: 361,
         categoria: "Evaluación",
         pregunta: "En 4to grado, un docente utiliza una rúbrica para evaluar una exposición. Un estudiante cumple con el contenido técnico, pero muestra mucha inseguridad y lenguaje corporal retraído. El indicador a evaluar es: 'Expresa sus ideas con claridad y seguridad'. ¿Cuál es la valoración correcta?",
         opciones: [
@@ -4767,7 +4767,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Adecuación Curricular 2023 y Ordenanza 04-2023. Las competencias son integrales. Si el indicador especifica 'seguridad', y el estudiante muestra dificultades en ese aspecto, no ha alcanzado el nivel de logro total, por lo que corresponde 'En Proceso' con su debida retroalimentación orientadora."
     },
     {
-        id: 3062,
+        id: 362,
         categoria: "Alfabetización",
         pregunta: "Una maestra de 1er grado nota que varios estudiantes escriben de derecha a izquierda y de abajo hacia arriba. Según la Ordenanza 01-2023, ¿cuál es la intervención adecuada?",
         opciones: [
@@ -4780,7 +4780,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 01-2023. La direccionalidad es una convención del sistema de escritura que se adquiere mediante la práctica y el modelado del docente en situaciones reales de escritura, no es una patología en las etapas iniciales."
     },
     {
-        id: 3063,
+        id: 363,
         categoria: "Inclusión",
         pregunta: "En una clase de 3er grado, un estudiante con discapacidad auditiva parcial (hipoacusia) se pierde constantemente en las explicaciones orales. ¿Qué ajuste de acceso es prioritario?",
         opciones: [
@@ -4793,7 +4793,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 05-2024. La inclusión efectiva requiere eliminar barreras de comunicación. El apoyo visual y la ubicación estratégica (proximidad al emisor) son ajustes razonables esenciales para estudiantes con dificultades auditivas."
     },
     {
-        id: 3064,
+        id: 364,
         categoria: "Ética",
         pregunta: "Un docente de 6to grado recibe un mensaje de WhatsApp de un padre criticando de forma ofensiva su método de enseñanza. ¿Cuál es la respuesta profesional correcta?",
         opciones: [
@@ -4806,7 +4806,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Manual de Convivencia y Estatuto del Docente. El docente debe ser mediador y mantener la compostura ética. Los conflictos con las familias deben resolverse por los canales institucionales presenciales y formales, evitando la escalada de agresión en medios informales."
     },
     {
-        id: 3065,
+        id: 365,
         categoria: "Planificación",
         pregunta: "Al planificar el área de Educación Artística en 5to grado, la maestra decide que los estudiantes creen un mural sobre la protección del medio ambiente. ¿Qué estrategia de enseñanza está aplicando?",
         opciones: [
@@ -4819,7 +4819,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Adecuación Curricular 2023. La elaboración de un mural permite la socialización, el trabajo colaborativo y la expresión de saberes a través del arte, conectando con el eje transversal ambiental de forma práctica."
     },
     {
-        id: 3066,
+        id: 366,
         categoria: "Evaluación",
         pregunta: "Un niño de 2do grado ha logrado todos los indicadores de Matemáticas, excepto uno relacionado con la resolución de problemas de suma con reagrupación. ¿Qué calificación final debe aparecer en el reporte de progreso?",
         opciones: [
@@ -4832,7 +4832,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 04-2023. El sistema de evaluación en primaria es criterial. Si hay un indicador clave no logrado, la valoración global del periodo refleja que el proceso de aprendizaje aún no se ha completado satisfactoriamente."
     },
     {
-        id: 3067,
+        id: 367,
         categoria: "Alfabetización",
         pregunta: "En la fase de alfabetización, un docente utiliza el 'Banco de Palabras' del aula para que los niños de 1er grado comparen palabras largas y cortas (ej. 'sol' vs 'mariposa'). ¿Qué objetivo persigue?",
         opciones: [
@@ -4845,7 +4845,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 01-2023. Es común que los niños piensen que objetos grandes deben tener palabras largas (realismo nominal). Comparar palabras ayuda a romper esta idea y a centrarse en las propiedades del sistema de escritura."
     },
     {
-        id: 3068,
+        id: 368,
         categoria: "Inclusión",
         pregunta: "Un estudiante de 5to grado suele terminar sus tareas muy rápido y se pone a dibujar de forma excelente, pero se niega a participar en las actividades de grupo de Ciencias Sociales. ¿Cuál es el enfoque correcto?",
         opciones: [
@@ -4858,7 +4858,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 05-2024 (DUA). El docente debe aprovechar los intereses y talentos (fortalezas) del estudiante para motivar su participación en áreas donde muestra resistencia, fomentando la inclusión social a través de su capacidad creativa."
     },
     {
-        id: 3069,
+        id: 369,
         categoria: "Gestión del Aprendizaje",
         pregunta: "Durante una actividad de laboratorio en 6to grado, se rompe un instrumento por negligencia de un estudiante que estaba jugando. ¿Cuál es la consecuencia formativa más coherente?",
         opciones: [
@@ -4871,7 +4871,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Manual de Convivencia y OD 22-2023. Las medidas disciplinarias deben ser formativas y restaurativas. La sanción debe estar vinculada al hecho y promover la responsabilidad y el cuidado del bien común, no solo el castigo."
     },
     {
-        id: 3070,
+        id: 370,
         categoria: "Evaluación",
         pregunta: "Una maestra de 3er grado utiliza la técnica de 'Observación' durante una dinámica grupal. ¿Cuál de estos instrumentos es el más adecuado para registrar el desempeño individual de forma objetiva?",
         opciones: [
@@ -4884,7 +4884,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 04-2023. La observación sistemática requiere de instrumentos que den rigor a la evaluación. La lista de cotejo permite verificar la presencia o ausencia de rasgos específicos alineados a los indicadores de logro."
     },
     {
-        id: 3071,
+        id: 371,
         categoria: "Planificación",
         pregunta: "En la Adecuación Curricular 2023, ¿cuál es la diferencia principal entre una Competencia Fundamental y una Competencia Específica?",
         opciones: [
@@ -4897,7 +4897,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Adecuación Curricular 2023. Las Competencias Fundamentales (ej. Ética y Ciudadana, Comunicativa) atraviesan todo el currículo. Las Específicas son la traducción de esas intenciones al campo del saber de cada asignatura (Lengua Española, Matemática, etc.)."
     },
     {
-        id: 3072,
+        id: 372,
         categoria: "Ética",
         pregunta: "Una docente se entera por un rumor que una colega del mismo grado está hablando mal de ella con los padres. ¿Cuál es el paso correcto según el compromiso profesional?",
         opciones: [
@@ -4910,7 +4910,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Estatuto Docente y Código de Ética. Los conflictos entre pares deben manejarse con madurez, respeto y siguiendo las vías de comunicación interna, priorizando siempre la armonía del clima escolar por el bienestar de los alumnos."
     },
     {
-        id: 3073,
+        id: 373,
         categoria: "Alfabetización",
         pregunta: "Al enseñar a leer en 1er grado, el docente prioriza que los niños comprendan primero el mensaje de un cuento antes de analizar las letras individuales. ¿A qué enfoque responde esto?",
         opciones: [
@@ -4923,7 +4923,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 01-2023. El MINERD promueve un enfoque donde el texto es la unidad de sentido. Se busca que el niño entienda para qué sirve leer y qué dice el texto antes de pasar al análisis de los componentes mínimos (letras/sílabas)."
     },
     {
-        id: 3074,
+        id: 374,
         categoria: "Inclusión",
         pregunta: "Un estudiante de 4to grado tiene dificultades de aprendizaje persistentes que no mejoran con los ajustes razonables del docente. ¿Cuál es el procedimiento administrativo a seguir?",
         opciones: [
@@ -4936,7 +4936,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 05-2024. Cuando los ajustes de aula no son suficientes, se debe activar la ruta de apoyo institucional para realizar una evaluación profunda y, si aplica, diseñar un Plan de Apoyo a la Diversidad."
     },
     {
-        id: 3075,
+        id: 375,
         categoria: "Gestión del Aprendizaje",
         pregunta: "Para una clase sobre 'El Ciclo del Agua', el docente organiza a los niños en semicírculo para ver un experimento. ¿Por qué es importante la organización del espacio físico?",
         opciones: [
@@ -4949,7 +4949,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Criterios de Gestión de Aula. El ambiente de aprendizaje es un 'tercer maestro'. La disposición de los muebles y estudiantes influye directamente en la atención y en el tipo de interacción social que se genera durante la clase."
     },
     {
-        id: 3076,
+        id: 376,
         categoria: "Evaluación",
         pregunta: "Según la Ordenanza 04-2023, ¿cuándo debe realizarse la evaluación formativa?",
         opciones: [
@@ -4962,7 +4962,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 04-2023. La evaluación formativa es continua y procesual. Su objetivo no es poner una nota, sino ofrecer retroalimentación constante al estudiante y al docente para mejorar el aprendizaje en marcha."
     },
     {
-        id: 3077,
+        id: 377,
         categoria: "Alfabetización",
         pregunta: "Un niño de 2do grado escribe 'CASA' como 'KSA'. Desde el punto de vista de la alfabetización inicial, ¿cómo se valora esto?",
         opciones: [
@@ -4975,7 +4975,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 01-2023. La escritura es un proceso constructivo. El uso de la 'K' por 'C' demuestra que el niño entiende la relación fonema-grafema. La ortografía convencional es una meta posterior que se trabaja con la lectura frecuente de textos."
     },
     {
-        id: 3078,
+        id: 378,
         categoria: "Ética",
         pregunta: "Una maestra observa que un colega utiliza castigos físicos (reglazos en la mano) con sus estudiantes. ¿Cuál es su obligación legal?",
         opciones: [
@@ -4988,7 +4988,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ley 136-03 y Ordenanza 22-2023. El maltrato físico es una violación a los derechos fundamentales del niño. El docente que presencia o conoce de estos hechos tiene el deber legal de denunciar para proteger la integridad de los menores."
     },
     {
-        id: 3079,
+        id: 379,
         categoria: "Planificación",
         pregunta: "Al planificar por competencias, ¿qué papel juegan los 'Contenidos'?",
         opciones: [
@@ -5001,7 +5001,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Adecuación Curricular 2023. En el enfoque por competencias, los contenidos no se enseñan por sí mismos, sino como herramientas para que el estudiante aprenda a actuar y resolver problemas en la realidad."
     },
     {
-        id: 3080,
+        id: 380,
         categoria: "Evaluación",
         pregunta: "En 5to grado, tras un examen, el docente nota que el 90% del curso fracasó en una pregunta específica. ¿Qué debe hacer el docente?",
         opciones: [
@@ -5015,9 +5015,8 @@ const bancoPrimaria = [
     },
 
 
-
     {
-        id: 3081,
+        id: 381,
         categoria: "Evaluación",
         pregunta: "Un docente de 4to grado aplica una técnica de 'Desempeño' solicitando a los estudiantes que realicen un mapa conceptual sobre el relieve. ¿Qué ventaja ofrece este instrumento frente a una prueba de selección múltiple?",
         opciones: [
@@ -5030,7 +5029,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 04-2023. Los mapas conceptuales son instrumentos de evaluación de desempeño que evidencian procesos cognitivos de alto nivel, como la síntesis y la organización del conocimiento, fundamentales en el enfoque por competencias."
     },
     {
-        id: 3082,
+        id: 382,
         categoria: "Alfabetización",
         pregunta: "En 1er grado, durante la 'Lectura Compartida', la maestra señala con el dedo cada palabra mientras lee en voz alta un texto ampliado. ¿Qué convención de la lengua escrita está reforzando?",
         opciones: [
@@ -5043,7 +5042,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 01-2023. El seguimiento de la lectura con el dedo ayuda a los niños en etapa inicial a comprender que cada segmento de voz corresponde a un segmento escrito (conciencia de la palabra) y refuerza la direccionalidad izquierda-derecha."
     },
     {
-        id: 3083,
+        id: 383,
         categoria: "Inclusión",
         pregunta: "Se integra a un aula de 5to grado un estudiante con Trastorno por Déficit de Atención con Hiperactividad (TDAH). ¿Qué estrategia de gestión de aula es más efectiva para apoyar su aprendizaje?",
         opciones: [
@@ -5056,7 +5055,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 05-2024. El apoyo a estudiantes con TDAH requiere ajustes en la metodología (instrucciones breves) y en el ambiente (control de estímulos) para facilitar su autorregulación y enfoque en la tarea."
     },
     {
-        id: 3084,
+        id: 384,
         categoria: "Ética",
         pregunta: "Un docente observa que un grupo de padres ha creado un grupo de chat donde se difunden noticias falsas sobre las vacunas escolares. ¿Cuál es el rol del docente ante esta situación?",
         opciones: [
@@ -5069,7 +5068,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Rol de la Escuela y la Comunidad. El docente es un referente social y promotor de la salud. Ante la desinformación que afecta el bienestar estudiantil, debe propiciar canales institucionales de orientación y diálogo basados en la evidencia científica."
     },
     {
-        id: 3085,
+        id: 385,
         categoria: "Planificación",
         pregunta: "Al diseñar una Situación de Aprendizaje, el docente parte de un problema real: 'La acumulación de basura en el patio del centro'. ¿Qué componente curricular se moviliza prioritariamente con este reto?",
         opciones: [
@@ -5082,7 +5081,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Adecuación Curricular 2023. Las situaciones de aprendizaje vinculadas a problemas del entorno son el escenario ideal para desarrollar competencias transversales, en este caso, la responsabilidad ambiental y el cuidado de la salud."
     },
     {
-        id: 3086,
+        id: 386,
         categoria: "Evaluación",
         pregunta: "Un estudiante de 3er grado muestra un excelente desempeño en las actividades diarias, pero en la prueba trimestral escrita se bloquea y reprueba. Según la Ordenanza 04-2023, ¿cuál debe ser la decisión del docente?",
         opciones: [
@@ -5095,7 +5094,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 04-2023. La evaluación es procesual y continua. Un solo instrumento (la prueba escrita) no puede anular las evidencias acumuladas durante todo el proceso de aprendizaje que demuestran el logro de las competencias."
     },
     {
-        id: 3087,
+        id: 387,
         categoria: "Inclusión",
         pregunta: "Una niña de 2do grado presenta una timidez extrema que le impide hablar frente a sus compañeros. ¿Cómo debe evaluarse su competencia comunicativa oral?",
         opciones: [
@@ -5108,7 +5107,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 05-2024. Los ajustes razonables también aplican a barreras socioemocionales. El docente debe diversificar los medios para que el estudiante demuestre lo que sabe sin que su condición emocional bloquee la evaluación de la competencia."
     },
     {
-        id: 3088,
+        id: 388,
         categoria: "Gestión del Aprendizaje",
         pregunta: "En una clase de 6to grado, los estudiantes están muy inquietos porque es el último periodo del viernes. ¿Qué acción de gestión de aula es más productiva?",
         opciones: [
@@ -5121,7 +5120,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Estrategias de Gestión de Aula. Un docente efectivo reconoce los ritmos biológicos y niveles de energía del grupo, adaptando la metodología para mantener el enganche pedagógico sin recurrir a medidas punitivas ineficaces."
     },
     {
-        id: 3089,
+        id: 389,
         categoria: "Alfabetización",
         pregunta: "Un docente utiliza el 'Nombre Propio' de cada niño para iniciar actividades de lectura y escritura en 1er grado. ¿Por qué es esta una estrategia recomendada por la Ordenanza 01-2023?",
         opciones: [
@@ -5134,7 +5133,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 01-2023. El nombre propio es el primer texto que un niño reconoce y desea escribir. Sirve como 'fuente de información' confiable para identificar letras que luego encontrará en otras palabras, facilitando el proceso de alfabetización inicial."
     },
     {
-        id: 3090,
+        id: 390,
         categoria: "Planificación",
         pregunta: "Al final de cada unidad, una maestra de 5to grado dedica una sesión a que los estudiantes piensen sobre 'qué aprendieron' y 'cómo lo aprendieron'. ¿Qué proceso está fomentando?",
         opciones: [
@@ -5147,7 +5146,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Adecuación Curricular 2023. La metacognición permite que el estudiante tome conciencia de sus propios procesos de aprendizaje, identifique sus fortalezas y áreas de mejora, lo cual es clave para el 'aprender a aprender'."
     },
     {
-        id: 3091,
+        id: 391,
         categoria: "Evaluación",
         pregunta: "Según el registro de grado actual, si un indicador de logro aparece tres veces en diferentes periodos, ¿cómo se determina la valoración final de ese indicador?",
         opciones: [
@@ -5160,7 +5159,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Instructivo del Registro de Grado / Ordenanza 04-2023. La evaluación es sumativa al final del proceso. Lo que importa es el nivel de competencia que el estudiante demuestra al concluir el año o la unidad, valorando su progreso."
     },
     {
-        id: 3092,
+        id: 392,
         categoria: "Inclusión",
         pregunta: "En 4to grado hay un estudiante con discapacidad intelectual leve. El grupo está trabajando la división de tres cifras, pero él aún tiene dificultades con la resta. ¿Cómo debe proceder el docente?",
         opciones: [
@@ -5173,7 +5172,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 05-2024. La inclusión no es que todos hagan lo mismo al mismo tiempo, sino que cada estudiante reciba los apoyos y adaptaciones (ajustes razonables) necesarios para progresar según su nivel y posibilidades."
     },
     {
-        id: 3093,
+        id: 393,
         categoria: "Ética",
         pregunta: "Una maestra encuentra a un estudiante llorando porque otro compañero le envió mensajes insultantes por redes sociales durante el fin de semana. ¿Cuál es el protocolo de actuación?",
         opciones: [
@@ -5186,7 +5185,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 22-2023 y Ley 136-03. El ciberacoso es una falta que afecta la convivencia escolar y el bienestar del menor. La institución debe intervenir independientemente de que el origen haya sido digital o fuera de horario."
     },
     {
-        id: 3094,
+        id: 394,
         categoria: "Alfabetización",
         pregunta: "Un docente de 2do grado organiza 'Tutorías de Pares' donde niños que ya leen fluidamente ayudan a los que aún están en proceso. ¿Qué beneficio pedagógico tiene esto?",
         opciones: [
@@ -5199,7 +5198,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Enfoque Histórico-Cultural (Vygotsky) / Adecuación Curricular. La interacción entre pares en la 'Zona de Desarrollo Próximo' facilita el andamiaje del aprendizaje y promueve valores de colaboración y solidaridad."
     },
     {
-        id: 3095,
+        id: 395,
         categoria: "Planificación",
         pregunta: "En la planificación docente, ¿qué diferencia a un 'Recurso' de un 'Medio' didáctico?",
         opciones: [
@@ -5212,7 +5211,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Diseño Curricular Dominicano. Es fundamental distinguir que cualquier elemento del contexto puede ser un recurso pedagógico si el docente le da una intención clara para facilitar el aprendizaje."
     },
     {
-        id: 3096,
+        id: 396,
         categoria: "Evaluación",
         pregunta: "Un docente de Educación Física nota que un estudiante tiene una condición física que le impide correr largas distancias. ¿Cómo debe evaluar la competencia de aptitud física?",
         opciones: [
@@ -5225,7 +5224,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 05-2024 y Enfoque de Derechos. La evaluación en Educación Física debe ser inclusiva. La competencia se mide en relación con el punto de partida y las capacidades del individuo, no por comparación con atletas de alto rendimiento."
     },
     {
-        id: 3097,
+        id: 397,
         categoria: "Gestión del Aprendizaje",
         pregunta: "Durante una lluvia intensa, el ruido en el techo de zinc impide que los niños escuchen la explicación. ¿Qué decisión de gestión de aula es la más acertada?",
         opciones: [
@@ -5238,7 +5237,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Flexibilidad Pedagógica. Un buen gestor de aula reacciona ante imprevistos del entorno, ajustando la dinámica para asegurar que el tiempo escolar siga siendo productivo a pesar de las interferencias externas."
     },
     {
-        id: 3098,
+        id: 398,
         categoria: "Alfabetización",
         pregunta: "En 1er grado, la maestra utiliza 'Rimas' y 'Trabalenguas' constantemente. ¿Qué dimensión del lenguaje está trabajando principalmente?",
         opciones: [
@@ -5251,7 +5250,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ordenanza 01-2023. El juego con los sonidos del lenguaje (conciencia fonológica) es el paso previo y necesario para que el niño entienda cómo se relacionan los sonidos con las letras (principio alfabético)."
     },
     {
-        id: 3099,
+        id: 399,
         categoria: "Ética",
         pregunta: "Un docente se entera de que un estudiante de su curso no está asistiendo porque tiene que cuidar a sus hermanos menores mientras su madre trabaja. ¿Cuál es su deber?",
         opciones: [
@@ -5264,7 +5263,7 @@ const bancoPrimaria = [
         explicacion: "Base Legal: Ley 136-03 y Código del Menor. El docente es garante de derechos. Ante una situación de riesgo social o vulneración del derecho a la educación (trabajo infantil o roles parentales inadecuados), debe activar las alarmas institucionales."
     },
     {
-        id: 3100,
+        id: 400,
         categoria: "Evaluación",
         pregunta: "La Adecuación Curricular 2023 establece que la evaluación debe ser 'Criterial'. ¿Qué significa esto?",
         opciones: [
@@ -5275,6 +5274,919 @@ const bancoPrimaria = [
         ],
         respuestaCorrecta: 1,
         explicacion: "Base Legal: Adecuación Curricular 2023 / Ordenanza 04-2023. La evaluación criterial busca objetividad. El éxito del estudiante se mide por cuánto se acerca al indicador de logro esperado para su grado y edad, eliminando la competencia insana entre pares."
+    },
+
+    {
+        id: 401,
+        categoria: "Gestión del Aprendizaje",
+        pregunta: "Durante una actividad de producción escrita en 4to grado, un estudiante interrumpe constantemente haciendo ruidos y levantándose de su asiento, afectando la concentración del grupo. El docente ya ha intentado redireccionarlo sin éxito. ¿Cuál es la decisión pedagógica y de gestión de aula más apropiada según el enfoque restaurativo?",
+        opciones: [
+            "A) Retirarle el derecho al recreo ese día para que comprenda que sus acciones tienen consecuencias directas sobre sus privilegios.",
+            "B) Dialogar con el estudiante en privado para identificar qué necesidad o barrera le impide concentrarse, y asignarle un rol de liderazgo o responsabilidad en la dinámica (ej. monitor de materiales) para canalizar su energía.",
+            "C) Referirlo inmediatamente a la unidad de Orientación y Psicología, ya que las interrupciones recurrentes escapan de la responsabilidad pedagógica del maestro de aula.",
+            "D) Restarle puntos en el indicador de 'Participación ciudadana' del registro de grado, advirtiéndole frente al grupo para que sirva de escarmiento."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Manual de Convivencia (OD 22-2023) y Gestión de Aula. Castigar con el recreo o bajar puntos académicos por disciplina son prácticas prohibidas y punitivas. Derivar a orientación es una evasión del rol docente de primer nivel. La disciplina positiva busca el diálogo, identificar la causa (aburrimiento, TDAH, estilo de aprendizaje) y canalizar la conducta hacia roles positivos."
+    },
+    {
+        id: 402,
+        categoria: "Planificación Pedagógica",
+        pregunta: "Una maestra de 2do grado desea diseñar una Situación de Aprendizaje para la unidad de 'Los Símbolos Patrios'. Para que sea válida según la Adecuación Curricular 2023, ¿cuál debe ser el punto de partida innegociable en su diseño?",
+        opciones: [
+            "A) La selección de los contenidos conceptuales exactos tal como aparecen en el libro de texto de Ciencias Sociales.",
+            "B) La definición de una problemática, interés o necesidad real o simulada del contexto de los estudiantes que demande la movilización de competencias para resolverse o crear un producto.",
+            "C) La redacción de preguntas de selección múltiple que aseguren que los niños memoricen las fechas patrias.",
+            "D) La organización de un acto cívico general donde los estudiantes marchen en silencio."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Adecuación Curricular 2023. La Situación de Aprendizaje no parte del contenido (eso es conductismo), sino de un contexto y un reto/problema (ej. 'En la escuela se acercan las efemérides y no tenemos ambientación...'). El contenido es solo el medio para lograr el producto y movilizar la competencia."
+    },
+    {
+        id: 403,
+        categoria: "Comportamientos Profesionales",
+        pregunta: "A la hora de la salida, un padre aborda a la maestra de 5to grado en el pasillo, gritándole y reclamando airadamente por la calificación de 'Iniciado' (I) que recibió su hijo. El padre amenaza con ir al distrito educativo. ¿Cuál es el proceder ético e institucional del docente?",
+        opciones: [
+            "A) Defender su autoridad profesional argumentando en voz alta para no mostrar debilidad frente a otros padres y estudiantes que están observando.",
+            "B) Ignorar al padre, darle la espalda y subir a su vehículo, ya que su jornada laboral ha terminado.",
+            "C) Mantener la calma, invitar al padre a la oficina de coordinación u orientación para garantizar la privacidad, aplicar la escucha activa y mostrar las evidencias (portafolio) que sustentan la valoración.",
+            "D) Acceder a cambiar la calificación temporalmente a 'En Proceso' (EP) para calmar al padre y evitar un conflicto mayor en el centro."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Código de Ética Docente y Manual de Convivencia. El docente es un mediador y profesional. Debe desescalar la violencia, garantizar el debido proceso y la confidencialidad, y respaldar sus decisiones evaluativas con las evidencias del proceso, nunca alterando notas por coerción ni respondiendo con agresión."
+    },
+    {
+        id: 404,
+        categoria: "Gestión del Aprendizaje",
+        pregunta: "En una clase de Matemáticas de 6to grado, la docente introduce el tema de fracciones. Nota que el 75% del grupo no logra comprender las operaciones básicas con fracciones escritas en la pizarra. ¿Qué decisión refleja una gestión efectiva del aprendizaje?",
+        opciones: [
+            "A) Repetir la explicación en la pizarra utilizando el mismo método, pero hablando más despacio y con voz más alta.",
+            "B) Pausar la explicación simbólica y retroceder a la etapa concreta (manipulativa), introduciendo material didáctico tangible (regletas, pizzas de papel) antes de volver al plano abstracto.",
+            "C) Avanzar con el tema y asignar tarea extra para la casa, asumiendo que con la práctica y la ayuda de los padres entenderán.",
+            "D) Evaluar con un examen escrito al final de la clase para forzarlos a prestar atención."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Enfoque Constructivista (Adecuación Curricular). Cuando hay una barrera generalizada en la comprensión abstracta, repetir el mismo método no funciona. Se debe aplicar la progresión CPA (Concreto-Pictórico-Abstracto), regresando al material manipulativo para garantizar la asimilación del concepto."
+    },
+    {
+        id: 405,
+        categoria: "Inclusión",
+        pregunta: "Una maestra de 3er grado recibe a un estudiante diagnosticado con Dislexia. El estudiante tiene ideas brillantes de forma oral, pero sus producciones escritas son ininteligibles y se frustra al escribir. Según la Ordenanza 05-2024, ¿cuál es el ajuste razonable correcto para evaluar su comprensión en Ciencias Sociales?",
+        opciones: [
+            "A) Disminuirle la exigencia académica y evaluarlo con los indicadores de logro de 1er grado.",
+            "B) Eximirlo de las pruebas escritas y enviarlo a la biblioteca durante las evaluaciones.",
+            "C) Permitirle demostrar el indicador de logro mediante formatos alternativos de expresión (oralidad, exposiciones, dibujos o grabaciones) mientras se le brinda apoyo específico en su lectoescritura.",
+            "D) Darle más tiempo en el examen escrito y penalizar sus faltas ortográficas para que se esfuerce en mejorar."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Ordenanza 05-2024 (Diseño Universal para el Aprendizaje - DUA). La dislexia afecta la decodificación y escritura, no la inteligencia ni la comprensión social. El ajuste no es bajar el nivel (A) ni excluir (B), sino variar el MEDIO DE EXPRESIÓN para que el estudiante demuestre la competencia sin que el formato escrito sea una barrera."
+    },
+    {
+        id: 406,
+        categoria: "Planificación Pedagógica",
+        pregunta: "Al planificar el Eje Transversal 'Salud y Bienestar' en 1er grado, un equipo docente debate sobre cómo abordarlo. ¿Cuál de las siguientes acciones demuestra una verdadera integración transversal alineada a la Adecuación Curricular?",
+        opciones: [
+            "A) Dedicar todos los viernes 15 minutos exclusivos para hablar de salud, separados de las asignaturas regulares.",
+            "B) Organizar una charla magistral con un pediatra una vez al mes para todo el centro educativo.",
+            "C) Articular el eje a través de un proyecto donde, en Lengua Española, los niños lean y escriban recetas saludables; en Matemáticas, cuenten frutas; y en Naturales, clasifiquen alimentos.",
+            "D) Colocar el nombre del Eje Transversal en la portada de la unidad de aprendizaje sin alterar las actividades de los libros de texto."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Adecuación Curricular 2023. La transversalidad no es un evento aislado (charla) ni un mero requisito de formato. Consiste en permear las áreas curriculares (matemática, lengua, naturales) dotándolas de un contexto común que aborde una problemática social o de desarrollo personal."
+    },
+    {
+        id: 407,
+        categoria: "Evaluación",
+        pregunta: "Al finalizar el primer trimestre en 4to grado, un maestro observa que un estudiante, a pesar de participar y asistir, no ha logrado movilizar los saberes para resolver problemas matemáticos, obteniendo 'Iniciado' (I). ¿Cuál es la implicación normativa y pedagógica de esta valoración?",
+        opciones: [
+            "A) Que el estudiante carece de aptitudes matemáticas y debe ser referido a una escuela especial.",
+            "B) Que el estudiante debe repetir el grado inmediatamente sin esperar al final del año.",
+            "C) Que el proceso de aprendizaje no se ha completado, lo que obliga al docente a diseñar e implementar un Plan de Apoyo y Recuperación Pedagógica adaptado a sus necesidades para el siguiente trimestre.",
+            "D) Que la familia es responsable de pagar un tutor privado para que el niño alcance el nivel del grupo."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Ordenanza 04-2023. La valoración 'I' o 'EP' no es un dictamen de fracaso definitivo, es una alerta temprana de la evaluación formativa. Institucionalmente, obliga al docente y al centro a brindar intervenciones oportunas (tutorías, ajustes, planes de recuperación) antes de que finalice el año escolar."
+    },
+    {
+        id: 408,
+        categoria: "Comportamientos Profesionales",
+        pregunta: "Una docente de 1er ciclo nota que su planificación no está dando los resultados esperados, ya que los estudiantes no avanzan en su proceso de alfabetización. Sus colegas de grado sí están logrando avances. ¿Qué acción demuestra un comportamiento profesional orientado a la mejora continua?",
+        opciones: [
+            "A) Solicitar una reunión de Comunidad de Aprendizaje (CAP) con sus colegas y el coordinador para analizar reflexivamente sus prácticas, pedir retroalimentación e integrar nuevas estrategias a su planificación.",
+            "B) Justificarse argumentando que le tocó el grupo de estudiantes con mayor déficit del sector.",
+            "C) Pedir a la dirección que le asigne otro grado el próximo año porque no tiene vocación para la alfabetización inicial.",
+            "D) Copiar la planificación de sus compañeras exactamente igual y aplicarla sin considerar las particularidades de su grupo."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Legal: Estándares Profesionales y del Desempeño (Dimensión de Desarrollo Profesional y Trabajo Colaborativo). El docente efectivo no se aísla ni se justifica. Utiliza la reflexión sobre su propia práctica y el aprendizaje entre pares (Grupos Pedagógicos / CAP) para mejorar su desempeño."
+    },
+    {
+        id: 409,
+        categoria: "Gestión del Aprendizaje",
+        pregunta: "Al iniciar una unidad didáctica, el docente de 5to grado proyecta un video corto y luego hace una serie de preguntas abiertas como: '¿Qué creen que pasaría si...?' y '¿Alguna vez han visto algo similar?'. ¿Qué propósito pedagógico principal persigue esta acción en la secuencia didáctica?",
+        opciones: [
+            "A) Evaluar sumativamente el conocimiento de los estudiantes para asignar la primera calificación del mes.",
+            "B) Recuperar los saberes previos, generar conflicto cognitivo y conectar emocionalmente al estudiante con el nuevo objeto de aprendizaje.",
+            "C) Mantener a los estudiantes entretenidos para poder terminar de escribir la planificación en el registro.",
+            "D) Cumplir con el requisito de usar la tecnología en el aula según lo pide el MINERD."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Enfoque Constructivista (Adecuación Curricular 2023). El inicio de toda secuencia didáctica requiere la activación de saberes previos y el 'enganche' motivacional. El aprendizaje significativo de Ausubel exige que el nuevo contenido se ancle en las estructuras cognitivas preexistentes del estudiante."
+    },
+    {
+        id: 410,
+        categoria: "Alfabetización",
+        pregunta: "En una evaluación diagnóstica en 1er grado, la maestra pide a un niño que escriba 'MARIPOSA'. El niño escribe 'M I O A' (cada letra corresponde a una sílaba y usa vocales o consonantes correctas de la palabra). ¿En qué nivel de conceptualización de la escritura se encuentra y qué significa esto?",
+        opciones: [
+            "A) Nivel Presilábico; significa que el niño no comprende nada del sistema de escritura y solo hace garabatos.",
+            "B) Nivel Silábico con valor sonoro convencional; significa que el niño ha descubierto que las letras representan partes sonoras de la palabra (sílabas) y está en un proceso normal de construcción.",
+            "C) Nivel Alfabético; significa que el niño ya está listo para leer textos largos sin ayuda.",
+            "D) Es un nivel de retraso del aprendizaje; significa que necesita ser derivado a educación especial."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023 (Fascículos de Alfabetización Inicial). Bajo el enfoque psicogenético (Ferreiro y Teberosky), escribir una grafía por cada sílaba sonora (ej. M-I-O-A para ma-ri-po-sa) es el hito del nivel Silábico. Demuestra un gran avance cognitivo, no un retraso."
+    },
+    {
+        id: 411,
+        categoria: "Evaluación",
+        pregunta: "Una maestra de 6to grado utiliza la técnica de 'Portafolio' para la evaluación. Al final del periodo, revisa la carpeta de un estudiante que contiene todos los trabajos, pero el estudiante solo los guardó sin orden y sin reflexionar sobre ellos. ¿Cuál fue el error metodológico de la maestra en la gestión de este instrumento?",
+        opciones: [
+            "A) Permitir que el estudiante eligiera qué guardar; la maestra debió guardar todo ella misma.",
+            "B) No establecer criterios claros (rúbricas) ni propiciar momentos de reflexión (metacognición) donde el estudiante analizara sus propios avances y dificultades a través de las evidencias.",
+            "C) No calificar cada hoja del portafolio con números en color rojo.",
+            "D) Usar un portafolio físico en lugar de uno digital."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. Un portafolio no es un simple archivo o 'folder' de acumulación de tareas. Su valor como instrumento de evaluación por competencias radica en la selección deliberada de evidencias y en la reflexión metacognitiva del estudiante sobre su propio proceso de aprendizaje."
+    },
+    {
+        id: 412,
+        categoria: "Planificación Pedagógica",
+        pregunta: "El equipo docente de 4to grado decide implementar un 'Proyecto de Intervención de Aula' para abordar el problema de la mala alimentación en el recreo. En este tipo de proyecto, ¿quiénes son los principales responsables de proponer soluciones y ejecutar las acciones?",
+        opciones: [
+            "A) El departamento de Orientación y Psicología en conjunto con la Dirección.",
+            "B) Los estudiantes, asumiendo un rol protagónico en la investigación, propuesta y ejecución de soluciones, bajo la mediación del docente.",
+            "C) El docente, quien elabora un plan estricto y asigna tareas a los estudiantes para que las cumplan.",
+            "D) Las familias y la Asociación de Padres, Madres y Amigos de la Escuela (APMAE)."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Adecuación Curricular 2023 (Estrategias de Planificación). La naturaleza de los Proyectos de Intervención y Proyectos Participativos de Aula es el desarrollo de la agencia, autonomía y ciudadanía activa del estudiante (Competencia Ética y Ciudadana y Resolución de Problemas). El docente facilita, pero el alumno lidera."
+    },
+    {
+        id: 413,
+        categoria: "Comportamientos Profesionales",
+        pregunta: "Durante una jornada extendida, un docente presencia a dos colegas discutiendo acaloradamente con insultos frente a un grupo de estudiantes en el patio. ¿Cuál es el deber profesional del docente observador?",
+        opciones: [
+            "A) Intervenir poniéndose del lado del colega que tenga la razón para solucionar el conflicto rápido.",
+            "B) Grabar la situación para tener pruebas y enviarlo al grupo de WhatsApp del centro.",
+            "C) Intervenir pacíficamente para separar a los colegas, proteger la integridad emocional de los estudiantes alejándolos del área, e informar inmediatamente al equipo de gestión.",
+            "D) Hacerse de la vista gorda argumentando que no es su problema y regresar a su aula."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Estatuto Docente y Manual de Convivencia. El docente tiene un rol de cuidado frente a los estudiantes. Presenciar violencia (incluso entre adultos) afecta el clima escolar. Debe detenerse la exposición de los menores al conflicto y reportar a las autoridades del centro (Dirección) para la aplicación del régimen disciplinario institucional."
+    },
+    {
+        id: 414,
+        categoria: "Inclusión",
+        pregunta: "Llega un niño de nuevo ingreso a 2do grado que utiliza lenguaje de señas para comunicarse. La maestra no conoce la lengua de señas dominicana. ¿Cuál es la primera decisión pedagógica correcta que garantiza la inclusión?",
+        opciones: [
+            "A) Rechazar la inscripción argumentando que la escuela no está preparada para recibir estudiantes sordos.",
+            "B) Ubicar al niño en primera fila, utilizar abundante apoyo visual y corporal, fomentar que los compañeros interactúen con él mediante gestos y solicitar formalmente apoyo al Distrito Educativo (atención a la diversidad / intérprete).",
+            "C) Sentarlo con un compañero para que este le escriba todo lo que el maestro dice oralmente.",
+            "D) Aislarlo en el área de informática para que vea videos interactivos toda la mañana."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley General de Educación 66-97 y Ordenanza 05-2024. Las escuelas regulares tienen el mandato de ser inclusivas. Ningún niño puede ser rechazado. Mientras se gestiona el apoyo especializado (intérprete/modelo lingüístico), el docente debe maximizar los canales visuales de comunicación (DUA) y crear un clima de acogida."
+    },
+    {
+        id: 415,
+        categoria: "Gestión del Aprendizaje",
+        pregunta: "La maestra de 3er grado propone una dinámica donde los estudiantes leen el borrador de un cuento escrito por su compañero y le hacen sugerencias para mejorarlo antes de entregarlo. ¿Qué estrategia está aplicando?",
+        opciones: [
+            "A) La evaluación diagnóstica de la unidad.",
+            "B) La coevaluación en el proceso de revisión de la producción escrita.",
+            "C) La delegación de su trabajo de corrección a los estudiantes.",
+            "D) Una actividad de castigo por cometer errores ortográficos."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023 y Enfoque Textual Funcional. La revisión entre pares (coevaluación) es fundamental en el proceso de escritura. Desarrolla el pensamiento crítico, la colaboración y la comprensión de que la escritura es un proceso perfectible (borradores), no un producto inmediato."
+    },
+    {
+        id: 416,
+        categoria: "Planificación Pedagógica",
+        pregunta: "Al diseñar los indicadores de logro para una unidad, ¿cuál debe ser la fuente principal y normativa de la cual el docente debe extraerlos?",
+        opciones: [
+            "A) Crearlos por sí mismo basándose en el nivel del grupo.",
+            "B) Del Diseño Curricular y la Adecuación Curricular vigente, ya que son normativos, prescriptivos y aseguran el perfil de egreso.",
+            "C) Del índice del libro de texto que utilizará durante el año.",
+            "D) Del manual de pruebas nacionales pasadas."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Adecuación Curricular 2023 y Ordenanza 04-2023. Los indicadores de logro no se inventan ni se cambian a discreción; son el referente oficial, legal y prescriptivo que establece el Estado Dominicano para garantizar la equidad y calidad en los aprendizajes de todos los niños del país."
+    },
+    {
+        id: 417,
+        categoria: "Alfabetización",
+        pregunta: "Durante una actividad en 1er grado, la maestra escribe en papelógrafos las normas del aula acordadas por los niños y las deja pegadas en la pared todo el año. ¿Qué propósito específico de la alfabetización cumple esta ambientación?",
+        opciones: [
+            "A) Decorar el aula para que se vea bonita durante las visitas de supervisión.",
+            "B) Proveer un ambiente alfabetizador (textos de circulación social y funcional) que sirva como fuente de información segura para que los niños consulten letras y palabras cuando intenten escribir de forma autónoma.",
+            "C) Cumplir con un requisito administrativo del cuaderno de planificación.",
+            "D) Mantener a los niños callados mirando la pared."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023. El ambiente alfabetizador no es decorativo, es funcional. Carteles con sentido, nombres y normas actúan como 'bancos de datos'. Si un niño no recuerda cómo hacer la 'T', puede ir al cartel que dice 'Tirar la basura' y observar el trazo, fomentando la autonomía."
+    },
+    {
+        id: 418,
+        categoria: "Comportamientos Profesionales",
+        pregunta: "La Dirección del centro convoca a los docentes un sábado para una jornada de capacitación sobre el nuevo Sistema de Evaluación. Un docente se niega a asistir argumentando que ya conoce su materia y no necesita aprender nada nuevo. ¿Qué estándar del desempeño profesional se está vulnerando?",
+        opciones: [
+            "A) El derecho a la libre asociación.",
+            "B) El estándar de Desarrollo Profesional, que exige una actitud de actualización permanente, apertura al aprendizaje y compromiso con las políticas y normativas educativas del MINERD.",
+            "C) Ninguno, porque el sábado no es un día laborable.",
+            "D) El estándar de gestión de aula."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Estándares de Desempeño Profesional Docente. La actualización continua no es opcional en la carrera docente. Las capacitaciones oficiales sobre normativas (como la evaluación) son de carácter obligatorio para asegurar la correcta implementación de las políticas del Estado."
+    },
+    {
+        id: 419,
+        categoria: "Evaluación",
+        pregunta: "Al evaluar la Competencia Científica en 5to grado, el profesor utiliza una Rúbrica para calificar el experimento sobre la germinación. ¿Cuál es el principal beneficio de compartir la Rúbrica con los estudiantes ANTES de realizar el experimento?",
+        opciones: [
+            "A) Para que los estudiantes puedan copiar las respuestas correctas.",
+            "B) Promover la transparencia y la autorregulación, ya que el estudiante conoce de antemano qué se espera de él y cuáles son los criterios de excelencia que guiarán su desempeño.",
+            "C) Para asustarlos y que se esfuercen más por miedo a reprobar.",
+            "D) Para ahorrarle tiempo al maestro al momento de explicar las instrucciones."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La evaluación por competencias es transparente y participativa. Conocer los criterios de evaluación a priori (mediante rúbricas) orienta el esfuerzo del estudiante y elimina la subjetividad, transformando la evaluación en una herramienta de aprendizaje."
+    },
+    {
+        id: 420,
+        categoria: "Gestión del Aprendizaje",
+        pregunta: "En una clase de 4to grado sobre 'El clima local', el docente pide a los estudiantes que salgan al patio, observen el cielo, sientan la temperatura y anoten sus percepciones antes de abrir el libro de texto. ¿Qué principio pedagógico está favoreciendo?",
+        opciones: [
+            "A) La memorización mecánica de conceptos meteorológicos.",
+            "B) El aprendizaje basado en la experiencia directa y el contacto con el entorno como puente para construir conocimientos significativos.",
+            "C) El desgaste de tiempo para llenar la hora de clase.",
+            "D) La sustitución total del conocimiento científico por el conocimiento empírico informal."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Estrategias de Inserción en el Entorno (Adecuación Curricular). El contacto con la realidad vivencial es una estrategia didáctica poderosa. La experiencia directa despierta la curiosidad y facilita que el posterior análisis teórico en el libro adquiera un sentido real para el niño."
+    },
+
+    {
+        id: 421,
+        categoria: "Inclusión",
+        pregunta: "En una clase de 4to grado, una estudiante con baja visión no logra copiar los esquemas de la pizarra a tiempo, aunque se sienta en la primera fila. Se acerca la evaluación de Ciencias de la Naturaleza. ¿Cuál es el ajuste razonable correcto según la Ordenanza 05-2024?",
+        opciones: [
+            "A) Eximir a la estudiante de la evaluación escrita y calificarla solo por su asistencia y participación oral esporádica.",
+            "B) Entregarle la evaluación impresa en macrotipo (letra ampliada y alto contraste) y permitirle más tiempo, asegurando que se evalúe el mismo indicador de logro.",
+            "C) Asignarle un compañero permanente para que le dicte las preguntas durante la prueba y escriba las respuestas por ella.",
+            "D) Bajar el nivel de exigencia de la prueba, evaluándola con los indicadores de logro correspondientes a 2do grado."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024. La inclusión exige realizar 'Ajustes de Acceso' (como el macrotipo y control de iluminación) sin disminuir las expectativas de aprendizaje ni alterar los indicadores de logro del grado, garantizando equidad en la evaluación."
+    },
+    {
+        id: 422,
+        categoria: "Evaluación",
+        pregunta: "Durante una reunión de padres en 3er grado, una madre se queja de que el docente no aplica exámenes mensuales tradicionales y exige ver una prueba escrita con puntos. El docente utiliza rúbricas, listas de cotejo y portafolios. ¿Cuál es la respuesta pedagógica e institucional correcta?",
+        opciones: [
+            "A) Imprimir un examen tradicional de inmediato para complacer a la madre y evitar una queja formal en la dirección.",
+            "B) Explicar que la Ordenanza 04-2023 prohíbe los exámenes y que los padres no deben intervenir en la metodología docente.",
+            "C) Mostrar el portafolio y las rúbricas de la estudiante, explicando que la evaluación por competencias es continua, formativa y basada en múltiples evidencias, no en una sola prueba memorística.",
+            "D) Promediar las notas de las rúbricas para convertirlas a una escala de 0 a 100 y así la madre lo entienda mejor."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Ordenanza 04-2023. La evaluación en el Nivel Primario es criterial y cualitativa. El docente tiene el deber de educar a las familias sobre el modelo formativo, demostrando cómo los instrumentos de evaluación sistemática (rúbricas/portafolio) evidencian el nivel de logro real (L, EP, I) mejor que una prueba memorística."
+    },
+    {
+        id: 423,
+        categoria: "Planificación Pedagógica",
+        pregunta: "Al diseñar una Unidad de Aprendizaje en 5to grado, el equipo docente debe integrar el Eje Transversal 'Ciudadanía y Convivencia'. ¿Cuál es la forma normativamente correcta de evidenciar esta integración en la práctica de aula?",
+        opciones: [
+            "A) Copiar la definición del eje transversal en la portada de la planificación para cumplir con el esquema solicitado por el coordinador.",
+            "B) Asignar a los estudiantes la copia de un texto sobre la convivencia pacífica durante la clase de Formación Integral Humana y Religiosa.",
+            "C) Articular actividades en diversas áreas (ej. debatir un conflicto histórico en Sociales y redactar normas de aula en Lengua Española) que conecten los saberes con la resolución de problemas ciudadanos.",
+            "D) Realizar un acto a la bandera más largo los viernes para fomentar el civismo."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Adecuación Curricular 2023. Los Ejes Transversales no son contenidos aislados ni requisitos burocráticos. Son grandes temas sociales que deben permear las áreas curriculares, dándoles contexto y obligando a los estudiantes a movilizar competencias para reflexionar y actuar sobre su realidad."
+    },
+    {
+        id: 424,
+        categoria: "Ética",
+        pregunta: "Una maestra de 1er grado se siente muy orgullosa del trabajo de sus alumnos en una feria científica. Toma fotos de los niños exponiendo y las publica en su cuenta pública de Instagram y TikTok con el uniforme del centro. ¿Qué principio legal está vulnerando?",
+        opciones: [
+            "A) Ninguno, ya que las fotos resaltan el trabajo educativo positivo y dan buena imagen a la escuela.",
+            "B) La Ley 136-03, que prohíbe la difusión de imágenes de menores de edad que permitan su identificación pública sin el consentimiento expreso y por escrito de sus tutores legales.",
+            "C) El manual de uso de uniformes escolares, ya que los niños podrían estar mal peinados en la foto.",
+            "D) El derecho de autor, porque los proyectos científicos pertenecen al centro educativo y no a ella."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 136-03 (Código para el Sistema de Protección de Niños, Niñas y Adolescentes). El derecho a la intimidad y a la imagen del menor es inviolable. La publicación de fotos sin autorización formal en redes sociales (incluso con fines 'positivos') es una falta ética y legal grave."
+    },
+    {
+        id: 425,
+        categoria: "Alfabetización",
+        pregunta: "En el segundo trimestre, un niño de 2do grado presenta inversiones sistemáticas al escribir, confundiendo la 'b' con la 'd' y la 'p' con la 'q'. El resto de su lectura avanza con normalidad. Según el enfoque de alfabetización inicial, ¿cómo debe actuar la docente?",
+        opciones: [
+            "A) Diagnosticar dislexia y solicitar al centro que lo transfiera a una escuela de educación especial.",
+            "B) Tacharle las letras invertidas con bolígrafo rojo y hacerle repetir la palabra 50 veces para crear memoria muscular.",
+            "C) Comprender que es una etapa transitoria común relacionada con la direccionalidad, e implementar juegos de lateralidad y apoyo visual con referentes estables en el aula.",
+            "D) Restarle un nivel en su calificación de Lengua Española para que preste más atención al trazo."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Ordenanza 01-2023 y Enfoque Psicogenético. Las inversiones grafomotrices (escritura en espejo) en el primer ciclo son fenómenos evolutivos normales asociados a la maduración de la lateralidad espacial, no un trastorno definitivo. Castigar o patologizar genera aversión a la escritura."
+    },
+    {
+        id: 426,
+        categoria: "Gestión del Aprendizaje",
+        pregunta: "La maestra de 6to grado organiza un trabajo colaborativo. Observa que en el grupo de Juan, él investiga, escribe y expone todo, mientras los otros tres miembros conversan y no aportan. ¿Qué estrategia corrige esta disfunción pedagógica?",
+        opciones: [
+            "A) Ponerle calificación de 'L' a Juan y de 'I' a los demás para hacer justicia.",
+            "B) Separar el grupo y ordenar que todos trabajen de forma individual en silencio.",
+            "C) Diseñar la actividad con interdependencia positiva, asignando roles rotativos (ej. coordinador, secretario, relator, investigador) y evaluando tanto el producto como el proceso grupal.",
+            "D) Llamar la atención del grupo frente a toda el aula para avergonzarlos y que se pongan a trabajar."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Estrategias Pedagógicas (Adecuación Curricular 2023). El trabajo colaborativo no ocurre mágicamente por sentar alumnos juntos. El docente debe estructurar la actividad garantizando la interdependencia positiva (el éxito de uno depende del éxito de todos) mediante roles claros y evaluables."
+    },
+    {
+        id: 427,
+        categoria: "Inclusión",
+        pregunta: "Un alumno de 1er grado ingresa al centro ya leyendo con fluidez y resolviendo sumas complejas, terminando las actividades en 5 minutos y luego aburriéndose e interrumpiendo. ¿Cuál es el procedimiento normativo para atender sus Necesidades Específicas de Apoyo Educativo (NEAE)?",
+        opciones: [
+            "A) Ascenderlo automáticamente a 3er grado en el primer mes de clases.",
+            "B) Asignarle que haga caligrafías adicionales para mantenerlo ocupado y en silencio.",
+            "C) Solicitar evaluación por Orientación para confirmar Altas Capacidades y aplicar un programa de enriquecimiento curricular con retos de mayor profundidad cognitiva.",
+            "D) Dejarlo salir a jugar al patio cuando termine para no entorpecer el ritmo de los demás."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Ordenanza 05-2024. Las Altas Capacidades son consideradas NEAE. La respuesta educativa no es dar 'más de lo mismo' (caligrafías) ni aislar, sino el enriquecimiento curricular (profundización, proyectos de investigación, tutoría de pares) para mantener el desafío cognitivo dentro de su grupo etario."
+    },
+    {
+        id: 428,
+        categoria: "Evaluación",
+        pregunta: "Durante las primeras tres semanas del año escolar en 4to grado, el profesor aplica varias actividades diagnósticas. Obtiene resultados muy bajos en matemáticas. ¿Qué debe hacer administrativamente con estos resultados según el currículo?",
+        opciones: [
+            "A) Asignar estas valoraciones en el primer periodo del Registro de Grado como primera calificación.",
+            "B) Registrar las deficiencias y realizar una nivelación de 4 semanas, adaptando su planificación para cubrir estas lagunas antes de avanzar a los temas de 4to grado.",
+            "C) Convocar a los padres para que firmen un acta asumiendo la culpa del bajo rendimiento de sus hijos.",
+            "D) Ignorar los resultados ya que la evaluación diagnóstica no tiene valor legal."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La evaluación diagnóstica tiene una función estrictamente orientadora y predictiva, nunca sumativa (no va al registro como calificación). Su propósito es obligar al docente a ajustar su planificación y ejecutar planes de nivelación si los pre-requisitos no están consolidados."
+    },
+    {
+        id: 429,
+        categoria: "Planificación Pedagógica",
+        pregunta: "Una docente está elaborando una Situación de Aprendizaje y redacta lo siguiente: 'Los estudiantes de 5to grado, ante la contaminación del río cercano, investigarán sobre el ciclo del agua guiados por la maestra para desarrollar la competencia científica'. Según la estructura del MINERD, ¿qué elemento clave le falta?",
+        opciones: [
+            "A) Las fechas exactas en que se realizará la investigación.",
+            "B) El producto final o punto de llegada (ej. para elaborar una campaña de concientización y presentarla a la comunidad).",
+            "C) Los nombres de todos los estudiantes que participarán.",
+            "D) El presupuesto de los materiales a utilizar."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Adecuación Curricular 2023. Toda Situación de Aprendizaje debe contar con: contexto/problema, roles, estrategias, pero fundamentalmente un PRODUCTO FINAL o punto de llegada que evidencie la movilización de las competencias y dé sentido a la investigación."
+    },
+    {
+        id: 430,
+        categoria: "Ética",
+        pregunta: "Una maestra observa marcas de golpes y quemaduras en los brazos de un estudiante de 2do grado. Al preguntarle sutilmente, el niño dice que 'su tío lo castiga con un cable'. ¿Cuál es el proceder obligatorio e inmediato de la docente?",
+        opciones: [
+            "A) Citar al tío al día siguiente y amenazarlo con llamar a la policía si vuelve a hacerlo.",
+            "B) Levantar un informe escrito confidencial y entregarlo de inmediato a la Dirección y al departamento de Orientación para la activación del protocolo de protección a través del CONANI/Ministerio Público.",
+            "C) Esperar unas semanas para ver si el abuso se repite antes de acusar a la familia injustamente.",
+            "D) Recomendarle al niño que se porte bien para que no lo castiguen."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 136-03 y Protocolos del MINERD. El docente es un garante de derechos. La omisión de denuncia en casos de maltrato infantil es un delito grave. La acción debe ser institucional, inmediata y articulada con Orientación/Dirección para no revictimizar al niño ni alertar al agresor indebidamente."
+    },
+    {
+        id: 431,
+        categoria: "Alfabetización",
+        pregunta: "En 1er grado, la maestra realiza diariamente la estrategia de 'Lectura en Voz Alta por parte del docente' utilizando cuentos con vocabulario rico. ¿Qué competencia fundamental de la alfabetización temprana se busca desarrollar con esto si los niños aún no saben decodificar?",
+        opciones: [
+            "A) Ninguna, es solo para relajarlos antes del recreo.",
+            "B) Desarrollar habilidades de comprensión oral, incrementar el léxico, modelar la prosodia y acercar al niño a la estructura del lenguaje escrito y literario.",
+            "C) Forzarlos a memorizar la historia para luego evaluarlos con un examen.",
+            "D) Enseñarles exclusivamente las reglas de ortografía de manera teórica."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023 (Fascículos de Alfabetización). Leerle a los niños todos los días es indispensable. Aunque no decodifiquen, escuchando literatura desarrollan vocabulario avanzado, sintaxis compleja, imaginación y el deseo de aprender a leer (motivación), precursores absolutos de la comprensión lectora."
+    },
+    {
+        id: 432,
+        categoria: "Gestión del Aprendizaje",
+        pregunta: "La maestra de 3er grado nota que pierde hasta 20 minutos de clase cada vez que los niños regresan del recreo; entran sudados, gritando y se niegan a sacar sus cuadernos. ¿Cuál es la estrategia de gestión de aula más asertiva?",
+        opciones: [
+            "A) Dejarlos sin recreo toda la semana siguiente para que valoren el tiempo.",
+            "B) Gritar más fuerte que ellos y golpear el escritorio para recuperar la atención.",
+            "C) Establecer y modelar una rutina de transición (ej. entrar en calma, hacer 2 minutos de respiración guiada profunda o leer un cuento corto) para bajar la energía y marcar el reinicio pedagógico.",
+            "D) Anotar a todos en el registro anecdótico por indisciplina colectiva."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Disciplina Positiva y Gestión del Tiempo. Las transiciones caóticas roban tiempo pedagógico. Sancionar un estado fisiológico (alta energía post-recreo) no funciona. Se requiere una rutina de anclaje (respiración/mindfulness/lectura) que ayude a la autorregulación infantil y restablezca el clima de aula."
+    },
+    {
+        id: 433,
+        categoria: "Evaluación",
+        pregunta: "Para evaluar las maquetas sobre el relieve en 5to grado, el profesor aplica la Coevaluación. Los estudiantes intercambian trabajos y todos se asignan una calificación de 'Logrado' (L) porque son amigos. ¿Cuál es el fallo en el diseño de esta evaluación?",
+        opciones: [
+            "A) Usar la coevaluación, ya que los niños de primaria no tienen capacidad ética para evaluarse.",
+            "B) No haber provisto una rúbrica o lista de cotejo con criterios objetivos claros, ni haber modelado primero cómo dar retroalimentación formativa y constructiva.",
+            "C) Que las maquetas deben evaluarse exclusivamente con pruebas escritas.",
+            "D) Que la coevaluación solo sirve para restar puntos por mala conducta."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La coevaluación es un proceso metacognitivo obligatorio, pero no puede dejarse a la subjetividad. Requiere andamiaje: el docente debe enseñar a usar instrumentos (rúbricas) para que la valoración se base en evidencias del producto y no en afinidades personales."
+    },
+    {
+        id: 434,
+        categoria: "Planificación Pedagógica",
+        pregunta: "En la estructura de la Adecuación Curricular 2023, ¿cuál es la relación correcta entre las Competencias Fundamentales y las Competencias Específicas al momento de planificar?",
+        opciones: [
+            "A) Son independientes; en algunas unidades se usan las Fundamentales y en otras las Específicas.",
+            "B) Las Fundamentales expresan las grandes intenciones (ej. Ética), y las Específicas son la traducción de esas intenciones a los saberes propios de cada asignatura (ej. argumentar en Lengua Española).",
+            "C) Las Específicas evalúan a los estudiantes y las Fundamentales evalúan al maestro.",
+            "D) Las Fundamentales reemplazaron a los indicadores de logro en el nuevo registro."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Adecuación Curricular 2023. Las Competencias Fundamentales (7) atraviesan todo el currículo. Las Específicas las operativizan en el área. Por ejemplo, la competencia comunicativa (fundamental) se vuelve específica en matemáticas al pedirle al niño que 'comunique matemáticamente un proceso'."
+    },
+    {
+        id: 435,
+        categoria: "Comportamientos Profesionales",
+        pregunta: "Una maestra de 4to grado recibe quejas de que varios de sus estudiantes están creando memes ofensivos y burlándose de un compañero en un grupo de WhatsApp los sábados. ¿Cuál es su grado de responsabilidad institucional?",
+        opciones: [
+            "A) Ninguna, porque el uso de WhatsApp y el tiempo de fin de semana competen exclusiva y legalmente a los padres.",
+            "B) Intervenir pedagógicamente al enterarse, ya que el ciberacoso impacta directamente la convivencia, la salud mental y el rendimiento del estudiante en el entorno escolar, reportando a Orientación.",
+            "C) Revisar los teléfonos personales de todos los estudiantes el lunes para borrar los memes.",
+            "D) Suspender a los implicados indefinidamente hasta que cierren el grupo de WhatsApp."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 136-03 y Manual de Convivencia Escolar (OD 22-2023). El ciberacoso, aunque ocurra fuera del horario y recinto físico, tiene un efecto expansivo en la escuela. La institución tiene el deber ético y legal de actuar de forma formativa y orientadora para restituir derechos y el clima escolar pacífico."
+    },
+    {
+        id: 436,
+        categoria: "Alfabetización",
+        pregunta: "Al iniciar el año escolar en 1er grado, el profesor realiza diariamente el 'Juego de los Aplausos', donde los niños aplauden por cada golpe de voz que escuchan en palabras como 'E-LE-FAN-TE'. ¿Qué habilidad crítica está desarrollando?",
+        opciones: [
+            "A) La motricidad gruesa para educación física.",
+            "B) La conciencia silábica, una sub-habilidad de la conciencia fonológica indispensable para que comprendan cómo el lenguaje oral se segmenta y se traduce a lenguaje escrito.",
+            "C) El aprendizaje del abecedario de memoria.",
+            "D) El control de la disciplina, usando los aplausos para que guarden silencio."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023. La conciencia fonológica es el mayor predictor del éxito lector. Un niño no puede entender que la 'L' suena /l/ si primero no es capaz de aislar los sonidos más grandes del lenguaje oral (las sílabas) mediante estrategias corporales como aplausos o saltos."
+    },
+    {
+        id: 437,
+        categoria: "Gestión del Aprendizaje",
+        pregunta: "Para llevar a cabo un debate sobre 'Los derechos de los niños' en 6to grado, la maestra decide romper la organización tradicional de pupitres en filas y los organiza en un gran círculo o asamblea. ¿Qué sustento pedagógico tiene esta decisión?",
+        opciones: [
+            "A) Solo busca que el aula se vea diferente para la foto institucional.",
+            "B) Enviar a los estudiantes más indisciplinados al centro del círculo para vigilarlos mejor.",
+            "C) Modificar el espacio (ambiente como 'tercer educador') para propiciar el contacto visual pleno, la escucha activa, la equidad en la participación y el desarrollo de la competencia comunicativa.",
+            "D) Que la maestra pueda sentarse en su escritorio a calificar sin tener niños en frente."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Gestión del Ambiente (Adecuación Curricular). Las filas promueven una comunicación vertical (maestro-alumno) pasiva. Un debate exige comunicación horizontal y dialógica. El mobiliario debe ajustarse a la intención pedagógica; el círculo democratiza la palabra y fomenta la ciudadanía."
+    },
+    {
+        id: 438,
+        categoria: "Inclusión",
+        pregunta: "Llega a la sección de 5to grado un estudiante de nacionalidad haitiana. Aunque comprende español básico, no logra redactar textos en este idioma. ¿Cómo debe evaluarse su producción escrita según el enfoque de equidad?",
+        opciones: [
+            "A) Ponerle 'I' en todas las materias hasta que domine perfectamente la gramática del español.",
+            "B) Prohibirle usar el creole en la escuela para forzar una inmersión total rápida.",
+            "C) Aplicar ajustes razonables, permitiéndole expresarse oralmente o con apoyos visuales/bilingües para evaluar sus saberes sobre las áreas (ej. Ciencias), mientras recibe apoyo progresivo de inmersión en español.",
+            "D) Darlo por aprobado automáticamente en Lengua Española por consideración a su situación migratoria."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Ordenanza 05-2024 y Enfoque de Derechos. La barrera idiomática no puede confundirse con una deficiencia cognitiva. El estudiante tiene derecho a demostrar sus saberes de las demás áreas sin que el dominio perfecto del español sea un filtro excluyente, requiriendo adaptaciones curriculares y de acceso temporales."
+    },
+    {
+        id: 439,
+        categoria: "Evaluación",
+        pregunta: "Un docente está redactando un Registro Anecdótico sobre un incidente en el aula de 4to grado. Escribe: 'Hoy Pedro se portó pésimo, como siempre es muy agresivo y golpeó a Carlos por maldad'. ¿Cuál es el error profesional en esta redacción según la técnica de evaluación?",
+        opciones: [
+            "A) Olvidó poner la fecha exacta del incidente.",
+            "B) Utiliza juicios de valor, adjetivos subjetivos y etiquetas ('pésimo', 'agresivo', 'por maldad') en lugar de describir el hecho observable de manera neutral y objetiva.",
+            "C) Que el registro anecdótico solo debe usarse para hechos positivos, nunca para conflictos.",
+            "D) Que no obligó a Pedro a firmar el cuaderno debajo del reporte."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La técnica de observación (Registro Anecdótico) exige neutralidad. Un registro ético y profesional describe la acción exacta: 'Durante el recreo, Pedro empujó a Carlos tras discutir por un balón'. Los juicios subjetivos estigmatizan al estudiante y carecen de validez pedagógica."
+    },
+    {
+        id: 440,
+        categoria: "Comportamientos Profesionales",
+        pregunta: "Un maestro de 6to grado con 20 años de servicio se niega a utilizar el nuevo Registro de Grado basado en las valoraciones L, EP, I, argumentando que él siempre ha evaluado con números (0-100) y que le da mejores resultados. Pasa sus notas en una libreta personal. ¿Qué falta normativa comete?",
+        opciones: [
+            "A) Ninguna, el Estatuto Docente ampara su libertad de cátedra y autonomía metodológica.",
+            "B) Incurre en un incumplimiento grave de sus deberes profesionales, ya que el Registro de Grado es el único documento oficial, auditable y legal que certifica los procesos bajo las normas del MINERD.",
+            "C) Falta leve de formato, siempre y cuando al final del año él convierta sus números a letras para la dirección.",
+            "D) Vulneración del derecho de los padres a recibir notas claras en números."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023 y Estatuto Docente. La libertad de cátedra aplica a las estrategias, no a la normativa estatal de evaluación y certificación oficial. La no utilización del Registro de Grado invalida administrativamente los aprendizajes, siendo una falta disciplinaria y ética frente al sistema y al estudiante."
+    },
+
+    {
+        id: 441,
+        categoria: "Gestión del Aprendizaje",
+        pregunta: "Durante una actividad de resolución de problemas en 5to grado, el docente nota que un grupo de estudiantes ha llegado a una respuesta incorrecta siguiendo un procedimiento lógico pero incompleto. ¿Cuál es la intervención pedagógica que mejor fomenta el aprendizaje significativo?",
+        opciones: [
+            "A) Señalarles inmediatamente el error en la pizarra para evitar que el resto de la clase aprenda un concepto equivocado.",
+            "B) Realizar preguntas reflexivas que lleven al grupo a revisar su propio proceso, identificar la inconsistencia y ajustar su estrategia de manera autónoma.",
+            "C) Asignarles una calificación de 'En Proceso' (EP) y pedirles que copien la solución correcta del libro de texto.",
+            "D) Pedir a un estudiante que ya resolvió bien el problema que pase a la pizarra y les explique cómo se hace paso a paso."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Adecuación Curricular 2023 (Enfoque Orientado a la Acción). El error es una oportunidad de aprendizaje. La intervención docente debe mediar el pensamiento crítico (metacognición) en lugar de dar la respuesta correcta, permitiendo que el estudiante sea protagonista de su propia corrección."
+    },
+    {
+        id: 442,
+        categoria: "Planificación Pedagógica",
+        pregunta: "En la planificación de una Unidad de Aprendizaje de 3er grado, la docente incluye el uso de tabletas para investigar sobre 'Los seres vivos'. ¿Qué criterio técnico justifica prioritariamente el uso de este recurso según el currículo?",
+        opciones: [
+            "A) La necesidad de modernizar el aula para cumplir con los estándares tecnológicos del centro educativo.",
+            "B) Que el uso de la tecnología facilita el control de la disciplina, ya que los niños se mantienen concentrados en las pantallas.",
+            "C) La intención pedagógica de potenciar la competencia de Pensamiento Lógico, Crítico y Creativo a través de la curación y análisis de información digital.",
+            "D) Que el Ministerio de Educación ha distribuido dispositivos y es obligatorio utilizarlos en cada sesión de clase."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Estándares Profesionales (Dimensión Curricular). El uso de las TIC no es un fin en sí mismo ni un adorno. Debe estar subordinado a una intención pedagógica clara que movilice competencias específicas, en este caso, la investigación y el análisis crítico de la información."
+    },
+    {
+        id: 443,
+        categoria: "Comportamientos Profesionales",
+        pregunta: "Un docente de 4to grado observa que el equipo de gestión del centro no está aplicando correctamente los protocolos de registro de inasistencias en el sistema de gestión escolar. ¿Cuál es su deber según el marco de ética y eficiencia profesional?",
+        opciones: [
+            "A) Ignorar el hecho, ya que las tareas administrativas del equipo de gestión no son responsabilidad del docente de aula.",
+            "B) Comunicar la observación de manera constructiva y formal al coordinador o director, ofreciendo su apoyo para asegurar la veracidad de los datos que impactan en los indicadores del centro.",
+            "C) Quejarse con los padres de familia sobre la desorganización administrativa del centro para que ellos exijan mejoras.",
+            "D) Realizar su propio registro en una libreta privada y no entregar reportes hasta que el sistema general funcione bien."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Instructivo ERP (Comportamientos Profesionales). El docente forma parte de una comunidad educativa y debe demostrar compromiso con la mejora institucional y la integridad de los procesos administrativos y pedagógicos del centro."
+    },
+    {
+        id: 444,
+        categoria: "Evaluación",
+        pregunta: "Al evaluar la producción oral en 2do grado, el docente utiliza una 'Escala de Estimación'. Nota que un estudiante ha logrado los criterios de fluidez y coherencia, pero no los de entonación. ¿Cómo debe asentar esta valoración parcial en el proceso formativo?",
+        opciones: [
+            "A) Promediar los criterios logrados con los no logrados para obtener una nota numérica única.",
+            "B) Identificar la dificultad específica de entonación para diseñar una actividad de apoyo pedagógico puntual, manteniendo el registro de los avances logrados.",
+            "C) Esperar hasta que el estudiante logre todos los criterios antes de hacer cualquier anotación en el registro.",
+            "D) Reprobar la actividad oral completa, ya que la competencia se considera lograda solo si se cumplen todos los criterios al 100%."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La evaluación es procesual. Identificar qué aspectos del indicador de logro se han alcanzado y cuáles no, permite una intervención pedagógica diferenciada (retroalimentación formativa), que es el corazón de la evaluación por competencias."
+    },
+    {
+        id: 445,
+        categoria: "Inclusión",
+        pregunta: "En una sección de 6to grado hay un estudiante con trastorno del espectro autista (TEA) que presenta sensibilidad sensorial ante ruidos fuertes. La escuela ha planeado una celebración de cumpleaños con música alta. ¿Qué acción docente garantiza la inclusión?",
+        opciones: [
+            "A) Pedir a la madre que no envíe al niño ese día para evitarle un mal momento de estrés.",
+            "B) Realizar la actividad de manera normal, asumiendo que el niño debe aprender a adaptarse al entorno social de sus compañeros.",
+            "C) Coordinar con el grupo y la familia ajustes ambientales (bajar el volumen, espacios de calma o uso de auriculares) y preparar al estudiante visualmente para la actividad.",
+            "D) Obligar al estudiante a permanecer en el centro de la fiesta para que trabaje su tolerancia sensorial 'a la fuerza'."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Ordenanza 05-2024. Los ajustes razonables incluyen modificaciones al entorno físico y social. Anticipar la situación y adaptar el ambiente permite que el estudiante participe en igualdad de condiciones sin vulnerar su bienestar emocional."
+    },
+    {
+        id: 446,
+        categoria: "Alfabetización",
+        pregunta: "En 1er grado, durante la actividad de 'Lectura de textos que circulan en el ambiente', un niño identifica la palabra 'JUGOS' en un envase, pero al pedirle que lea la letra 'J' aislada, no sabe cuál es. ¿Qué evidencia este comportamiento según la etapa de alfabetización?",
+        opciones: [
+            "A) Que el niño no sabe leer y está adivinando por el dibujo del envase.",
+            "B) Que el niño está en una etapa de lectura global/contextual, reconociendo el texto como una unidad con significado antes de analizar sus partes (letras).",
+            "C) Que el niño tiene problemas de memoria visual a corto plazo.",
+            "D) Que el docente debe dejar de usar envases y enfocarse exclusivamente en enseñar el abecedario de la A a la Z."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023. En la alfabetización inicial, el reconocimiento de 'textos estables' (marcas, nombres) es un paso fundamental. El niño otorga significado al texto antes de dominar el código alfabético, lo cual es parte del proceso normal de construcción del sistema de escritura."
+    },
+    {
+        id: 447,
+        categoria: "Planificación Pedagógica",
+        pregunta: "Al momento de planificar el horario escolar en el Nivel Primario, el docente debe asegurar que el tiempo dedicado a las Áreas Curriculares sea flexible. ¿Qué justifica esta flexibilidad normativa?",
+        opciones: [
+            "A) Que el maestro pueda salir más temprano si termina los contenidos rápido.",
+            "B) La necesidad de extender el tiempo de una actividad si el interés de los estudiantes y la profundidad del aprendizaje lo requieren para lograr la competencia.",
+            "C) Que el director pueda cambiar las clases según las visitas de técnicos que reciba el centro.",
+            "D) Que los estudiantes no se aburran de estar mucho tiempo haciendo la misma tarea."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Adecuación Curricular 2023. El tiempo pedagógico está al servicio del aprendizaje, no de la burocracia. Si una investigación o debate está en su punto máximo de construcción de conocimiento, la flexibilidad permite agotar el proceso sin cortes arbitrarios."
+    },
+    {
+        id: 448,
+        categoria: "Comportamientos Profesionales",
+        pregunta: "Un docente recibe una retroalimentación de su coordinador pedagógico indicando que sus criterios de evaluación no son claros para los estudiantes. ¿Cuál es la actitud profesional esperada según el ERP?",
+        opciones: [
+            "A) Sentirse ofendido y argumentar que tiene muchos años de experiencia para ser cuestionado.",
+            "B) Analizar las evidencias de su práctica junto al coordinador, identificar los puntos de mejora y ajustar sus instrumentos de evaluación para que sean más transparentes.",
+            "C) Ignorar la sugerencia y seguir evaluando como siempre, ya que el registro es responsabilidad del docente.",
+            "D) Pedir un cambio de centro educativo donde se respete más su autonomía docente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Instructivo ERP / Estándares Profesionales. La reflexión sobre la práctica y la apertura a la supervisión pedagógica son dimensiones esenciales del desempeño. El docente profesional utiliza la retroalimentación para crecer y garantizar el derecho de los estudiantes a una evaluación justa."
+    },
+    {
+        id: 449,
+        categoria: "Gestión del Aprendizaje",
+        pregunta: "Para trabajar la resolución de conflictos en 4to grado, la docente utiliza el 'Círculo de Diálogo' tras una pelea en el patio. ¿Cuál es el objetivo principal de esta técnica de gestión?",
+        opciones: [
+            "A) Identificar al culpable para imponerle una sanción ejemplar frente a todos.",
+            "B) Restaurar los vínculos afectados, permitiendo que las partes expresen cómo se sintieron y lleguen a acuerdos de reparación consensuados.",
+            "C) Evitar que los niños jueguen en el patio durante el próximo recreo.",
+            "D) Llenar el tiempo de la clase de Formación Humana con una actividad dinámica."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Manual de Convivencia (OD 22-2023). El enfoque restaurativo busca la sanación de la relación y la responsabilidad personal, alejándose del modelo puramente punitivo/expulsivo para fomentar una cultura de paz."
+    },
+    {
+        id: 450,
+        categoria: "Evaluación",
+        pregunta: "En 5to grado, el docente decide evaluar la competencia comunicativa mediante un debate. ¿Qué instrumento es el más coherente para valorar desempeños complejos y variados durante este proceso?",
+        opciones: [
+            "A) Un examen de selección múltiple sobre las reglas del debate.",
+            "B) Una Rúbrica Analítica que describa niveles de logro para criterios como argumentación, respeto al turno y uso del léxico.",
+            "C) Una lista de cotejo que solo diga 'Sí' o 'No' participó en el debate.",
+            "D) La observación general sin registro, asignando una nota al final por percepción."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. Para evaluar competencias (saber hacer en contexto), la rúbrica es el instrumento ideal porque permite desglosar la complejidad del desempeño en niveles descriptivos, facilitando una valoración objetiva y formativa."
+    },
+    {
+        id: 451,
+        categoria: "Gestión del Aprendizaje",
+        pregunta: "En una aula de 4to grado, durante un trabajo en equipos, el ruido se eleva a un nivel que impide la comunicación. El docente utiliza un 'Semáforo de Ruido' y, al llegar al rojo, detiene la actividad. ¿Cuál es el fundamento de esta técnica en la gestión efectiva?",
+        opciones: [
+            "A) Imponer el silencio absoluto como norma principal de conducta en el aula.",
+            "B) Desarrollar la autorregulación grupal mediante una señal visual que permite a los estudiantes monitorear y ajustar su propio volumen de trabajo.",
+            "C) Suspender la actividad de forma punitiva para que los estudiantes sientan la pérdida del tiempo de juego.",
+            "D) Demostrar que el docente tiene el control total de los dispositivos tecnológicos y las señales del aula."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Estrategias de Gestión de Aula. El enfoque de competencias busca la autonomía. El semáforo no es un castigo, sino un recurso de autorregulación que ayuda a los niños a entender los niveles de ruido permitidos según la tarea (voz de equipo vs. voz de asamblea)."
+    },
+    {
+        id: 452,
+        categoria: "Comportamientos Profesionales",
+        pregunta: "Un docente de 5to grado identifica que un grupo de sus estudiantes utiliza términos despectivos sobre la orientación sexual de un compañero. ¿Cuál es la acción docente correcta según los estándares de desempeño?",
+        opciones: [
+            "A) Ignorar los comentarios si no hay agresión física, para no darle importancia a 'cosas de niños'.",
+            "B) Abordar la situación de inmediato como una oportunidad pedagógica para trabajar la Competencia Ética y Ciudadana, promoviendo el respeto a la dignidad humana y la diversidad.",
+            "C) Castigar a los estudiantes con una falta grave en el registro sin explicarles el motivo.",
+            "D) Llamar a los padres del niño afectado para sugerirles que lo cambien de centro para evitarle sufrimientos."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ley 136-03 y Constitución Dominicana. El docente debe garantizar un ambiente libre de discriminación y violencia. El hostigamiento verbal por prejuicios es una vulneración de derechos que debe ser intervenida desde la formación en valores y el cumplimiento de las normas de convivencia."
+    },
+    {
+        id: 453,
+        categoria: "Planificación Pedagógica",
+        pregunta: "Al planificar una unidad sobre 'La nutrición' en 3er grado, la docente decide integrar a los padres para que compartan recetas saludables de la comunidad. ¿Qué dimensión de la planificación docente se está fortaleciendo?",
+        opciones: [
+            "A) La dimensión administrativa de control de la comunidad.",
+            "B) La relación Escuela-Comunidad, reconociendo el contexto familiar como una fuente de saberes que enriquece el aprendizaje significativo.",
+            "C) La delegación de la enseñanza de contenidos a personas externas para reducir la carga docente.",
+            "D) El cumplimiento formal de un requisito del Programa de Alimentación Escolar (PAE)."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Diseño Curricular (Relación Escuela-Comunidad). La educación no ocurre en el vacío. Integrar a la familia en los procesos de aprendizaje valida los saberes locales y fortalece el vínculo afectivo y social necesario para el desarrollo de competencias."
+    },
+    {
+        id: 454,
+        categoria: "Evaluación",
+        pregunta: "En 6to grado, un docente aplica una 'Prueba de Desempeño' donde los estudiantes deben simular un noticiero sobre el cambio climático. ¿Cuál es el criterio principal para calificar esta actividad?",
+        opciones: [
+            "A) El estudiante que mejor sepa actuar o que tenga el disfraz más costoso.",
+            "B) La capacidad del estudiante para integrar los conceptos científicos, comunicarlos con claridad y proponer soluciones basadas en evidencias.",
+            "C) La cantidad de tiempo que duró la presentación frente al grupo.",
+            "D) Que el estudiante no haya cometido ningún error de dicción durante la grabación."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. En una evaluación de desempeño, el foco está en la integración de saberes (ser, saber, hacer). Se valora la competencia técnica (ciencia) y la transversal (comunicación/ciudadanía), no elementos superficiales como la vestimenta."
+    },
+    {
+        id: 455,
+        categoria: "Inclusión",
+        pregunta: "Un docente nota que un estudiante con discapacidad motora no puede participar en la clase de Educación Física que consiste en jugar béisbol. ¿Qué acción refleja un compromiso con la inclusión?",
+        opciones: [
+            "A) Dejar al estudiante en el aula haciendo una tarea de lengua española mientras los demás juegan.",
+            "B) Sentar al estudiante en las gradas para que sea el anotador oficial de los puntos del juego.",
+            "C) Adaptar las reglas del juego o los materiales (ej. batear desde una base fija o usar pelotas sonoras/más grandes) para que el estudiante participe activamente según su posibilidad.",
+            "D) Eximirlo de la calificación de la materia de forma definitiva."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Ordenanza 05-2024. La inclusión efectiva no es solo 'estar presente' o hacer tareas pasivas (anotador), sino garantizar la PARTICIPACIÓN. Los ajustes razonables en Educación Física implican adaptar la actividad para que el reto sea posible para todos."
+    },
+    {
+        id: 456,
+        categoria: "Alfabetización",
+        pregunta: "La maestra de 1er grado utiliza 'El libro viajero', donde cada niño se lleva un cuaderno a casa para escribir con su familia algo que sucedió el fin de semana. ¿Qué proceso de alfabetización se fomenta?",
+        opciones: [
+            "A) La copia mecánica de textos para mejorar la caligrafía.",
+            "B) El uso funcional de la lengua escrita como herramienta para comunicar vivencias y la vinculación afectiva con la lectura y escritura.",
+            "C) La evaluación de la ortografía de los padres de familia.",
+            "D) La sustitución de los libros de texto oficiales por cuadernos hechos en casa."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023. La alfabetización inicial debe ser significativa. Escribir sobre la propia vida ('textos de circulación social') ayuda al niño a entender para qué sirve escribir, superando la etapa de ver las letras como simples dibujos sin sentido."
+    },
+    {
+        id: 457,
+        categoria: "Gestión del Aprendizaje",
+        pregunta: "En una clase de 5to grado, surge un debate imprevisto sobre una noticia de actualidad que apasiona a los estudiantes. El docente decide posponer la actividad planificada de matemáticas por 20 minutos para mediar el debate. ¿Cómo se califica esta acción?",
+        opciones: [
+            "A) Como una falta de planificación y pérdida de tiempo pedagógico.",
+            "B) Como una gestión flexible y oportuna del aprendizaje que aprovecha el 'momento pedagógico' para desarrollar la competencia comunicativa y el pensamiento crítico.",
+            "C) Como una falta grave al cumplimiento del horario oficial del MINERD.",
+            "D) Como una estrategia para trabajar menos contenidos en el mes."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Adecuación Curricular 2023. Un docente profesional no es un esclavo del cronómetro, sino un gestor del aprendizaje. Aprovechar el interés genuino de los alumnos para desarrollar competencias transversales es una práctica de excelencia pedagógica."
+    },
+    {
+        id: 458,
+        categoria: "Evaluación",
+        pregunta: "Un docente de 4to grado devuelve un trabajo de investigación a un estudiante con la única nota de '60/100'. ¿Qué principio de la evaluación formativa se está ignorando?",
+        opciones: [
+            "A) El principio de la justicia numérica.",
+            "B) La retroalimentación cualitativa, que es la que explica al estudiante qué logró, qué le faltó y cómo puede mejorar en el futuro.",
+            "C) El principio de ahorro de papel al no escribir comentarios largos.",
+            "D) La obligación de que los padres firmen cada nota numérica."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La calificación sin retroalimentación es 'muerta'. En el enfoque por competencias, el estudiante necesita saber los criterios detrás de la nota para poder aprender del proceso y superar sus dificultades."
+    },
+    {
+        id: 459,
+        categoria: "Comportamientos Profesionales",
+        pregunta: "El equipo de gestión del centro solicita a los docentes que entreguen una autoevaluación de su desempeño. Un docente decide marcar 'Excelente' en todo sin reflexionar seriamente. ¿Qué impacto tiene esto en su desarrollo profesional?",
+        opciones: [
+            "A) Es positivo, ya que asegura que recibirá mejores incentivos económicos.",
+            "B) Es negativo, porque anula la posibilidad de identificar necesidades reales de capacitación y estanca su crecimiento profesional.",
+            "C) Es indiferente, ya que la autoevaluación no tiene peso en la calificación final del ERP.",
+            "D) Es una muestra de alta autoestima, necesaria para la labor docente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Instructivo ERP / Estándares Profesionales. La autocrítica y la reflexión sobre la práctica son motores del desarrollo profesional. La honestidad en la autoevaluación permite al MINERD y al docente diseñar rutas de mejora efectivas."
+    },
+    {
+        id: 460,
+        categoria: "Planificación Pedagógica",
+        pregunta: "Al seleccionar los recursos para una unidad de 2do grado sobre 'La comunidad', el docente prefiere usar un mapa dibujado por los niños y una caminata por el sector en lugar de solo mostrar una foto en el libro. ¿Qué criterio pedagógico prima aquí?",
+        opciones: [
+            "A) La economía, al no querer gastar tiza o recursos digitales.",
+            "B) El uso de recursos del entorno y la construcción de aprendizajes desde lo cercano y concreto hacia lo abstracto.",
+            "C) La improvisación ante la falta de libros de texto suficientes.",
+            "D) El cumplimiento de las horas de salida fuera del aula por recreación."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Adecuación Curricular 2023. Los recursos del entorno (la comunidad misma) son los más potentes en los primeros grados de primaria para generar conceptos geográficos y sociales sólidos y vivenciales."
+    },
+    {
+        id: 461,
+        categoria: "Gestión del Aprendizaje",
+        pregunta: "Una maestra de 4to grado utiliza la técnica de 'La Caja de las Dudas', donde los estudiantes depositan papeles con preguntas que no se atrevieron a hacer en público. ¿Qué aspecto del clima de aula está fortaleciendo?",
+        opciones: [
+            "A) La inseguridad de los estudiantes al no querer hablar frente a otros.",
+            "B) Un ambiente de seguridad emocional y confianza que reconoce que el no saber es parte del proceso de aprendizaje y reduce la ansiedad por el error.",
+            "C) El anonimato para evitar que el maestro identifique quién no estudia.",
+            "D) La falta de comunicación directa entre maestro y alumno."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Estándares Profesionales (Dimensión de Gestión de Aula). Un clima de aula efectivo es aquel donde el error se despenaliza. Esta técnica fomenta la participación de estudiantes tímidos y garantiza que ninguna duda se quede sin respuesta pedagógica."
+    },
+    {
+        id: 462,
+        categoria: "Comportamientos Profesionales",
+        pregunta: "Durante una asamblea de la APMAE, un grupo de padres critica duramente a la directora del centro. Un docente presente interviene diciendo: 'Ella es así, nunca escucha a nadie, yo también tengo problemas con ella'. ¿Cuál es la falta ética en este comportamiento?",
+        opciones: [
+            "A) Ninguna, el docente tiene derecho a la libre expresión de sus sentimientos.",
+            "B) Vulneración del compromiso institucional y la lealtad profesional, ya que los conflictos internos deben dirimirse en los canales correspondientes y no ventilarlos para socavar la autoridad frente a la comunidad.",
+            "C) Una falta de solidaridad con sus compañeros docentes.",
+            "D) Un exceso de honestidad que ayuda a los padres a entender la realidad del centro."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Código de Ética Docente / Estatuto. El docente debe proyectar una imagen de unidad institucional frente a la comunidad externa. Las críticas a la gestión deben realizarse en reuniones técnicas o mediante los organismos de participación interna, no en espacios públicos que debiliten la institucionalidad."
+    },
+    {
+        id: 463,
+        categoria: "Evaluación",
+        pregunta: "En 5to grado, para evaluar el indicador 'Utiliza estrategias de cálculo mental', el docente propone un juego de tienda escolar. Observa que una niña usa los dedos para sumar. ¿Cuál es la valoración correcta en ese momento?",
+        opciones: [
+            "A) Logrado (L), porque al final llegó al resultado correcto.",
+            "B) En Proceso (EP), porque aunque resuelve el problema, todavía depende de una estrategia concreta y no ha alcanzado la abstracción del cálculo mental requerido por el indicador.",
+            "C) Iniciado (I), porque usar los dedos es de niños de primer grado.",
+            "D) Reprobada, por no seguir la instrucción de no usar las manos."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Instructivo del Registro de Grado. La valoración 'EP' indica que el estudiante muestra avances pero requiere mediación para alcanzar el nivel de dominio técnico o abstracto esperado. El docente debe ahora proponer actividades que la ayuden a soltar el apoyo físico."
+    },
+    {
+        id: 464,
+        categoria: "Alfabetización",
+        pregunta: "Un docente de 2do grado nota que un estudiante lee palabra por palabra, sin respetar los puntos ni las comas, lo que le impide entender el sentido del texto. ¿En qué debe enfocarse la intervención?",
+        opciones: [
+            "A) En la velocidad lectora, cronometrando cuántas palabras lee por minuto.",
+            "B) En la fluidez y prosodia (entonación y ritmo), mediante lecturas modeladas y teatro de lectores para conectar la puntuación con el significado.",
+            "C) En enseñarle más vocabulario difícil de diccionarios.",
+            "D) En que copie el texto diez veces para que se lo aprenda de memoria."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 01-2023. La comprensión lectora depende de la fluidez. Si el niño gasta toda su energía cognitiva en decodificar sílabas, no puede procesar el significado. Leer con entonación (prosodia) ayuda a segmentar las ideas correctamente en el cerebro."
+    },
+    {
+        id: 465,
+        categoria: "Planificación Pedagógica",
+        pregunta: "El currículo dominicano actual se define como 'abierto, flexible y participativo'. ¿Cómo aplica un docente la característica de 'participativo' en su planificación de aula?",
+        opciones: [
+            "A) Dejando que los estudiantes decidan qué días no quieren tener clase.",
+            "B) Involucrando a los estudiantes en la selección de temas de interés para proyectos y en la negociación de algunos criterios de evaluación.",
+            "C) Permitiendo que los padres de familia dicten los contenidos que ellos consideran importantes.",
+            "D) Haciendo que todos los estudiantes hablen al mismo tiempo durante la clase."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Bases de la Revisión y Actualización Curricular. Lo participativo implica democratizar el proceso de aprendizaje. Cuando el alumno tiene voz en su formación (ej. elegir el tema de un Proyecto de Aula), aumenta su compromiso y motivación intrínseca."
+    },
+    {
+        id: 466,
+        categoria: "Inclusión",
+        pregunta: "Un estudiante extranjero se incorpora a 3er grado a mitad de año. Sus compañeros lo excluyen de los juegos por su acento. El docente decide organizar una 'Feria de las Culturas' donde cada niño investigue y valore el origen de sus familias. ¿Qué está trabajando el docente?",
+        opciones: [
+            "A) Solo un contenido de Ciencias Sociales sobre geografía.",
+            "B) El clima inclusivo y la Competencia Ética y Ciudadana, utilizando la diversidad como un valor pedagógico para prevenir el acoso escolar (bullying).",
+            "C) Una actividad recreativa para que los niños no se aburran en el aula.",
+            "D) Una estrategia para que el estudiante extranjero se sienta obligado a cambiar su acento."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024 y Manual de Convivencia. La inclusión no es solo para discapacidades; es para toda la diversidad (cultural, étnica, lingüística). El docente debe ser un agente activo que desarticule prejuicios mediante la educación en valores."
+    },
+    {
+        id: 467,
+        categoria: "Gestión del Aprendizaje",
+        pregunta: "Un docente de 6to grado utiliza 'Rúbricas de Autoevaluación' después de cada proyecto. Un estudiante se pone 'Excelente' en todo, pero el docente sabe que no trabajó. ¿Cuál es la respuesta educativa correcta?",
+        opciones: [
+            "A) Tacharle la autoevaluación y ponerle un cero por mentiroso.",
+            "B) Sostener una entrevista individual de retroalimentación, pidiéndole al estudiante que muestre las evidencias que sustentan su valoración y ayudándole a reflexionar sobre su honestidad y compromiso.",
+            "C) Ignorar la autoevaluación y poner la nota que el maestro considere.",
+            "D) Llamar a los padres para informarles que el niño tiene problemas morales."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La autoevaluación es un proceso de aprendizaje. Si el estudiante no es honesto, es porque aún no ha desarrollado la capacidad reflexiva. El papel del docente es mediar esa reflexión mediante el diálogo y la confrontación con las evidencias reales."
+    },
+    {
+        id: 468,
+        categoria: "Comportamientos Profesionales",
+        pregunta: "Un docente es asignado a un centro educativo muy lejano a su residencia. Durante los primeros meses, llega tarde frecuentemente alegando problemas de transporte. ¿Cómo afecta esto su evaluación de desempeño?",
+        opciones: [
+            "A) No le afecta, ya que es una causa justificada por la distancia.",
+            "B) Le afecta negativamente en la dimensión de Compromiso Ético y Profesional, ya que la puntualidad es un deber básico y debe gestionar alternativas para cumplir con su horario.",
+            "C) El Ministerio debe ponerle un transporte privado para que no llegue tarde.",
+            "D) Se compensa si el docente se queda más tiempo después de la hora de salida."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Estatuto Docente y Reglamento de Carrera. El cumplimiento del horario es una obligación contractual y ética. Aunque la distancia sea un reto, el docente profesional debe buscar soluciones o realizar los trámites de traslado correspondientes, pero no vulnerar el tiempo de aprendizaje de los niños."
+    },
+    {
+        id: 469,
+        categoria: "Evaluación",
+        pregunta: "En 4to grado, el profesor de Educación Física nota que un niño tiene miedo a saltar el obstáculo. En lugar de forzarlo, le pide que realice un salto más bajo y que explique la técnica. ¿Qué está evaluando?",
+        opciones: [
+            "A) Nada, porque el niño no cumplió con el estándar del salto alto.",
+            "B) El componente actitudinal y el conocimiento procedimental de la competencia motriz, valorando el progreso individual y la gestión del miedo.",
+            "C) Que el niño es flojo y no tiene aptitud física.",
+            "D) Una falta de disciplina por no obedecer la instrucción original."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La evaluación en Educación Física bajo el enfoque por competencias no es 'olímpica'. Se valoran los procesos, la conciencia corporal y la disposición, permitiendo que cada estudiante avance según su ritmo biológico y emocional."
+    },
+    {
+        id: 470,
+        categoria: "Planificación Pedagógica",
+        pregunta: "Al final de la jornada en jornada extendida, los docentes de un centro se reúnen 30 minutos para coordinar las actividades del día siguiente. ¿Cómo se denomina técnicamente este espacio?",
+        opciones: [
+            "A) Tiempo de descanso docente.",
+            "B) Comunidad de Aprendizaje o Espacio de Planificación Colaborativa, vital para asegurar la coherencia pedagógica del centro.",
+            "C) Reunión de chismes pedagógicos.",
+            "D) Tiempo perdido que debería usarse con los estudiantes."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Calendario Escolar / Jornada Extendida. La planificación colaborativa es un estándar de calidad. Permite que lo que pasa en matemáticas tenga sentido con lo que pasa en lengua española y que el centro educativo funcione como una unidad pedagógica y no como islas aisladas."
     }
 
 ];
@@ -5282,4 +6194,4 @@ const bancoPrimaria = [
 // Exportar (opcional según necesidad)
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = bancoPrimaria;
-}
+}   
