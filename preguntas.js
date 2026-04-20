@@ -6561,7 +6561,1634 @@ const bancoPreguntas = [
         ],
         respuestaCorrecta: 1,
         explicacion: "Base Normativa REAL: Ley General de Educación 66-97 y Normas de Convivencia. El fomento de los valores nacionales es un fin de la educación dominicana, y su abordaje ante faltas debe ser formativo."
+    },
+
+
+    {
+        id: 491,
+        categoria: "Protección",
+        pregunta: "Padres en proceso de divorcio sin sentencia judicial de custodia. La madre (quien matriculó a la niña) informa verbalmente a la escuela que el padre no puede retirar a la estudiante de 2do grado. En la salida, el padre se presenta a buscarla. Según el Manual Operativo y la Ley 136-03, ¿cuál es la decisión técnico-administrativa correcta?",
+        opciones: [
+            "A) Negar la entrega de la menor al padre amparándose en la solicitud verbal de la madre para evitar conflictos en el recinto.",
+            "B) Entregar a la menor al padre, ya que al no existir una orden de restricción o sentencia judicial, ambos mantienen la patria potestad inalienable.",
+            "C) Retener a la menor en la Dirección, contactar inmediatamente a la madre para que se presente, e informar al padre que por protocolo de seguridad no se puede efectuar la entrega sin el consentimiento de quien firmó la matriculación.",
+            "D) Requerir la intervención de la Policía Escolar para que arreste al padre por alteración del orden institucional."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Normativa REAL: Ley 136-03 y Manual Operativo (2015). Aunque ambos tienen patria potestad (opción B es la trampa legal), la escuela debe salvaguardar la integridad emocional del menor y respetar el contrato de matriculación. Ante un conflicto de custodia in situ sin orden judicial, el centro retiene preventivamente y convoca a la parte matriculante para mediar, evitando entregar al NNA en un escenario de vulnerabilidad o sustracción."
+    },
+    {
+        id: 492,
+        categoria: "NEAE",
+        pregunta: "Un docente de 4to grado aplica el Diseño Universal para el Aprendizaje (DUA) en su planificación. Sin embargo, un estudiante con Discapacidad Intelectual Moderada no logra alcanzar los indicadores de logro. El docente exige su traslado a un centro especial. Según la Ordenanza 05-2024, ¿qué procede?",
+        opciones: [
+            "A) Avalar el traslado, ya que el DUA demostró ser ineficaz y el aula regular no garantiza su derecho al aprendizaje.",
+            "B) Articular con el docente el diseño de Ajustes Curriculares Significativos (ACS), modificando los indicadores de logro y los contenidos, previa evaluación psicopedagógica y consentimiento familiar.",
+            "C) Obligar al docente a seguir aplicando el DUA genérico hasta que el estudiante se adapte por repetición.",
+            "D) Promover al estudiante administrativamente sin evaluación para no vulnerar su autoestima, eximiéndolo de los contenidos no logrados."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ordenanza 05-2024. El DUA es el primer nivel de respuesta (preventivo). Si este no es suficiente, la normativa exige pasar al segundo nivel: Ajustes Curriculares Individualizados (en este caso Significativos, pues modifican el currículo), manteniendo la escolarización en el entorno menos restrictivo (aula regular)."
+    },
+    {
+        id: 493,
+        categoria: "Clima Escolar",
+        pregunta: "Durante una revisión aleatoria de mochilas (operativo de seguridad), se le incauta un cigarrillo electrónico (vape) a un estudiante de 6to grado. La Dirección, amparada en la política de 'Cero Tolerancia', decide su expulsión. Como psicólogo escolar, usted debe establecer que:",
+        opciones: [
+            "A) La expulsión es válida y legal, ya que la introducción de sustancias controladas es una falta tipificada como muy grave.",
+            "B) La incautación fue legal, pero la expulsión viola el derecho a la educación. Procede retener el objeto, citar a la familia, derivar a programas de salud y aplicar medidas socioeducativas de permanencia.",
+            "C) El operativo de revisión de mochilas fue ilegal por violar la intimidad del NNA, por lo que el hallazgo es nulo y no procede sanción.",
+            "D) Se debe someter al estudiante a pruebas toxicológicas obligatorias dentro del centro antes de emitir una sanción disciplinaria."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Normas del Sistema de Convivencia Educativa. Introducir sustancias es una falta grave/muy grave, pero la sanción máxima permitida NO es la expulsión definitiva, sino la suspensión temporal acompañada de un proceso restaurativo, formativo y de referimiento al sistema de salud."
+    },
+    {
+        id: 494,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "La Dirección del centro le instruye formalmente organizar y ejecutar un diagnóstico de lectura a todos los estudiantes de 1er ciclo de Primaria con el fin de utilizar los resultados para 'evaluar el desempeño y eficiencia de los docentes'. ¿Cuál es su postura técnica fundamentada?",
+        opciones: [
+            "A) Acatar la instrucción, diseñando una rúbrica estandarizada para medir la competencia lectora de manera objetiva.",
+            "B) Declinar la instrucción de evaluar el desempeño docente, aclarando que la función del psicólogo es identificar barreras de aprendizaje en los estudiantes para asesorar pedagógicamente, no realizar auditorías laborales al personal.",
+            "C) Realizar la evaluación, pero entregar los resultados de forma anónima para proteger la identidad de los docentes con bajo rendimiento.",
+            "D) Delegar la aplicación de la prueba a los coordinadores pedagógicos para mantener la neutralidad clínica."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo (2015) y Lineamientos 2023-2024. El rol del psicólogo escolar es de apoyo al estudiante y acompañamiento al docente. Utilizar evaluaciones psicopedagógicas como mecanismo punitivo o de auditoría laboral desvirtúa el rol, rompe el clima de confianza y viola las funciones del puesto."
+    },
+    {
+        id: 495,
+        categoria: "Protección",
+        pregunta: "Una estudiante de Nivel Inicial relata de manera espontánea en el aula que su padrastro le tomó fotografías sin ropa en el baño. La madre, al ser citada, se muestra ofendida, niega el hecho, acusa a la niña de mentir e intenta retirarla de la escuela de forma agresiva. ¿Qué establece la Ruta Crítica?",
+        opciones: [
+            "A) Retener a la madre en la escuela mediante la Policía Escolar e interrogar a la niña en su presencia para buscar contradicciones.",
+            "B) Entregar a la menor a la madre para no escalar el conflicto, pero agendar una cita con el padrastro al día siguiente.",
+            "C) Resguardar a la menor en un espacio seguro del centro (no entregarla si hay riesgo inminente), activar a la Dirección y notificar inmediatamente a la Línea Vida, CONANI o Ministerio Público por sospecha de ASI.",
+            "D) Convencer a la madre mediante técnicas de persuasión psicológica para que sea ella quien ponga la denuncia voluntariamente."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Normativa REAL: Guía de Ruta Crítica y Ley 136-03. Ante la revelación de Abuso Sexual Infantil (ASI) donde el agresor es del núcleo convivencial y la madre encubre o reacciona con hostilidad, el centro asume el rol de garante primario. No se entrega a la víctima a su presunto entorno agresor sin directriz del Ministerio Público o CONANI."
+    },
+    {
+        id: 496,
+        categoria: "NEAE",
+        pregunta: "A un estudiante de 3er grado con diagnóstico clínico externo de TDAH se le prescribió medicación controlada. La familia notifica que suspenderá la medicación por problemas económicos. El docente titular se niega a recibir al niño en el aula 'hasta que vuelva a estar medicado'. ¿Qué principio legal aplica?",
+        opciones: [
+            "A) El docente tiene la potestad de salvaguardar el orden de su aula exigiendo la continuidad del tratamiento médico.",
+            "B) El centro debe proveer los recursos económicos de sus fondos descentralizados para comprar el medicamento del NNA.",
+            "C) Condicionar el acceso a la educación a un tratamiento farmacológico es un acto discriminatorio, ilegal y violatorio de la Ordenanza 05-2024; el centro debe aplicar estrategias de autorregulación y DUA.",
+            "D) El psicólogo escolar debe suplir la falta de medicación aplicando terapia cognitivo-conductual intensiva diaria en su cubículo."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Normativa REAL: Ordenanza 05-2024 y Ley 136-03. El derecho a la escolarización es incondicional. Ningún actor del sistema educativo puede exigir o condicionar la permanencia de un estudiante a la ingesta de fármacos."
+    },
+    {
+        id: 497,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "En la estructuración de su Plan Operativo Anual (POA), usted identifica la necesidad de trabajar la Orientación Vocacional en el segundo ciclo de Primaria. Según los Lineamientos del MINERD, ¿cuál es el enfoque metodológico para este nivel?",
+        opciones: [
+            "A) Aplicación de baterías de pruebas de aptitud (Ej. Test de Kuder) para definir un perfil profesional cerrado.",
+            "B) Exploración lúdica de intereses, dignificación de los oficios del entorno y fomento del autoconocimiento como base del Proyecto de Vida.",
+            "C) Orientación exclusiva hacia los liceos de modalidad Técnico-Profesional que existen en el Distrito.",
+            "D) Omitir esta línea de intervención, ya que la orientación vocacional es competencia exclusiva del Nivel Secundario."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Lineamientos de Orientación y Psicología 2023-2024. En Primaria no se aplican pruebas definitorias de vocación; se trabaja la fase exploratoria y pre-vocacional mediante el autoconocimiento y la valoración del trabajo."
+    },
+    {
+        id: 498,
+        categoria: "Clima Escolar",
+        pregunta: "Durante una revisión de los expedientes disciplinarios, usted nota que la medida más utilizada por los docentes ante faltas leves (hablar en clase, pararse) es enviar al estudiante fuera del aula por periodos prolongados. Conforme a las Normas de Convivencia, esta práctica:",
+        opciones: [
+            "A) Es una estrategia válida de 'tiempo fuera' (time out) respaldada por la psicología conductual.",
+            "B) Es una falta del docente, ya que vulnera el derecho al aprendizaje y el deber de cuidado (supervisión) del menor, exponiéndolo a riesgos.",
+            "C) Solo es permitida si el estudiante es enviado a la oficina del psicólogo para recibir consejería.",
+            "D) Es correcta siempre que el estudiante sea mayor de 10 años y pueda cuidarse solo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Normas del Sistema de Convivencia del MINERD. Queda expresamente prohibido expulsar a los estudiantes del aula como medida disciplinaria, pues interrumpe su derecho constitucional a la educación y los deja en estado de vulnerabilidad institucional."
+    },
+    {
+        id: 499,
+        categoria: "Protección",
+        pregunta: "Se detecta que un estudiante de 12 años trabaja de 10:00 p.m. a 3:00 a.m. en una panadería, lo que genera somnolencia diurna extrema y bajo rendimiento escolar. Los padres afirman que 'el trabajo dignifica'. Institucionalmente, el deber del psicólogo es:",
+        opciones: [
+            "A) Respetar los valores y pautas de crianza de la familia, limitándose a motivar al estudiante a esforzarse más en clase.",
+            "B) Flexibilizar el horario de entrada del estudiante para que pueda dormir las horas necesarias.",
+            "C) Tipificarlo como Trabajo Infantil en sus Peores Formas (horario nocturno) y notificar al CONANI y Ministerio de Trabajo para restitución de derechos.",
+            "D) Ofrecer al estudiante un trabajo dentro del centro escolar (ej. en la cafetería) para que renuncie al empleo nocturno."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Normativa REAL: Ley 136-03 y Guía de Ruta Crítica. El trabajo nocturno en menores de 14 años es ilegal y constituye una vulneración grave de derechos. La escuela no puede ser cómplice adaptando su currículo a una práctica de explotación laboral."
+    },
+    {
+        id: 500,
+        categoria: "NEAE",
+        pregunta: "Un estudiante extranjero recién llegado no domina el idioma español (habla creole haitiano). El docente argumenta barrera comunicativa insalvable. Según la Ordenanza 05-2024, ¿cómo se clasifica y aborda esta situación?",
+        opciones: [
+            "A) Como barrera sociocultural ajena a la escuela; el estudiante debe permanecer como oyente hasta aprender el idioma por sus medios.",
+            "B) Como Necesidad Específica de Apoyo Educativo (NEAE) transitoria, requiriendo un plan de acogida, ajustes de acceso (comunicación) y apoyo para el aprendizaje del español como segunda lengua.",
+            "C) Como una Discapacidad Intelectual Leve debido a la falta de comprensión de los mandatos áulicos.",
+            "D) El centro debe exigir a la embajada correspondiente un intérprete permanente como condición para la escolarización."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ordenanza 05-2024. El desconocimiento del idioma de instrucción es tipificado como una NEAE vinculada a historia personal o sociocultural. Exige respuesta institucional mediante ajustes de acceso y metodológicos, no exclusión."
+    },
+    {
+        id: 501,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "Usted es designado a un centro educativo de nueva creación. Para elaborar el Plan Operativo Anual (POA) del Departamento de Psicología, ¿cuál es la primera acción técnica estipulada en los Lineamientos?",
+        opciones: [
+            "A) Implementar el mismo POA de su centro anterior, ya que los lineamientos nacionales son universales.",
+            "B) Esperar la primera asamblea de padres para levantar quejas y basar el plan en sus demandas.",
+            "C) Diseñar y aplicar una Evaluación Diagnóstica de Necesidades (Línea Base) dirigida a estudiantes, docentes y familias para contextualizar las intervenciones.",
+            "D) Copiar los objetivos directamente del currículo oficial de Nivel Primario y aplicarlos sin modificaciones."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Normativa REAL: Manual Operativo y Lineamientos 2023-2024. Toda planificación en Orientación y Psicología parte obligatoriamente de un diagnóstico de contexto (Línea Base) para responder a la realidad biopsicosocial específica de esa comunidad."
+    },
+    {
+        id: 502,
+        categoria: "Clima Escolar",
+        pregunta: "Estudiantes de 5to grado realizan un 'reto viral' de redes sociales dentro del centro, el cual resulta en el daño físico leve de un compañero. ¿Cuál es el protocolo de abordaje de la Ruta Crítica?",
+        opciones: [
+            "A) Considerarlo un juego de niños que salió mal y pedir que se disculpen entre ellos en el recreo.",
+            "B) Prohibir el uso de celulares y suspender de la escuela a todos los que sigan cuentas de redes sociales.",
+            "C) Tratarlo como violencia/riesgo psicosocial: brindar atención al afectado, citar a familias, aplicar medidas formativas y ejecutar prevención grupal sobre ciberseguridad y presión de grupo.",
+            "D) Exigir a los padres del niño herido que presenten una demanda penal contra los compañeros."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Normativa REAL: Guía de Ruta Crítica y Normas de Convivencia. Los retos virales que atentan contra la integridad son situaciones de riesgo psicosocial que requieren abordaje correctivo (sanción formativa) y preventivo (educación digital institucional)."
+    },
+    {
+        id: 503,
+        categoria: "Protección",
+        pregunta: "Una docente reporta que un estudiante de 1er grado presenta constante irritación en su zona genital y conductas sexualizadas inapropiadas para su etapa evolutiva. Según el protocolo del MINERD, ¿cuál es el paso técnico inmediato del psicólogo?",
+        opciones: [
+            "A) Realizar un examen físico superficial al menor en el departamento de psicología para confirmar la irritación.",
+            "B) Entrevistar directamente a los padres para indagar si han notado los síntomas y preguntarles si alguien abusa del niño.",
+            "C) Consolidar los indicadores (reporte docente, observación) y notificar al Ministerio Público de NNA por sospecha de ASI, evitando interrogar a la familia.",
+            "D) Aplicar pruebas proyectivas exhaustivas durante varias semanas para tener certeza diagnóstica antes de reportar."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Normativa REAL: Ruta Crítica de Violencia. El profesional escolar NO realiza exámenes físicos ni interrogatorios periciales a sospechosos. Agrupa indicadores observables y ejerce la obligación de denuncia inmediata."
+    },
+    {
+        id: 504,
+        categoria: "NEAE",
+        pregunta: "Un estudiante con parálisis cerebral es matriculado. El Equipo de Gestión indica que la escuela no puede responsabilizarse si el estudiante no logra controlar sus esfínteres. La Ordenanza 05-2024 dicta que:",
+        opciones: [
+            "A) La escuela tiene razón; el control de esfínteres es requisito administrativo para el Nivel Primario.",
+            "B) La familia debe estar presente durante toda la jornada escolar para atender exclusivamente estas necesidades biomédicas.",
+            "C) El centro debe promover la autonomía paulatina, coordinando con la familia los apoyos (ajustes de acceso) necesarios para su higiene y dignidad sin condicionar su escolarización.",
+            "D) El estudiante debe ser derivado a la modalidad de educación a distancia."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Normativa REAL: Ordenanza 05-2024. Los requisitos de madurez biomédica no pueden ser usados como barreras de exclusión. La escuela gestiona apoyos y establece acuerdos de corresponsabilidad con la familia garantizando el acceso."
+    },
+    {
+        id: 505,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "En una reunión del Equipo de Gestión (EGE), el Director solicita que el psicólogo asuma las horas de docencia de un maestro de Educación Física que está de licencia por un mes. Usted, basándose en el Manual Operativo, responde:",
+        opciones: [
+            "A) Aceptar de manera incondicional, ya que el psicólogo es un empleado administrativo sujeto a las órdenes directas del Director.",
+            "B) Rechazar la solicitud, explicando que sus funciones son técnico-asesoras y asumir titularidad de aula paraliza los servicios de prevención, atención a la diversidad y protección del centro.",
+            "C) Aceptar la sustitución, pero exigir un pago doble por asumir funciones ajenas a su contrato.",
+            "D) Negociar impartir Educación Física solo a los cursos que tengan estudiantes con NEAE."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo de los Centros de Orientación y Psicología (2015). El rol técnico está protegido normativamente. Asumir sustituciones docentes constituye una desviación de funciones que vulnera la planificación y la atención psicosocial de toda la matrícula."
+    },
+    {
+        id: 506,
+        categoria: "Clima Escolar",
+        pregunta: "Una madre se presenta furiosa al centro acusando a un docente de discriminar a su hijo por su religión (pelo largo por voto nazareo). Exige la destitución del maestro. El proceder mediador del orientador es:",
+        opciones: [
+            "A) Explicarle a la madre que las normas de higiene del centro están por encima de las creencias religiosas personales.",
+            "B) Apoyar a la madre incondicionalmente y levantar un acta de amonestación contra el docente por intolerancia.",
+            "C) Facilitar un espacio de diálogo respetuoso, amparado en el respeto a la diversidad (Ley 136-03), para armonizar la normativa escolar con el derecho a la identidad religiosa del menor.",
+            "D) Remitir el caso de manera directa al Ministerio de Defensa por tratarse de seguridad nacional."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Normativa REAL: Manual de Convivencia y Ley 136-03. El derecho a la identidad y libertad de culto es constitucional. El rol del orientador es la mediación para evitar conflictos, asegurando la inclusión y el respeto a la diversidad cultural y religiosa."
+    },
+    {
+        id: 507,
+        categoria: "Protección",
+        pregunta: "Durante una evaluación psicopedagógica, un niño de 8 años revela que su hermano mayor (17 años), quien también asiste a la misma escuela en secundaria, lo obliga a tocar sus partes íntimas. ¿Cuál es el accionar institucional según la ley dominicana?",
+        opciones: [
+            "A) Abordarlo como un conflicto entre pares, realizando mediación entre ambos hermanos en el departamento de psicología.",
+            "B) Informar a los padres para que resuelvan el tema dentro del hogar, ya que ambos son menores de edad de la misma familia.",
+            "C) Garantizar la separación física de ambos en el recinto, notificar al Equipo de Gestión y derivar el reporte de presunto ASI a la fiscalía de NNA/CONANI para su abordaje legal.",
+            "D) Expulsar inmediatamente al hermano de 17 años por constituir un peligro para la comunidad educativa."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Normativa REAL: Ley 136-03 y Ruta Crítica. Un agresor adolescente no exime la figura de Abuso Sexual ni la obligación de denuncia institucional. La escuela debe proteger a la víctima y canalizar el caso por la vía legal para que el Estado intervenga con el agresor menor de edad."
+    },
+    {
+        id: 508,
+        categoria: "NEAE",
+        pregunta: "Para certificar las adecuaciones realizadas a un estudiante con NEAE asociadas a discapacidad, el docente y el psicólogo deben consolidar la información en un documento técnico legal llamado:",
+        opciones: [
+            "A) Registro Anecdótico de Comportamiento Diario.",
+            "B) Plan Educativo Individualizado (PEI) o Documento de Ajustes Curriculares Individualizados (ACI).",
+            "C) Certado de Deficiencia Cognitiva.",
+            "D) Reporte Epidemiológico Escolar."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ordenanza 05-2024. El ACI o PEI es el documento oficial y vinculante que operativiza y legitima las modificaciones curriculares (metodología, indicadores, evaluación) para el estudiante."
+    },
+    {
+        id: 509,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "Al detectar altos niveles de agresividad en los estudiantes durante la hora del almuerzo escolar, la intervención preventiva más adecuada desde el área de Orientación es:",
+        opciones: [
+            "A) Suspender el almuerzo escolar para los grupos que presenten mayor incidencia de conflictos.",
+            "B) Diseñar un programa transversal de habilidades para la vida y resolución pacífica de conflictos, articulado con las rutinas de aula.",
+            "C) Patologizar el comportamiento y emitir diagnósticos de Trastorno Negativista Desafiante de forma masiva.",
+            "D) Solicitar la presencia militar (Policía Escolar) armada dentro del comedor estudiantil permanentemente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Lineamientos del Proceso de Orientación y Psicología 2023-2024. El abordaje preventivo ante disrupciones sistémicas demanda programas formativos en habilidades socioemocionales, promoción de cultura de paz y articulación docente, no respuestas punitivas o restrictivas de derechos fundamentales (como la alimentación)."
+    },
+    {
+        id: 510,
+        categoria: "Clima Escolar",
+        pregunta: "Ante un estudiante que reiteradamente se niega a realizar las actividades en el aula, desafía al docente y altera el orden (falta grave), el conducto regular para la aplicación de medidas disciplinarias formales requiere la participación de:",
+        opciones: [
+            "A) El orientador actuando como figura sancionadora y punitiva primaria.",
+            "B) El Equipo de Gestión, el docente titular, el orientador (como garante del debido proceso y enfoque formativo) y la citación a la familia.",
+            "C) Exclusivamente el Director del centro, quien tiene la potestad de decidir unilateralmente.",
+            "D) El Consejo Estudiantil, quienes deben votar para decidir el castigo de su compañero."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Normas del Sistema de Convivencia. El debido proceso ante faltas graves es colegiado. El psicólogo no sanciona, sino que asesora para que la medida elegida por el Equipo de Gestión sea pedagógica, proporcional y restituya la convivencia."
+    },
+    
+    {
+        id: 511,
+        categoria: "Protección",
+        pregunta: "Un estudiante de 4to grado de Primaria confía al orientador que su padre, quien tiene un cargo de alta jerarquía en la comunidad, lo golpea con un cinturón 'cuando se porta mal'. El estudiante ruega que no se diga nada por miedo. Según la Ley 136-03 y la ética profesional del MINERD, ¿cuál es la acción imperativa?",
+        opciones: [
+            "A) Respetar el deseo del menor para mantener el vínculo de confianza y trabajar pautas de crianza con el padre de forma discreta.",
+            "B) Notificar al Distrito Educativo y al Ministerio Público de NNA inmediatamente, ya que el maltrato físico grave no está sujeto a confidencialidad ni depende del estatus social del agresor.",
+            "C) Realizar una visita domiciliaria sorpresa para constatar las condiciones de la vivienda antes de emitir un reporte formal.",
+            "D) Derivar el caso al consejo de ancianos o líderes religiosos de la comunidad para que medien con el padre."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ley 136-03 (Art. 14) y Guía de Ruta Crítica. La obligación de denunciar el maltrato físico es absoluta para el personal docente y técnico. No se puede invocar el secreto profesional ni el temor del menor cuando hay una vulneración de integridad física."
+    },
+    {
+        id: 412,
+        categoria: "NEAE",
+        pregunta: "En una evaluación psicopedagógica, se identifica que un estudiante de 5to grado posee un Coeficiente Intelectual (CI) muy superior al promedio (Altas Capacidades), pero muestra desinterés y bajo rendimiento en las tareas rutinarias. ¿Qué respuesta educativa dicta la Ordenanza 05-2024?",
+        opciones: [
+            "A) Exigirle el doble de tareas que a sus compañeros para mantenerlo ocupado y evitar que se aburra.",
+            "B) Implementar Ajustes Curriculares de Enriquecimiento (vertical u horizontal), profundizando en los contenidos o permitiendo proyectos de investigación autónomos.",
+            "C) Promoverlo de grado inmediatamente sin realizar ninguna evaluación adicional para no frenar su desarrollo.",
+            "D) Sugerir a los padres que lo retiren de la escuela pública y lo inscriban en un centro para superdotados, ya que el sistema regular no tiene recursos para él."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ordenanza 05-2024. El enriquecimiento curricular es la estrategia de inclusión para altas capacidades dentro del aula regular. La aceleración (promoción de grado) es una opción posterior, pero requiere un proceso administrativo de certificación previo."
+    },
+    {
+        id: 513,
+        categoria: "Clima Escolar",
+        pregunta: "Un docente de 6to grado solicita al orientador que aplique un 'correctivo psicológico' a un estudiante que usa lenguaje soez. Al indagar, el orientador descubre que el docente suele gritar y ridiculizar al estudiante frente al grupo. ¿Cuál es el abordaje técnico del orientador?",
+        opciones: [
+            "A) Aplicar una técnica de modificación de conducta solo al estudiante para que aprenda a respetar la autoridad.",
+            "B) Intervenir de forma sistémica: brindar apoyo socioemocional al estudiante y asesorar al docente en estrategias de disciplina positiva y gestión de aula, recordándole el deber de respeto a la dignidad del NNA.",
+            "C) Reportar al docente ante el Distrito para que sea desvinculado por maltrato verbal sin hablar con él previamente.",
+            "D) Organizar un careo entre el docente y el estudiante en el patio del recreo para que 'se digan sus verdades'."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Lineamientos 2023-2024 y Normas de Convivencia. El orientador no es una figura sancionadora. Su intervención debe ser integral, abordando tanto la conducta del estudiante como la práctica pedagógica del docente que pudiera estar detonando el conflicto."
+    },
+    {
+        id: 514,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "Durante la elaboración del informe psicopedagógico de un estudiante con dificultades de aprendizaje, el psicólogo debe incluir 'recomendaciones para el hogar'. ¿Cuál de estas es una recomendación técnicamente alineada al MINERD?",
+        opciones: [
+            "A) Indicar a los padres que contraten a un tutor privado que realice las tareas por el niño.",
+            "B) Sugerir el establecimiento de rutinas claras de estudio, fomento de la lectura compartida y refuerzo positivo de los logros, sin sustituir la labor docente.",
+            "C) Recetar vitaminas o suplementos cerebrales para mejorar la retención de memoria.",
+            "D) Pedir a los padres que castiguen al niño sin televisión hasta que sus notas suban a 90 puntos."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Lineamientos del Proceso de Orientación y Psicología. Las recomendaciones para la familia deben ser orientaciones piscoeducativas que fortalezcan el hábito y el entorno, no medidas punitivas ni médicas."
+    },
+    {
+        id: 515,
+        categoria: "Protección",
+        pregunta: "Un centro educativo recibe una orden judicial de alejamiento contra el padre de una estudiante de 3er grado. El padre se presenta al centro alegando que 'solo quiere ver a su hija cinco minutos'. ¿Cuál es el procedimiento legal del personal?",
+        opciones: [
+            "A) Permitir la visita en la oficina de orientación bajo supervisión del psicólogo para no ser inhumanos.",
+            "B) Impedir el acceso de manera tajante, resguardar a la menor y llamar a la Policía Escolar/911 si el padre insiste, respetando estrictamente la orden judicial.",
+            "C) Llamar a la madre para pedirle permiso y ver si ella accede a que el padre la vea.",
+            "D) Entregar a la niña al padre rápidamente para que se vaya y no cause un escándalo en la escuela."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ley 136-03 y Protocolos de Seguridad Escolar. El incumplimiento de una orden judicial de protección es un delito. La escuela es garante de la seguridad de la menor y debe ejecutar la restricción sin excepciones."
+    },
+    {
+        id: 516,
+        categoria: "NEAE",
+        pregunta: "Para un estudiante con Discapacidad Motriz que requiere el uso de un andador, ¿cuál de las siguientes acciones se considera un 'Ajuste de Acceso' según la Ordenanza 05-2024?",
+        opciones: [
+            "A) Modificar los contenidos de la asignatura de Matemáticas para que sean más fáciles.",
+            "B) Asegurar que los pasillos estén despejados, instalar rampas y colocar el mobiliario de forma que permita el desplazamiento del estudiante.",
+            "C) Eximir al estudiante de participar en todas las actividades fuera del aula.",
+            "D) Asignar a un compañero para que le mueva la silla de ruedas siempre, impidiendo su autonomía."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ordenanza 05-2024. Los ajustes de acceso son aquellos que modifican el entorno físico o los materiales para permitir la participación, sin alterar los objetivos de aprendizaje."
+    },
+    {
+        id: 517,
+        categoria: "Clima Escolar",
+        pregunta: "En una asamblea de la APMAE, varios padres expresan su preocupación porque un estudiante con VIH está matriculado en el centro. Exigen que sea segregado o expulsado. La respuesta institucional del orientador debe ser:",
+        opciones: [
+            "A) Acceder a la demanda para calmar a la mayoría de los padres y mantener la paz escolar.",
+            "B) Informar que, por ley, la condición de salud no es motivo de exclusión ni discriminación, y realizar una jornada de sensibilización sobre el derecho a la educación y salud sin revelar la identidad del menor.",
+            "C) Confirmar públicamente quién es el niño para que los padres tomen sus propias medidas de precaución.",
+            "D) Pedir a la familia del niño con VIH que lo retire voluntariamente para 'evitarle problemas'."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Constitución Dominicana, Ley 66-97 y Ley 135-11 sobre VIH. La discriminación por salud es ilegal. El orientador debe educar a la comunidad y proteger el derecho a la educación y la confidencialidad del estudiante."
+    },
+    {
+        id: 518,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "Un psicólogo escolar detecta que el 60% de los estudiantes de un grado presentan dificultades de comprensión lectora. Según su función de 'asesoría a la práctica pedagógica', ¿qué debe hacer?",
+        opciones: [
+            "A) Atender a todos los niños de forma individual en su oficina durante todo el año.",
+            "B) Coordinar con la unidad pedagógica para analizar las estrategias de enseñanza del docente y sugerir metodologías activas y diversificadas de lectura.",
+            "C) Elaborar un reporte diciendo que los niños no sirven para estudiar.",
+            "D) Aplicar una prueba de CI a todos los niños para ver si tienen discapacidad intelectual masiva."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Lineamientos 2023-2024. Cuando una dificultad afecta a la mayoría de un grupo, el problema suele ser de índole pedagógica o metodológica, no clínica individual."
+    },
+    {
+        id: 519,
+        categoria: "Protección",
+        pregunta: "Se descubre que una estudiante de 12 años está embarazada. El Equipo de Gestión sugiere que sea transferida a la modalidad de educación para adultos para evitar 'mal ejemplo'. ¿Qué establece la normativa dominicana?",
+        opciones: [
+            "A) La transferencia es obligatoria para proteger la moral del centro.",
+            "B) La estudiante tiene derecho a permanecer en su centro y grado habitual; el centro debe garantizar su protección, apoyo emocional y evitar cualquier forma de discriminación o expulsión.",
+            "C) La estudiante debe ser suspendida hasta que dé a luz.",
+            "D) Solo puede seguir si los padres de los demás estudiantes firman un acuerdo de aceptación."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Constitución Dominicana y Ley 136-03. El embarazo no es motivo de exclusión del sistema educativo regular. El centro debe realizar ajustes para su seguimiento médico pero nunca expulsarla o segregarla."
+    },
+    {
+        id: 520,
+        categoria: "NEAE",
+        pregunta: "El 'Documento de Ajustes Curriculares Individualizados' (ACI) debe ser elaborado por:",
+        opciones: [
+            "A) El psicólogo escolar de manera aislada en su cubículo.",
+            "B) El docente de aula de manera unilateral sin consultar a nadie.",
+            "C) El docente de aula con la asesoría técnica del psicólogo/orientador y el aval de la coordinación pedagógica.",
+            "D) El conserje del centro junto con el comité de padres."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Normativa REAL: Ordenanza 05-2024. El ACI es un trabajo colaborativo donde el docente (dueño del proceso pedagógico) recibe el apoyo técnico del psicólogo para realizar las adecuaciones necesarias."
+    },
+    {
+        id: 521,
+        categoria: "Clima Escolar",
+        pregunta: "Un estudiante de 1er grado tiene crisis de llanto incontrolable cada vez que su madre lo deja en la puerta. ¿Cuál es la intervención técnica inicial recomendada?",
+        opciones: [
+            "A) Dejar que el niño llore hasta que se canse para que aprenda que la madre no volverá pronto.",
+            "B) Implementar un plan de acogida afectivo, permitiendo una transición gradual y trabajando vínculos de seguridad con el docente y el orientador.",
+            "C) Llamar a la madre para que se lleve al niño y lo intente de nuevo el próximo año.",
+            "D) Administrar un sedante ligero al menor con autorización del Director."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Lineamientos del Nivel Inicial/Primaria. El proceso de adaptación requiere un abordaje empático y estrategias de transición que aseguren el bienestar emocional del menor."
+    },
+    {
+        id: 522,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "En una visita de acompañamiento distrital, se observa que el orientador no tiene al día el 'Registro Anecdótico' de los casos de protección. ¿Qué tipo de falta constituye esto según el Manual Operativo?",
+        opciones: [
+            "A) Ninguna, el registro es opcional.",
+            "B) Una debilidad en el desempeño de sus funciones técnicas de documentación y seguimiento, sujeta a recomendaciones de mejora administrativa.",
+            "C) Un delito penal que conlleva arresto inmediato.",
+            "D) Una razón para que el Distrito le asigne más horas de clase."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo y Estatuto del Docente. El manejo de registros técnicos es una obligación del cargo para asegurar la continuidad y legalidad de los procesos."
+    },
+    {
+        id: 523,
+        categoria: "Protección",
+        pregunta: "Se sospecha que un estudiante es víctima de trata de personas (explotación mendicante en las calles). ¿Cuál es la institución principal a la que el centro debe referir el caso tras activar la Ruta Crítica?",
+        opciones: [
+            "A) Al Ayuntamiento municipal.",
+            "B) Al Ministerio Público y al CONANI.",
+            "C) A la Cruz Roja.",
+            "D) A una ONG de protección animal."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ley 136-03. CONANI y el Ministerio Público son los entes rectores del sistema de protección ante vulneraciones graves de derechos."
+    },
+    {
+        id: 524,
+        categoria: "NEAE",
+        pregunta: "Un estudiante con Trastorno del Espectro Autista (TEA) no verbal utiliza un tablero de comunicación con pictogramas. ¿Esto se considera?",
+        opciones: [
+            "A) Una trampa para no aprender a hablar.",
+            "B) Un Sistema Alternativo y Aumentativo de Comunicación (SAAC), que constituye un ajuste de acceso fundamental.",
+            "C) Un juguete que distrae a los demás compañeros.",
+            "D) Una herramienta que solo debe usarse en la casa."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ordenanza 05-2024. Los SAAC son apoyos técnicos esenciales para garantizar el derecho a la comunicación y participación de estudiantes con discapacidades específicas."
+    },
+    {
+        id: 525,
+        categoria: "Clima Escolar",
+        pregunta: "Un grupo de estudiantes de 6to grado ha creado una página de 'confesiones' en Instagram donde se burlan de la apariencia física de otros niños. El orientador debe:",
+        opciones: [
+            "A) Ignorarlo porque las redes sociales no son propiedad de la escuela.",
+            "B) Identificar a los administradores, aplicar medidas restaurativas (concientización sobre el daño) y trabajar el uso ético de la tecnología con el grupo y familias.",
+            "C) Reportar la página a la policía para que todos los niños vayan presos.",
+            "D) Pedirle al informático de la escuela que hackee la cuenta."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Normas de Convivencia y Guía de Ruta Crítica (Ciberacoso). El acoso fuera del centro que repercute en el clima escolar debe ser abordado formativamente por la institución."
+    },
+    {
+        id: 526,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "Según el Calendario Escolar vigente, el mes de noviembre se destaca por la promoción de:",
+        opciones: [
+            "A) La salud bucal.",
+            "B) La Familia y la prevención de la violencia contra la mujer.",
+            "C) El carnaval dominicano.",
+            "D) El ahorro nacional."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Calendario Escolar MINERD. Noviembre es el mes de la familia y se conmemora la No Violencia contra la Mujer (hermanas Mirabal), temas ejes de la planificación de orientación."
+    },
+    {
+        id: 527,
+        categoria: "Protección",
+        pregunta: "Al entrevistar a un estudiante que presenta moretones, este dice: 'Mi mamá me dio porque rompí un plato, pero ella me quiere'. ¿Cómo debe actuar el profesional?",
+        opciones: [
+            "A) Aceptar que fue un método de corrección culturalmente aceptado y no intervenir.",
+            "B) Informar que el castigo físico está prohibido por ley, reportar el caso según el protocolo y orientar a la madre sobre métodos de disciplina no violentos.",
+            "C) Llamar a la madre para decirle que el niño la 'delató'.",
+            "D) Darle un plato nuevo al niño para que no lo vuelvan a golpear."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ley 136-03. El derecho a la integridad física es absoluto. La 'intención de educar' no justifica el uso de la violencia física contra un NNA."
+    },
+    {
+        id: 528,
+        categoria: "NEAE",
+        pregunta: "Un estudiante de 2do grado no ha logrado la alfabetización inicial, mientras que el resto del curso sí. El psicólogo sospecha de una dificultad específica de aprendizaje. ¿Cuál es el paso previo a la evaluación psicopedagógica profunda?",
+        opciones: [
+            "A) Dejarlo repetir el grado automáticamente.",
+            "B) Agotar la fase de intervención pedagógica intensiva y observación sistemática por parte del docente con apoyo del orientador.",
+            "C) Enviarlo a neurología de una vez.",
+            "D) Pedirle a la madre que le enseñe ella en la casa."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Lineamientos de Orientación. Antes de diagnosticar, se debe asegurar que el estudiante haya recibido las oportunidades pedagógicas adecuadas y observar su respuesta a la intervención."
+    },
+    {
+        id: 529,
+        categoria: "Clima Escolar",
+        pregunta: "Se produce una pelea física entre dos estudiantes en el patio. Tras separarlos, la primera acción del psicólogo es:",
+        opciones: [
+            "A) Determinar quién empezó para castigarlo.",
+            "B) Garantizar la integridad física de ambos (primeros auxilios si aplica) y proporcionar un espacio de calma antes de iniciar el proceso de mediación.",
+            "C) Obligarlos a darse un abrazo frente a todos.",
+            "D) Llamar a los padres para que se los lleven suspendidos de inmediato."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Normas de Convivencia. La prioridad inicial es la contención emocional y la seguridad física, antes de proceder con la investigación o medidas disciplinarias."
+    },
+    {
+        id: 530,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "La participación de los estudiantes en los Consejos de Curso es una estrategia para:",
+        opciones: [
+            "A) Que los estudiantes limpien el aula.",
+            "B) Fomentar el liderazgo, la participación democrática y el sentido de pertenencia en el marco de la cultura de paz.",
+            "C) Que los estudiantes elijan a qué docente quieren despedir.",
+            "D) Evitar que el docente trabaje durante una hora."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ley 66-97 y Lineamientos de Orientación. El Consejo de Curso es el órgano de participación estudiantil por excelencia para el desarrollo de valores ciudadanos."
+    },
+
+    {
+        id: 531,
+        categoria: "Protección",
+        pregunta: "Un orientador recibe información confidencial de que un grupo de estudiantes de 6to grado está siendo captado por una red de 'prestamistas' externos que operan cerca del centro. ¿Cuál es el protocolo de actuación inmediata según la gestión de riesgos?",
+        opciones: [
+            "A) Confrontar a los prestamistas personalmente fuera del centro para advertirles sobre las consecuencias legales.",
+            "B) Documentar los casos identificados, informar al Equipo de Gestión y activar la denuncia ante la Policía Escolar y el Ministerio Público para la protección del entorno escolar.",
+            "C) Prohibir que los estudiantes salgan del centro durante el recreo hasta que la red desaparezca por sí sola.",
+            "D) Dar una charla general sobre ahorro y finanzas personales a los estudiantes sin mencionar el peligro real."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Guía de Ruta Crítica y Manual Operativo. El centro educativo debe garantizar un entorno seguro; ante amenazas externas que vulneren a los menores, la articulación con las autoridades de seguridad y el Ministerio Público es el paso legal obligatorio."
+    },
+    {
+        id: 532,
+        categoria: "NEAE",
+        pregunta: "Un estudiante con discapacidad visual parcial solicita realizar sus exámenes en formato digital con un lector de pantalla. El docente se niega alegando que esto le da una 'ventaja injusta'. Según la Ordenanza 05-2024, usted debe:",
+        opciones: [
+            "A) Aceptar la postura del docente para evitar conflictos en el cuerpo docente.",
+            "B) Establecer que el uso de tecnologías asistivas es un 'Ajuste de Acceso' obligatorio y un derecho que garantiza la equidad, no una ventaja competitiva.",
+            "C) Sugerir que el estudiante aprenda Braille de inmediato para que pueda examinarse en papel como los demás.",
+            "D) Pedirle a otro estudiante que le lea las preguntas en voz alta durante el examen regular."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ordenanza 05-2024. El uso de recursos tecnológicos para compensar una discapacidad es un derecho fundamental dentro de la educación inclusiva para eliminar barreras de acceso al currículo."
+    },
+    {
+        id: 533,
+        categoria: "Clima Escolar",
+        pregunta: "Se detecta que un estudiante de 5to grado es objeto de burlas constantes por su peso (body shaming) en el grupo de WhatsApp del curso. El orientador interviene y los estudiantes agresores dicen que 'solo es una broma'. ¿Cuál es la medida socioeducativa correcta?",
+        opciones: [
+            "A) Obligar a los agresores a pedir disculpas públicas en el izamiento de bandera.",
+            "B) Realizar un proceso restaurativo donde los agresores comprendan el impacto emocional de sus actos y se establezcan compromisos de cambio de conducta supervisados.",
+            "C) Expulsar a los líderes del grupo de WhatsApp por 3 días para que reflexionen.",
+            "D) Borrar el grupo de WhatsApp y prohibir el uso de tecnología a todos los estudiantes del grado."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Normas del Sistema de Convivencia. Las medidas ante el acoso escolar deben ser restaurativas y formativas, buscando la empatía y la reparación del daño, evitando acciones que humillen aún más a los involucrados."
+    },
+    {
+        id: 534,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "El psicólogo escolar observa que la mayoría de los informes de aprendizaje de los estudiantes con NEAE están incompletos en el registro de grado. ¿A qué instancia debe reportar técnicamente esta necesidad de apoyo?",
+        opciones: [
+            "A) Directamente al Ministro de Educación mediante una carta pública.",
+            "B) A la Unidad de Orientación y Psicología y a la Coordinación Pedagógica del centro para organizar un taller de capacitación sobre registros inclusivos.",
+            "C) Al comité de padres y madres para que presionen a los docentes.",
+            "D) No reportar, ya que el llenado del registro no es responsabilidad del psicólogo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo (2015). El psicólogo asesora la práctica pedagógica. Detectar fallas en el registro de los apoyos a la diversidad requiere una intervención de capacitación y acompañamiento técnico interno."
+    },
+    {
+        id: 535,
+        categoria: "Protección",
+        pregunta: "Un niño de 1er grado llega al centro con evidencias de desnutrición severa y falta de higiene personal persistente. Los padres no asisten a las citas. Tras agotar las visitas domiciliarias, el centro debe:",
+        opciones: [
+            "A) Seguir enviando circulares hasta que los padres respondan.",
+            "B) Referir el caso al CONANI por negligencia parental grave, ya que la salud y el bienestar del menor están en riesgo inminente.",
+            "C) Comprar comida para el niño con los fondos del centro sin reportar a nadie.",
+            "D) Solicitar que el niño sea transferido a un internado privado."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ley 136-03 y Ruta Crítica. La negligencia que afecta la salud y el desarrollo del menor es una forma de maltrato. Si la familia no responde a la intervención escolar, el Estado (CONANI) debe intervenir."
+    },
+    {
+        id: 536,
+        categoria: "NEAE",
+        pregunta: "Ante un estudiante con Trastorno de Conducta diagnosticado, el docente titular pierde la paciencia y le dice 'tú no sirves para estar aquí'. El orientador, al presenciar esto, debe:",
+        opciones: [
+            "A) Darle la razón al docente, ya que el comportamiento del niño es difícil.",
+            "B) Intervenir para modelar una comunicación asertiva, proteger la integridad emocional del menor y posteriormente realizar un acompañamiento técnico al docente sobre manejo conductual.",
+            "C) Ignorar el comentario para no restarle autoridad al docente frente a los estudiantes.",
+            "D) Llevarse al niño del aula y decirle que no vuelva hasta que el docente se calme."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Estatuto del Docente y Normas de Convivencia. El respeto a la dignidad del estudiante es innegociable. El orientador debe garantizar el buen trato y apoyar al docente en el manejo de crisis."
+    },
+    {
+        id: 537,
+        categoria: "Clima Escolar",
+        pregunta: "Para fortalecer la 'Cultura de Paz' en un centro con altos niveles de conflictividad, ¿cuál es la estrategia técnica más efectiva según los Lineamientos del MINERD?",
+        opciones: [
+            "A) Contratar más agentes de seguridad privada para vigilar los pasillos.",
+            "B) Implementar el programa de Mediación de Pares, capacitando a estudiantes para que ayuden a resolver conflictos menores entre ellos.",
+            "C) Instalar cámaras de seguridad en todos los baños y aulas.",
+            "D) Suspender las actividades artísticas y deportivas para que los estudiantes solo se enfoquen en estudiar."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Lineamientos del Proceso de Orientación y Psicología (2023-2024). La mediación de pares es una estrategia clave para empoderar a los estudiantes y reducir la violencia escolar mediante el diálogo."
+    },
+    {
+        id: 538,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "Se le solicita al psicólogo escolar que realice una evaluación de 'madurez para el aprendizaje' a niños de Nivel Inicial que van a ingresar a 1er grado de Primaria. El psicólogo debe saber que:",
+        opciones: [
+            "A) La evaluación es obligatoria para decidir quién entra y quién se queda fuera del sistema.",
+            "B) Los resultados deben usarse únicamente para planificar los apoyos pedagógicos iniciales, nunca para negar la inscripción o el acceso al grado.",
+            "C) Solo deben evaluarse los niños que se portan mal.",
+            "D) La evaluación de madurez es un proceso clínico que solo se hace en hospitales."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ordenanza de Evaluación del Nivel Primario. La evaluación diagnóstica tiene fines pedagógicos y de apoyo, no es un criterio de exclusión para el ingreso a la educación obligatoria."
+    },
+    {
+        id: 539,
+        categoria: "Protección",
+        pregunta: "Se confirma que un estudiante es víctima de abuso sexual por parte de un vecino. La familia pide que 'no se haga un escándalo' y que la escuela no reporte a la justicia. El deber del orientador es:",
+        opciones: [
+            "A) Respetar el derecho a la privacidad de la familia y no reportar.",
+            "B) Explicar a la familia que el centro tiene la obligación legal irrenunciable de denunciar, procediendo a activar la Ruta Crítica de inmediato.",
+            "C) Esperar a que el niño cumpla 18 años para que él decida si quiere denunciar.",
+            "D) Mudarse de barrio para no tener que lidiar con el problema."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ley 136-03. El personal educativo que tenga conocimiento de un delito contra un menor y no lo reporte incurre en responsabilidad penal por omisión."
+    },
+    {
+        id: 540,
+        categoria: "NEAE",
+        pregunta: "Un estudiante con TDAH olvida constantemente sus materiales. El docente le quita 5 puntos de su nota final por cada olvido. Esta práctica es:",
+        opciones: [
+            "A) Correcta, para que el estudiante aprenda a ser responsable.",
+            "B) Incorrecta, ya que la evaluación debe considerar las características de la NEAE del estudiante; se deben aplicar apoyos organizativos en lugar de sanciones académicas.",
+            "C) Permitida si el psicólogo no ha entregado un informe formal todavía.",
+            "D) Válida solo si se aplica a todos los estudiantes por igual."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ordenanza 05-2024. La evaluación para estudiantes con NEAE debe ajustarse a sus necesidades. Sancionar síntomas de un trastorno (como la desorganización en el TDAH) es una barrera pedagógica injusta."
+    },
+    {
+        id: 541,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "Al recibir un nuevo grupo de estudiantes, el psicólogo identifica un alto índice de familias monoparentales con jefatura femenina en situación de vulnerabilidad. ¿Cuál es la intervención prioritaria?",
+        opciones: [
+            "A) Dar una charla sobre por qué es mejor tener una familia tradicional.",
+            "B) Fortalecer los vínculos escuela-familia mediante programas de Escuela de Padres contextualizados y coordinar con redes de apoyo social locales.",
+            "C) Pedir a las madres que no trabajen para que cuiden mejor a sus hijos.",
+            "D) No intervenir, ya que la estructura familiar no afecta el aprendizaje."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual de Familia y Escuela. El orientador debe trabajar con la realidad de las familias del centro, brindando herramientas que fortalezcan su rol protector y educativo en su contexto real."
+    },
+    {
+        id: 542,
+        categoria: "Protección",
+        pregunta: "En el marco del ERP, si un estudiante presenta ideación suicida expresada en un dibujo, la acción de mayor nivel de desempeño profesional es:",
+        opciones: [
+            "A) Guardar el dibujo en el expediente y esperar a ver si el niño vuelve a dibujar algo similar.",
+            "B) Realizar una entrevista de valoración de riesgo inmediata, contactar a la familia, asegurar que el menor no se quede solo y referir de urgencia a salud mental.",
+            "C) Darle una charla sobre por qué la vida es bella y mandarlo a clases.",
+            "D) Llamar a los bomberos para que hablen con el estudiante."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Protocolos de Intervención en Crisis del MINERD. La ideación suicida requiere una respuesta inmediata de protección, vigilancia y referimiento clínico para salvaguardar la vida."
+    },
+    {
+        id: 543,
+        categoria: "Clima Escolar",
+        pregunta: "Un grupo de docentes se queja de que el orientador 'no hace nada' porque no ven que esté castigando a los estudiantes. El orientador debe explicar que:",
+        opciones: [
+            "A) Su función no es castigar, sino mediar, prevenir y acompañar procesos socioemocionales para mejorar la convivencia.",
+            "B) Empezará a dar correazos para que los docentes vean que sí trabaja.",
+            "C) Los docentes tienen razón y debe disculparse.",
+            "D) Solo castiga a los estudiantes que el Director le ordena."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Normativa REAL: Manual Operativo (2015). El rol del orientador y psicólogo es técnico-pedagógico y preventivo, no disciplinario-punitivo. Es vital clarificar las funciones para una buena gestión del clima laboral."
+    },
+    {
+        id: 544,
+        categoria: "NEAE",
+        pregunta: "Un estudiante con Discapacidad Intelectual Leve en 6to grado está en proceso de transición a secundaria. El orientador debe asegurar que:",
+        opciones: [
+            "A) El expediente psicopedagógico con todos los ajustes realizados (ACI/PEI) sea transferido formalmente al nuevo centro para garantizar la continuidad del apoyo.",
+            "B) El nuevo centro no sepa nada de la discapacidad para que el niño 'empiece de cero'.",
+            "C) El niño sea inscrito en una escuela técnica de alto nivel de dificultad.",
+            "D) El estudiante abandone los estudios para que no sufra en secundaria."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ordenanza 05-2024. La continuidad de los apoyos educativos es un principio de la educación inclusiva; el expediente es la herramienta técnica que garantiza este derecho en la transición."
+    },
+    {
+        id: 545,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "En la planificación de las intervenciones grupales, el orientador debe incluir temas de 'Cuidado del Medio Ambiente' porque:",
+        opciones: [
+            "A) Es un tema de moda en las redes sociales.",
+            "B) Es un Eje Transversal del Currículo Dominicano que contribuye a la formación de ciudadanos responsables.",
+            "C) El Director quiere ganar un premio de reciclaje.",
+            "D) Es una forma de perder el tiempo cuando no hay clases."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Currículo Dominicano (Base de la Revisión Curricular). Los ejes transversales deben ser integrados en las intervenciones de orientación para una formación integral."
+    },
+    {
+        id: 546,
+        categoria: "Protección",
+        pregunta: "Un estudiante de 12 años ha comenzado a faltar a clases dos veces por semana. Al indagar, se descubre que está trabajando como 'cobrador' en una ruta de transporte local. Según el protocolo:",
+        opciones: [
+            "A) Se le debe permitir trabajar si ayuda económicamente a su abuela.",
+            "B) Se debe activar el protocolo de prevención de deserción escolar y notificar al Ministerio de Trabajo por tratarse de trabajo infantil prohibido.",
+            "C) El orientador debe ir a trabajar con el niño para cuidarlo.",
+            "D) Expulsar al niño de la escuela por no cumplir con la asistencia."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ley 136-03 y Guía de Ruta Crítica. La escuela debe intervenir para reintegrar al estudiante y denunciar la explotación laboral de menores."
+    },
+    {
+        id: 547,
+        categoria: "Clima Escolar",
+        pregunta: "Se produce un rumor malintencionado sobre la vida privada de una estudiante, lo que genera que sus compañeras la aíslen. Esta forma de violencia se denomina:",
+        opciones: [
+            "A) Conflicto de intereses.",
+            "B) Violencia relacional o social (Bullying indirecto).",
+            "C) Disciplina positiva fallida.",
+            "D) Falta de higiene escolar."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Normas de Convivencia. El aislamiento social provocado por rumores es una forma de acoso escolar que requiere intervención inmediata para restaurar el clima."
+    },
+    {
+        id: 548,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "Un docente de nuevo ingreso no sabe cómo trabajar con los estudiantes de 'bajo rendimiento'. El orientador debe:",
+        opciones: [
+            "A) Decirle que lea los libros de pedagogía en su casa.",
+            "B) Brindarle acompañamiento técnico, compartiendo estrategias de diversificación de la enseñanza y manejo de grupos heterogéneos.",
+            "C) Pedirle al Director que despida al docente por incompetente.",
+            "D) Hacerse cargo de todos los niños con bajo rendimiento en su oficina."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Lineamientos del Proceso de Orientación y Psicología. El apoyo técnico al docente es una función sustantiva para mejorar la calidad educativa del centro."
+    },
+    {
+        id: 549,
+        categoria: "NEAE",
+        pregunta: "La 'evaluación psicopedagógica' es un proceso que busca identificar:",
+        opciones: [
+            "A) Quién es el niño más inteligente del aula.",
+            "B) Las barreras al aprendizaje y las necesidades específicas de apoyo educativo para diseñar una respuesta inclusiva.",
+            "C) El grado de culpabilidad de los padres en el fracaso del niño.",
+            "D) Qué medicación necesita el estudiante."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ordenanza 05-2024. La evaluación psicopedagógica es una herramienta diagnóstica para la inclusión, no para el etiquetado clínico o la exclusión."
+    },
+    {
+        id: 550,
+        categoria: "Clima Escolar",
+        pregunta: "Al finalizar una charla sobre prevención de drogas, varios estudiantes se acercan con dudas personales. El orientador debe:",
+        opciones: [
+            "A) Decirles que ya terminó su hora de trabajo y que se vayan a sus casas.",
+            "B) Brindar un espacio de escucha individual segura, evaluar factores de riesgo y dar seguimiento o referimiento si es necesario.",
+            "C) Contarles sus experiencias personales con las drogas para que aprendan.",
+            "D) Ignorarlos para no fomentar que los niños hablen de temas prohibidos."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Lineamientos 2023-2024. Las intervenciones grupales suelen detonar necesidades individuales; el orientador debe estar disponible para canalizar estas inquietudes de forma técnica y ética."
+    },
+
+{
+        id: 551,
+        categoria: "Protección",
+        pregunta: "Durante una sesión de seguimiento individual en el nivel Primario, una estudiante de 9 años manifiesta espontáneamente que su padrastro 'le toca cuando está dormida'. La maestra de grado desconoce la situación. Conforme al protocolo institucional vigente del MINERD, ¿cuál es la acción inmediata que debe ejecutar el/la psicólogo/a escolar?",
+        opciones: [
+            "A) Registrar el relato textual de la estudiante en el expediente psicológico, notificar de forma verbal y escrita al director/a del centro educativo ese mismo día, y activar la Ruta Crítica institucional comunicando el caso al equipo de gestión para su reporte obligatorio ante las autoridades de protección competentes (CONANI o Ministerio Público).",
+            "B) Citar a la madre biológica de la estudiante para corroborar la información antes de proceder con cualquier notificación institucional, a fin de evitar consecuencias precipitadas para la familia.",
+            "C) Derivar el caso directamente al orientador/a escolar del centro para que este gestione la comunicación con la familia y determine si la situación amerita notificación externa.",
+            "D) Elaborar un informe psicológico detallado de la estudiante durante las próximas 72 horas y remitirlo al técnico distrital de psicología para que este centralice la decisión de notificación."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Normativa REAL: Ley 136-03, Art. 19 (obligación de denuncia inmediata de toda persona que tenga conocimiento de maltrato o abuso sexual a NNA); Guía de Ruta Crítica MINERD (la notificación al director/a es el primer eslabón interno obligatorio ese mismo día); Manual Operativo de los COP (2015), sección de protección: el psicólogo/a activa la ruta interna y registra el relato sin cuestionar al niño/a ni confrontar al posible agresor. Ninguna otra opción cumple la secuencia correcta: la opción B viola el protocolo al anteponer la verificación familiar; la C traslada una responsabilidad indelegable; la D incumple la inmediatez que exige la Ruta Crítica."
+    },
+ 
+    {
+        id: 552,
+        categoria: "NEAE",
+        pregunta: "El director de un centro de Primaria solicita al/la psicólogo/a escolar que emita de manera urgente, en un plazo de 24 horas, un diagnóstico psicológico formal de un estudiante de 2.º grado con presuntas dificultades de aprendizaje, con el propósito de justificar ante los padres la ubicación del niño en un aula de apoyo. ¿Cuál es la respuesta procedimental correcta del/la psicólogo/a escolar conforme a los lineamientos del MINERD?",
+        opciones: [
+            "A) Aceptar el requerimiento del director/a y emitir un informe preliminar en 24 horas basado en la observación conductual del estudiante en el aula, difiriendo la evaluación formal para una etapa posterior.",
+            "B) Informar al director/a que el proceso de evaluación psicopedagógica para determinar Necesidades Específicas de Apoyo Educativo (NEAE) requiere la aplicación de un protocolo de evaluación estructurado, la obtención del consentimiento informado de los padres o tutores, y no puede comprimirse a 24 horas, procediendo a establecer un cronograma evaluativo conforme a los Lineamientos de Orientación y Psicología 2023-2024.",
+            "C) Solicitar al técnico distrital de psicología que realice la evaluación dada la urgencia planteada por el director/a, reservándose la función de acompañamiento familiar.",
+            "D) Aplicar de forma inmediata una prueba de inteligencia estandarizada disponible en el centro y entregar los resultados al director/a dentro del plazo solicitado, dejando constancia escrita de la instrucción recibida."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Lineamientos del Proceso de Orientación y Psicología (Actualización 2023-2024): el proceso de identificación de NEAE contempla etapas secuenciales que incluyen revisión de expediente, entrevista con docentes y familia, aplicación de instrumentos estandarizados y elaboración de informe. Ordenanza 05-2024, Art. 8: la evaluación para fines de educación inclusiva exige consentimiento informado de la familia. Manual Operativo COP (2015): el psicólogo/a escolar no puede emitir diagnósticos bajo presión administrativa que comprometan la validez técnica del proceso. Las opciones A y D vulneran los estándares éticos y técnicos; la C transfiere una responsabilidad que corresponde al psicólogo/a del centro."
+    },
+ 
+    {
+        id: 553,
+        categoria: "Clima Escolar",
+        pregunta: "Tres maestros del nivel Primario reportan al/la psicólogo/a escolar que un grupo de estudiantes de 5.º grado manifiesta conductas de rechazo sistemático y exclusión deliberada hacia un compañero con discapacidad física, que incluyen burlas en el recreo y negativa colectiva a trabajar con él en actividades grupales. El director/a del centro no ha sido informado. ¿Cuál es la secuencia de intervención institucional correcta?",
+        opciones: [
+            "A) Convocar de manera inmediata a los estudiantes identificados como agresores a una sesión grupal de confrontación directa facilitada por el psicólogo/a, para que reconozcan el impacto de sus conductas ante el estudiante afectado.",
+            "B) Registrar la situación, informar al director/a del centro, coordinar con el equipo de gestión una intervención en tres niveles (estudiante afectado, grupo-aula y comunidad educativa), y articular acciones con el docente de aula conforme al protocolo de convivencia escolar y los lineamientos de educación inclusiva de la Ordenanza 05-2024.",
+            "C) Remitir el caso al orientador/a escolar para que este gestione la intervención con el grupo, limitando la actuación del psicólogo/a al acompañamiento individual del estudiante afectado.",
+            "D) Citar a los padres y madres de los estudiantes involucrados antes de realizar cualquier intervención en el centro, con el objetivo de obtener su autorización para trabajar con los menores."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ordenanza 05-2024 (Lineamientos para la Educación Inclusiva): prohíbe toda forma de discriminación hacia estudiantes con discapacidad y establece la responsabilidad del equipo de gestión en garantizar entornos inclusivos. Manual Operativo COP (2015): la intervención en clima escolar es competencia del psicólogo/a e implica actuación sistémica (individual, grupal e institucional). Lineamientos 2023-2024: el director/a debe ser informado antes de ejecutar intervenciones grupales. La opción A puede revictimizar o escalar el conflicto; la C fracciona la responsabilidad indebidamente; la D antepone el permiso familiar a la intervención institucional obligatoria."
+    },
+ 
+    {
+        id: 554,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "Una maestra de 1.er grado del nivel Primario refiere al/la psicólogo/a escolar a un estudiante de 6 años porque 'no aprende igual que los demás', presenta dificultades para reconocer letras y números, se distrae frecuentemente y en ocasiones llora sin razón aparente. Los padres refieren que el niño 'es sano'. ¿Cuál es el primer paso procedimental que debe ejecutar el/la psicólogo/a escolar?",
+        opciones: [
+            "A) Iniciar directamente la aplicación de una batería de evaluación neuropsicológica para descartar un trastorno del neurodesarrollo, dado que los indicadores clínicos presentados justifican la evaluación especializada sin demora.",
+            "B) Revisar el expediente académico y de salud del estudiante, realizar una observación estructurada en el aula, entrevistar a la maestra referidora y solicitar entrevista con los padres o tutores para obtener historia de desarrollo, como parte del proceso de evaluación inicial conforme a los Lineamientos de Orientación y Psicología 2023-2024.",
+            "C) Orientar a la maestra para que adapte sus estrategias pedagógicas durante un período de 30 días calendario antes de iniciar cualquier proceso de evaluación psicológica, conforme al principio de intervención en el aula previa a la derivación.",
+            "D) Elaborar un informe de derivación externa hacia un especialista en neurología pediátrica, dado que los síntomas descritos superan el ámbito de acción del psicólogo/a escolar en el nivel Primario."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Lineamientos del Proceso de Orientación y Psicología (Actualización 2023-2024): establecen que el proceso de evaluación psicológica escolar comienza con la revisión del expediente, la observación en contexto y las entrevistas con actores clave (docente y familia) antes de aplicar instrumentos formales. Manual Operativo COP (2015): la recogida de información multicontextual es un requisito previo ineludible. La opción A omite pasos esenciales del protocolo; la C demora indebidamente el proceso evaluativo cuando hay señales que requieren atención; la D realiza una derivación externa prematura sin haber completado la evaluación institucional."
+    },
+ 
+    {
+        id: 555,
+        categoria: "Protección",
+        pregunta: "El/la psicólogo/a escolar de un centro de Inicial detecta, durante una evaluación de rutina, que una niña de 4 años presenta moretones en los brazos y muslos en distintos estadios de cicatrización. Al ser preguntada con lenguaje apropiado para su edad, la niña responde que 'papi la pega con el cinturón cuando llora'. La tutora del aula no estaba al tanto. Conforme a la Ley 136-03 y la Ruta Crítica del MINERD, ¿qué acción es mandatoria e impostergable?",
+        opciones: [
+            "A) Registrar los hallazgos físicos y el relato de la niña, notificar al director/a del centro ese mismo día mediante comunicación escrita, y gestionar conjuntamente con el equipo de gestión la denuncia ante el CONANI o el Ministerio Público dentro de las siguientes 24 horas, sin confrontar al padre ni informarle previamente.",
+            "B) Informar a la tutora del aula para que convoque a los padres a una reunión, durante la cual el psicólogo/a mediará entre la familia y el centro a fin de establecer compromisos de cambio en las prácticas disciplinarias.",
+            "C) Solicitar al médico escolar o al personal de salud del centro que documente los signos físicos antes de proceder con cualquier notificación institucional, para garantizar la validez evidentística del caso.",
+            "D) Elaborar un plan de intervención psicológica de cuatro sesiones con la niña y comunicar los hallazgos al técnico distrital de orientación y psicología en el informe mensual correspondiente."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Normativa REAL: Ley 136-03, Art. 19: toda persona que tenga conocimiento de una situación de maltrato a un NNA está obligada a denunciarla de forma inmediata. Guía de Ruta Crítica MINERD: prohíbe explícitamente alertar al presunto agresor antes de la denuncia, pues ello puede poner en mayor riesgo al NNA. Manual Operativo COP (2015): el psicólogo/a notifica al director/a el mismo día; el equipo de gestión activa la ruta externa. La opción B confronta a la familia y viola el principio de no re-victimización; la C antepone la documentación médica a la notificación inmediata; la D difiere la denuncia al ciclo mensual de informes, lo que es inaceptable en casos de maltrato activo."
+    },
+ 
+    {
+        id: 556,
+        categoria: "NEAE",
+        pregunta: "Los padres de un estudiante de 3.er grado con diagnóstico externo de Trastorno por Déficit de Atención e Hiperactividad (TDAH) presentan al psicólogo/a escolar un informe médico privado y solicitan que el centro implemente de inmediato 'lo que diga el doctor'. El informe recomienda reducir la carga de tareas en un 50%, ubicar al niño en un aula especial separada y exonerarle de evaluaciones escritas. ¿Cuál es la actuación correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Implementar de inmediato todas las recomendaciones del informe médico externo, dado que provienen de un especialista y prevalecen sobre los criterios institucionales del MINERD.",
+            "B) Recibir y registrar el informe externo como insumo diagnóstico, convocar una reunión del equipo interdisciplinario del centro (director/a, docente, psicólogo/a, orientador/a) para analizar las recomendaciones a la luz de los Lineamientos de Orientación y Psicología 2023-2024 y la Ordenanza 05-2024, y diseñar un Plan de Apoyo Individualizado (PAI) que articule las adecuaciones curriculares pertinentes según la normativa del MINERD.",
+            "C) Solicitar a los padres un segundo informe de un especialista vinculado al sistema de salud público antes de iniciar cualquier tipo de adecuación curricular en el centro educativo.",
+            "D) Derivar la solicitud de los padres al técnico distrital de psicología para que este valide el informe externo y autorice las adecuaciones curriculares específicas señaladas por el médico privado."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ordenanza 05-2024, Art. 11-14: las adecuaciones curriculares para estudiantes con NEAE se establecen mediante un proceso institucional liderado por el equipo del centro, no por prescripción médica unilateral. Lineamientos de Orientación y Psicología 2023-2024: el informe externo es un insumo, no una orden ejecutable directamente; debe analizarse en equipo. Manual Operativo COP (2015): la ubicación en aula separada como primera medida contraviene el principio de inclusión educativa. La opción A transfiere la autoridad pedagógica al sector salud; la C demora sin justificación el apoyo al estudiante; la D renuncia a la función técnica del psicólogo/a del centro."
+    },
+ 
+    {
+        id: 557,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "Durante el primer trimestre, el/la psicólogo/a escolar identifica que cuatro estudiantes de 4.º grado presentan un patrón común de bajo rendimiento académico, ausentismo intermitente y retraimiento social. Al revisar sus expedientes, constata que los cuatro provienen de familias en situación de vulnerabilidad socioeconómica severa y que ninguno ha recibido intervención psicológica previa. ¿Cuál es el procedimiento institucional adecuado?",
+        opciones: [
+            "A) Iniciar sesiones de terapia psicológica individual con cada uno de los cuatro estudiantes de manera simultánea, priorizando la intervención clínica sobre cualquier otra acción institucional.",
+            "B) Sistematizar los hallazgos, presentarlos al equipo de gestión del centro, diseñar un plan de intervención psicológica y psicosocial que incluya seguimiento individualizado, coordinación con los docentes para estrategias diferenciadas en aula, y articulación con redes de protección social del territorio, conforme al Manual Operativo COP (2015).",
+            "C) Remitir los cuatro casos al orientador/a escolar para la gestión familiar, dado que el origen de las dificultades es de naturaleza social y no psicológica, reservando la intervención del psicólogo/a para casos con diagnóstico clínico formal.",
+            "D) Elaborar informes de derivación externa para cada estudiante hacia servicios de salud mental comunitaria, dado que la complejidad de los casos supera las competencias del psicólogo/a escolar en el contexto de un centro educativo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): el psicólogo/a escolar tiene competencia en intervención psicosocial, no solo clínica individual; la articulación con el equipo de gestión y las redes externas es parte de su función. Lineamientos de Orientación y Psicología 2023-2024: ante patrones de vulnerabilidad múltiple, la intervención debe ser sistémica e institucional, no exclusivamente individual. La opción A reduce la intervención a lo clínico individual; la C hace una distinción falsa entre lo social y lo psicológico; la D realiza derivaciones externas antes de agotar la intervención institucional."
+    },
+ 
+    {
+        id: 558,
+        categoria: "Protección",
+        pregunta: "Un estudiante de 5.º grado entrega al/la psicólogo/a escolar una nota escrita en la que manifiesta: 'ya no quiero vivir, me quiero morir, nadie me quiere en esta escuela ni en mi casa'. El estudiante solicita que el psicólogo/a 'no le diga nada a nadie'. ¿Cuál es la acción institucional correcta e inmediata?",
+        opciones: [
+            "A) Respetar la solicitud de confidencialidad del estudiante, dado que la relación terapéutica se fundamenta en la confianza, y programar una sesión individual para la próxima semana con el objetivo de evaluar el nivel de riesgo.",
+            "B) Explicar al estudiante de manera empática que existen situaciones en que la confidencialidad no puede mantenerse por razones de seguridad, evaluar de forma inmediata el nivel de riesgo suicida mediante un protocolo de valoración de crisis, notificar al director/a del centro ese mismo día, contactar a los padres o tutores, y garantizar que el estudiante no quede solo hasta que se establezca un plan de seguridad, conforme a los Lineamientos de Orientación y Psicología 2023-2024.",
+            "C) Notificar únicamente al director/a del centro mediante una nota escrita y aguardar sus instrucciones antes de tomar cualquier medida adicional, dado que la autoridad máxima del proceso recae en la dirección.",
+            "D) Derivar de inmediato al estudiante a un servicio de salud mental externo sin informar a la familia, dado que la situación supera el nivel de intervención del psicólogo/a escolar y requiere atención especializada urgente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Lineamientos de Orientación y Psicología (Actualización 2023-2024): ante indicadores de riesgo suicida, la confidencialidad tiene límites claros; la seguridad del NNA prevalece. Manual Operativo COP (2015): el psicólogo/a escolar debe realizar valoración de riesgo inmediata, activar la ruta interna e involucrar a la familia ese mismo día. Ley 136-03, Art. 15: el interés superior del NNA obliga a priorizar su seguridad sobre cualquier otro principio procedimental. La opción A diferida vulnera el deber de protección; la C delega la decisión al director sin actuar; la D excluye a la familia de una situación de emergencia."
+    },
+ 
+    {
+        id: 559,
+        categoria: "Clima Escolar",
+        pregunta: "El/la psicólogo/a escolar es informado/a por varios estudiantes de 6.º grado que un compañero está siendo víctima de acoso escolar (bullying) sostenido por parte de un grupo de estudiantes, que incluye agresiones verbales, exclusión de grupos de mensajería digital y sustracción de materiales escolares. El estudiante víctima ha pedido a sus compañeros que no 'lo digan'. ¿Cuál es el procedimiento institucional correcto?",
+        opciones: [
+            "A) Entrevistar de manera conjunta y simultánea al estudiante víctima y a los presuntos agresores en una sesión de mediación facilitada por el psicólogo/a, con el fin de que las partes lleguen a un acuerdo directo.",
+            "B) Realizar entrevistas individuales y separadas con el estudiante víctima (garantizando su seguridad y confidencialidad apropiada), documentar los hechos, informar al director/a del centro, y coordinar un plan de intervención escalonado que incluya trabajo con los agresores, el grupo-aula y las familias, conforme a la Guía de Ruta Crítica y los Lineamientos 2023-2024.",
+            "C) Comunicar la situación únicamente al orientador/a escolar para que este active el protocolo de convivencia, dado que el bullying es una problemática de convivencia y no de salud mental.",
+            "D) Citar a los padres de los presuntos agresores antes de entrevistar al estudiante víctima, para garantizar el debido proceso y evitar posibles reclamaciones de las familias hacia el centro."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Guía de Ruta Crítica MINERD: prohíbe la mediación directa entre víctima y agresor en casos de acoso escolar, pues genera revictimización. Manual Operativo COP (2015): el psicólogo/a escolar es actor clave en la identificación e intervención en situaciones de violencia escolar, con un rol específico diferenciado del orientador/a. Lineamientos 2023-2024: la intervención en bullying es sistémica e incluye todos los actores de la comunidad educativa. Ley 136-03: la protección de la integridad del NNA es prioritaria. La opción A revictimiza; la C fracciona artificialmente la responsabilidad; la D antepone el proceso familiar a la seguridad de la víctima."
+    },
+ 
+    {
+        id: 560,
+        categoria: "NEAE",
+        pregunta: "Una maestra de Inicial refiere al/la psicólogo/a escolar a un niño de 5 años porque 'no habla como los demás', solo produce algunas palabras aisladas, presenta dificultades para mantener contacto visual, realiza movimientos repetitivos con las manos y muestra interés exclusivo en alinear objetos. Los padres refieren que 'así es él, es tímido'. ¿Cuál es la actuación técnicamente correcta del/la psicólogo/a escolar como primer paso institucional?",
+        opciones: [
+            "A) Comunicar a los padres que el niño presenta signos compatibles con Trastorno del Espectro Autista (TEA) y debe ser evaluado por un neurólogo pediátrico de manera urgente, antes de iniciar cualquier proceso de evaluación interna.",
+            "B) Iniciar el proceso de evaluación psicológica escolar conforme al protocolo institucional: revisión del expediente, observación estructurada en el aula, entrevista de historia de desarrollo con los padres, aplicación de instrumentos de tamizaje del desarrollo disponibles en el centro, y elaboración de un informe con recomendaciones que puede incluir derivación externa especializada si los hallazgos lo justifican, conforme a los Lineamientos 2023-2024 y la Ordenanza 05-2024.",
+            "C) Orientar a la maestra para que implemente estrategias de estimulación del lenguaje en el aula durante 60 días antes de iniciar el proceso de evaluación psicológica, dado que el niño aún está en el rango de variabilidad del desarrollo normal para su edad.",
+            "D) Registrar la referencia de la maestra en el expediente del estudiante y aguardar a que los padres soliciten formalmente la evaluación psicológica, dado que sin el consentimiento parental no es posible iniciar ningún proceso de valoración."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Lineamientos de Orientación y Psicología (Actualización 2023-2024): ante señales de alerta del desarrollo, el psicólogo/a inicia el protocolo de evaluación institucional sin demora; la derivación externa es una posible recomendación posterior, no el primer paso. Ordenanza 05-2024: la identificación temprana de necesidades es una responsabilidad del sistema educativo. Manual Operativo COP (2015): el psicólogo/a no puede emitir diagnósticos clínicos (como TEA), pero sí aplicar tamizajes y elaborar recomendaciones. La opción A excede el rol del psicólogo/a escolar al aproximarse a un diagnóstico; la C demora una evaluación que los indicadores hacen prioritaria; la D confunde el consentimiento para evaluar (que la escuela puede gestionar) con la inacción."
+    },
+ 
+    {
+        id: 561,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "Al inicio del año escolar, el/la psicólogo/a escolar revisa los expedientes de los estudiantes promovidos a 3.er grado y detecta que 8 de ellos fueron referidos el año anterior por dificultades lectoras significativas, pero ninguno recibió seguimiento psicológico formal durante ese período. El técnico distrital no ha emitido lineamientos específicos para este grupo. ¿Cuál es la acción institucional correcta?",
+        opciones: [
+            "A) Esperar los lineamientos del técnico distrital antes de iniciar cualquier acción, dado que la planificación de intervenciones psicológicas a nivel de grupo requiere autorización del nivel distrital.",
+            "B) Incluir a estos estudiantes en el plan de trabajo anual del psicólogo/a escolar, priorizar su evaluación durante el primer trimestre, informar al director/a y coordinar con los docentes de 3.er grado estrategias de acompañamiento pedagógico diferenciado, conforme al Manual Operativo COP (2015) y los Lineamientos 2023-2024.",
+            "C) Elaborar un informe colectivo dirigido al técnico distrital describiendo la situación de los ocho estudiantes y aguardar la validación de dicho nivel antes de proceder con la evaluación individual.",
+            "D) Referir los ocho casos directamente a un especialista en dificultades de aprendizaje externo al sistema, dado que la acumulación de rezago sin intervención indica que la situación supera la capacidad de respuesta del psicólogo/a escolar."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): el plan de trabajo anual del psicólogo/a escolar debe incluir la atención prioritaria a estudiantes con historial de dificultades no atendidas; la planificación es una responsabilidad autónoma del psicólogo/a a nivel de centro. Lineamientos 2023-2024: la coordinación con docentes es parte integral del rol del psicólogo/a. La opción A subordina la intervención institucional a la validación distrital, vulnerando la autonomía técnica del psicólogo/a; la C demora la acción; la D realiza derivaciones externas prematuras sin haber completado la evaluación institucional."
+    },
+ 
+    {
+        id: 562,
+        categoria: "Protección",
+        pregunta: "Una madre se presenta al centro educativo visiblemente alterada y exige hablar con el/la psicólogo/a escolar para que 'le diga todo lo que su hijo ha contado en las sesiones', argumentando que tiene derecho a saber lo que ocurre con su hijo menor de edad. El estudiante (10 años) ha compartido en sesiones información sobre conflictos familiares graves. ¿Cuál es la respuesta institucional correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Facilitar a la madre toda la información compartida por el estudiante durante las sesiones, dado que los padres y tutores tienen autoridad legal sobre sus hijos menores de edad y el psicólogo/a no puede anteponer la confidencialidad ante la tutela parental.",
+            "B) Explicar a la madre los alcances y límites de la confidencialidad en el ámbito escolar conforme a los lineamientos del MINERD, informarle sobre el proceso y los objetivos de la intervención de manera general, sin revelar el contenido específico de las sesiones, a menos que exista un riesgo inminente para la seguridad del estudiante que lo justifique, conforme al Manual Operativo COP (2015).",
+            "C) Derivar a la madre al director/a del centro para que este decida el nivel de información que debe ser compartido con la familia, eximiéndose el psicólogo/a de gestionar directamente el conflicto con la tutora.",
+            "D) Suspender de inmediato el proceso de intervención psicológica con el estudiante hasta tanto los padres firmen un nuevo consentimiento informado que aclare los límites de la confidencialidad."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): la confidencialidad en el proceso psicológico escolar protege la relación terapéutica y el bienestar del estudiante; los padres reciben información general del proceso, no el contenido de las sesiones, salvo riesgo comprobado. Lineamientos 2023-2024: el psicólogo/a gestiona directamente la comunicación con las familias dentro de los límites éticos y normativos establecidos. La opción A vulnera la confidencialidad sin justificación de riesgo; la C delega la función al director sin razón técnica; la D penaliza al estudiante por la demanda de la madre."
+    },
+ 
+    {
+        id: 563,
+        categoria: "Clima Escolar",
+        pregunta: "El/la psicólogo/a escolar observa durante el recreo que un docente del nivel Primario increpa públicamente a un estudiante de 2.º grado frente a sus compañeros, le grita que 'es un burro' y lo empuja hacia la fila. Ningún otro adulto del centro presencia el episodio. ¿Cuál es la actuación institutionalmente correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Intervenir verbalmente en el momento para detener la situación, confrontar al docente frente a los estudiantes y exigirle que se retire del patio, ejerciendo la autoridad del psicólogo/a sobre el personal docente.",
+            "B) Registrar los hechos observados con fecha, hora y descripción detallada, atender al estudiante afectado para valorar su estado emocional, y reportar la situación al director/a del centro mediante comunicación formal ese mismo día, conforme a la Guía de Ruta Crítica y el Estatuto del Docente Dominicano, sin confrontar públicamente al docente para preservar el orden institucional.",
+            "C) Conversar de manera privada con el docente involucrado al final de la jornada para orientarle sobre el manejo adecuado de la disciplina en el aula, resolviendo la situación en el nivel de relaciones entre pares profesionales sin escalarla a la dirección.",
+            "D) Documentar la situación en el informe mensual que se remite al técnico distrital, dado que los conflictos entre docentes y estudiantes son competencia del nivel distrital cuando involucran a miembros del personal."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Guía de Ruta Crítica MINERD: el maltrato de un adulto hacia un NNA en el contexto escolar activa la ruta interna; el primer eslabón es el director/a. Ley 136-03, Art. 19: obliga a reportar situaciones de maltrato conocidas por testigos directos. Estatuto del Docente Dominicano: el maltrato verbal y físico de docentes hacia estudiantes está tipificado como falta grave sujeta a proceso administrativo. Manual Operativo COP (2015): el psicólogo/a no tiene autoridad disciplinaria sobre el personal docente; su rol es atender al estudiante y reportar formalmente. La opción A excede el rol del psicólogo/a; la C omite la notificación obligatoria al director; la D demora inaceptablemente la denuncia."
+    },
+ 
+    {
+        id: 564,
+        categoria: "NEAE",
+        pregunta: "Los padres de una estudiante de 4.º grado solicitan al/la psicólogo/a escolar que retire del expediente académico de su hija el informe de evaluación psicológica elaborado el año anterior, argumentando que dicho informe 'la discrimina y la etiqueta'. La estudiante recibe actualmente adecuaciones curriculares basadas en ese informe. ¿Cuál es la respuesta institucional correcta?",
+        opciones: [
+            "A) Retirar el informe del expediente académico en atención a la solicitud legítima de los padres como tutores legales, y suspender las adecuaciones curriculares hasta que se realice una nueva evaluación.",
+            "B) Explicar a los padres la función técnica y el carácter confidencial del informe psicológico dentro del expediente escolar, el impacto que su retiro tendría en la continuidad del apoyo a su hija, y escalar la solicitud al director/a para que el equipo de gestión y el psicólogo/a definan conjuntamente una respuesta institucional, sin proceder a retirar el informe de manera unilateral, conforme al Manual Operativo COP (2015).",
+            "C) Aceptar la solicitud de los padres, retirar el informe del expediente y elaborar un nuevo proceso de evaluación desde cero, dado que el derecho de los padres prevalece sobre el criterio técnico del psicólogo/a.",
+            "D) Remitir la solicitud al técnico distrital de psicología para que este emita una resolución vinculante sobre si el informe debe o no mantenerse en el expediente académico de la estudiante."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): los informes psicológicos son documentos técnicos del expediente escolar; su modificación o retiro requiere análisis institucional y no puede realizarse unilateralmente por el psicólogo/a ni por los padres. Ordenanza 05-2024: las adecuaciones curriculares se sustentan en documentación técnica evaluativa; su interrupción sin proceso afecta el derecho a la educación inclusiva de la estudiante. Lineamientos 2023-2024: las decisiones sobre expedientes de estudiantes con NEAE son competencia del equipo de gestión. Las opciones A y C vulneran el proceso institucional; la D transfiere indebidamente al nivel distrital una decisión que inicia en el centro."
+    },
+ 
+    {
+        id: 565,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "Al finalizar el segundo trimestre, el/la psicólogo/a escolar constata que de los 12 estudiantes incluidos en su plan de intervención individual, solamente 4 han asistido con regularidad a las sesiones programadas. Los padres de los 8 restantes no han respondido a las citaciones enviadas. El director/a no ha dado seguimiento a la situación. ¿Cuál es el procedimiento institucional correcto?",
+        opciones: [
+            "A) Cerrar los casos de los 8 estudiantes por inasistencia, dado que sin la participación de la familia no es posible sostener un proceso de intervención psicológica efectivo en el contexto escolar.",
+            "B) Documentar formalmente el patrón de inasistencia, presentar la situación al director/a mediante informe escrito, proponer estrategias alternativas de vinculación con las familias (contacto telefónico, visitas coordinadas con el orientador/a, coordinación con redes comunitarias), y mantener activos los expedientes, conforme al Manual Operativo COP (2015) y los Lineamientos 2023-2024.",
+            "C) Visitar de manera individual los hogares de los 8 estudiantes durante el horario extracurricular para establecer contacto directo con las familias y garantizar su participación en el proceso de intervención.",
+            "D) Remitir los 8 casos al técnico distrital de orientación y psicología como situaciones de abandono del proceso, para que este determine la pertinencia de continuar o cerrar la intervención desde el nivel distrital."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): el cierre de casos requiere un proceso formal, no puede hacerse por inasistencia sin agotar estrategias de vinculación; el director/a debe ser informado y es parte del equipo responsable. Lineamientos 2023-2024: el psicólogo/a escolar tiene entre sus funciones la articulación con familias y la coordinación con otros actores institucionales para garantizar la continuidad de los procesos. La opción A cierra casos sin agotar el protocolo; la C excede el rol del psicólogo/a escolar (las visitas domiciliarias son una acción que requiere coordinación institucional y no se realizan de manera individual por el psicólogo/a); la D delega al nivel distrital una decisión que corresponde al centro."
+    },
+ 
+    {
+        id: 566,
+        categoria: "Protección",
+        pregunta: "El/la psicólogo/a escolar recibe la visita de un funcionario que se identifica como trabajador social del CONANI, quien solicita información sobre el expediente psicológico de un estudiante que está bajo investigación por presunto maltrato intrafamiliar. El funcionario no presenta orden escrita ni credencial formal, solo una identificación verbal. ¿Cuál es la actuación correcta?",
+        opciones: [
+            "A) Facilitar de inmediato el expediente psicológico del estudiante al funcionario del CONANI, dado que dicha institución tiene autoridad legal sobre los casos de protección infantil y la colaboración interinstitucional es un deber del psicólogo/a escolar.",
+            "B) Solicitar al funcionario la presentación de credenciales formales y documentación escrita que acredite la solicitud oficial de información, informar al director/a del centro de la situación antes de facilitar cualquier documento, y canalizar la solicitud a través de los mecanismos formales de coordinación interinstitucional establecidos por el MINERD, conforme al Manual Operativo COP (2015).",
+            "C) Entregar al funcionario un resumen verbal del caso sin revelar el expediente físico, dado que la información verbal no constituye entrega formal de documentos y permite la colaboración sin violar la confidencialidad.",
+            "D) Negar toda información al funcionario externo, dado que la confidencialidad del expediente psicológico escolar no admite excepciones bajo ninguna circunstancia, ni siquiera ante organismos de protección estatal."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): el expediente psicológico es un documento de acceso restringido; su entrega a terceros requiere documentación formal y la autorización del director/a del centro. Ley 136-03: establece mecanismos de coordinación interinstitucional formal entre el sistema educativo y los organismos de protección; no autoriza el acceso informal a expedientes. Lineamientos 2023-2024: la coordinación con entidades externas debe documentarse y canalizarse institucionalmente. La opción A omite los controles de seguridad documental; la C vulnera la confidencialidad mediante información verbal no documentada; la D niega absolutamente la colaboración interinstitucional que la Ley 136-03 sí contempla por vías formales."
+    },
+ 
+    {
+        id: 567,
+        categoria: "Clima Escolar",
+        pregunta: "El/la psicólogo/a escolar es convocado/a por el director/a para participar en una reunión con los padres de un estudiante de 5.º grado que presenta conductas disruptivas graves y reiteradas en el aula. El director/a le solicita al psicólogo/a que en la reunión le comunique a los padres que 'si el niño no mejora, será excluido del centro'. ¿Cuál es la actuación correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Cumplir la instrucción del director/a y comunicar a los padres la posibilidad de exclusión, dado que el director/a es la autoridad máxima del centro y el psicólogo/a debe acatar sus directrices en el ámbito administrativo.",
+            "B) Informar al director/a, antes de la reunión, que la comunicación de una posible exclusión escolar no es parte de la función del psicólogo/a; participar en la reunión desde su rol técnico, presentando una valoración del estudiante, las intervenciones realizadas y las recomendaciones de apoyo, conforme al Manual Operativo COP (2015) y los Lineamientos 2023-2024, y señalando que la exclusión escolar no está contemplada como medida en la normativa del MINERD para casos de conducta.",
+            "C) Ausentarse de la reunión para no verse involucrado/a en una comunicación que no corresponde a su función técnica, remitiendo al director/a al orientador/a escolar para que este lo acompañe en dicha reunión.",
+            "D) Participar en la reunión y asumir el rol de mediador/a entre el director/a y los padres, evitando tomar posición sobre la pertinencia o no de la posible exclusión escolar."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): el psicólogo/a escolar tiene un rol técnico definido; no es su función comunicar medidas administrativas disciplinarias. Ley 136-03, Art. 45: todo NNA tiene derecho a la educación; la exclusión como medida disciplinaria contraviene este derecho. Lineamientos 2023-2024: ante conductas disruptivas, el protocolo de intervención implica evaluación, apoyo y coordinación, no exclusión. Estatuto del Docente Dominicano: establece conductos regulares para conflictos estudiantiles. La opción A subordina el criterio técnico al mandato administrativo; la C abandona el proceso sin justificación; la D asume un rol de mediador neutral que elude la responsabilidad técnica."
+    },
+ 
+    {
+        id: 568,
+        categoria: "NEAE",
+        pregunta: "Un estudiante de 1.er grado del nivel Primario con diagnóstico de discapacidad auditiva moderada asiste al centro sin ningún tipo de adecuación curricular implementada, porque el docente de aula manifiesta que 'no sabe cómo trabajar con él' y que 'debería estar en una escuela especial'. Los padres no han sido informados de esta posición del docente. ¿Cuál es la actuación correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Acordar con el docente que el estudiante sea promovido al siguiente grado sin evaluación formal, para evitar que permanezca en un entorno donde el docente no tiene las competencias para atenderlo adecuadamente.",
+            "B) Documentar la situación, informar al director/a del centro, coordinar con el equipo de gestión la implementación de adecuaciones curriculares conforme a la Ordenanza 05-2024, orientar al docente sobre estrategias inclusivas desde el rol del psicólogo/a, informar a los padres de la situación y del plan de apoyo diseñado, y de ser necesario, solicitar acompañamiento del técnico distrital de educación inclusiva.",
+            "C) Derivar al estudiante a una escuela especial conforme a la opinión del docente, dado que el centro ordinario no cuenta con los recursos ni el personal capacitado para garantizar una educación de calidad al estudiante.",
+            "D) Citar a los padres para comunicarles que el centro no tiene capacidad para atender las necesidades del estudiante y orientarles sobre centros especializados disponibles en el distrito, sin involucrar al director/a ni al equipo de gestión en la decisión."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ordenanza 05-2024 (Lineamientos para la Educación Inclusiva): el sistema educativo dominicano es inclusivo por mandato normativo; ningún estudiante con discapacidad puede ser excluido de la escuela regular sin un proceso institucional formal. La derivación a escuela especial requiere evaluación integral y decisión del equipo de gestión, no opinión unilateral del docente. Manual Operativo COP (2015): el psicólogo/a escolar tiene un rol clave en la orientación docente y la coordinación del equipo de gestión en casos de inclusión. La opción A vulnera el derecho a la educación; la C ejecuta una exclusión sin proceso formal; la D excluye al director/a de una decisión que le corresponde."
+    },
+ 
+    {
+        id: 569,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "El/la psicólogo/a escolar diseña e implementa, de manera autónoma y sin informar al director/a ni coordinar con los docentes, un taller grupal de habilidades socioemocionales para todos los estudiantes de 3.er grado, ocupando dos horas de las asignaturas de Lengua Española y Matemáticas durante tres semanas consecutivas. Al finalizar, los docentes se quejan ante el director/a. ¿Qué principio del Manual Operativo COP (2015) fue vulnerado en este proceso?",
+        opciones: [
+            "A) El principio de interdisciplinariedad, dado que el taller debió ser cofacilitado con el orientador/a escolar para garantizar la integralidad de la intervención.",
+            "B) El principio de coordinación institucional e integración curricular: las intervenciones del psicólogo/a escolar que afectan el tiempo curricular deben ser coordinadas y autorizadas por el director/a del centro e integradas al plan de trabajo institucional, sin interrumpir unilateralmente los procesos de enseñanza de otras áreas.",
+            "C) El principio de evaluación de impacto, dado que el psicólogo/a debió aplicar pre y post test para medir la efectividad del taller antes de ejecutarlo con toda la población estudiantil.",
+            "D) El principio de participación familiar, dado que los padres debieron ser consultados y dar su consentimiento antes de que sus hijos participaran en talleres de habilidades socioemocionales."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): todas las intervenciones del psicólogo/a escolar que afectan la dinámica institucional, incluyendo el uso del tiempo curricular, deben ser planificadas, coordinadas y autorizadas por el director/a del centro como parte del plan de trabajo anual. La autonomía técnica del psicólogo/a no incluye la decisión unilateral de modificar el horario escolar. Lineamientos 2023-2024: la coordinación con el equipo directivo es un principio rector de la función psicológica escolar. Estatuto del Docente: el director/a es la autoridad académica del centro. Las demás opciones señalan principios reales pero no son el que fue vulnerado de manera primaria en el escenario descrito."
+    },
+ 
+    {
+        id: 570,
+        categoria: "Protección",
+        pregunta: "Durante el proceso de evaluación psicológica de un estudiante de 4.º grado, el/la psicólogo/a escolar identifica que el niño presenta indicadores compatibles con exposición crónica a violencia doméstica (testigo de violencia entre sus padres), aunque no hay evidencia de maltrato directo hacia el niño. Los padres conviven juntos y el niño no ha sido objeto de ninguna denuncia. ¿Cuál es la actuación institucional correcta?",
+        opciones: [
+            "A) No activar ninguna ruta de protección, dado que el estudiante no es víctima directa de maltrato y la violencia entre adultos convivientes es una situación de la esfera privada familiar que no corresponde al ámbito de intervención del psicólogo/a escolar.",
+            "B) Documentar los indicadores identificados, informar al director/a del centro, diseñar un plan de intervención psicológica para el estudiante que aborde el impacto de la exposición a la violencia doméstica, y valorar conjuntamente con el equipo de gestión si la situación requiere la activación de la Ruta Crítica de protección conforme a la Ley 136-03 y los Lineamientos 2023-2024, dado que la exposición a violencia doméstica constituye una forma de maltrato emocional reconocida.",
+            "C) Citar a ambos padres de manera conjunta para una sesión de orientación sobre los efectos de la violencia doméstica en el desarrollo infantil, con el objetivo de promover un cambio en la dinámica familiar desde el centro educativo.",
+            "D) Referir el caso directamente al Ministerio Público sin informar previamente al director/a del centro, dado que la violencia doméstica es un delito que debe ser reportado directamente a las autoridades penales por quien lo conoce."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ley 136-03, Art. 3 y 5: la exposición de un NNA a violencia doméstica es reconocida como una forma de maltrato emocional y pone en riesgo su desarrollo integral, independientemente de que sea victima directa de agresión física. Guía de Ruta Crítica MINERD: la valoración del riesgo y la decisión de activar la ruta de protección es una decisión del equipo de gestión del centro, no unilateral del psicólogo/a. Manual Operativo COP (2015): el psicólogo/a documenta, informa e interviene con el estudiante afectado. La opción A normaliza una situación de riesgo para el NNA; la C convoca conjuntamente a dos adultos en conflicto, lo que puede escalar el riesgo; la D omite el conducto regular interno obligatorio (director/a) antes de la notificación externa."
+    },
+
+   {
+        id: 571,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "El/la psicólogo/a escolar de un centro de Primaria recibe la referencia de una maestra de 4.º grado que reporta que un estudiante de 9 años ha bajado significativamente su rendimiento académico en el último mes, se muestra aislado, llora con frecuencia y ha manifestado que 'extraña mucho a su papá'. Al indagar, el psicólogo/a se entera de que el padre del niño falleció hace seis semanas en un accidente. La familia no ha buscado apoyo externo. ¿Cuál es la intervención psicológica escolar correcta en esta situación?",
+        opciones: [
+            "A) Remitir de inmediato al estudiante a un servicio de salud mental externo especializado en duelo, dado que el proceso de pérdida parental supera el nivel de intervención del psicólogo/a en el contexto escolar y requiere atención clínica especializada.",
+            "B) Abrir un expediente de seguimiento, iniciar acompañamiento psicológico individual al estudiante dentro del centro educativo con enfoque en el proceso de duelo, coordinar con la maestra estrategias de apoyo en el aula, establecer contacto con la familia para orientación y acompañamiento, e informar al director/a del centro sobre el caso y el plan de intervención, conforme al Manual Operativo COP (2015) y los Lineamientos 2023-2024.",
+            "C) Orientar a la maestra para que brinde apoyo emocional al estudiante en el aula durante el período de adaptación al duelo, sin abrir un expediente psicológico formal para evitar estigmatizar al niño en un momento de vulnerabilidad familiar.",
+            "D) Citar únicamente a la madre o tutor/a del estudiante para orientarla sobre recursos externos de apoyo en duelo disponibles en la comunidad, limitando la intervención del psicólogo/a escolar al rol de gestor de derivaciones."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): el acompañamiento en situaciones de crisis vitales como el duelo es una función específica del psicólogo/a escolar dentro del centro; la derivación externa es una posible medida complementaria, no la primera respuesta. Lineamientos de Orientación y Psicología 2023-2024: el psicólogo/a escolar tiene competencia en intervención ante crisis emocionales y debe actuar con la familia y el equipo docente de manera coordinada. La opción A deriva prematuramente sin agotar la intervención institucional; la C invisibiliza la situación sin abrir proceso formal; la D reduce el rol del psicólogo/a a gestor de derivaciones, lo cual contradice el Manual Operativo."
+    },
+ 
+    {
+        id: 572,
+        categoria: "Protección",
+        pregunta: "El/la psicólogo/a escolar es informado/a por la conserje del centro de que frecuentemente observa a un estudiante de 2.º grado llegar sin desayunar, con la misma ropa varios días seguidos y con señales visibles de descuido en su higiene personal. La maestra del grado confirma que el niño a veces dice tener hambre y que sus útiles están deteriorados. Los padres no han asistido a ninguna reunión del año. ¿Cuál es la actuación institucional correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Registrar los indicadores observados, informar al director/a del centro mediante comunicación formal, coordinar con el equipo de gestión la activación de la Ruta Crítica por posible situación de negligencia o descuido parental conforme a la Ley 136-03, y articular con las redes de protección social disponibles en el territorio, garantizando el seguimiento al estudiante desde el centro.",
+            "B) Visitar el hogar del estudiante de manera individual para verificar directamente las condiciones de vida de la familia antes de activar cualquier ruta de protección, con el objetivo de no perjudicar injustamente a los padres con una denuncia precipitada.",
+            "C) Orientar a la maestra para que, en la medida de lo posible, facilite al estudiante alimentos del merienda escolar y útiles adicionales, y aguardar hasta reunir más evidencias antes de informar al director/a o activar cualquier protocolo institucional.",
+            "D) Elaborar un informe de situación y remitirlo al técnico distrital de orientación y psicología en el próximo informe mensual, dado que la decisión de activar la Ruta Crítica por negligencia requiere validación del nivel distrital."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Normativa REAL: Ley 136-03, Art. 3: la negligencia o descuido parental que afecta la salud, higiene y alimentación del NNA constituye una forma de maltrato por omisión. Guía de Ruta Crítica MINERD: los indicadores múltiples y sostenidos de descuido activan la ruta interna de protección; el primer paso es informar al director/a. Manual Operativo COP (2015): el psicólogo/a escolar no realiza visitas domiciliarias de manera individual; estas se coordinan institucionalmente. La opción B expone al psicólogo/a y a la institución sin seguir el protocolo. La opción C normaliza la situación y retrasa la protección. La opción D demora inaceptablemente la notificación ante indicadores activos de negligencia."
+    },
+ 
+    {
+        id: 573,
+        categoria: "NEAE",
+        pregunta: "El/la psicólogo/a escolar concluye el proceso de evaluación de un estudiante de 3.er grado e identifica que presenta dificultades específicas de aprendizaje en el área de la lectura (dislexia) que requieren adecuaciones curriculares. Al presentar los resultados al equipo de gestión, el coordinador pedagógico señala que 'en este centro no hacemos adecuaciones porque bajan el nivel del salón'. ¿Cuál es la respuesta correcta del/la psicólogo/a escolar ante esta posición?",
+        opciones: [
+            "A) Aceptar el criterio del coordinador pedagógico, dado que las adecuaciones curriculares son una decisión pedagógica que compete al coordinador y no al psicólogo/a, y registrar su desacuerdo en el expediente del estudiante.",
+            "B) Fundamentar técnicamente ante el equipo de gestión que las adecuaciones curriculares son un derecho del estudiante establecido en la Ordenanza 05-2024 y que su negativa constituye una vulneración del derecho a la educación inclusiva; escalar la situación al director/a si el coordinador mantiene su posición, y de persistir la negativa, informar al técnico distrital correspondiente para su intervención, dejando constancia escrita de todo el proceso.",
+            "C) Implementar de manera unilateral las adecuaciones curriculares recomendadas coordinándolas directamente con la maestra de aula, prescindiendo de la autorización del coordinador pedagógico, dado que el bienestar del estudiante prevalece sobre los criterios administrativos del centro.",
+            "D) Orientar a los padres del estudiante para que soliciten formalmente las adecuaciones curriculares mediante una comunicación escrita dirigida al director/a del centro, dado que la solicitud familiar tiene mayor peso institucional que la recomendación técnica del psicólogo/a."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ordenanza 05-2024, Art. 6: las adecuaciones curriculares son un derecho del estudiante con NEAE y una obligación del sistema educativo; su negativa por criterios no técnicos constituye discriminación. Manual Operativo COP (2015): el psicólogo/a escolar tiene la responsabilidad de defender técnicamente sus recomendaciones y escalar la situación cuando un derecho del estudiante es vulnerado. Lineamientos 2023-2024: el escalamiento al nivel distrital procede cuando el equipo de gestión no actúa conforme a la normativa. La opción A renuncia a la responsabilidad técnica; la C actúa de manera unilateral violando la coordinación institucional; la D transfiere a la familia una carga que es responsabilidad institucional."
+    },
+ 
+    {
+        id: 574,
+        categoria: "Clima Escolar",
+        pregunta: "El/la psicólogo/a escolar recibe la solicitud del director/a para diseñar e implementar un programa de prevención de violencia escolar para el año lectivo. Al revisar el contexto del centro, identifica que no existen datos sistematizados sobre los tipos de violencia presentes, las áreas del centro donde se concentran los incidentes ni los grados más afectados. ¿Cuál es el primer paso técnico correcto antes de diseñar el programa?",
+        opciones: [
+            "A) Diseñar el programa de prevención basándose en los modelos de intervención en violencia escolar reconocidos internacionalmente, dado que son aplicables a cualquier contexto educativo independientemente del diagnóstico situacional específico del centro.",
+            "B) Realizar un diagnóstico situacional del centro mediante la revisión del registro de incidencias, la aplicación de instrumentos de valoración del clima escolar a estudiantes y docentes, y entrevistas con actores clave, para que el programa de prevención responda a las necesidades reales identificadas, conforme al Manual Operativo COP (2015) y los Lineamientos 2023-2024.",
+            "C) Solicitar al técnico distrital de orientación y psicología que facilite un programa de prevención de violencia estandarizado ya diseñado, dado que el desarrollo de programas institucionales desde el nivel de centro requiere validación y recursos del nivel distrital.",
+            "D) Iniciar directamente las actividades de prevención con los grados superiores del centro (5.º y 6.º), dado que estadísticamente son los que presentan mayor incidencia de violencia escolar en los centros de Primaria a nivel nacional."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): toda intervención psicológica a nivel institucional debe partir de un diagnóstico situacional que identifique las características específicas del problema en ese centro. Lineamientos de Orientación y Psicología 2023-2024: el diseño de programas de prevención es una función del psicólogo/a escolar y debe ser contextualizado. Guía de Ruta Crítica MINERD: la prevención de la violencia requiere conocimiento del tipo, frecuencia y actores involucrados en cada institución específica. La opción A aplica modelos genéricos sin diagnóstico; la C renuncia a la función técnica autónoma del psicólogo/a; la D actúa sobre supuestos estadísticos nacionales sin verificar el contexto local."
+    },
+ 
+    {
+        id: 575,
+        categoria: "Protección",
+        pregunta: "El/la psicólogo/a escolar recibe a una estudiante de 6.º grado que llega espontáneamente a su oficina durante el recreo y le muestra, desde su teléfono, mensajes de un adulto desconocido que le solicita fotografías de su cuerpo a cambio de dinero. La estudiante dice que 'todavía no le ha enviado nada' pero que el hombre sabe dónde vive. ¿Cuál es la secuencia de actuación inmediata correcta conforme a la normativa dominicana?",
+        opciones: [
+            "A) Orientar a la estudiante para que bloquee al contacto en el teléfono y elimine los mensajes, y convoque a sus padres para que hagan la denuncia correspondiente ante las autoridades policiales, dado que la situación ya está controlada porque la estudiante no envió nada.",
+            "B) Preservar las evidencias digitales sin eliminar los mensajes, mantener a la estudiante en un espacio seguro, notificar al director/a del centro de inmediato, contactar a los padres o tutores ese mismo día, y activar la Ruta Crítica de protección reportando la situación al CONANI y/o al Ministerio Público por configurarse como un caso de grooming o intento de explotación sexual comercial de NNA, conforme a la Ley 136-03 y la Guía de Ruta Crítica MINERD.",
+            "C) Escuchar a la estudiante, registrar la situación en el expediente psicológico, y programar una sesión con sus padres para la próxima semana con el objetivo de abordar el tema de la seguridad digital en familia.",
+            "D) Notificar al técnico distrital de orientación y psicología de manera urgente para que este determine si la situación requiere la activación de la Ruta Crítica o si puede ser manejada desde el nivel del centro educativo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ley 136-03, Art. 408 y ss.: el grooming y el intento de obtención de imágenes sexuales de NNA constituyen delitos que requieren denuncia penal inmediata. Guía de Ruta Crítica MINERD: cuando existe un riesgo inminente para la seguridad de un NNA, la respuesta es inmediata; no se demora para esperar sesiones o validaciones del nivel distrital. La eliminación de los mensajes (opción A) destruye evidencia digital del delito. La opción C programa una respuesta diferida ante una emergencia de protección activa. La opción D transfiere al técnico distrital una decisión que la ruta interna del centro debe iniciar de inmediato."
+    },
+ 
+    {
+        id: 576,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "Al revisar el plan de trabajo del año anterior, el/la psicólogo/a escolar constata que el 70% de las intervenciones realizadas fueron de tipo reactivo (atención a crisis y referidos urgentes) y solo el 30% correspondió a acciones preventivas planificadas. Para el nuevo año lectivo, el director/a solicita al psicólogo/a que mantenga el mismo esquema porque 'así siempre se ha hecho'. ¿Cuál es la respuesta técnicamente correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Acatar la instrucción del director/a y mantener el esquema reactivo predominante, dado que la demanda espontánea de atención determina la dinámica de trabajo del psicólogo/a escolar y no puede planificarse de manera rígida.",
+            "B) Presentar al director/a una propuesta de plan de trabajo anual que reequilibre la distribución entre intervención preventiva y atención a casos, fundamentando técnicamente que el Manual Operativo COP (2015) y los Lineamientos 2023-2024 establecen que la función preventiva y de promoción es prioritaria en el rol del psicólogo/a escolar, sin descuidar la atención a situaciones emergentes.",
+            "C) Elaborar el plan de trabajo manteniendo el esquema reactivo solicitado por el director/a, pero añadiendo en el informe trimestral una nota técnica que explique las limitaciones del modelo para cumplir con los lineamientos del MINERD.",
+            "D) Solicitar al técnico distrital que intervenga ante el director/a para que este autorice al psicólogo/a a modificar el esquema de trabajo, dado que el director/a tiene autoridad sobre el plan de trabajo del psicólogo/a en el centro."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): establece explícitamente que la función preventiva y de promoción del bienestar es el eje central del rol del psicólogo/a escolar; la atención reactiva es necesaria pero no debe ser el modelo predominante. Lineamientos de Orientación y Psicología 2023-2024: el plan de trabajo anual del psicólogo/a debe privilegiar la prevención y la intervención temprana. El psicólogo/a tiene responsabilidad técnica de fundamentar su plan conforme a la normativa, no simplemente ejecutar lo que dicte la tradición institucional. La opción A renuncia a la función técnica; la C registra el incumplimiento sin corregirlo; la D delega al nivel distrital una responsabilidad técnica del psicólogo/a."
+    },
+ 
+    {
+        id: 577,
+        categoria: "NEAE",
+        pregunta: "Durante la aplicación de una evaluación de inteligencia estandarizada a un estudiante de 5.º grado, el/la psicólogo/a escolar detecta que el instrumento utilizado fue estandarizado exclusivamente en población de otro país y no cuenta con baremos validados para la población dominicana. El director/a insiste en que se use porque 'es el único disponible en el centro'. ¿Cuál es la actuación técnica y ética correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Aplicar el instrumento siguiendo la instrucción del director/a, dado que la disponibilidad de recursos en el centro determina las herramientas evaluativas que puede usar el psicólogo/a, e incluir una nota metodológica en el informe señalando la limitación.",
+            "B) Aplicar el instrumento con precaución, pero complementarlo obligatoriamente con observación sistemática, análisis de desempeño escolar y entrevistas, y señalar explícitamente en el informe de evaluación las limitaciones del instrumento para la población dominicana, absteniéndose de emitir conclusiones diagnósticas basadas exclusivamente en ese puntaje, conforme a los estándares técnicos del Manual Operativo COP (2015).",
+            "C) Negarse a aplicar el instrumento y solicitar formalmente al director/a que gestione ante el nivel distrital la adquisición de instrumentos estandarizados para población dominicana antes de iniciar cualquier proceso de evaluación.",
+            "D) Aplicar el instrumento y usar los baremos disponibles del país de estandarización, dado que los estándares psicométricos internacionales son equivalentes y los resultados son igualmente válidos para cualquier población hispanohablante."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): el psicólogo/a escolar tiene responsabilidad técnica sobre la validez de los instrumentos que aplica; cuando un instrumento tiene limitaciones, estas deben señalarse explícitamente en el informe y los resultados no pueden interpretarse de manera aislada. Lineamientos de Orientación y Psicología 2023-2024: la evaluación psicológica escolar es un proceso multimodal que no depende exclusivamente de pruebas estandarizadas. La opción A aplica sin señalar limitaciones, lo que puede conducir a decisiones equivocadas sobre el estudiante. La opción C paraliza el proceso sin justificación absoluta. La opción D ignora la validez de constructo y las diferencias culturales en la estandarización."
+    },
+ 
+    {
+        id: 578,
+        categoria: "Protección",
+        pregunta: "El/la psicólogo/a escolar recibe a la madre de un estudiante de 1.er grado quien, entre lágrimas, le refiere que su expareja (padre del niño) viene al centro frecuentemente a buscarlo sin autorización, que tiene una orden de protección en su contra, y que teme que el niño sea sustraído del centro. Solicita al psicólogo/a que 'haga algo'. ¿Cuál es la actuación institucional correcta?",
+        opciones: [
+            "A) Escuchar a la madre, orientarla emocionalmente y recomendarle que contacte a su abogado para que gestione la modificación de la orden de protección, dado que la situación legal entre los progenitores está fuera del ámbito de intervención del psicólogo/a escolar.",
+            "B) Registrar la información aportada por la madre, solicitar copia de la orden de protección vigente, notificar de inmediato al director/a del centro para que se establezca un protocolo de seguridad institucional que impida el acceso del padre sin autorización, informar al personal del centro sobre la situación, y orientar a la madre sobre los canales de apoyo disponibles, conforme al Manual Operativo COP (2015) y la Guía de Ruta Crítica MINERD.",
+            "C) Citar al padre del niño a una reunión con el psicólogo/a y la madre para mediar entre ambos progenitores y establecer acuerdos sobre las visitas al centro educativo, aplicando un enfoque de mediación familiar.",
+            "D) Comunicar la situación únicamente al orientador/a escolar para que este gestione la relación con la familia y determine las medidas de seguridad necesarias en el centro."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Guía de Ruta Crítica MINERD: ante riesgo de sustracción o contacto no autorizado de un NNA en el centro educativo, la respuesta es inmediata e institucional; el director/a activa los protocolos de seguridad del centro. Ley 136-03, Art. 60: la protección de la integridad física y emocional del NNA en todos los espacios donde se encuentre, incluido el escolar, es obligación del sistema. Manual Operativo COP (2015): el psicólogo/a no media entre progenitores en conflictos legales (opción C); escala al director/a y apoya a la familia desde su rol. La opción A limita el rol del psicólogo/a a orientación emocional sin acción institucional; la D delega a otro actor sin informar al director/a."
+    },
+ 
+    {
+        id: 579,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "Una estudiante de 6.º grado es referida al/la psicólogo/a escolar por presentar síntomas de ansiedad intensa: llanto frecuente antes de los exámenes, dolores de estómago recurrentes sin causa médica identificada, dificultad para dormir y expresiones de miedo al fracaso escolar. La maestra informa que la niña tiene las mejores calificaciones del grado. ¿Cuál es la intervención psicológica escolar correcta?",
+        opciones: [
+            "A) Comunicar a la maestra y a los padres que la estudiante 'está bien académicamente' y que la ansiedad es normal ante los exámenes, sin abrir expediente ni iniciar intervención formal, dado que los síntomas son proporcionales al nivel de exigencia del 6.º grado.",
+            "B) Abrir expediente de seguimiento, realizar una evaluación de los indicadores de ansiedad escolar de la estudiante, diseñar un plan de intervención que incluya técnicas de regulación emocional adecuadas a su edad, coordinar con la familia y la maestra estrategias de acompañamiento, e informar al director/a sobre el caso, conforme al Manual Operativo COP (2015) y los Lineamientos 2023-2024.",
+            "C) Recomendar a los padres que lleven a la estudiante a un psicólogo clínico privado, dado que la ansiedad con síntomas somáticos como los descritos requiere intervención clínica especializada fuera del ámbito escolar.",
+            "D) Solicitar a la maestra que reduzca la carga evaluativa de la estudiante durante el trimestre para disminuir la presión que genera la ansiedad, dado que la modificación del entorno de exigencia es la intervención más efectiva en estos casos."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): los síntomas de ansiedad escolar con manifestaciones somáticas recurrentes constituyen una situación que requiere apertura de expediente e intervención psicológica formal en el centro. El alto rendimiento académico no excluye la necesidad de apoyo psicológico. Lineamientos de Orientación y Psicología 2023-2024: la intervención ante ansiedad escolar es una competencia del psicólogo/a escolar; incluye trabajo con el estudiante, la familia y el equipo docente. La opción A normaliza síntomas que requieren atención. La opción C deriva externamente sin agotar la intervención institucional. La opción D modifica el entorno sin abordar los factores psicológicos subyacentes, lo cual es insuficiente."
+    },
+ 
+    {
+        id: 580,
+        categoria: "Clima Escolar",
+        pregunta: "El/la psicólogo/a escolar es convocado/a por el director/a porque varios docentes han presentado quejas sobre el comportamiento de un grupo de padres que ingresa al centro en horas de clases, interrumpe las aulas para reclamar a los maestros y en una ocasión amenazó verbalmente a una docente. El director/a solicita al psicólogo/a que 'hable con los padres problemáticos'. ¿Cuál es la actuación institucional correcta?",
+        opciones: [
+            "A) Asumir la función solicitada por el director/a y reunirse individualmente con cada uno de los padres identificados como 'problemáticos' para orientarles sobre las normas de convivencia del centro y mediar en los conflictos con el personal docente.",
+            "B) Informar al director/a que la gestión de conflictos con familias que afectan la seguridad del personal es una responsabilidad institucional que corresponde a la dirección del centro; ofrecer desde el rol del psicólogo/a un diagnóstico del clima institucional, una propuesta de protocolo de atención a familias y acciones de fortalecimiento de la convivencia escolar, sin asumir la función de mediador/a entre la dirección y los padres en conflictos de naturaleza disciplinaria o legal.",
+            "C) Convocar una reunión conjunta de todos los padres del centro para abordar las normas de convivencia de manera colectiva, evitando identificar públicamente a las familias involucradas en los incidentes.",
+            "D) Elaborar un informe de situación sobre el clima institucional y remitirlo al técnico distrital para que este diseñe e implemente un plan de intervención con las familias del centro desde el nivel distrital."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): el psicólogo/a escolar no tiene función de mediador/a en conflictos disciplinarios o de seguridad entre la dirección y las familias; su función es el diagnóstico del clima y el diseño de intervenciones preventivas. Estatuto del Docente Dominicano: la protección del personal docente ante situaciones de amenaza es responsabilidad de la dirección del centro con apoyo del nivel distrital. Lineamientos 2023-2024: el psicólogo/a contribuye al clima escolar desde su rol técnico específico, no sustituyendo funciones directivas. La opción A desborda el rol del psicólogo/a hacia funciones de gestión disciplinaria. La opción C diluye la responsabilidad en una reunión general. La opción D delega al nivel distrital sin ofrecer la contribución técnica del psicólogo/a desde el centro."
+    },
+ 
+    {
+        id: 581,
+        categoria: "Protección",
+        pregunta: "El/la psicólogo/a escolar recibe a un estudiante de 3.er grado que manifiesta que su maestra 'le baja puntos cuando no hace lo que ella dice' y que una vez 'le quitó el almuerzo porque llegó tarde'. El estudiante se muestra temeroso de que 'la maestra se moleste' si el psicólogo/a le pregunta algo. ¿Cuál es la actuación institucional correcta conforme a la normativa dominicana?",
+        opciones: [
+            "A) Devolver al estudiante al aula, dado que las decisiones sobre puntuación y manejo disciplinario dentro del aula son competencia exclusiva del docente, y la información del niño puede estar distorsionada por su perspectiva subjetiva.",
+            "B) Escuchar al estudiante sin cuestionar su relato, registrar con precisión sus expresiones textuales, atender su estado emocional, notificar al director/a del centro mediante informe formal ese mismo día sin confrontar previamente a la maestra, y garantizar que el estudiante no quede expuesto a posibles represalias mientras se investiga la situación, conforme a la Guía de Ruta Crítica y la Ley 136-03.",
+            "C) Citar a la maestra involucrada a una reunión con el psicólogo/a para escuchar su versión de los hechos antes de reportar la situación al director/a, aplicando el principio de escucha a todas las partes antes de tomar decisiones.",
+            "D) Orientar al estudiante para que comente la situación con sus padres, de manera que sean estos quienes inicien la queja formal ante el director/a del centro, dado que la denuncia de un docente por parte del psicólogo/a puede afectar la relación institucional."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Guía de Ruta Crítica MINERD: cuando un estudiante revela una posible situación de maltrato o trato arbitrario por parte de un adulto del centro, el psicólogo/a notifica al director/a sin confrontar al señalado; la investigación corresponde a la dirección y no al psicólogo/a. Ley 136-03, Art. 19: el retiro de alimentos como medida disciplinaria y la privación arbitraria como castigo constituyen formas de maltrato institucional. La opción A descarta el relato del niño sin fundamento. La opción C confronta al docente antes del reporte, lo que puede comprometer la investigación y exponer al estudiante. La opción D transfiere la responsabilidad de reporte a la familia, cuando el psicólogo/a tiene la obligación institucional directa."
+    },
+ 
+    {
+        id: 582,
+        categoria: "NEAE",
+        pregunta: "Un estudiante de 2.º grado con diagnóstico de Trastorno del Espectro Autista (TEA) nivel 1, debidamente documentado, asiste al centro sin que su maestra haya recibido ninguna orientación sobre cómo trabajar con él. La maestra refiere al psicólogo/a que el niño 'no atiende, interrumpe y no puede trabajar en grupo', y solicita que sea 'cambiado de grado o de centro'. ¿Cuál es la actuación correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Gestionar con el director/a el traslado del estudiante a un aula de educación especial dentro del mismo centro o a un centro especializado, dado que el TEA requiere ambientes estructurados que el aula regular no puede proveer sin recursos adicionales.",
+            "B) Revisar el expediente y el diagnóstico del estudiante, brindar orientación técnica a la maestra sobre estrategias pedagógicas inclusivas para estudiantes con TEA nivel 1, coordinar con el equipo de gestión el diseño de un Plan de Apoyo Individualizado (PAI) con adecuaciones curriculares conforme a la Ordenanza 05-2024, e informar al director/a sobre la necesidad de formación del personal docente en educación inclusiva.",
+            "C) Aplicar una nueva evaluación psicológica completa del estudiante para verificar si el diagnóstico externo de TEA es correcto y determinar si sus necesidades pueden ser atendidas en el aula regular antes de diseñar cualquier plan de apoyo.",
+            "D) Orientar a los padres del estudiante para que busquen un centro de educación especial que cuente con los recursos necesarios para atender adecuadamente a su hijo, dado que el centro regular no está en condiciones de garantizarle una educación de calidad."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ordenanza 05-2024: el sistema educativo dominicano es inclusivo; los estudiantes con TEA tienen derecho a permanecer en el aula regular con los apoyos necesarios. La exclusión del aula regular sin proceso formal viola este mandato. Manual Operativo COP (2015): la orientación al personal docente sobre estrategias de atención a la diversidad es una función específica del psicólogo/a escolar. Lineamientos 2023-2024: el PAI es el instrumento formal para la atención a estudiantes con NEAE documentadas. La opción A ejecuta una exclusión sin proceso formal. La opción C cuestiona un diagnóstico ya establecido por especialista externo sin justificación. La opción D orienta la exclusión desde el consejo del psicólogo/a, lo que contraviene directamente la Ordenanza 05-2024."
+    },
+ 
+    {
+        id: 583,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "El/la psicólogo/a escolar elabora el informe de evaluación psicológica de un estudiante de 4.º grado y lo entrega directamente a la maestra de aula para que esta lo comparta con los padres en la próxima reunión de entrega de calificaciones. El director/a del centro no recibe copia del informe. ¿Qué principio del Manual Operativo COP (2015) se vulnera en este procedimiento?",
+        opciones: [
+            "A) El principio de objetividad, dado que la entrega directa a la maestra puede comprometer la imparcialidad del informe al estar mediada por la perspectiva docente.",
+            "B) El principio de confidencialidad y conducto regular: el informe psicológico es un documento técnico de acceso restringido; su entrega debe realizarse a los padres o tutores de manera directa por el psicólogo/a, previa notificación al director/a del centro como parte del equipo institucional que gestiona el caso, conforme al Manual Operativo COP (2015).",
+            "C) El principio de interdisciplinariedad, dado que el informe debió ser elaborado en conjunto con el orientador/a escolar antes de ser entregado a cualquier actor de la comunidad educativa.",
+            "D) El principio de pertinencia, dado que los informes psicológicos deben entregarse únicamente en espacios formales como reuniones del equipo de gestión y no en el contexto de reuniones de entrega de calificaciones."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): el informe psicológico es un documento de acceso restringido; los padres o tutores son los destinatarios directos y la entrega debe realizarse en un contexto de orientación por parte del psicólogo/a, no a través de terceros (como la maestra). El director/a debe ser informado como parte del equipo institucional. La entrega a la maestra para que la comparta expone información sensible del estudiante y viola el principio de confidencialidad y el protocolo de comunicación de resultados. Las opciones A, C y D mencionan principios reales del Manual pero no son los que se vulneran de manera primaria y directa en el procedimiento descrito."
+    },
+ 
+    {
+        id: 584,
+        categoria: "Protección",
+        pregunta: "El/la psicólogo/a escolar atiende a una estudiante de 5.º grado que le muestra fotos en su teléfono que ella misma tomó de sus brazos, donde se observan cicatrices de cortes superficiales recientes. La estudiante manifiesta que 'se corta cuando se siente muy mal' y que sus padres 'no saben nada y no pueden enterarse porque se van a poner bravos'. ¿Cuál es la secuencia de actuación institucional correcta?",
+        opciones: [
+            "A) Respetar la confidencialidad de la estudiante dado que los cortes son superficiales y no representan riesgo para su vida, programar sesiones de apoyo psicológico continuo e instruirla sobre estrategias alternativas para manejar sus emociones.",
+            "B) Informar a la estudiante que su seguridad es prioritaria y que los padres deben ser notificados, valorar el nivel de riesgo de manera inmediata, notificar al director/a del centro ese mismo día, contactar a los padres o tutores para informarles de la situación, diseñar un plan de seguridad para la estudiante e iniciar proceso de intervención psicológica, conforme al Manual Operativo COP (2015) y los Lineamientos 2023-2024.",
+            "C) Citar a los padres para la semana siguiente sin revelarles el motivo de la citación, con el objetivo de conocer el contexto familiar antes de comunicarles la situación de autolesión de su hija.",
+            "D) Derivar de inmediato a la estudiante a un servicio de salud mental externo sin informar a los padres, dado que la autolesión requiere intervención clínica especializada que el psicólogo/a escolar no puede proveer."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Lineamientos de Orientación y Psicología 2023-2024: la autolesión, independientemente de su nivel de gravedad aparente, rompe la confidencialidad y activa el protocolo de protección; los padres deben ser informados ese mismo día. Manual Operativo COP (2015): el psicólogo/a escolar realiza la valoración de riesgo inicial y activa la ruta interna inmediatamente. Ley 136-03: la integridad física del NNA es un derecho que el sistema educativo debe proteger. La opción A mantiene confidencialidad ante una situación de riesgo activo, lo que es una violación grave del protocolo. La opción C demora la notificación parental sin justificación. La opción D excluye a la familia de una situación de emergencia que les incumbe directamente."
+    },
+ 
+    {
+        id: 585,
+        categoria: "NEAE",
+        pregunta: "El/la psicólogo/a escolar identifica, durante el proceso de evaluación de un estudiante de 3.er grado, que este presenta un coeficiente intelectual en el rango límite (borderline) según el instrumento aplicado. Al comunicar los resultados al equipo de gestión, el director/a solicita que en el informe se escriba 'retardo mental leve' para que el Seguro Nacional de Salud (SENASA) de la familia cubra las terapias externas. ¿Cuál es la actuación ética y técnica correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Acceder a la solicitud del director/a dado que el fin último es beneficiar al estudiante facilitando el acceso a terapias que necesita, y el psicólogo/a tiene la autoridad técnica para ajustar las conclusiones del informe a los requerimientos del sistema de salud.",
+            "B) Negarse a modificar el informe para incluir un diagnóstico que no corresponde a los hallazgos de la evaluación, explicar al director/a que el informe psicológico escolar debe reflejar con exactitud los resultados obtenidos y que emitir un diagnóstico falso constituye una falta ética y legal, y ofrecer alternativas de apoyo al estudiante dentro del marco normativo del MINERD conforme al Manual Operativo COP (2015) y los Lineamientos 2023-2024.",
+            "C) Redactar el informe con el diagnóstico correcto (rango límite) pero añadir en la sección de recomendaciones la frase 'podría beneficiarse de intervención terapéutica para condiciones del desarrollo', para que la familia gestione el acceso a SENASA con esa redacción.",
+            "D) Elaborar dos versiones del informe: una con los resultados reales para el expediente escolar, y otra con el diagnóstico solicitado por el director/a para uso exclusivo de la familia ante SENASA."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): el psicólogo/a escolar tiene la obligación ética de reflejar con exactitud los resultados de la evaluación en el informe; la emisión de diagnósticos falsos constituye una falta grave a la ética profesional y puede tener consecuencias legales. Lineamientos 2023-2024: el informe psicológico escolar es un documento oficial del MINERD sujeto a auditoría. Estatuto del Docente Dominicano: la comisión de actos dolosos en el ejercicio de la función docente está tipificada como falta grave. Las opciones A, C y D, en distintos grados, implican la falsificación o distorsión de un documento oficial del sistema educativo, lo cual es indefendible independientemente de la intención."
+    },
+ 
+    {
+        id: 586,
+        categoria: "Clima Escolar",
+        pregunta: "El/la psicólogo/a escolar aplica un instrumento de valoración del clima escolar al inicio del año y los resultados indican que el 65% de los estudiantes de 5.º y 6.º grado percibe el centro como 'poco seguro' y que el 40% reporta haber sido testigo de peleas físicas entre compañeros en el último mes. El director/a minimiza los resultados y dice 'eso lo responden así porque quieren salir temprano'. ¿Cuál es la actuación correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Aceptar la interpretación del director/a y no escalar los resultados, dado que el director/a tiene mayor conocimiento del contexto del centro y su criterio prevalece sobre el instrumento aplicado por el psicólogo/a.",
+            "B) Documentar los resultados del diagnóstico, presentarlos formalmente al equipo de gestión mediante un informe técnico con la metodología aplicada y los datos obtenidos, proponer un plan de intervención en clima escolar y, si el director/a persiste en ignorar los resultados, reportar la situación al técnico distrital correspondiente, dejando constancia escrita de todas las actuaciones, conforme al Manual Operativo COP (2015).",
+            "C) Repetir la aplicación del instrumento de valoración del clima a una muestra diferente de estudiantes para verificar si los resultados se confirman antes de presentar el informe al equipo de gestión.",
+            "D) Compartir los resultados directamente con los docentes del centro para generar presión institucional que motive al director/a a tomar acción sobre el clima escolar."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): el psicólogo/a escolar tiene la responsabilidad técnica de sostener los resultados de sus diagnósticos y proponer intervenciones; cuando la dirección no actúa ante situaciones que afectan la seguridad y el bienestar de los estudiantes, el escalamiento al nivel distrital es el conducto correcto. Lineamientos 2023-2024: los datos del diagnóstico del clima escolar son insumos para la planificación institucional, no para ser minimizados. Guía de Ruta Crítica: un centro donde los estudiantes reportan inseguridad y violencia requiere intervención activa. La opción A renuncia a la función técnica. La opción C duplica el diagnóstico innecesariamente. La opción D distribuye información sensible sin autorización del director/a, vulnerando el conducto regular."
+    },
+ 
+    {
+        id: 587,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "El/la psicólogo/a escolar es solicitado por un grupo de docentes para que realice 'una capacitación sobre cómo manejar niños difíciles en el aula' durante una tarde de la semana. El psicólogo/a no ha coordinado esta actividad con el director/a del centro ni la ha incluido en su plan de trabajo anual. ¿Cuál es la actuación institucional correcta antes de proceder?",
+        opciones: [
+            "A) Realizar la capacitación de inmediato dado que la solicitud parte de los docentes, quienes son los usuarios directos del servicio del psicólogo/a, y la demanda espontánea del personal docente justifica la respuesta inmediata sin necesidad de autorización formal.",
+            "B) Valorar la pertinencia técnica de la solicitud, plantear la propuesta al director/a del centro para su autorización e incorporación al plan de trabajo institucional, definir el contenido de la capacitación conforme a los Lineamientos de Orientación y Psicología 2023-2024, y coordinar la logística con el equipo de gestión antes de ejecutar la actividad.",
+            "C) Solicitar a los docentes que presenten la petición por escrito al director/a del centro para que este la eleve al técnico distrital de orientación y psicología, quien es el responsable de autorizar y diseñar las capacitaciones dirigidas al personal docente.",
+            "D) Rechazar la solicitud dado que las capacitaciones docentes son una función del coordinador pedagógico del centro y no del psicólogo/a escolar, cuyo rol se limita a la atención directa de los estudiantes y sus familias."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): la orientación y capacitación al personal docente en temas de gestión del comportamiento y bienestar estudiantil es una función explícita del psicólogo/a escolar; sin embargo, toda actividad que afecte el tiempo institucional debe ser autorizada por el director/a e integrada al plan de trabajo. Lineamientos 2023-2024: las acciones del psicólogo/a deben planificarse y documentarse dentro del plan anual del centro. La opción A actúa sin coordinación institucional, vulnerando el principio de planificación y autorización. La opción C escala innecesariamente al nivel distrital una decisión que corresponde al centro. La opción D niega equivocadamente que la capacitación docente sea una función del psicólogo/a escolar."
+    },
+ 
+    {
+        id: 588,
+        categoria: "Protección",
+        pregunta: "El/la psicólogo/a escolar detecta que un estudiante de 4.º grado ha faltado al centro durante 12 días consecutivos sin justificación conocida. Al consultar el expediente, observa que este mismo estudiante tuvo una intervención por posibles indicadores de maltrato el año anterior, pero el caso fue cerrado sin conclusión formal. Los padres no han respondido a las comunicaciones enviadas por la maestra. ¿Cuál es la actuación institucional correcta?",
+        opciones: [
+            "A) Registrar las ausencias en el expediente del estudiante y aguardar a que los padres se presenten espontáneamente al centro para retomar el contacto con la familia, dado que las ausencias frecuentes pueden tener múltiples explicaciones no relacionadas con maltrato.",
+            "B) Revisar el expediente previo de intervención, informar al director/a del centro sobre el patrón de ausentismo en el contexto de los antecedentes del caso, coordinar con el equipo de gestión una visita domiciliaria institucional o una notificación formal a las autoridades de protección para verificar el estado del estudiante, y documentar todas las acciones realizadas, conforme a la Guía de Ruta Crítica y la Ley 136-03.",
+            "C) Contactar telefónicamente a los padres del estudiante desde el centro educativo para indagar sobre el motivo de las ausencias, y aguardar su respuesta antes de tomar cualquier medida institucional adicional.",
+            "D) Elaborar un informe de ausentismo y remitirlo al técnico distrital de orientación y psicología junto con el expediente previo, para que el nivel distrital determine si la situación amerita la activación de la Ruta Crítica de protección."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Guía de Ruta Crítica MINERD: el ausentismo prolongado e injustificado, en el contexto de antecedentes de posible maltrato, es un indicador de riesgo que activa la ruta de verificación del bienestar del NNA; no puede esperarse la presentación espontánea de la familia. Ley 136-03, Art. 45: el derecho a la educación incluye el deber del sistema de garantizar la asistencia y verificar la integridad del NNA cuando hay señales de alerta. Manual Operativo COP (2015): los antecedentes de intervención previa deben considerarse en la valoración de situaciones de riesgo activo. La opción A normaliza el ausentismo sin considerar el contexto de riesgo. La opción C aplaza la acción a la espera de una respuesta de los mismos padres que no han respondido. La opción D delega al nivel distrital una acción que la ruta interna del centro debe iniciar."
+    },
+ 
+    {
+        id: 589,
+        categoria: "NEAE",
+        pregunta: "El/la psicólogo/a escolar recibe la solicitud de los padres de un estudiante de 5.º grado para que emita un certificado psicológico que acredite que su hijo 'tiene problemas de aprendizaje' con el fin de solicitar una prórroga en el pago de la matrícula en el centro educativo privado al que asiste. El psicólogo/a no ha evaluado al estudiante. ¿Cuál es la respuesta correcta?",
+        opciones: [
+            "A) Emitir el certificado basándose en el historial de observaciones de la maestra y las quejas de los padres, dado que la situación socioeconómica de la familia justifica el uso del criterio clínico del psicólogo/a para facilitar el acceso a un beneficio que favorece al estudiante.",
+            "B) Informar a los padres que no es posible emitir ningún certificado, diagnóstico ni informe psicológico sin haber realizado un proceso de evaluación formal conforme a los protocolos del MINERD, que incluye el consentimiento informado, la aplicación de instrumentos y la elaboración del informe técnico; y ofrecerles iniciar el proceso de evaluación si lo consideran pertinente, conforme al Manual Operativo COP (2015).",
+            "C) Emitir una nota de orientación (no un diagnóstico formal) señalando que el estudiante 'presenta dificultades académicas que requieren apoyo', para satisfacer la necesidad de los padres sin comprometer la ética profesional.",
+            "D) Derivar la solicitud al orientador/a escolar para que este gestione la certificación desde su función de apoyo familiar, dado que las certificaciones para trámites administrativos externos no son competencia del psicólogo/a escolar."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): ningún informe, certificado ni documento psicológico puede emitirse sin haber completado el proceso de evaluación formal; hacerlo constituye una falta grave a la ética profesional y compromete la validez del sistema. Lineamientos de Orientación y Psicología 2023-2024: el informe psicológico es un documento técnico que requiere proceso evaluativo previo. Estatuto del Docente Dominicano: la emisión de documentos falsos o sin sustento técnico es una falta sancionable. La opción A y C emiten documentos sin evaluación previa, lo que constituye una falta ética independientemente de la intención. La opción D traslada la responsabilidad al orientador/a cuando ningún actor puede emitir un diagnóstico psicológico sin evaluación."
+    },
+ 
+    {
+        id: 590,
+        categoria: "Clima Escolar",
+        pregunta: "Al inicio del tercer trimestre, el/la psicólogo/a escolar constata que los indicadores de referidos al servicio de psicología han aumentado un 40% respecto al trimestre anterior, y que la mayoría corresponden a estudiantes de los grados que tienen a un mismo docente. Los referidos incluyen ansiedad, llanto frecuente, resistencia a asistir al centro y relatos de los niños sobre 'gritos y humillaciones' en el aula. ¿Cuál es la actuación institucional correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Atender individualmente a cada estudiante referido y registrar sus testimonios en los expedientes psicológicos, sin comunicar al director/a el patrón identificado para evitar generar un conflicto institucional basado en información que puede ser subjetiva.",
+            "B) Sistematizar los datos del patrón de referidos (aumento, concentración en el mismo grado y docente, tipo de síntomas, relatos de los estudiantes), elaborar un informe técnico y presentarlo al director/a del centro de manera formal, señalando que el patrón observado constituye un indicador de posible maltrato institucional que requiere investigación por parte de la dirección, conforme a la Guía de Ruta Crítica y la Ley 136-03.",
+            "C) Conversar de manera informal con el docente señalado para orientarle sobre el manejo emocional en el aula, dado que el docente puede desconocer el impacto de su estilo de enseñanza sobre los estudiantes, y evaluar si la situación mejora antes de escalarla al director/a.",
+            "D) Citar a los padres de los estudiantes afectados de manera colectiva para que sean ellos quienes presenten formalmente la queja ante el director/a, dado que la denuncia de un docente resulta más sólida cuando proviene de las familias."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Guía de Ruta Crítica MINERD: un patrón sistemático de síntomas emocionales y relatos de humillación asociados a un mismo actor adulto del centro constituye un indicador de maltrato institucional que activa la ruta de notificación al director/a. Ley 136-03: el maltrato emocional y la humillación reiterada de un adulto hacia NNA está tipificado como una forma de maltrato. Manual Operativo COP (2015): el psicólogo/a tiene la responsabilidad de identificar y reportar patrones sistémicos, no solo casos individuales. La opción A omite el reporte del patrón, que es la información más relevante. La opción C confronta al docente sin reporte previo al director/a, violando el conducto regular. La opción D transfiere la responsabilidad de denuncia a las familias cuando el psicólogo/a tiene obligación institucional directa."
+    },
+
+    
+  {
+        id: 591,
+        categoria: "Protección",
+        pregunta: "El/la psicólogo/a escolar de un centro de Primaria es abordado/a en el pasillo por la tía materna de una estudiante de 3.er grado, quien le informa que la niña le ha contado que 'el novio de su mamá la toca en sus partes privadas cuando la mamá trabaja de noche'. La tía solicita al psicólogo/a que 'hable con la niña hoy mismo y le pregunte todo lo que pasó' para tener más detalles antes de decidir si hace la denuncia. ¿Cuál es la actuación institucional correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Atender la solicitud de la tía y realizar una entrevista exhaustiva con la niña ese mismo día para obtener toda la información posible sobre los hechos, dado que la inmediatez en la recolección del relato es fundamental para preservar la evidencia del caso.",
+            "B) Explicar a la tía que la entrevista investigativa a la niña no corresponde al psicólogo/a escolar sino a las autoridades competentes (Ministerio Público o CONANI); registrar la información aportada, notificar de inmediato al director/a del centro, activar la Ruta Crítica de protección, y orientar a la tía sobre cómo realizar la denuncia formal ante las autoridades, sin interrogar a la niña sobre los hechos, conforme a la Guía de Ruta Crítica MINERD y la Ley 136-03.",
+            "C) Realizar una entrevista breve y cuidadosa con la niña utilizando técnicas de entrevista forense adaptadas al contexto escolar, registrar su relato y remitirlo al CONANI como evidencia documental para agilizar el proceso de investigación.",
+            "D) Informar a la tía que el centro educativo no puede intervenir en situaciones que ocurren fuera del ámbito escolar y orientarla para que acuda directamente al Ministerio Público sin involucrar al centro en el proceso de denuncia."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Guía de Ruta Crítica MINERD: el psicólogo/a escolar no realiza entrevistas investigativas sobre hechos de abuso sexual; esta función corresponde exclusivamente al Ministerio Público y al CONANI mediante personal especializado. La entrevista reiterada a la víctima puede contaminar el relato y afectar el proceso judicial. Ley 136-03, Art. 19: la obligación de denuncia es inmediata; la activación de la ruta interna (director/a) es el primer paso institucional. La opción A realiza una función que no le corresponde y puede dañar el proceso legal. La opción C aplica entrevista forense, lo que excede totalmente el rol del psicólogo/a escolar. La opción D excluye al centro de una responsabilidad de protección que le es propia."
+    },
+ 
+    {
+        id: 592,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "El/la psicólogo/a escolar lleva tres meses trabajando con un estudiante de 4.º grado que presenta dificultades de regulación emocional severas: episodios frecuentes de llanto incontrolable, rabietas y agresividad física hacia compañeros. A pesar de la intervención sostenida, los comportamientos no han mejorado significativamente y el equipo docente reporta que la situación está afectando el clima del aula. ¿Cuál es el paso institucional correcto en este momento del proceso?",
+        opciones: [
+            "A) Continuar la intervención psicológica individual durante tres meses adicionales antes de tomar cualquier otra medida, dado que los procesos de cambio conductual en niños de Primaria requieren períodos prolongados para mostrar resultados.",
+            "B) Revisar el plan de intervención, documentar la evolución del caso y la falta de respuesta al tratamiento, presentar un informe de seguimiento al director/a del centro, valorar la necesidad de derivación a un servicio especializado externo (salud mental infantil), coordinar con la familia la búsqueda de apoyo complementario, y ajustar las estrategias de acompañamiento en el aula, conforme al Manual Operativo COP (2015) y los Lineamientos 2023-2024.",
+            "C) Solicitar al director/a que el estudiante sea ubicado en un aula de apoyo especial mientras dura el proceso de intervención, para proteger el clima del aula regular y garantizar que el psicólogo/a pueda trabajar con él en un ambiente más controlado.",
+            "D) Informar a los padres que el psicólogo/a escolar ha agotado sus posibilidades de intervención y que deben buscar atención psicológica privada para su hijo, cerrando el caso en el centro educativo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): cuando la intervención psicológica escolar no produce resultados en un período razonable, el psicólogo/a revisa el plan, documenta la evolución y valora la derivación externa como medida complementaria, sin cerrar el acompañamiento institucional. Lineamientos 2023-2024: la derivación externa no implica cierre del caso en el centro; el psicólogo/a mantiene el seguimiento. La opción A prolonga sin justificación técnica una intervención que no está siendo efectiva. La opción C segrega al estudiante sin proceso formal de la Ordenanza 05-2024. La opción D cierra el caso unilateralmente, lo que contradice el principio de continuidad del apoyo institucional."
+    },
+ 
+    {
+        id: 593,
+        categoria: "NEAE",
+        pregunta: "Una estudiante de Kínder (5 años) es referida al/la psicólogo/a escolar porque 'no habla en el salón': responde en casa, habla con sus padres y hermanos, pero en el centro educativo no emite ninguna palabra ni ante docentes ni ante compañeros, aunque sigue instrucciones gestuales. La maestra cree que 'es tímida o que está haciendo teatro'. ¿Cuál es la intervención técnicamente correcta del/la psicólogo/a escolar como primer paso?",
+        opciones: [
+            "A) Orientar a la maestra para que no presione a la estudiante a hablar en clase, dado que la timidez extrema en niños de Inicial es una variante del desarrollo normal que se resuelve espontáneamente con la adaptación al entorno escolar.",
+            "B) Iniciar el proceso de evaluación psicológica escolar que incluya observación en distintos contextos del centro, entrevista con la familia para obtener historia de desarrollo y comportamiento en el hogar, y revisión del expediente; los hallazgos orientarán si se trata de mutismo selectivo u otra condición que requiera intervención especializada, coordinando con la familia y el equipo docente, conforme al Manual Operativo COP (2015) y los Lineamientos 2023-2024.",
+            "C) Diagnosticar mutismo selectivo con base en la descripción de la maestra e iniciar de inmediato un protocolo de intervención conductual en el aula, dado que el cuadro descrito es clínicamente inequívoco y no requiere evaluación adicional.",
+            "D) Derivar directamente a la estudiante a un servicio de salud mental infantil externo, dado que el mutismo selectivo es una condición clínica que requiere atención psicológica y/o psiquiátrica especializada que supera el ámbito de intervención del psicólogo/a escolar."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Lineamientos de Orientación y Psicología 2023-2024: ante cualquier señal de alerta del desarrollo, el primer paso es siempre la evaluación institucional estructurada, no el diagnóstico inmediato ni la derivación prematura. Manual Operativo COP (2015): la observación multicontextual y la entrevista familiar son componentes ineludibles del proceso evaluativo. La opción A normaliza sin evaluar una situación que puede requerir intervención temprana. La opción C emite un diagnóstico sin evaluación formal, lo que excede el rol del psicólogo/a escolar. La opción D deriva externamente sin haber completado la evaluación institucional, que es el paso previo obligatorio."
+    },
+ 
+    {
+        id: 594,
+        categoria: "Clima Escolar",
+        pregunta: "El/la psicólogo/a escolar es informado/a de que en el grupo de WhatsApp de padres y madres del 5.º grado circulan mensajes que señalan a un estudiante específico como 'el culpable de todos los problemas del salón', incluyendo su nombre completo y fotografías tomadas sin su consentimiento. Varios padres solicitan que 'sea sacado del centro'. El director/a está al tanto pero no ha tomado ninguna acción. ¿Cuál es la actuación correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Unirse al grupo de WhatsApp de padres para orientarles directamente sobre el impacto de sus mensajes en el estudiante señalado y facilitar desde esa plataforma un proceso de reflexión colectiva sobre convivencia.",
+            "B) Informar al director/a mediante comunicación formal sobre el impacto que la situación tiene en el bienestar del estudiante señalado, solicitar que el centro tome medidas institucionales ante los padres involucrados, brindar apoyo psicológico al estudiante afectado, y documentar la situación como un caso de violencia digital contra un NNA conforme a la Ley 136-03 y la Guía de Ruta Crítica MINERD.",
+            "C) Citar a los padres que participan en los mensajes a una reunión grupal mediada por el psicólogo/a para que dialoguen con el estudiante señalado y su familia, con el objetivo de resolver el conflicto de manera directa entre las partes.",
+            "D) Orientar a los padres del estudiante afectado para que realicen la denuncia ante las autoridades competentes por difamación, dado que la situación ocurre en un espacio digital externo al centro y no es competencia del psicólogo/a ni del director/a intervenir en ella."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ley 136-03: la difusión de imágenes de NNA sin consentimiento y la estigmatización pública de un menor constituyen vulneraciones de sus derechos, independientemente del medio utilizado. Guía de Ruta Crítica MINERD: cuando el bienestar de un estudiante es afectado por acciones de adultos de la comunidad educativa, el psicólogo/a actúa desde su rol técnico e informa al director/a. Manual Operativo COP (2015): el apoyo al estudiante afectado es prioritario; la mediación directa entre padres y el estudiante señalado (opción C) puede revictimizarlo. La opción A desborda el rol institucional. La opción D excluye al centro de una responsabilidad de protección que le corresponde aunque el medio sea digital."
+    },
+ 
+    {
+        id: 595,
+        categoria: "Protección",
+        pregunta: "El/la psicólogo/a escolar de un centro de Inicial recibe a los padres de una niña de 4 años que solicitan que el psicólogo/a 'le diga a su hija que tiene que querer a su papá', dado que tras la separación conyugal la niña manifiesta no querer ir con el padre en los fines de semana y llora cuando lo ve. El padre tiene custodia compartida legalmente establecida. ¿Cuál es la respuesta institucional correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Acceder a la solicitud del padre y trabajar con la niña en sesiones individuales orientadas a fortalecer el vínculo afectivo con su progenitor, dado que la custodia compartida es un mandato legal que el sistema educativo debe apoyar.",
+            "B) Explicar a los padres que el rol del psicólogo/a escolar no incluye intervenir en disputas de custodia ni influir en los vínculos afectivos de la niña por mandato de uno de los progenitores; evaluar el estado emocional de la niña en el contexto del proceso de separación familiar, y si los síntomas lo ameritan, diseñar un plan de acompañamiento centrado en el bienestar de la niña, no en satisfacer la demanda de ninguno de los progenitores, conforme al Manual Operativo COP (2015) y la Ley 136-03.",
+            "C) Citar a ambos progenitores de manera conjunta para una sesión de orientación familiar sobre el impacto del conflicto parental en el desarrollo emocional de la niña, aplicando un enfoque de mediación familiar.",
+            "D) Derivar el caso a un psicólogo clínico externo especializado en dinámicas familiares post-separación, dado que las disputas de custodia superan el ámbito de intervención del psicólogo/a en el contexto escolar."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): el psicólogo/a escolar no puede ser instrumentalizado por ningún progenitor para influir en los vínculos afectivos de un NNA; su función es el bienestar del estudiante, no la gestión de disputas de custodia. Ley 136-03, Art. 15: el interés superior del NNA prevalece sobre los intereses de los progenitores. Lineamientos 2023-2024: la evaluación del estado emocional de la niña es pertinente; la intervención debe centrarse en su bienestar. La opción A convierte al psicólogo/a en instrumento de uno de los progenitores. La opción C convoca conjuntamente a progenitores en conflicto, lo que puede ser contraproducente. La opción D deriva externamente sin haber evaluado la necesidad desde el centro."
+    },
+ 
+    {
+        id: 596,
+        categoria: "NEAE",
+        pregunta: "El/la psicólogo/a escolar concluye la evaluación de un estudiante de 2.º grado y determina que no presenta Necesidades Específicas de Apoyo Educativo (NEAE); sin embargo, la maestra insiste en que 'algo tiene ese niño' y solicita que el psicólogo/a repita la evaluación con instrumentos diferentes. El rendimiento académico del estudiante es bajo pero estable. ¿Cuál es la actuación técnicamente correcta?",
+        opciones: [
+            "A) Repetir la evaluación con instrumentos adicionales en atención a la solicitud de la maestra, dado que el criterio docente es un insumo valioso que puede revelar aspectos no captados por los instrumentos aplicados inicialmente.",
+            "B) Presentar a la maestra los resultados de la evaluación de manera fundamentada, explicar los instrumentos utilizados y sus hallazgos, proponer estrategias pedagógicas diferenciadas en el aula para atender las dificultades académicas identificadas sin diagnóstico de NEAE, y registrar en el expediente tanto los resultados como la discrepancia con la percepción docente, sin repetir el proceso evaluativo sin justificación técnica que lo respalde, conforme al Manual Operativo COP (2015).",
+            "C) Aceptar la discrepancia entre la percepción docente y los resultados de la evaluación como indicador suficiente para emitir un diagnóstico provisional de NEAE, con el objetivo de garantizar que el estudiante reciba apoyo adicional en el aula.",
+            "D) Derivar el caso al técnico distrital de orientación y psicología para que este aplique una segunda evaluación y dirima la discrepancia entre el criterio del psicólogo/a escolar y la percepción de la maestra."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): la evaluación psicológica es un proceso técnico; su repetición requiere justificación clínica o evidencia de cambio en el estudiante, no simplemente la insistencia de un docente. El psicólogo/a presenta los resultados fundamentados y propone alternativas de apoyo. Lineamientos 2023-2024: las estrategias de apoyo en el aula no requieren diagnóstico de NEAE cuando los resultados no lo justifican; pueden implementarse como diferenciación pedagógica. La opción A repite la evaluación sin justificación técnica, lo que puede llevar a un diagnóstico incorrecto. La opción C emite un diagnóstico sin respaldo evaluativo, vulnerando la ética profesional. La opción D transfiere al nivel distrital una decisión técnica que corresponde al psicólogo/a del centro."
+    },
+ 
+    {
+        id: 597,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "El/la psicólogo/a escolar identifica durante el primer trimestre que ocho estudiantes de 1.er grado provienen de familias que migraron recientemente desde Haití y que presentan barreras idiomáticas, desorientación en el entorno escolar y señales de estrés adaptativo. Ninguno ha recibido atención psicológica. El director/a no ha planificado ninguna acción específica para este grupo. ¿Cuál es la actuación institucional correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Limitarse a atender individualmente a los estudiantes que sean referidos por sus maestras, dado que la intervención proactiva con grupos no referidos excede el mandato del psicólogo/a escolar en el contexto de un centro de Primaria.",
+            "B) Incluir a este grupo en el plan de trabajo del psicólogo/a como población prioritaria, diseñar acciones de acompañamiento psicosocial que consideren el contexto migratorio y las barreras culturales, coordinar con el equipo docente estrategias de acogida e inclusión, informar al director/a sobre la situación y proponer acciones institucionales, conforme al Manual Operativo COP (2015), los Lineamientos 2023-2024 y la Ordenanza 05-2024.",
+            "C) Remitir los ocho casos al orientador/a escolar para que gestione el proceso de adaptación de las familias migrantes al sistema educativo dominicano, dado que la adaptación sociocultural es una función de orientación y no de psicología escolar.",
+            "D) Informar al técnico distrital sobre la presencia de estudiantes migrantes en el centro y solicitar lineamientos específicos antes de iniciar cualquier tipo de intervención psicológica con este grupo poblacional."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): la intervención preventiva y proactiva con grupos en situación de vulnerabilidad es una función explícita del psicólogo/a escolar; no requiere referido individual previo. Ordenanza 05-2024: la inclusión educativa aplica también a estudiantes en situación migratoria; el sistema debe garantizar condiciones de acogida y apoyo. Lineamientos 2023-2024: el estrés adaptativo en contextos migratorios es una situación que requiere acompañamiento psicosocial desde el centro. La opción A restringe el rol del psicólogo/a a la reactividad. La opción C fracciona artificialmente las funciones de orientación y psicología. La opción D paraliza la acción institucional a la espera de lineamientos distritales que no son necesarios para iniciar el acompañamiento."
+    },
+ 
+    {
+        id: 598,
+        categoria: "Protección",
+        pregunta: "El/la psicólogo/a escolar atiende a un estudiante de 6.º grado que en sesión individual le confiesa que 'unos muchachos mayores del barrio lo obligan a vender cositas en la escuela a cambio de no pegarle'. El estudiante tiene miedo y pide que 'no se lo diga a nadie porque si no le van a hacer algo peor'. ¿Cuál es la secuencia de actuación institucional correcta?",
+        opciones: [
+            "A) Respetar la confidencialidad del estudiante y trabajar durante las próximas sesiones en estrategias de asertividad y manejo del miedo, sin notificar a ningún actor institucional hasta que el estudiante se sienta preparado para que se conozca su situación.",
+            "B) Informar al estudiante que su seguridad es prioritaria y que esta situación requiere la intervención de adultos responsables; notificar de inmediato al director/a del centro, garantizar que el estudiante no quede desprotegido, activar la Ruta Crítica de protección ante la posible situación de extorsión y uso del estudiante como menor en actividades ilícitas, y coordinar con las autoridades competentes conforme a la Ley 136-03 y la Guía de Ruta Crítica MINERD.",
+            "C) Citar a los padres del estudiante ese mismo día para informarles de la situación y orientarles para que sean ellos quienes realicen la denuncia ante las autoridades policiales, dado que la situación descrita ocurre fuera del centro educativo.",
+            "D) Registrar la información en el expediente psicológico del estudiante y notificar la situación al técnico distrital de orientación y psicología en el próximo informe mensual, dado que la posible extorsión externa requiere análisis del nivel distrital antes de activar protocolos de protección."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ley 136-03: la utilización de un NNA en actividades ilícitas y su sometimiento a amenazas y extorsión constituye una vulneración grave de sus derechos que requiere protección inmediata. Guía de Ruta Crítica MINERD: ante riesgo inminente para la seguridad de un NNA, la confidencialidad se suspende y la notificación es inmediata. La situación puede involucrar trata o explotación de menores, lo que eleva la urgencia. La opción A mantiene confidencialidad ante un riesgo activo y grave. La opción C transfiere la responsabilidad de denuncia a los padres sin activar primero la ruta interna. La opción D demora inaceptablemente la notificación ante una emergencia de protección."
+    },
+ 
+    {
+        id: 599,
+        categoria: "NEAE",
+        pregunta: "El/la psicólogo/a escolar recibe la solicitud del director/a para que evalúe a todos los estudiantes del nivel Primario durante el primer mes del año con el objetivo de 'identificar cuáles tienen problemas y cuáles no'. El director/a justifica la solicitud señalando que 'el técnico distrital dijo que hay que hacer un tamizaje masivo'. ¿Cuál es la actuación técnica correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Iniciar de inmediato el proceso de evaluación masiva de todos los estudiantes, dado que la instrucción del director/a respaldada por el técnico distrital constituye un mandato institucional que el psicólogo/a debe ejecutar.",
+            "B) Solicitar que el lineamiento del técnico distrital se formalice por escrito, clarificar con el director/a el objetivo específico del tamizaje, seleccionar instrumentos de tamizaje apropiados para aplicación colectiva (no evaluaciones psicológicas individuales completas), obtener los consentimientos informados de las familias, e integrar el proceso al plan de trabajo anual con cronograma factible, conforme al Manual Operativo COP (2015) y los Lineamientos 2023-2024.",
+            "C) Rechazar la solicitud, dado que la evaluación psicológica escolar es siempre individual y por referido; una evaluación masiva sin referido previo no está contemplada en la normativa del MINERD y no puede ser ejecutada por el psicólogo/a escolar.",
+            "D) Aplicar a todos los estudiantes el mismo instrumento de evaluación de inteligencia disponible en el centro durante el primer mes, dado que la instrucción del director/a justifica el uso de los recursos disponibles independientemente del protocolo habitual."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): el psicólogo/a escolar puede realizar tamizajes colectivos como parte de la función preventiva; sin embargo, estos son diferentes a las evaluaciones psicológicas individuales y requieren instrumentos apropiados para aplicación colectiva, consentimiento informado y planificación técnica. Lineamientos 2023-2024: toda acción que involucre a la totalidad de los estudiantes requiere planificación, documentación y consentimiento. La opción A ejecuta sin protocolo técnico una acción de alto impacto. La opción C niega equivocadamente la posibilidad de tamizajes colectivos, que sí están contemplados. La opción D aplica instrumentos de evaluación individual de manera masiva, lo que invalida los resultados y es técnicamente incorrecto."
+    },
+ 
+    {
+        id: 600,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "Al revisar su agenda de trabajo, el/la psicólogo/a escolar constata que tiene 22 casos activos de atención individual, 4 talleres grupales en ejecución, 3 procesos de evaluación psicológica en curso y dos reuniones semanales de equipo. El técnico distrital le solicita que además elabore un informe estadístico mensual detallado con indicadores de cada caso. El psicólogo/a percibe que la carga de trabajo es inmanejable y que la calidad de la atención está siendo comprometida. ¿Cuál es la actuación institucional correcta?",
+        opciones: [
+            "A) Asumir toda la carga de trabajo asignada sin reportar la situación, dado que la dedicación al servicio es un valor fundamental de la función docente y el psicólogo/a debe responder a todas las demandas institucionales sin cuestionar la asignación.",
+            "B) Elaborar un informe técnico dirigido al director/a del centro que documente la carga de trabajo actual, sus implicaciones para la calidad del servicio y el bienestar de los estudiantes atendidos, y proponer una priorización de casos conforme a los criterios de riesgo establecidos en los Lineamientos 2023-2024, solicitando al director/a que medie ante el técnico distrital para ajustar las demandas a las posibilidades reales del servicio.",
+            "C) Cerrar los casos de menor riesgo de manera unilateral para reducir la carga de trabajo a un nivel manejable, informando a las familias de los estudiantes afectados que el servicio no puede continuar su atención en este momento.",
+            "D) Comunicar al técnico distrital directamente, sin informar al director/a del centro, que la carga de trabajo es excesiva y solicitar una reducción de las demandas de reporte estadístico para poder concentrarse en la atención directa a los estudiantes."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): el psicólogo/a escolar tiene la responsabilidad técnica y ética de garantizar la calidad del servicio; cuando la carga de trabajo compromete esa calidad, debe reportarlo formalmente al director/a del centro como primer nivel de escalamiento. Lineamientos 2023-2024: la priorización de casos por nivel de riesgo es un criterio técnico establecido. Estatuto del Docente Dominicano: el docente tiene derecho a condiciones de trabajo adecuadas para cumplir sus funciones. La opción A asume una carga que compromete la ética del servicio. La opción C cierra casos unilateralmente sin proceso formal. La opción D comunica al nivel distrital sin pasar primero por el director/a, vulnerando el conducto regular."
+    },
+ 
+    {
+        id: 601,
+        categoria: "Protección",
+        pregunta: "Durante una actividad grupal en el aula de 2.º grado, el/la psicólogo/a escolar observa que una estudiante de 7 años dibuja de manera reiterada figuras de personas adultas golpeando a niños, con detalles de sangre. Al preguntarle sobre el dibujo con lenguaje apropiado a su edad, la niña responde: 'así le hacen a mi hermanito cuando se porta mal'. ¿Cuál es la actuación institucional correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Interpretar el dibujo como una expresión artística propia del desarrollo infantil y continuar la actividad grupal sin interrumpir, programando una entrevista individual con la niña para la semana siguiente con el fin de profundizar en el significado de sus producciones.",
+            "B) Concluir la actividad de manera natural sin generar ansiedad en la niña, registrar con precisión los dibujos y las palabras textuales de la estudiante, notificar al director/a del centro mediante comunicación formal ese mismo día señalando los indicadores observados, y activar la Ruta Crítica de protección para el hermano menor mencionado, conforme a la Guía de Ruta Crítica MINERD y la Ley 136-03.",
+            "C) Continuar la actividad grupal y al finalizar conversar en privado con la niña para obtener más detalles sobre la situación del hermano antes de decidir si la información amerita notificación al director/a del centro.",
+            "D) Notificar la situación a la maestra de aula para que esta cite a los padres de la niña y explore la situación familiar directamente con ellos antes de que el psicólogo/a intervenga formalmente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Guía de Ruta Crítica MINERD: los indicadores indirectos de maltrato (como producciones gráficas y verbalizaciones espontáneas de un niño sobre situaciones de violencia hacia terceros, especialmente hacia otros NNA en el hogar) activan la Ruta Crítica de protección. El hermano mencionado es también una posible víctima. Ley 136-03, Art. 19: la obligación de reporte no se limita al NNA que está en el centro; se extiende a cualquier NNA en riesgo del que se tenga conocimiento. La opción A normaliza indicadores que requieren atención inmediata. La opción C interroga a la niña antes de reportar, lo que puede contaminar el proceso. La opción D delega al docente una responsabilidad de reporte que corresponde al psicólogo/a."
+    },
+ 
+    {
+        id: 602,
+        categoria: "Clima Escolar",
+        pregunta: "El/la psicólogo/a escolar facilita un taller de convivencia con estudiantes de 5.º grado. Durante el taller, un estudiante manifiesta abiertamente frente al grupo: 'yo no trabajo con N. porque es haitiano y los haitianos son sucios y nos quitan todo'. Otros estudiantes asienten. ¿Cuál es la respuesta técnica correcta del/la psicólogo/a escolar en ese momento y posteriormente?",
+        opciones: [
+            "A) Ignorar el comentario para no interrumpir la dinámica del taller y abordar el tema de la discriminación de manera general en una actividad posterior, sin señalar el incidente específico para no exponer al estudiante que hizo el comentario.",
+            "B) Intervenir en el momento de manera pedagógica y no punitiva para problematizar el comentario con el grupo, sin exponer individualmente al estudiante; continuar el taller abordando el tema de la diversidad, el respeto y los derechos; registrar el incidente al finalizar; atender individualmente al estudiante afectado (N.); informar al director/a del centro; y planificar acciones de educación en derechos e inclusión con el grupo, conforme a la Ordenanza 05-2024 y los Lineamientos 2023-2024.",
+            "C) Interrumpir el taller de inmediato, sancionar verbalmente al estudiante que hizo el comentario frente al grupo y exigirle que se disculpe públicamente con su compañero, dado que los actos de discriminación deben tener consecuencias inmediatas y visibles.",
+            "D) Registrar el incidente y reportarlo al director/a del centro para que sea este quien decida si el comentario del estudiante amerita una sanción disciplinaria o un proceso de intervención psicológica."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ordenanza 05-2024: prohíbe toda forma de discriminación por origen nacional o étnico en el sistema educativo dominicano y establece el deber de intervención pedagógica ante actos discriminatorios. Manual Operativo COP (2015): el psicólogo/a interviene en el momento utilizando la situación como oportunidad de aprendizaje colectivo, sin exponer individualmente al estudiante que discriminó (lo que podría generar mayor conflicto) ni al estudiante afectado. Lineamientos 2023-2024: la intervención en clima escolar incluye el trabajo grupal inmediato y el seguimiento individual. La opción A omite la intervención ante un acto discriminatorio activo. La opción C sanciona públicamente, lo que puede escalar el conflicto. La opción D delega al director/a una intervención que corresponde al psicólogo/a en el contexto del taller."
+    },
+ 
+    {
+        id: 603,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "Los padres de un estudiante de 3.er grado solicitan al/la psicólogo/a escolar una reunión y le informan que su hijo ha sido diagnosticado con leucemia y que iniciará quimioterapia en dos semanas, lo que implicará ausentismo frecuente. Piden orientación sobre cómo manejar la situación con el centro. ¿Cuál es la actuación institucional correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Orientar a los padres para que tramiten la baja del estudiante del centro durante el período de tratamiento y lo reingresen cuando su condición de salud se lo permita, dado que el centro educativo no cuenta con las condiciones para atender a estudiantes con enfermedades crónicas graves.",
+            "B) Brindar apoyo emocional a los padres, coordinar con el director/a y el equipo docente un plan de acompañamiento que contemple: comunicación fluida con la familia durante el tratamiento, estrategias de continuidad educativa durante los períodos de ausentismo, preparación del grupo de pares para acoger al estudiante, y apoyo psicológico al propio estudiante, conforme al Manual Operativo COP (2015), los Lineamientos 2023-2024 y la Ordenanza 05-2024.",
+            "C) Remitir a los padres al orientador/a escolar para que este gestione los trámites administrativos relacionados con las ausencias justificadas y coordine con los docentes la entrega de tareas durante el período de tratamiento.",
+            "D) Elaborar un informe psicológico del estudiante para adjuntarlo al expediente médico del hospital, dado que la información psicológica del centro puede ser útil para el equipo de salud que atiende al niño durante el tratamiento."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): el acompañamiento psicosocial ante situaciones de enfermedad crónica que afectan la escolaridad es una función del psicólogo/a escolar; incluye el trabajo con la familia, el equipo docente y el grupo de pares. Ordenanza 05-2024: el derecho a la educación de estudiantes con condiciones de salud que generan ausentismo debe ser garantizado mediante adaptaciones y apoyos institucionales, no mediante la baja del centro. Lineamientos 2023-2024: la coordinación interinstitucional incluye la comunicación con el equipo de salud solo cuando el estudiante o la familia lo autoriza y con fines específicos. La opción A vulnera el derecho a la educación. La opción C reduce el rol del psicólogo/a a la gestión administrativa. La opción D elabora un informe sin solicitud formal del equipo médico ni consentimiento explícito de la familia."
+    },
+ 
+    {
+        id: 604,
+        categoria: "NEAE",
+        pregunta: "El/la psicólogo/a escolar elabora el Plan de Apoyo Individualizado (PAI) de una estudiante de 4.º grado con discapacidad visual parcial. Al presentarlo al equipo de gestión, el coordinador pedagógico señala que las adecuaciones propuestas 'son demasiado trabajo para los maestros' y sugiere reducirlas a solo ampliar el tamaño de letra en los materiales. ¿Cuál es la actuación correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Aceptar la reducción propuesta por el coordinador pedagógico, dado que la viabilidad pedagógica de las adecuaciones debe ser determinada por el equipo docente y no puede imponerse desde la perspectiva técnica del psicólogo/a.",
+            "B) Fundamentar técnicamente ante el equipo de gestión que el PAI debe responder a las necesidades reales de la estudiante conforme a la Ordenanza 05-2024 y no puede reducirse por razones de carga docente; proponer estrategias de acompañamiento al equipo docente para la implementación de las adecuaciones, y escalar al director/a si el coordinador mantiene su posición de reducir el PAI por debajo de lo técnicamente necesario.",
+            "C) Modificar el PAI reduciendo las adecuaciones a las sugeridas por el coordinador pedagógico y registrar en el expediente de la estudiante que las adecuaciones completas fueron rechazadas por el equipo pedagógico, dejando así constancia de su recomendación original.",
+            "D) Presentar el PAI completo directamente a los padres de la estudiante sin pasar por el equipo de gestión, para que sean ellos quienes presionen institucionalmente por la implementación de todas las adecuaciones propuestas."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ordenanza 05-2024, Art. 11-14: el PAI es un documento técnico que debe responder a las necesidades del estudiante; su reducción por razones de conveniencia docente constituye una vulneración del derecho a la educación inclusiva. Manual Operativo COP (2015): el psicólogo/a tiene la responsabilidad de defender técnicamente sus recomendaciones y escalar cuando un derecho del estudiante es comprometido. La opción A renuncia al criterio técnico ante presión administrativa. La opción C registra el rechazo pero acepta la reducción del PAI, lo que en la práctica vulnera el derecho de la estudiante. La opción D bypasea el equipo de gestión, vulnerando el conducto regular institucional."
+    },
+ 
+    {
+        id: 605,
+        categoria: "Protección",
+        pregunta: "El/la psicólogo/a escolar atiende a un estudiante de 5.º grado que manifiesta que su padre 'toma mucho' y que 'cuando llega borracho en la noche grita mucho y a veces rompe cosas'. El niño dice que 'tiene miedo cuando pasa eso' pero que 'a él no le hace nada'. No hay evidencia de maltrato físico directo hacia el niño. ¿Cuál es la actuación institucional correcta?",
+        opciones: [
+            "A) No activar ninguna ruta de protección dado que el estudiante no reporta maltrato físico directo hacia su persona y la conducta del padre ocurre en el espacio privado del hogar sin afectar directamente al NNA.",
+            "B) Registrar el relato del estudiante, brindarle apoyo psicológico para manejar el impacto emocional de la exposición a la violencia y el consumo de alcohol en el hogar, informar al director/a del centro, valorar conjuntamente con el equipo de gestión si la situación requiere la activación de la Ruta Crítica de protección por exposición a violencia doméstica y entorno de riesgo, y diseñar un plan de seguimiento al estudiante, conforme a la Ley 136-03 y los Lineamientos 2023-2024.",
+            "C) Citar a la madre del estudiante para orientarla sobre los efectos del consumo de alcohol en el ambiente familiar e instalarla como figura de apoyo y protección para el niño, sin activar ningún protocolo de protección dado que la situación no alcanza el umbral de maltrato definido por la Ley 136-03.",
+            "D) Orientar al estudiante sobre cómo protegerse durante los episodios de conducta violenta del padre y cómo buscar ayuda de vecinos o familiares si la situación se agrava, dado que el psicólogo/a escolar no puede intervenir en dinámicas familiares que no constituyen maltrato directo al NNA."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ley 136-03, Art. 3 y 5: la exposición de un NNA a violencia doméstica y a un entorno de riesgo por consumo problemático de alcohol es reconocida como una forma de maltrato emocional y un factor de riesgo que requiere seguimiento e intervención. Guía de Ruta Crítica MINERD: la valoración del nivel de riesgo es una decisión del equipo de gestión, no unilateral del psicólogo/a; el miedo expresado por el niño es un indicador relevante. La opción A descarta el riesgo por ausencia de maltrato físico directo, ignorando el impacto emocional documentado. La opción C convoca solo a la madre sin activar la valoración de riesgo institucional. La opción D transfiere la responsabilidad de protección al propio NNA, lo que es inadmisible."
+    },
+ 
+    {
+        id: 606,
+        categoria: "NEAE",
+        pregunta: "El/la psicólogo/a escolar elabora el informe de evaluación de un estudiante de 3.er grado e identifica que presenta dificultades en la velocidad de procesamiento y en la memoria de trabajo, sin alcanzar criterios para ningún diagnóstico clínico formal. Al presentar los resultados a los padres, estos insisten en que el psicólogo/a 'escriba en el papel que el niño tiene dislexia' para poder acceder a tiempo adicional en las evaluaciones del centro. ¿Cuál es la respuesta correcta?",
+        opciones: [
+            "A) Acceder a la solicitud de los padres y consignar dislexia en el informe dado que las dificultades identificadas son consistentes con este diagnóstico y el tiempo adicional beneficiará al estudiante en su desempeño académico.",
+            "B) Explicar a los padres que el informe debe reflejar con exactitud los hallazgos de la evaluación; consignar en el informe las dificultades específicas identificadas (velocidad de procesamiento y memoria de trabajo) y recomendar las adecuaciones que estas justifican, incluyendo tiempo adicional si corresponde técnicamente, sin necesidad de consignar un diagnóstico que los resultados no respaldan, conforme al Manual Operativo COP (2015).",
+            "C) Consignar en el informe 'posible dislexia' como diagnóstico diferencial, de manera que los padres puedan gestionar el tiempo adicional sin que el psicólogo/a asuma la responsabilidad de un diagnóstico definitivo.",
+            "D) Derivar al estudiante a un especialista en dificultades de aprendizaje externo para que este confirme o descarte el diagnóstico de dislexia, y aguardar ese resultado antes de recomendar cualquier tipo de adecuación en el centro."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): el informe psicológico debe reflejar con exactitud los hallazgos de la evaluación; la consignación de un diagnóstico no respaldado por los datos constituye una falta ética grave independientemente de la intención. Lineamientos 2023-2024: las adecuaciones curriculares y los apoyos evaluativos pueden recomendarse con base en las dificultades identificadas, sin requerir un diagnóstico clínico formal específico. Ordenanza 05-2024: las adecuaciones responden a necesidades documentadas, no necesariamente a diagnósticos categoriales. La opción A consigna un diagnóstico sin respaldo técnico. La opción C introduce un diagnóstico diferencial no fundamentado. La opción D demora innecesariamente el apoyo al estudiante cuando las dificultades ya están identificadas."
+    },
+ 
+    {
+        id: 607,
+        categoria: "Clima Escolar",
+        pregunta: "El/la psicólogo/a escolar recibe información de que un grupo de estudiantes de 6.º grado creó un perfil falso en redes sociales usando el nombre y fotos de una compañera, publicando comentarios ofensivos en su nombre. La estudiante afectada está en el centro y se encuentra muy angustiada. Los hechos ocurrieron fuera del horario escolar. ¿Cuál es la actuación institucional correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Informar a la estudiante afectada y a sus padres que, dado que los hechos ocurrieron fuera del horario y espacio escolar, el centro educativo no tiene competencia para intervenir y deben acudir directamente a las autoridades competentes.",
+            "B) Brindar atención psicológica inmediata a la estudiante afectada, registrar la situación, notificar al director/a del centro, coordinar con el equipo de gestión una intervención que incluya la identificación de los estudiantes involucrados, la comunicación con las familias de todas las partes y las acciones pertinentes conforme al reglamento del centro, orientar a la familia de la afectada sobre la denuncia formal ante las autoridades, y documentar el caso como violencia digital contra un NNA conforme a la Ley 136-03.",
+            "C) Reunir a todos los estudiantes del 6.º grado en una asamblea para abordar el tema de la responsabilidad en redes sociales y solicitar que los responsables se identifiquen voluntariamente ante el grupo.",
+            "D) Asesorar a la estudiante afectada para que reporte el perfil falso directamente a la plataforma de redes sociales y a sus padres para que interpongan la denuncia, dado que la ciberviolencia entre pares fuera del horario escolar no constituye un asunto de competencia del centro educativo."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Ley 136-03: la creación de perfiles falsos y la difusión de contenido ofensivo usando la identidad de un NNA constituye una vulneración de sus derechos fundamentales, independientemente del espacio donde ocurra. Guía de Ruta Crítica MINERD: cuando la violencia entre pares (incluyendo la digital) afecta el bienestar de un estudiante dentro del centro, el centro tiene responsabilidad de intervención. Manual Operativo COP (2015): la atención inmediata al estudiante afectado es prioritaria; la intervención del centro no está limitada a hechos ocurridos dentro del horario escolar cuando los actores son miembros de la comunidad educativa. Las opciones A y D excluyen indebidamente la responsabilidad del centro. La opción C expone públicamente la situación y puede revictimizar a la estudiante."
+    },
+ 
+    {
+        id: 608,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "El/la psicólogo/a escolar recibe en su oficina a una maestra que llora y refiere que 'ya no puede más', que siente que 'ha fallado como docente', que no duerme bien y que algunos días no quiere venir al centro. Solicita al psicólogo/a que la ayude porque 'no quiere que el director/a se entere'. ¿Cuál es la actuación institucional correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Iniciar un proceso de acompañamiento psicológico formal con la maestra como si fuera un caso de atención a estudiante, dado que el bienestar del personal docente también es parte del rol del psicólogo/a escolar y la solicitud de confidencialidad debe ser respetada.",
+            "B) Escuchar a la maestra de manera empática, brindarle contención emocional en ese momento, aclarar que el rol del psicólogo/a escolar es la atención a los estudiantes y no la psicoterapia al personal adulto del centro, orientarla sobre los recursos de apoyo al docente disponibles en el sistema (si los hay), e informarle que si la situación afecta su desempeño y el bienestar de sus estudiantes, el director/a deberá ser informado como parte del equipo de gestión, conforme al Manual Operativo COP (2015).",
+            "C) Notificar de inmediato al director/a del centro que la maestra presenta un cuadro de agotamiento emocional severo que podría afectar su desempeño, dado que la situación de la maestra impacta directamente el bienestar de los estudiantes a su cargo.",
+            "D) Elaborar un informe psicológico de la maestra y remitirlo al técnico distrital de orientación y psicología para que este gestione una licencia médica por salud mental a favor de la docente afectada."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): la población objetivo del psicólogo/a escolar son los estudiantes; el psicólogo/a no tiene función de psicoterapeuta del personal adulto del centro. Sin embargo, la contención empática inmediata y la orientación hacia recursos son respuestas humanamente adecuadas. Si la situación de la maestra afecta a sus estudiantes, el director/a debe ser informado. Lineamientos 2023-2024: el psicólogo/a no puede asumir funciones fuera de su rol institucional aunque sea solicitado por un colega. La opción A asume el rol de terapeuta de adultos, lo que excede el mandato del psicólogo/a escolar. La opción C notifica de inmediato sin haber valorado el impacto real sobre los estudiantes ni haber orientado a la maestra. La opción D elabora un informe clínico sobre un adulto, lo que está totalmente fuera del rol."
+    },
+ 
+    {
+        id: 609,
+        categoria: "Protección",
+        pregunta: "El/la psicólogo/a escolar activa la Ruta Crítica de protección por indicadores de maltrato físico en un estudiante de 2.º grado e informa al director/a del centro. Tres días después, el director/a le comunica que habló con los padres y que 'todo está bien, los padres prometieron que no va a pasar más' y le indica que cierre el caso. ¿Cuál es la actuación correcta del/la psicólogo/a escolar?",
+        opciones: [
+            "A) Cerrar el caso conforme a la instrucción del director/a, dado que este es la autoridad máxima del centro y tiene la potestad de determinar cuándo una situación de riesgo ha sido resuelta mediante el diálogo con la familia.",
+            "B) Informar al director/a que el cierre de un caso de maltrato activado mediante la Ruta Crítica no puede realizarse por decisión unilateral del director/a ni por el compromiso verbal de los padres; el caso debe continuar con seguimiento institucional y, si la denuncia ante las autoridades de protección aún no se ha realizado, debe hacerse de inmediato; documentar por escrito la instrucción del director/a y la respuesta técnica del psicólogo/a, y escalar al técnico distrital si el director/a insiste en cerrar el caso, conforme a la Guía de Ruta Crítica y la Ley 136-03.",
+            "C) Aceptar el cierre del caso pero continuar haciendo seguimiento informal al estudiante sin registrarlo en el expediente, para no generar conflicto con el director/a pero garantizar de manera encubierta el bienestar del niño.",
+            "D) Cerrar el caso en el expediente psicológico del centro pero notificar directamente al CONANI de manera anónima, para que las autoridades de protección investiguen la situación sin que el director/a sepa que el psicólogo/a escaló el caso externamente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Guía de Ruta Crítica MINERD: una vez activada la Ruta Crítica de protección, su cierre no puede determinarse por el compromiso verbal de los padres ni por instrucción unilateral del director/a; requiere verificación del estado de protección del NNA y resolución formal. Ley 136-03: la obligación de denuncia persiste aunque los padres prometan cambiar; el riesgo no desaparece por un acuerdo verbal. Manual Operativo COP (2015): el psicólogo/a tiene la responsabilidad de documentar las instrucciones que contradicen la normativa y escalar al nivel distrital cuando el director/a actúa en contra del protocolo. La opción A acata una instrucción que viola la normativa. La opción C actúa sin registro, lo que invalida el proceso institucional. La opción D actúa encubiertamente, lo que viola el principio de transparencia institucional."
+    },
+ 
+    {
+        id: 610,
+        categoria: "Apoyo Psicopedagógico",
+        pregunta: "Al finalizar el año escolar, el/la psicólogo/a escolar presenta su informe anual al director/a del centro. El informe incluye datos estadísticos de casos atendidos, pero no contiene un análisis de los resultados de las intervenciones, ni indicadores de impacto, ni propuestas de mejora para el próximo año. El director/a lo aprueba sin observaciones. ¿Qué elemento fundamental está ausente en este informe conforme al Manual Operativo COP (2015) y los Lineamientos 2023-2024?",
+        opciones: [
+            "A) La firma del técnico distrital de orientación y psicología que debe validar el informe anual antes de que el director/a lo apruebe, dado que los informes anuales de psicología son documentos que requieren revisión del nivel distrital.",
+            "B) El análisis de resultados e impacto de las intervenciones realizadas, los indicadores de logro respecto a los objetivos planificados al inicio del año, y las recomendaciones y propuestas de mejora para el siguiente ciclo; estos son componentes obligatorios del informe anual conforme al Manual Operativo COP (2015) y los Lineamientos 2023-2024, y su ausencia impide la evaluación de la calidad del servicio psicológico escolar.",
+            "C) El listado nominal de todos los estudiantes atendidos durante el año con sus diagnósticos respectivos, dado que la trazabilidad individual de los casos es el elemento central del informe anual del psicólogo/a escolar.",
+            "D) La valoración del desempeño docente del psicólogo/a realizada por el director/a del centro, que debe incluirse en el informe anual como parte de la Evaluación del Desempeño Docente establecida en la Orden Departamental No. 18-2025."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Normativa REAL: Manual Operativo COP (2015): el informe anual del psicólogo/a escolar debe incluir obligatoriamente: estadísticas de atención, análisis de resultados de las intervenciones, evaluación del logro de los objetivos planificados e indicadores de impacto, y recomendaciones para el siguiente ciclo. Un informe que solo presenta datos estadísticos sin análisis de impacto no cumple con los requisitos del Manual. Lineamientos de Orientación y Psicología 2023-2024: la evaluación de la efectividad de las intervenciones es un componente ineludible del ciclo de mejora continua del servicio. La opción A introduce un requisito que no existe en la normativa. La opción C expone información nominativa protegida de los estudiantes, lo que viola la confidencialidad. La opción D confunde el informe anual del servicio con la Evaluación del Desempeño Docente, que son instrumentos distintos."
     }
+
+
 
 
 ];
