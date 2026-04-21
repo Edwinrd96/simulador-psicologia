@@ -8186,10 +8186,398 @@ const bancoPreguntas = [
         ],
         respuestaCorrecta: 1,
         explicacion: "Base Normativa REAL: Manual Operativo COP (2015): el informe anual del psicólogo/a escolar debe incluir obligatoriamente: estadísticas de atención, análisis de resultados de las intervenciones, evaluación del logro de los objetivos planificados e indicadores de impacto, y recomendaciones para el siguiente ciclo. Un informe que solo presenta datos estadísticos sin análisis de impacto no cumple con los requisitos del Manual. Lineamientos de Orientación y Psicología 2023-2024: la evaluación de la efectividad de las intervenciones es un componente ineludible del ciclo de mejora continua del servicio. La opción A introduce un requisito que no existe en la normativa. La opción C expone información nominativa protegida de los estudiantes, lo que viola la confidencialidad. La opción D confunde el informe anual del servicio con la Evaluación del Desempeño Docente, que son instrumentos distintos."
-    }
+    },
+{
+"id": 611,
+"categoria": "Ética",
+"pregunta": "Un docente de 4to de Primaria remite a Orientación a una estudiante de 9 años por cambios bruscos de humor, retraimiento y dibujos con contenido sexual explícito. Durante la entrevista exploratoria inicial, la niña revela que el 'tío' que vive en su casa le pide que jueguen a tocarse cuando su madre no está. Ante esta situación crítica, ¿cuál es el procedimiento institucional y legal inmediato que debe ejecutar el profesional de Orientación y Psicología?",
+"opciones": [
+"A) Citar inmediatamente a la madre y al tío para confrontar la situación, documentar el caso en el registro anecdótico y ofrecer apoyo psicoterapéutico continuo en el centro.",
+"B) Detener la indagación para no revictimizar, informar a la Dirección del centro y notificar de manera inmediata al Ministerio Público y a CONANI para garantizar la protección de la menor.",
+"C) Realizar una evaluación psicológica profunda con pruebas proyectivas para confirmar el abuso antes de levantar la alerta al Sistema de Protección, evitando difamaciones.",
+"D) Suspender temporalmente a la estudiante para protegerla del entorno escolar mientras se investiga el caso de manera confidencial con los padres."
+],
+"respuestaCorrecta": 1,
+"explicacion": "Base Legal: Ley 136-03 (Código del Menor), Art. 14. Existe la obligación legal de denunciar de inmediato cualquier sospecha de abuso ante el Ministerio Público o CONANI. Citar al agresor (A) pone en riesgo la vida del menor e interfiere con la investigación judicial. La evaluación clínica (C) no es competencia escolar y retrasa la protección, constituyendo negligencia."
+},
+{
+"id": 612,
+"categoria": "Evaluación",
+"pregunta": "En un centro de Secundaria, se reporta que un grupo de estudiantes ha agredido físicamente de forma reiterada a un compañero, causándole lesiones leves, y ha difundido un video de la agresión en redes sociales. El equipo de gestión solicita la intervención de Orientación. Según las Normas del Sistema Educativo Dominicano para la Convivencia Armoniosa, ¿cuál es la acción prioritaria correcta?",
+"opciones": [
+"A) Organizar un círculo de diálogo y mediación grupal entre los agresores y la víctima para fomentar la cultura de paz y la empatía.",
+"B) Aplicar la expulsión definitiva de los agresores del sistema educativo dominicano para garantizar un entorno seguro para los demás.",
+"C) Tipificar el hecho como falta muy grave, activar el protocolo de protección a la víctima, notificar a las familias y al Distrito Educativo, y recomendar medidas socioeducativas y de reparación.",
+"D) Referir inmediatamente a todos los involucrados a un psiquiatra externo y prohibirles el uso de dispositivos electrónicos dentro del plantel escolar."
+],
+"respuestaCorrecta": 2,
+"explicacion": "Base Legal: Normas de Convivencia MINERD. El acoso escolar severo y la agresión física se tipifican como 'Faltas Muy Graves'. La mediación (A) está contraindicada en situaciones de desequilibrio de poder y violencia grave, ya que revictimiza. La expulsión (B) viola el derecho a la educación; se deben aplicar medidas disciplinarias con enfoque restaurativo y socioeducativo, previa protección de la víctima."
+},
+{
+"id": 613,
+"categoria": "Inclusión",
+"pregunta": "Un estudiante de 2do de Secundaria presenta un diagnóstico reciente de Trastorno del Espectro Autista (Nivel 1). El docente de Matemáticas se queja de que el estudiante no mantiene contacto visual, se tapa los oídos durante trabajos grupales y no copia de la pizarra, por lo que le está reprobando. ¿Cuál es la intervención psicopedagógica adecuada basada en el Manual de Apoyo Psicopedagógico?",
+"opciones": [
+"A) Redactar un reporte de indisciplina, ya que el estudiante debe adaptarse a las normas del aula regular y el docente no tiene formación en educación especial.",
+"B) Coordinar con el docente la implementación de Ajustes Razonables No Significativos (DUA), como permitir el uso de audífonos canceladores de ruido, ubicarlo cerca del docente y entregarle el material impreso.",
+"C) Solicitar a la familia que el estudiante sea trasladado a un Centro de Educación Especial, ya que el currículo regular no está diseñado para sus necesidades sensoriales.",
+"D) Diseñar un Ajuste Curricular Significativo eliminando las competencias matemáticas del grado escolar del estudiante para evitarle frustraciones."
+],
+"respuestaCorrecta": 1,
+"explicacion": "Base Legal: Ordenanza 04-2018 (Educación Inclusiva) y Diseño Universal para el Aprendizaje (DUA). Las necesidades sensoriales del TEA Nivel 1 requieren ajustes de acceso y metodológicos (no significativos), no la eliminación de competencias (D) ni la segregación en centros de educación especial (C). El castigo (A) es una vulneración de derechos."
+},
+{
+"id": 614,
+"categoria": "Prevención",
+"pregunta": "Durante una dinámica de tutoría grupal, una estudiante de 15 años entrega una carta al orientador manifestando que 'no encuentra sentido a su vida', se siente una carga y tiene un plan estructurado para ingerir medicamentos esa misma tarde. ¿Cuál es el protocolo de contención y derivación inmediato?",
+"opciones": [
+"A) Brindar consejería durante una hora, animarla a pensar en positivo, devolverla al aula y agendar una cita para la próxima semana para dar seguimiento.",
+"B) No dejar a la estudiante sola en ningún momento, contactar inmediatamente a la familia o tutor legal, exigir su traslado a una emergencia psiquiátrica y levantar el acta de referimiento.",
+"C) Llamar al 911 de inmediato sin avisar a los padres, ya que ellos podrían ser los causantes del problema, y acompañarla al hospital.",
+"D) Reunir al grupo curso para hacer una dinámica de abrazos y apoyo grupal que la haga sentir valorada antes de que se vaya a su casa."
+],
+"respuestaCorrecta": 1,
+"explicacion": "Base Legal: Manual de Servicios de Orientación y Psicología (Intervención en Crisis). Ante riesgo inminente y plan estructurado de suicidio, la norma dicta contención inmediata (no dejar solo), notificación obligatoria a la familia como primeros responsables y derivación urgente a salud mental. La opción A es negligencia letal; la D vulnera la privacidad y expone a la alumna."
+},
+{
+"id": 615,
+"categoria": "Evaluación",
+"pregunta": "A inicio del año escolar, el orientador debe elaborar su Plan Operativo Anual (POA). Al revisar los indicadores de eficiencia interna del año anterior, nota un alto índice de repitencia en 1er grado de Secundaria y múltiples conflictos violentos. ¿Cuál es la acción de planificación estratégica más adecuada?",
+"opciones": [
+"A) Copiar la planificación del año anterior, ya que las actividades extracurriculares siempre generan buena convivencia, sin necesidad de adaptar al nuevo contexto.",
+"B) Diseñar un plan de intervención basado en sus preferencias teóricas personales, enfocándose únicamente en dar charlas sobre valores éticos a los estudiantes de 1er grado.",
+"C) Realizar una evaluación diagnóstica integral del contexto psicosocial, triangular datos con el equipo docente y diseñar líneas de acción priorizadas en prevención de riesgos y apoyo a los aprendizajes.",
+"D) Exigir a la Dirección que expulse a los estudiantes que repitieron, ya que estadísticamente son los que generan los conflictos en el centro."
+],
+"respuestaCorrecta": 2,
+"explicacion": "Base Legal: Manual de Servicios de Orientación y Psicología. La planificación del servicio de orientación debe ser contextualizada, basada en el análisis de necesidades (diagnóstico), con un enfoque preventivo, articulado con el equipo docente y en respuesta a los indicadores de eficiencia interna."
+},
+{
+"id": 616,
+"categoria": "Inclusión",
+"pregunta": "Una estudiante de 16 años se encuentra en estado de embarazo. Un grupo de padres de familia recoge firmas y exige a la Dirección que la adolescente sea retirada del centro educativo o puesta en modalidad libre, argumentando que 'es un mal ejemplo' para las demás. ¿Cómo debe proceder Orientación y Psicología?",
+"opciones": [
+"A) Orientar a la Dirección para rechazar la petición, garantizar la permanencia de la estudiante en modalidad regular, coordinar ajustes para sus controles prenatales y realizar acciones de sensibilización comunitaria.",
+"B) Sugerir a la familia de la adolescente que la inscriban en un programa nocturno para adultos (PREPA) para evitarle el acoso y cumplir con la petición de los padres.",
+"C) Aprobar el paso a la modalidad libre permanentemente para proteger la imagen institucional del centro educativo, enviándole cuadernillos a su casa.",
+"D) Citar a la estudiante y exigirle que firme una carta de compromiso donde asuma la responsabilidad si otras jóvenes resultan embarazadas."
+],
+"respuestaCorrecta": 0,
+"explicacion": "Base Legal: Constitución de la República y Ley 136-03 (Derecho a la educación y no discriminación). Expulsar, segregar o forzar a una adolescente embarazada a ir a clases nocturnas (B) o modalidad libre contra su voluntad (C) viola sus derechos fundamentales. Se deben brindar apoyos psicopedagógicos y garantizar su permanencia."
+},
+{
+"id": 617,
+"categoria": "Ética",
+"pregunta": "Un orientador recibe en su oficina a un estudiante que confiesa haber traído una navaja en su mochila porque un pandillero del barrio lo amenazó. El estudiante entrega la navaja voluntariamente al orientador y pide que no se lo digan a nadie por miedo a represalias. ¿Cuál es el proceder ético y normativo?",
+"opciones": [
+"A) Respetar estrictamente la confidencialidad profesional, guardar la navaja en la oficina y aconsejar al estudiante que cambie su ruta al irse a casa.",
+"B) Retener el objeto, informar a la Dirección para activar el protocolo de seguridad, contactar a la familia y notificar a la Policía Escolar para garantizar la protección del menor y la comunidad.",
+"C) Expulsar inmediatamente al estudiante por portar armas blancas (falta muy grave) y llamar a la prensa para que sirva de escarmiento público.",
+"D) Devolverle la navaja a la hora de la salida argumentando que el orientador no es guardia de seguridad y no puede retener propiedad ajena."
+],
+"respuestaCorrecta": 1,
+"explicacion": "Base Legal: Normas de Convivencia y Protocolos de Seguridad Escolar MINERD. Portar armas es una falta muy grave, pero la amenaza externa constituye un riesgo inminente a la vida (excepción a la confidencialidad). Se debe priorizar la seguridad integral mediante el equipo de gestión y la Policía Escolar (prevención de delitos)."
+},
+{
+"id": 618,
+"categoria": "Evaluación",
+"pregunta": "Durante una reunión del Equipo de Gestión, el director informa que un estudiante con Discapacidad Intelectual Leve no está alcanzando los indicadores de logro. El docente exige que se le coloque la nota mínima aprobatoria automáticamente por 'inclusión', sin evaluar sus competencias reales. ¿Cuál debe ser la orientación técnica del especialista?",
+"opciones": [
+"A) Apoyar al docente, ya que el sistema dominicano prohíbe reprobar a estudiantes con discapacidad bajo cualquier circunstancia para evitar traumas.",
+"B) Elaborar un Diseño Universal para el Aprendizaje global que exima al estudiante de toda evaluación escrita u oral durante el año escolar.",
+"C) Aclarar que la inclusión no es regalar calificaciones; se debe evaluar al estudiante en función de los indicadores establecidos en su Ajuste Curricular Individualizado (ACI), reflejando sus progresos reales.",
+"D) Recomendar que el estudiante sea evaluado con los mismos exámenes estandarizados que el resto del curso para no ser discriminado."
+],
+"respuestaCorrecta": 2,
+"explicacion": "Base Legal: Manual de Apoyo Psicopedagógico y Sistema de Evaluación MINERD. La evaluación de estudiantes con Necesidades Específicas de Apoyo Educativo (NEAE) vinculadas a discapacidad se realiza con base en su plan de ajuste curricular (ACI). Regalar notas (A) o aplicar pruebas sin ajuste (D) violan el derecho al aprendizaje significativo."
+},
+{
+"id": 619,
+"categoria": "Prevención",
+"pregunta": "Un estudiante de 5to de Secundaria ha acumulado 15 ausencias injustificadas en un mes. Durante una visita domiciliaria, la madre informa que el adolescente de 16 años está trabajando en construcción porque el padre abandonó el hogar y necesitan el dinero. ¿Cuál es la línea de intervención adecuada desde Orientación?",
+"opciones": [
+"A) Levantar un acta de abandono escolar, dar de baja al estudiante en el SIGERD y desearle suerte a la familia en su situación económica.",
+"B) Sensibilizar a la familia sobre la importancia de la educación, coordinar flexibilización de horarios con la Dirección y articular con instituciones de bienestar social para apoyo a la familia.",
+"C) Denunciar a la madre ante la fiscalía por explotación laboral infantil, procediendo a retirar de inmediato al menor del hogar con la policía.",
+"D) Obligar al estudiante a elegir entre estudiar a tiempo completo o trabajar, advirtiendo que el reglamento escolar no contempla excepciones por pobreza."
+],
+"respuestaCorrecta": 1,
+"explicacion": "Base Legal: Manual de Servicios (Prevención de abandono escolar) y Ley 136-03. A los 16 años, el trabajo adolescente está regulado, no prohibido de manera absoluta como el infantil, pero no debe interrumpir la educación. El rol del MINERD es retener al estudiante mediante la flexibilización, acompañamiento y derivación a programas de apoyo social."
+},
+{
+"id": 620,
+"categoria": "Ética",
+"pregunta": "Un orientador de nuevo ingreso decide aplicar una batería de pruebas psicométricas clínicas (Bender, WISC-IV, MMPI) a todos los estudiantes de 1er grado de Primaria para 'descartar problemas mentales' al inicio de año, sin previo consentimiento informado de los padres. ¿Cuál es el error técnico y ético fundamental?",
+"opciones": [
+"A) Ninguno. Es una práctica proactiva recomendada por el MINERD para diagnosticar a tiempo y llenar el registro anecdótico.",
+"B) El error es no haber cobrado por la aplicación de pruebas tan costosas dentro del sector público.",
+"C) Constituye una infracción ética grave: el orientador escolar no realiza evaluación clínica, no aplicó el protocolo de derivación específica y violó el derecho al consentimiento informado de las familias.",
+"D) El error radica en no haber incluido pruebas proyectivas gráficas que son más rápidas para diagnosticar a los 6 años."
+],
+"respuestaCorrecta": 2,
+"explicacion": "Base Legal: Ley 22-01 (Colegio Dominicano de Psicólogos) y Manual de Servicios MINERD. La evaluación psicopedagógica escolar no tiene fines clínicos/psiquiátricos, se realiza ante demandas específicas (no masivas sin justificación), y la aplicación de cualquier instrumento requiere el consentimiento informado y firmado por los padres o tutores."
+},
+{
+"id": 621,
+"categoria": "Convivencia",
+"pregunta": "Durante un recreo, el orientador observa a un docente gritando e insultando a un estudiante frente a sus compañeros, llamándolo 'bueno para nada' y jaloneándolo por el brazo. ¿Cuál es el procedimiento técnico administrativo que debe seguir el departamento de Orientación?",
+"opciones": [
+"A) Intervenir asertivamente para detener el maltrato, brindar contención al estudiante, documentar el hecho y levantar un informe a la Dirección para que aplique el régimen disciplinario docente y notifique al Distrito.",
+"B) Ignorar la situación para no romper la colegialidad docente ni crear conflictos con el sindicato de maestros (ADP).",
+"C) Citar a los padres del estudiante para que ellos mismos procedan a demandar al profesor civilmente, lavándose las manos como institución.",
+"D) Confrontar públicamente al docente a gritos frente a los alumnos para demostrar que Orientación protege los derechos de la niñez."
+],
+"respuestaCorrecta": 0,
+"explicacion": "Base Legal: Ley 136-03 (Protección contra el maltrato) y Estatuto del Docente. El maltrato físico/psicológico por parte de un adulto es inaceptable. El orientador es garante de derechos; debe detener el daño y utilizar la vía institucional jerárquica (Dirección, Distrito) para las sanciones administrativas correspondientes, protegiendo a la víctima."
+},
+{
+"id": 622,
+"categoria": "Prevención",
+"pregunta": "Se detecta a un grupo de estudiantes de 6to de Secundaria consumiendo cigarrillos electrónicos (vapers) dentro de los baños del centro educativo. Según las Normas del Sistema Educativo Dominicano, ¿qué secuencia de acciones debe aplicarse?",
+"opciones": [
+"A) Expulsarlos de inmediato del centro, ya que el uso de sustancias nocivas en recintos escolares es un delito que anula su derecho a estudiar.",
+"B) Dejar pasar el incidente si son estudiantes meritorios, y darles una advertencia verbal privada para no manchar su récord escolar.",
+"C) Confiscar los dispositivos, tipificarlo como falta grave, citar a las familias, derivar a consejería en prevención de adicciones y asignar medidas socioeducativas en el centro.",
+"D) Llamar a la policía antidrogas para que arreste a los menores de edad y los traslade al tribunal de tránsito."
+],
+"respuestaCorrecta": 2,
+"explicacion": "Base Legal: Normas de Convivencia MINERD. El consumo de tabaco/vapers en el plantel es una Falta Grave. Conlleva medidas disciplinarias no excluyentes (retención del objeto, citación a familias, compromisos) combinadas con apoyo psicoeducativo, ya que el enfoque normativo es formativo y no puramente punitivo o judicial (como la D, que es desproporcionada)."
+},
+{
+"id": 623,
+"categoria": "Inclusión",
+"pregunta": "Un estudiante de nuevo ingreso proviene de la zona rural fronteriza y tiene el creole como lengua materna, presentando un nivel muy bajo de español. Sus compañeros se burlan de su acento y los profesores reportan que no entiende las clases. ¿Qué estrategia debe promover la Unidad de Orientación y Psicología?",
+"opciones": [
+"A) Recomendar a la familia que el niño no asista a clases hasta que domine el español para que no retrase al resto del grupo.",
+"B) Implementar un programa de acogida intercultural, sensibilizar al grupo curso sobre respeto a la diversidad, y coordinar con los docentes apoyo lingüístico y evaluación diferenciada.",
+"C) Sancionar severamente a los docentes por no saber hablar creole y obligarlos a traducir todas sus planificaciones de inmediato.",
+"D) Aplicar un test de inteligencia (CI) en español para demostrar que el problema del estudiante es cognitivo y no cultural."
+],
+"respuestaCorrecta": 1,
+"explicacion": "Base Legal: Diseño Curricular Dominicano (Atención a la diversidad) y Derechos Humanos. La barrera es lingüística y sociocultural, no cognitiva. Excluir al alumno (A) o evaluarlo con sesgo cultural (D) discrimina y es antitécnico. Se debe promover un enfoque de inclusión, interculturalidad y apoyos curriculares de acceso."
+},
+{
+"id": 624,
+"categoria": "Planificación",
+"pregunta": "En la elaboración de los programas de Prevención de Riesgos Psicosociales, el Departamento de Orientación planea una campaña sobre Educación Integral en Sexualidad (EIS). ¿En qué marco debe sustentarse técnica y legalmente esta intervención en el sector público dominicano?",
+"opciones": [
+"A) En las creencias religiosas predominantes del equipo de gestión, omitiendo cualquier tema que incomode a la asociación de padres.",
+"B) En manuales extranjeros de la década de los 90, priorizando tácticas de miedo y castidad obligatoria como único método.",
+"C) En los ejes transversales del Currículo Dominicano, el enfoque de derechos, la Ley 136-03 y las directrices técnico-pedagógicas del MINERD acordes al nivel de desarrollo.",
+"D) En las opiniones personales que los estudiantes recojan libremente de redes sociales sin ninguna guía estructurada."
+],
+"respuestaCorrecta": 2,
+"explicacion": "Base Legal: Diseño Curricular Nacional, Ley de Educación 66-97 y Política de Educación Integral. Las intervenciones psicoeducativas del MINERD deben ser laicas, científicas, basadas en el currículo nacional, adaptadas a la etapa evolutiva y fundamentadas en el enfoque de derechos humanos para prevenir embarazos, ITS y abusos."
+},
+{
+"id": 625,
+"categoria": "Evaluación",
+"pregunta": "Un estudiante sufre una crisis de ansiedad severa (ataque de pánico) en medio de un examen de Pruebas Nacionales. Presenta hiperventilación, llanto incontrolable y temblores. ¿Cuál es el abordaje primario del orientador escolar?",
+"opciones": [
+"A) Retirar al estudiante a un ambiente tranquilo, aplicar primeros auxilios psicológicos (técnicas de respiración y grounding), notificar a la familia y coordinar la reprogramación de la prueba si la normativa lo permite.",
+"B) Exigirle que termine la prueba inmediatamente en esas condiciones, ya que las Pruebas Nacionales son inamovibles y no se permiten pausas emocionales.",
+"C) Diagnosticar al estudiante con Trastorno de Pánico Generalizado y medicarlo con ansiolíticos del botiquín escolar.",
+"D) Hacer que respire en una funda plástica frente a todo el curso para demostrarles qué sucede cuando no estudian con tiempo."
+],
+"respuestaCorrecta": 0,
+"explicacion": "Base Legal: Manual de Apoyo Psicopedagógico (Manejo de Crisis). El orientador brinda Primeros Auxilios Psicológicos (PAP). Medicar (C) es ilegal y penalizado (ejercicio ilegal de la medicina). Forzarlo o humillarlo (B, D) es maltrato y viola el bienestar emocional, que prima sobre cualquier evaluación estandarizada."
+},
+{
+"id": 626,
+"categoria": "Ética",
+"pregunta": "Una profesora refiere a Orientación a un estudiante de 3er grado de Primaria por 'hiperactividad' y le exige al psicólogo escolar que redacte un referimiento médico indicando Ritalina (Metilfenidato) para poder admitirlo de nuevo en su clase. ¿Cuál debe ser la postura del profesional?",
+"opciones": [
+"A) Redactar la receta médica de inmediato para facilitar la labor docente y calmar el ambiente en el aula.",
+"B) Explicar a la docente que el psicólogo escolar evalúa el contexto de aprendizaje y sugiere estrategias pedagógicas, pero el diagnóstico médico y la prescripción farmacológica son competencia exclusiva del psiquiatra o neurólogo.",
+"C) Sugerir a la madre que compre remedios naturales en la farmacia y no le informe a la maestra.",
+"D) Suspender al estudiante permanentemente porque el centro no cuenta con los recursos médicos para atender TDAH severos."
+],
+"respuestaCorrecta": 1,
+"explicacion": "Base Legal: Ley 22-01 (Límites del ejercicio profesional). El psicólogo u orientador escolar no receta ni prescribe medicamentos; es una falta gravísima de intrusismo médico. Su rol es psicopedagógico (intervención áulica, DUA). La exigencia docente carece de fundamento normativo e institucional."
+},
+{
+"id": 627,
+"categoria": "Convivencia",
+"pregunta": "Dos estudiantes de 4to de Secundaria inician un intercambio de insultos a través del grupo de WhatsApp del curso durante el fin de semana. El lunes, la tensión se traslada al aula y perturba la clase, aunque no ha llegado a la violencia física. ¿Qué mecanismo del sistema de convivencia se debe activar?",
+"opciones": [
+"A) Denunciar el caso en el DICAT (Departamento de Crímenes y Delitos de Alta Tecnología) por terrorismo cibernético.",
+"B) Expulsar a ambos del centro porque los conflictos en redes sociales fuera del horario escolar son Faltas Muy Graves automáticas.",
+"C) Ignorar el caso puesto que los hechos ocurrieron un domingo y fuera del recinto escolar, escapando a la jurisdicción del MINERD.",
+"D) Considerarlo una falta que afecta el clima escolar, citar a ambos estudiantes para un proceso de mediación escolar y aplicar medidas educativas de reparación.",
+],
+"respuestaCorrecta": 3,
+"explicacion": "Base Legal: Normas de Convivencia MINERD. Cuando un evento cibernético o externo afecta el clima escolar interno, el centro tiene potestad de intervención educativa. Un conflicto verbal sin violencia grave (Falta Leve/Grave dependiendo del nivel de daño) es el escenario ideal para la Mediación Escolar y el diálogo restaurativo."
+},
+{
+"id": 628,
+"categoria": "Inclusión",
+"pregunta": "Un estudiante de 1er ciclo de Primaria es diagnosticado con Dislexia. Su nivel de comprensión oral es excelente, pero fracasa en todas las pruebas escritas debido a su lentitud y errores en la decodificación. ¿Qué adaptación evaluativa debe coordinar Orientación con los docentes?",
+"opciones": [
+"A) Reprobarlo en todas las materias hasta que alcance la fluidez lectora esperada para su edad de forma natural.",
+"B) Implementar ajustes en los instrumentos de evaluación, como permitir exámenes orales, brindar tiempo adicional y no penalizar severamente los errores ortográficos.",
+"C) Enviarlo al grado inferior donde los textos son más cortos para que no se frustre con sus compañeros de edad cronológica.",
+"D) Designar a un compañero para que le haga las tareas y los exámenes a lo largo de todo el año escolar."
+],
+"respuestaCorrecta": 1,
+"explicacion": "Base Legal: Diseño Universal para el Aprendizaje (DUA) y Ordenanza 04-2018. Las Dificultades Específicas del Aprendizaje (DEA) requieren ajustes metodológicos y de acceso a la evaluación. Evaluar oralmente permite medir las competencias curriculares reales (comprensión, análisis) esquivando la barrera neurobiológica de la decodificación."
+},
+{
+"id": 629,
+"categoria": "Ética",
+"pregunta": "El orientador recibe el expediente clínico de un estudiante trasladado donde consta que vive con VIH. El Director del centro, preocupado, le pide al orientador que entregue la lista a todos los docentes y publique el estado del estudiante en la pizarra de maestros para que 'tengan cuidado al curarlo si se raspa'. ¿Cómo debe proceder?",
+"opciones": [
+"A) Obedecer al Director inmediatamente, ya que este es su superior jerárquico y la salud de la mayoría del plantel está en riesgo.",
+"B) Negarse rotundamente basándose en la Ley 135-11 sobre VIH/SIDA, garantizando el secreto profesional y protegiendo al estudiante de la estigmatización; en su lugar, reforzar protocolos generales de bioseguridad en primeros auxilios para todo el centro.",
+"C) Convocar una asamblea de padres para votar si están de acuerdo con que el estudiante permanezca en el aula.",
+"D) Exigirle al estudiante que use guantes de látex y mascarilla en todo momento dentro del aula para tranquilizar al Director."
+],
+"respuestaCorrecta": 1,
+"explicacion": "Base Legal: Ley 135-11 de VIH/SIDA (Artículos sobre confidencialidad y no discriminación). Revelar el estado serológico de un estudiante es un delito penado por la ley. La precaución sanitaria ante fluidos (bioseguridad) es universal y debe aplicarse siempre a todos los estudiantes por igual, sin estigmatizar."
+},
+{
+"id": 630,
+"categoria": "Prevención",
+"pregunta": "Se identifica que un estudiante de 3er grado presenta moretones frecuentes, ropa descuidada, roba comida a sus compañeros y se muestra aterrorizado a la hora de salida. Los padres no asisten a las citaciones del centro. El orientador sospecha de maltrato por negligencia severa y abuso físico. ¿Cuál es el último paso del protocolo de protección tras confirmar la no comparecencia familiar?",
+"opciones": [
+"A) Levantar un reporte confidencial al Ministerio Público, Línea Vida o CONANI, detallando las evidencias y el agotamiento de la vía familiar, para que el Estado asuma la protección inmediata.",
+"B) Esperar a final de año escolar para ver si la situación mejora espontáneamente o si el estudiante es trasladado de centro.",
+"C) Comprarle comida al estudiante a diario y ocultarlo en la Dirección a la hora de salida, evitando involucrar a las autoridades judiciales.",
+"D) Publicar fotos de los moretones del niño en las redes sociales de la escuela para crear presión pública y forzar a los padres a asistir."
+],
+"respuestaCorrecta": 0,
+"explicacion": "Base Legal: Ley 136-03 (Código para el Sistema de Protección y los Derechos Fundamentales). Ante indicios de abuso y negligencia parental reiterada, la escuela agota su nivel preventivo y debe activar la ruta de restitución de derechos a través del Estado (Ministerio Público/CONANI). Ocultarlo o exponer su imagen en redes (D) revictimiza y es ilegal."
+},
 
-
-
+  {
+    "id": 631,
+    "categoria": "Prevención",
+    "pregunta": "En un centro de Nivel Inicial, la maestra reporta que la niña Penélope (5 años) asiste reiteradamente con una falta de higiene extrema, carencia de merienda y ropa inadecuada para el clima. Además, presenta somnolencia constante en el aula. Tras dos citaciones, la madre asiste y alega que trabaja en horario nocturno y no tiene red de apoyo. ¿Cuál es el procedimiento técnico y administrativo procedente?",
+    "opciones": [
+      "A) Levantar de inmediato una denuncia en CONANI por negligencia y abuso infantil, solicitando que la niña sea retirada de la custodia de la madre.",
+      "B) Establecer un acuerdo de corresponsabilidad con la madre mediante una entrevista comprensiva, ofreciendo pautas de crianza, derivando a programas de apoyo social (como Supérate) y estableciendo un monitoreo estricto.",
+      "C) Solicitar a la Dirección que no reciba a la niña hasta que asista con las condiciones de higiene estipuladas en el reglamento del centro para proteger a los demás niños.",
+      "D) Iniciar una colecta monetaria entre el personal docente para comprarle la merienda y ropa a la niña durante todo el año escolar."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Base Legal: Ley 136-03 y Manual de Servicios de Orientación y Psicología. Antes de judicializar un caso de negligencia que tiene raíz en la vulnerabilidad socioeconómica, el centro debe agotar el acompañamiento a la familia, brindar apoyo psicoeducativo y articular con redes de asistencia social. La denuncia (A) procede si, tras el agotamiento de estos recursos, persiste la vulneración del derecho."
+  },
+  {
+    "id": 632,
+    "categoria": "Inclusión",
+    "pregunta": "Durante el periodo de adaptación en el Nivel Inicial, un niño de 4 años muerde y empuja frecuentemente a sus compañeros cuando no se le cede un juguete. La asociación de padres exige a la Dirección la expulsión del menor. ¿Cuál debe ser la intervención del profesional de Psicología Educativa?",
+    "opciones": [
+      "A) Recomendar la suspensión por tres días en cada ocasión que muerda para aplicar un condicionamiento operante estricto.",
+      "B) Apoyar la decisión de los padres argumentando que el centro no cuenta con las condiciones para manejar trastornos de conducta en la primera infancia.",
+      "C) Realizar observación áulica, aplicar una evaluación psicopedagógica para descartar barreras del neurodesarrollo, orientar a la docente en el diseño de un rincón de la calma (DUA) e iniciar un programa de psicoeducación con la familia.",
+      "D) Diagnosticar al niño con Trastorno Negativista Desafiante (TND) e indicar a la familia que debe medicarlo antes de regresar al centro."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Base Legal: Diseño Curricular del Nivel Inicial y Ley 136-03. El comportamiento agresivo en la etapa preoperacional es frecuentemente inmadurez en la regulación emocional, no una falta disciplinaria. Expulsar (B) o castigar (A) en el Nivel Inicial viola el derecho a la educación. El abordaje exige evaluación de barreras, apoyos de acceso (DUA) y trabajo sistémico familia-escuela."
+  },
+  {
+    "id": 633,
+    "categoria": "Ética",
+    "pregunta": "Un docente de 2do de Primaria se acerca al departamento de Orientación exigiendo ver la carpeta confidencial de un estudiante, específicamente los resultados numéricos del test de inteligencia (WISC-V), alegando que 'necesita saber su CI exacto para decidir si vale la pena esforzarse en enseñarle'. ¿Cuál debe ser la postura del psicólogo?",
+    "opciones": [
+      "A) Entregar la carpeta completa, ya que los docentes son parte del sistema educativo y tienen derecho absoluto sobre toda la información del estudiante.",
+      "B) Negarse a entregar los puntajes brutos basándose en el secreto profesional, y en su lugar, facilitar un informe psicopedagógico que traduzca el perfil cognitivo en estrategias áulicas específicas y ajustes curriculares.",
+      "C) Entregarle únicamente el número de Cociente Intelectual (CI) anotado en un papel, sin las subescalas, para satisfacer su demanda rápidamente.",
+      "D) Levantar una amonestación escrita al docente por discriminación e ignorar su solicitud de acompañamiento en el aula."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Base Legal: Ley 22-01 (Código de Ética del CODOPSI) y Normativa de Evaluación. Los datos clínicos y psicométricos brutos son confidenciales. El docente requiere la interpretación pedagógica (el 'qué hacer') y no la etiqueta clínica (el 'qué tiene'). Facilitar datos técnicos sin interpretación a personal no especializado fomenta la estigmatización y el efecto Pigmalión negativo."
+  },
+  {
+    "id": 634,
+    "categoria": "Protección",
+    "pregunta": "Una estudiante de 2do de Secundaria (14 años) acude llorando a la Unidad de Orientación. Confiesa que sospecha estar embarazada de su novio, quien tiene 22 años y trabaja en un colmado cercano al centro educativo. ¿Cuál es la acción mandatoria e inmediata según el marco legal dominicano?",
+    "opciones": [
+      "A) Celebrar una reunión de conciliación entre los padres de la adolescente y el adulto de 22 años para que asuma su responsabilidad económica y garantizar que ella no abandone la escuela.",
+      "B) Informar al Equipo de Gestión, contactar a los padres de la menor y notificar de manera obligatoria e inmediata al Ministerio Público o CONANI, ya que constituye un delito de abuso sexual estatutario por la minoría de edad.",
+      "C) Enviar a la estudiante a la farmacia a comprar una prueba de embarazo y guardar el secreto para que sus padres no la castiguen.",
+      "D) Expulsar a la estudiante temporalmente hasta que presente una ecografía formal y luego transferirla a la modalidad de educación de adultos (Prepara)."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Base Legal: Ley 136-03 (Código del Menor), Arts. sobre Abuso Sexual. En la República Dominicana, las relaciones sexuales de un adulto con una persona menor de 18 años constituyen seducción de menores o abuso (estatutario), sin importar el presunto 'consentimiento'. La denuncia es un mandato legal ineludible, omitirlo es complicidad."
+  },
+  {
+    "id": 635,
+    "categoria": "Planificación",
+    "pregunta": "Al analizar el Sistema de Alerta Temprana (SAT) del centro, el orientador detecta que un 15% de los estudiantes de 3ero de Secundaria acumulan más de tres inasistencias injustificadas en un mes. De cara a la planificación preventiva, ¿cuál es el abordaje metodológico correcto?",
+    "opciones": [
+      "A) Redactar circulares de advertencia informando a las familias que perderán las ayudas del Estado (bono escolar) si no envían a sus hijos.",
+      "B) Focalizar la intervención individual mediante visitas domiciliarias para identificar factores de riesgo (laborales, familiares, comunitarios) e implementar un plan de acogida y nivelación académica junto a los docentes.",
+      "C) Eliminar el registro de ausencias en el SIGERD para mejorar artificialmente los indicadores de eficiencia interna ante el Distrito Educativo.",
+      "D) Dejar que los estudiantes alcancen el límite de ausencias permitidas para aplicar la repitencia automática, ya que el ausentismo es responsabilidad exclusiva de la familia."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Base Legal: Manual Operativo de Centro Público y Lineamientos de Retención Escolar. El SAT exige intervenciones proactivas y focalizadas. El ausentismo es multifactorial; el MINERD prioriza la retención mediante la identificación de barreras en el entorno del estudiante y la aplicación de planes de nivelación que eviten la sobreedad o el abandono definitivo."
+  },
+  {
+    "id": 636,
+    "categoria": "Inclusión",
+    "pregunta": "Un estudiante con discapacidad visual (ceguera total) ingresa a 1er grado de Primaria. El docente alega que no puede alfabetizarlo porque no sabe Braille y solicita a Orientación que el estudiante sea transferido al Centro Nacional de Recursos para la Discapacidad Visual. ¿Cuál es el rol del psicólogo/orientador escolar en este contexto?",
+    "opciones": [
+      "A) Gestionar inmediatamente el traslado del estudiante al centro de educación especial, argumentando que la escuela regular no está equipada para su condición.",
+      "B) Articular con la Unidad de Atención a la Diversidad del Distrito, coordinar el entrenamiento docente en estrategias auditivo-táctiles, solicitar materiales adaptados y garantizar la permanencia del estudiante implementando un Ajuste Curricular de Acceso.",
+      "C) Asumir personalmente la alfabetización del estudiante sacándolo del aula todos los días durante la clase de Lengua Española.",
+      "D) Exigir a la familia que pague un maestro sombra (tutor) especializado en Braille para que permanezca con el niño durante toda la jornada escolar."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Base Legal: Ordenanza 04-2018 (Educación Inclusiva). El sistema dominicano prioriza la inclusión en aulas regulares con los apoyos necesarios. Transferir al estudiante (A) viola la política de inclusión. El orientador no es terapeuta de lenguaje ni maestro alfabetizador (C), su rol es articular los recursos (Distrito, UAD) y asesorar al docente en los Ajustes de Acceso."
+  },
+  {
+    "id": 637,
+    "categoria": "Ética",
+    "pregunta": "El psicólogo de un centro educativo público recibe la solicitud de varios padres para que ofrezca terapias clínicas privadas a sus hijos (estudiantes del mismo centro) durante las tardes en su consultorio particular, pagando honorarios. Según el marco legal del ejercicio profesional, ¿cómo debe proceder?",
+    "opciones": [
+      "A) Aceptar los casos, aplicando un descuento especial a los padres por ser de la misma comunidad educativa.",
+      "B) Aceptar únicamente a los estudiantes que no presenten problemas de conducta graves, para no contaminar su relación en la escuela.",
+      "C) Rechazar la solicitud, explicando que incurriría en dualidad de roles y conflicto de intereses; procediendo a referir a los estudiantes a otros profesionales o centros de salud pública.",
+      "D) Brindar la terapia clínica de manera clandestina en la oficina de la escuela al finalizar el horario laboral."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Base Legal: Ley 22-01 (Código de Ética del CODOPSI). Constituye una falta ética grave (Dualidad de Roles / Conflicto de Intereses) que el psicólogo escolar evalúe, intervenga psicopedagógicamente o tome decisiones administrativas sobre un estudiante en la mañana y le cobre por terapia clínica en la tarde. Obligatoriamente debe derivar a terceros."
+  },
+  {
+    "id": 638,
+    "categoria": "Convivencia",
+    "pregunta": "Dos docentes inician una discusión acalorada en el pasillo que escala a empujones y uso de vocabulario soez frente a un grupo de estudiantes de Secundaria. El Director solicita la intervención de Orientación. ¿Cuál es el límite de acción del orientador en este caso?",
+    "opciones": [
+      "A) Citar a ambos docentes, levantar un acta de indisciplina y recomendar al Director la cancelación de los contratos de ambos educadores.",
+      "B) Intervenir en la mediación entre los docentes como pares, pero orientar la contención psicológica de los estudiantes espectadores; aclarando que el régimen disciplinario de los docentes es competencia exclusiva del Director y Recursos Humanos (Distrito).",
+      "C) Ignorar la situación ya que el Departamento de Orientación y Psicología trabaja exclusivamente con estudiantes y familias, nunca con docentes.",
+      "D) Aplicar una prueba de personalidad a los docentes para diagnosticar cuál de los dos tiene problemas de control de ira."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Base Legal: Estatuto del Docente (Ley 66-97) y Manual Operativo. El orientador apoya el clima escolar y puede facilitar mediación primaria, pero no tiene jerarquía administrativa para sancionar docentes (eso corresponde al Director y Distrito). Su principal obligación técnica aquí es mitigar el impacto emocional y formativo negativo en los estudiantes que presenciaron el hecho."
+  },
+  {
+    "id": 639,
+    "categoria": "Prevención",
+    "pregunta": "Al aplicar un cuestionario de tamizaje socioemocional, un estudiante de 6to de Secundaria marca afirmativamente la premisa: 'A veces pienso que estaría mejor muerto', pero en la entrevista clínica de riesgo no se evidencia intencionalidad, plan estructurado ni intentos previos. ¿Qué nivel de intervención corresponde?",
+    "opciones": [
+      "A) Nivel de Emergencia: Llamar al 911 y trasladarlo involuntariamente a un hospital psiquiátrico bajo custodia.",
+      "B) Nivel Preventivo: Ignorar el resultado asumiendo que es manipulación propia de la adolescencia para llamar la atención.",
+      "C) Nivel de Riesgo Leve/Moderado: Informar a la familia, derivar a evaluación psicológica externa de manera ordinaria, y establecer un plan de seguimiento continuo en el centro (tutoría y apoyo emocional).",
+      "D) Expulsión preventiva por riesgo para la institución, exigiendo una carta de descargo del psiquiatra para poder reingresar."
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Base Legal: Manual de Prevención de Riesgos Psicosociales (Ideación Autolítica). Cuando hay ideación pasiva sin plan ni intención inminente (riesgo leve/moderado), la contención se basa en la red de apoyo (familia) y la derivación ambulatoria. Sobrerreaccionar con internamiento (A) o subestimar (B) son errores técnicos; expulsar (D) es ilegal."
+  },
+  {
+    "id": 640,
+    "categoria": "Evaluación",
+    "pregunta": "El equipo de gestión discute el caso de un estudiante con Discapacidad Intelectual Moderada en 3er grado de Primaria. El docente pide un 'Ajuste Curricular Significativo'. ¿Qué requisito técnico indispensable, validado por Orientación, debe cumplirse antes de aprobar este tipo de ajuste?",
+    "opciones": [
+      "A) Que el estudiante haya reprobado al menos dos años consecutivos en el mismo grado para justificar el cambio de currículo.",
+      "B) Que se demuestre, mediante evaluación psicopedagógica exhaustiva, que los Ajustes Razonables (DUA) y de Acceso aplicados previamente resultaron insuficientes, requiriendo modificar o eliminar competencias específicas del grado.",
+      "C) Que la familia firme un documento aceptando que el estudiante nunca recibirá el certificado de conclusión de bachillerato.",
+      "D) Que el orientador determine empíricamente, tras una semana de observación, que el estudiante no logrará aprender a leer."
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Base Legal: Ordenanza 04-2018 y Manual de Apoyo Psicopedagógico. Un Ajuste Curricular Significativo (modificar competencias/indicadores de logro) es una medida extraordinaria y subsidiaria. Solo procede cuando la evaluación psicopedagógica formal evidencia que, tras agotar los ajustes metodológicos y de acceso (DUA), el estudiante requiere una adaptación en los elementos prescriptivos del currículo."
+  },
 
 ];
 

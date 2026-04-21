@@ -13,15 +13,15 @@
         <div class="container mx-auto flex justify-between items-center">
             <div>
                 <h1 class="text-xl font-bold">MINERD</h1>
-                <p class="text-xs opacity-80 uppercase">Evaluación de Desempeño Docente (EDD) — Simulador de practica </p>
+                <p class="text-xs opacity-80 uppercase">Evaluación de Desempeño Docente (EDD) — Simulador</p>
             </div>
         </div>
     </header>
 
     <main class="flex-grow container mx-auto p-2 md:p-6 max-w-6xl flex items-center justify-center">
-        
-        <!-- PANTALLA 1: SELECCIÓN DE ROL -->
-        <div id="role-screen" class="bg-white rounded-xl shadow-lg p-8 w-full max-w-2xl text-center">
+
+        <!-- PANTALLA 1: SELECCIÓN DE ROL PRINCIPAL -->
+        <div id="role-screen" class="bg-white rounded-xl shadow-lg p-8 w-full max-w-3xl text-center">
             <div class="mb-6">
                 <div class="text-5xl mb-4">🏫</div>
                 <h2 class="text-3xl font-bold minerd-text mb-2">Simulador de Evaluación Docente</h2>
@@ -29,42 +29,112 @@
             </div>
 
             <p class="text-gray-600 mb-8">Selecciona tu perfil docente para comenzar la prueba con las preguntas correspondientes a tu función:</p>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
-                <!-- Opción Psicólogo -->
-                <button onclick="seleccionarRol('psicologo')" class="role-card group flex flex-col items-center p-6 border-2 border-gray-200 rounded-xl hover:border-[#003876] hover:bg-blue-50 transition-all cursor-pointer bg-white">
+                <!-- Psicólogo -->
+                <button onclick="seleccionarRolPrincipal('psicologo')" class="role-card flex flex-col items-center p-6 border-2 border-gray-200 rounded-xl hover:border-[#003876] hover:bg-blue-50 transition-all cursor-pointer bg-white">
                     <div class="text-4xl mb-3">🧠</div>
                     <h3 class="text-lg font-bold text-[#003876] mb-1">Psicólogo/a Escolar</h3>
                     <p class="text-xs text-gray-500 text-center">Orientación y Psicología · Unidad de Apoyo</p>
                     <div class="mt-3 px-3 py-1 bg-blue-100 text-[#003876] rounded-full text-xs font-bold">Juicio Situacional Clínico-Educativo</div>
                 </button>
 
-                <!-- Opción Maestro Primaria -->
-                <button onclick="seleccionarRol('primaria')" class="role-card group flex flex-col items-center p-6 border-2 border-gray-200 rounded-xl hover:border-[#003876] hover:bg-blue-50 transition-all cursor-pointer bg-white">
+                <!-- Primaria -->
+                <button onclick="seleccionarRolPrincipal('primaria')" class="role-card flex flex-col items-center p-6 border-2 border-gray-200 rounded-xl hover:border-[#003876] hover:bg-blue-50 transition-all cursor-pointer bg-white">
                     <div class="text-4xl mb-3">📚</div>
                     <h3 class="text-lg font-bold text-[#003876] mb-1">Maestro/a de Primaria</h3>
                     <p class="text-xs text-gray-500 text-center">Nivel Primario · 1ero a 6to grado</p>
                     <div class="mt-3 px-3 py-1 bg-blue-100 text-[#003876] rounded-full text-xs font-bold">Análisis de Casos Pedagógicos</div>
                 </button>
+
+                <!-- Técnico Distrital -->
+                <button onclick="seleccionarRol('tecnicoDistrital')" class="role-card flex flex-col items-center p-6 border-2 border-gray-200 rounded-xl hover:border-[#003876] hover:bg-blue-50 transition-all cursor-pointer bg-white">
+                    <div class="text-4xl mb-3">🏛️</div>
+                    <h3 class="text-lg font-bold text-[#003876] mb-1">Técnico/a Distrital</h3>
+                    <p class="text-xs text-gray-500 text-center">Técnico Docente · Nivel Distrital</p>
+                    <div class="mt-3 px-3 py-1 bg-blue-100 text-[#003876] rounded-full text-xs font-bold">Gestión y Asesoría Técnica</div>
+                </button>
+
+                <!-- Técnico Profesional -->
+                <button onclick="seleccionarRol('tecnicoProfesional')" class="role-card flex flex-col items-center p-6 border-2 border-gray-200 rounded-xl hover:border-[#003876] hover:bg-blue-50 transition-all cursor-pointer bg-white">
+                    <div class="text-4xl mb-3">🔧</div>
+                    <h3 class="text-lg font-bold text-[#003876] mb-1">Docente Técnico Profesional</h3>
+                    <p class="text-xs text-gray-500 text-center">Modalidad Técnico Profesional · MTP</p>
+                    <div class="mt-3 px-3 py-1 bg-blue-100 text-[#003876] rounded-full text-xs font-bold">Competencias Técnico-Pedagógicas</div>
+                </button>
             </div>
 
-            <p class="text-[11px] text-gray-400">Simulador basado en el marco normativo MINERD. Las preguntas se seleccionan aleatoriamente del banco correspondiente a tu perfil.</p>
+            <p class="text-[11px] text-gray-400">Simulador basado en el marco normativo MINERD — Etapa V: Ejercicio de Rendimiento Profesional. Las preguntas se seleccionan aleatoriamente del banco correspondiente a tu perfil.</p>
+        </div>
+
+        <!-- PANTALLA 1B: SUB-SELECCIÓN PSICÓLOGO -->
+        <div id="sub-screen-psicologo" class="hidden bg-white rounded-xl shadow-lg p-8 w-full max-w-2xl text-center">
+            <div class="text-4xl mb-4">🧠</div>
+            <h2 class="text-2xl font-bold minerd-text mb-2">Psicólogo/a Escolar</h2>
+            <p class="text-gray-600 mb-6">Selecciona el banco de preguntas con el que deseas practicar:</p>
+
+            <div class="grid grid-cols-1 gap-4 mb-6">
+                <button onclick="seleccionarRol('psicologo')" class="role-card flex flex-col items-center p-5 border-2 border-gray-200 rounded-xl hover:border-[#003876] hover:bg-blue-50 transition-all cursor-pointer bg-white">
+                    <div class="text-2xl mb-2">📋</div>
+                    <h3 class="text-base font-bold text-[#003876] mb-1">Banco General</h3>
+                    <p class="text-xs text-gray-500 text-center">Banco principal de preguntas para Psicólogo/a Escolar. Marco legal dominicano.</p>
+                    <div class="mt-2 px-3 py-1 bg-blue-100 text-[#003876] rounded-full text-xs font-bold">35 preguntas · 52:30 min</div>
+                </button>
+
+                <button onclick="seleccionarRol('psicologoExterno')" class="role-card flex flex-col items-center p-5 border-2 border-gray-200 rounded-xl hover:border-[#003876] hover:bg-blue-50 transition-all cursor-pointer bg-white">
+                    <div class="text-2xl mb-2">📝</div>
+                    <h3 class="text-base font-bold text-[#003876] mb-1">Banco Complementario</h3>
+                    <p class="text-xs text-gray-500 text-center">Banco adicional basado en formularios y situaciones de evaluación profesional.</p>
+                    <div class="mt-2 px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold">35 preguntas · 52:30 min</div>
+                </button>
+            </div>
+
+            <button onclick="volverSeleccion()" class="border-2 border-[#003876] text-[#003876] py-2 px-8 rounded-lg font-bold hover:bg-blue-50 transition-all text-sm">
+                ← Cambiar Perfil
+            </button>
+        </div>
+
+        <!-- PANTALLA 1C: SUB-SELECCIÓN PRIMARIA -->
+        <div id="sub-screen-primaria" class="hidden bg-white rounded-xl shadow-lg p-8 w-full max-w-2xl text-center">
+            <div class="text-4xl mb-4">📚</div>
+            <h2 class="text-2xl font-bold minerd-text mb-2">Maestro/a de Primaria</h2>
+            <p class="text-gray-600 mb-6">Selecciona el banco de preguntas con el que deseas practicar:</p>
+
+            <div class="grid grid-cols-1 gap-4 mb-6">
+                <button onclick="seleccionarRol('primaria')" class="role-card flex flex-col items-center p-5 border-2 border-gray-200 rounded-xl hover:border-[#003876] hover:bg-blue-50 transition-all cursor-pointer bg-white">
+                    <div class="text-2xl mb-2">📋</div>
+                    <h3 class="text-base font-bold text-[#003876] mb-1">Banco General</h3>
+                    <p class="text-xs text-gray-500 text-center">Banco principal con análisis de casos pedagógicos. Ordenanza 04-2023 y marco normativo MINERD.</p>
+                    <div class="mt-2 px-3 py-1 bg-blue-100 text-[#003876] rounded-full text-xs font-bold">40 preguntas · 60:00 min</div>
+                </button>
+
+                <button onclick="seleccionarRol('rimariaFiltrada')" class="role-card flex flex-col items-center p-5 border-2 border-gray-200 rounded-xl hover:border-[#003876] hover:bg-blue-50 transition-all cursor-pointer bg-white">
+                    <div class="text-2xl mb-2">🎯</div>
+                    <h3 class="text-base font-bold text-[#003876] mb-1">Banco Filtrado</h3>
+                    <p class="text-xs text-gray-500 text-center">Banco con preguntas seleccionadas y filtradas sobre inclusión y casos pedagógicos específicos.</p>
+                    <div class="mt-2 px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold">40 preguntas · 60:00 min</div>
+                </button>
+            </div>
+
+            <button onclick="volverSeleccion()" class="border-2 border-[#003876] text-[#003876] py-2 px-8 rounded-lg font-bold hover:bg-blue-50 transition-all text-sm">
+                ← Cambiar Perfil
+            </button>
         </div>
 
         <!-- PANTALLA 2: INICIO DEL EXAMEN -->
         <div id="start-screen" class="hidden bg-white rounded-xl shadow-lg p-8 w-full max-w-2xl text-center">
             <div id="start-icon" class="text-5xl mb-4">🧠</div>
-            <h2 id="start-title" class="text-3xl font-bold minerd-text mb-2 text-center">Evaluación Técnico-Profesional</h2>
-            <p id="start-subtitle" class="text-gray-600 mb-6 text-center">Prueba de Juicio Situacional basada en el marco legal dominicano.</p>
-            
+            <h2 id="start-title" class="text-3xl font-bold minerd-text mb-2 text-center">Evaluación</h2>
+            <p id="start-subtitle" class="text-gray-600 mb-6 text-center">Prueba de Rendimiento Profesional.</p>
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
                 <div class="bg-blue-50 p-4 rounded-lg border border-blue-100 text-left">
                     <p class="font-bold text-blue-800">Preguntas</p>
-                    <p id="info-preguntas" class="text-sm text-gray-600">35 seleccionadas</p>
+                    <p id="info-preguntas" class="text-sm text-gray-600">—</p>
                 </div>
                 <div class="bg-blue-50 p-4 rounded-lg border border-blue-100 text-left">
                     <p class="font-bold text-blue-800">Tiempo</p>
-                    <p id="info-tiempo" class="text-sm text-gray-600">52:30 min</p>
+                    <p id="info-tiempo" class="text-sm text-gray-600">—</p>
                 </div>
                 <div class="bg-blue-50 p-4 rounded-lg border border-blue-100 text-left">
                     <p class="font-bold text-blue-800">Modalidad</p>
@@ -73,8 +143,8 @@
             </div>
 
             <div class="flex flex-col md:flex-row gap-3 justify-center">
-                <button onclick="volverSeleccion()" class="border-2 border-[#003876] text-[#003876] py-3 px-8 rounded-lg font-bold hover:bg-blue-50 transition-all">
-                    ← Cambiar Perfil
+                <button id="back-btn" onclick="volverSubSeleccion()" class="border-2 border-[#003876] text-[#003876] py-3 px-8 rounded-lg font-bold hover:bg-blue-50 transition-all">
+                    ← Regresar
                 </button>
                 <button id="start-btn" class="minerd-bg py-3 px-10 rounded-lg shadow-md transition-all text-lg font-bold">
                     Comenzar Prueba
@@ -84,17 +154,17 @@
 
         <!-- PANTALLA 3: QUIZ -->
         <div id="quiz-screen" class="hidden bg-white rounded-xl shadow-lg w-full flex flex-col md:flex-row overflow-hidden border border-gray-200">
-            
+
             <aside class="w-full md:w-72 bg-gray-50 border-b md:border-b-0 md:border-r border-gray-200 flex flex-col">
                 <div class="p-4 bg-white border-b border-gray-200 flex justify-between items-center md:block">
                     <h3 class="text-sm font-bold minerd-text uppercase tracking-widest text-center">Navegación</h3>
                 </div>
-                
+
                 <div id="questions-nav" class="overflow-y-auto max-h-40 md:max-h-full custom-scroll"></div>
 
                 <div class="p-6 bg-white border-t border-gray-100 flex flex-col items-center">
                     <span class="text-[10px] font-bold text-gray-400 uppercase mb-1">Tiempo Restante</span>
-                    <div id="timer" class="text-4xl font-mono font-black minerd-text">52:30</div>
+                    <div id="timer" class="text-4xl font-mono font-black minerd-text">--:--</div>
                 </div>
 
                 <div class="hidden md:block p-4 mt-auto border-t border-gray-100">
@@ -110,7 +180,7 @@
             <section class="flex-grow flex flex-col p-4 md:p-8 overflow-hidden">
                 <div class="mb-4">
                     <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-2 mb-2">
-                        <span id="question-counter" class="text-lg font-bold minerd-text">Pregunta 1 de 35</span>
+                        <span id="question-counter" class="text-lg font-bold minerd-text">Pregunta 1</span>
                         <span id="category-badge" class="bg-blue-100 minerd-text px-3 py-1 rounded-full text-[10px] font-bold uppercase w-fit">CATEGORÍA</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-1.5">
@@ -122,7 +192,7 @@
                     <div class="bg-blue-50 border-l-4 border-[#003876] p-4 md:p-6 mb-6 rounded-r-lg">
                         <p id="question-text" class="text-lg md:text-xl text-gray-800 font-semibold leading-relaxed"></p>
                     </div>
-                    
+
                     <div id="options-container"></div>
                 </div>
 
@@ -141,10 +211,10 @@
         <div id="result-screen" class="hidden bg-white rounded-xl shadow-lg w-full max-w-5xl overflow-hidden overflow-y-auto max-h-[90vh]">
             <div class="minerd-bg p-8 text-center text-white">
                 <h2 class="text-3xl font-bold mb-2">Resultados</h2>
-                <div class="text-5xl font-black mb-2" id="final-score">0/35</div>
+                <div class="text-5xl font-black mb-2" id="final-score">0/0</div>
                 <div id="score-percentage" class="text-lg opacity-90"></div>
             </div>
-            
+
             <div class="p-6 md:p-8">
                 <h3 class="font-bold text-xl mb-4 border-b pb-2 minerd-text">Revisión Técnica</h3>
                 <div id="review-container" class="space-y-6"></div>
@@ -164,6 +234,10 @@
 
     <script src="preguntas.js"></script>
     <script src="preguntasprimaria.js"></script>
+    <script src="preguntasfiltradas.js"></script>
+    <script src="preguntasdelformulariosexternos.js"></script>
+    <script src="tecnicodistrital.js"></script>
+    <script src="tecnicoprofesional.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

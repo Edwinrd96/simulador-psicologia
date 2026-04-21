@@ -1,5 +1,6 @@
 // --- ESTADO ---
-let rolSeleccionado = null; // 'psicologo' | 'primaria'
+let rolSeleccionado = null;
+let rolPrincipal = null; // Para saber a qué sub-pantalla regresar
 let preguntasSeleccionadas = [];
 let indiceActual = 0;
 let respuestasUsuario = {};
@@ -8,62 +9,146 @@ let intervaloTimer;
 
 // Configuración por rol
 const CONFIG = {
-    psicologo: { preguntas: 35, tiempo: (52 * 60) + 30, tiempoLabel: '52:30 min' },
-    primaria:  { preguntas: 40, tiempo: 60 * 60,         tiempoLabel: '60:00 min' }
+    psicologo: {
+        banco: () => bancoPreguntas,
+        preguntas: 35,
+        tiempo: (52 * 60) + 30,
+        tiempoLabel: '52:30 min',
+        icon: '🧠',
+        titulo: 'Psicólogo/a Escolar',
+        subtitulo: 'Banco General — Prueba de Juicio Situacional. Marco legal dominicano.',
+        aprobacion: 25
+    },
+    psicologoExterno: {
+        banco: () => bancoFormularios,
+        preguntas: 35,
+        tiempo: (52 * 60) + 30,
+        tiempoLabel: '52:30 min',
+        icon: '🧠',
+        titulo: 'Psicólogo/a Escolar — Banco Complementario',
+        subtitulo: 'Banco adicional basado en formularios y situaciones de evaluación profesional.',
+        aprobacion: 25
+    },
+    primaria: {
+        banco: () => bancoPrimaria,
+        preguntas: 40,
+        tiempo: 60 * 60,
+        tiempoLabel: '60:00 min',
+        icon: '📚',
+        titulo: 'Maestro/a de Nivel Primario',
+        subtitulo: 'Banco General — Análisis de Casos Pedagógicos. Ordenanza 04-2023 y marco normativo MINERD.',
+        aprobacion: 28
+    },
+    rimariaFiltrada: {
+        banco: () => bancoFiltrado,
+        preguntas: 40,
+        tiempo: 60 * 60,
+        tiempoLabel: '60:00 min',
+        icon: '📚',
+        titulo: 'Maestro/a de Primaria — Banco Filtrado',
+        subtitulo: 'Banco filtrado con preguntas sobre inclusión y casos pedagógicos específicos.',
+        aprobacion: 8
+    },
+    tecnicoDistrital: {
+        banco: () => bancoTecnicoDistrital,
+        preguntas: 35,
+        tiempo: (52 * 60) + 30,
+        tiempoLabel: '52:30 min',
+        icon: '🏛️',
+        titulo: 'Técnico/a Distrital',
+        subtitulo: 'Prueba de Rendimiento Profesional — Gestión y Asesoría Técnica Distrital.',
+        aprobacion: 25
+    },
+    tecnicoProfesional: {
+        banco: () => bancoTecnicoProfesional,
+         preguntas: 40,
+        tiempo: 60 * 60,
+        tiempoLabel: '60:00 min',
+        icon: '🔧',
+        titulo: 'Docente Técnico Profesional',
+        subtitulo: 'Prueba de Rendimiento Profesional — Modalidad Técnico Profesional (MTP).',
+        aprobacion: 14
+    }
+};
+
+// Roles que tienen sub-pantalla de selección
+const ROLES_CON_SUB = {
+    psicologo: 'sub-screen-psicologo',
+    primaria: 'sub-screen-primaria'
 };
 
 // --- ELEMENTOS ---
-const roleScreen   = document.getElementById('role-screen');
-const startScreen  = document.getElementById('start-screen');
-const quizScreen   = document.getElementById('quiz-screen');
-const resultScreen = document.getElementById('result-screen');
-const nextBtn      = document.getElementById('next-btn');
-const prevBtn      = document.getElementById('prev-btn');
-const navContainer = document.getElementById('questions-nav');
+const roleScreen    = document.getElementById('role-screen');
+const startScreen   = document.getElementById('start-screen');
+const quizScreen    = document.getElementById('quiz-screen');
+const resultScreen  = document.getElementById('result-screen');
+const nextBtn       = document.getElementById('next-btn');
+const prevBtn       = document.getElementById('prev-btn');
+const navContainer  = document.getElementById('questions-nav');
 
 // --- EVENTOS ---
-document.getElementById('start-btn').onclick = iniciarExamen;
+document.getElementById('start-btn').onclick  = iniciarExamen;
 document.getElementById('prev-btn').onclick   = anteriorPregunta;
 document.getElementById('next-btn').onclick   = siguientePregunta;
 document.getElementById('restart-btn').onclick = () => {
-    // Reiniciar con el mismo rol
     resetEstado();
     resultScreen.classList.add('hidden');
     startScreen.classList.remove('hidden');
 };
 
-// --- SELECCIÓN DE ROL ---
+// --- SELECCIÓN DE ROL PRINCIPAL (con sub-pantalla) ---
+function seleccionarRolPrincipal(rolBase) {
+    rolPrincipal = rolBase;
+    const subScreenId = ROLES_CON_SUB[rolBase];
+    ocultarTodasLasPantallas();
+    document.getElementById(subScreenId).classList.remove('hidden');
+}
+
+// --- SELECCIÓN DIRECTA DE ROL (sin sub-pantalla) ---
 function seleccionarRol(rol) {
     rolSeleccionado = rol;
     const cfg = CONFIG[rol];
     tiempoRestante = cfg.tiempo;
 
-    if (rol === 'psicologo') {
-        document.getElementById('start-icon').textContent = '🧠';
-        document.getElementById('start-title').textContent = 'Psicólogo/a Escolar';
-        document.getElementById('start-subtitle').textContent =
-            'Prueba de Juicio Situacional — Unidad de Orientación y Psicología. Marco legal dominicano.';
-    } else {
-        document.getElementById('start-icon').textContent = '📚';
-        document.getElementById('start-title').textContent = 'Maestro/a de Nivel Primario';
-        document.getElementById('start-subtitle').textContent =
-            'Análisis de Casos Pedagógicos — EDD 2025-2026. Ordenanza 04-2023 y marco normativo MINERD.';
-    }
+    document.getElementById('start-icon').textContent   = cfg.icon;
+    document.getElementById('start-title').textContent  = cfg.titulo;
+    document.getElementById('start-subtitle').textContent = cfg.subtitulo;
+    document.getElementById('info-preguntas').textContent = `${cfg.preguntas} preguntas`;
+    document.getElementById('info-tiempo').textContent    = cfg.tiempoLabel;
 
-    // Actualizar info dinámica en la pantalla de inicio
-    document.getElementById('info-preguntas').textContent = `${cfg.preguntas} seleccionadas`;
-    document.getElementById('info-tiempo').textContent = cfg.tiempoLabel;
-
-    roleScreen.classList.add('hidden');
+    ocultarTodasLasPantallas();
     startScreen.classList.remove('hidden');
+}
+
+function ocultarTodasLasPantallas() {
+    roleScreen.classList.add('hidden');
+    startScreen.classList.add('hidden');
+    quizScreen.classList.add('hidden');
+    resultScreen.classList.add('hidden');
+    // Ocultar sub-pantallas
+    Object.values(ROLES_CON_SUB).forEach(id => {
+        document.getElementById(id).classList.add('hidden');
+    });
 }
 
 function volverSeleccion() {
     resetEstado();
-    resultScreen.classList.add('hidden');
-    quizScreen.classList.add('hidden');
-    startScreen.classList.add('hidden');
+    rolSeleccionado = null;
+    rolPrincipal = null;
+    ocultarTodasLasPantallas();
     roleScreen.classList.remove('hidden');
+}
+
+function volverSubSeleccion() {
+    // Si el rol viene de una sub-pantalla, volver a ella; si no, volver a la pantalla principal
+    if (rolPrincipal && ROLES_CON_SUB[rolPrincipal]) {
+        resetEstado();
+        rolSeleccionado = null;
+        ocultarTodasLasPantallas();
+        document.getElementById(ROLES_CON_SUB[rolPrincipal]).classList.remove('hidden');
+    } else {
+        volverSeleccion();
+    }
 }
 
 function resetEstado() {
@@ -71,18 +156,26 @@ function resetEstado() {
     preguntasSeleccionadas = [];
     indiceActual = 0;
     respuestasUsuario = {};
-    tiempoRestante = rolSeleccionado ? CONFIG[rolSeleccionado].tiempo : (52 * 60) + 30;
+    tiempoRestante = rolSeleccionado ? CONFIG[rolSeleccionado].tiempo : 0;
 }
 
 // --- INICIAR EXAMEN ---
 function iniciarExamen() {
     const cfg = CONFIG[rolSeleccionado];
-    const banco = rolSeleccionado === 'psicologo' ? bancoPreguntas : bancoPrimaria;
+    const banco = cfg.banco();
+
+    if (!banco || banco.length === 0) {
+        alert('Error: No se encontró el banco de preguntas. Verifica que todos los archivos .js estén cargados.');
+        return;
+    }
+
+    const totalDisponible = banco.length;
+    const totalSolicitar  = Math.min(cfg.preguntas, totalDisponible);
 
     const barajadas = [...banco].sort(() => Math.random() - 0.5);
-    preguntasSeleccionadas = barajadas.slice(0, cfg.preguntas);
+    preguntasSeleccionadas = barajadas.slice(0, totalSolicitar);
 
-    startScreen.classList.add('hidden');
+    ocultarTodasLasPantallas();
     quizScreen.classList.remove('hidden');
 
     iniciarTimer();
@@ -92,15 +185,15 @@ function iniciarExamen() {
 // --- MOSTRAR PREGUNTA ---
 function mostrarPregunta() {
     const pregunta = preguntasSeleccionadas[indiceActual];
-    const total = preguntasSeleccionadas.length;
+    const total    = preguntasSeleccionadas.length;
 
     document.getElementById('question-counter').textContent = `Pregunta ${indiceActual + 1} de ${total}`;
-    document.getElementById('category-badge').textContent   = pregunta.categoria;
+    document.getElementById('category-badge').textContent   = pregunta.categoria || 'General';
     document.getElementById('question-text').textContent    = pregunta.pregunta;
     document.getElementById('progress-bar').style.width     = `${((indiceActual + 1) / total) * 100}%`;
 
     prevBtn.style.visibility = indiceActual === 0 ? 'hidden' : 'visible';
-    nextBtn.textContent = indiceActual === total - 1 ? 'Finalizar Examen' : 'Siguiente';
+    nextBtn.textContent = indiceActual === total - 1 ? 'Finalizar Prueba' : 'Siguiente';
 
     if (respuestasUsuario[indiceActual] !== undefined) activarBoton();
     else desactivarBoton();
@@ -121,10 +214,8 @@ function mostrarPregunta() {
 
 function seleccionarOpcion(index, btnReferencia) {
     respuestasUsuario[indiceActual] = index;
-
     document.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
     btnReferencia.classList.add('selected');
-
     actualizarMenuLateral();
     activarBoton();
 }
@@ -186,7 +277,6 @@ function actualizarDisplayTimer() {
 function manejarAlertasVisuales() {
     const timerDisplay = document.getElementById('timer');
     if (!timerDisplay) return;
-
     if (tiempoRestante <= 60) {
         timerDisplay.className = "text-4xl font-mono font-black timer-critical";
     } else if (tiempoRestante <= 300) {
@@ -199,7 +289,7 @@ function manejarAlertasVisuales() {
 // --- RESULTADOS ---
 function finalizarExamen() {
     clearInterval(intervaloTimer);
-    quizScreen.classList.add('hidden');
+    ocultarTodasLasPantallas();
     resultScreen.classList.remove('hidden');
 
     let puntos = 0;
@@ -208,11 +298,11 @@ function finalizarExamen() {
 
     preguntasSeleccionadas.forEach((p, i) => {
         const respuestaUser = respuestasUsuario[i];
-        const esCorrecta = respuestaUser === p.respuestaCorrecta;
+        const esCorrecta    = respuestaUser === p.respuestaCorrecta;
         if (esCorrecta) puntos++;
 
         const statusColor = esCorrecta ? 'border-green-500 bg-green-50' : 'border-red-500 bg-red-50';
-        const icon = esCorrecta ? '✅' : '❌';
+        const icon        = esCorrecta ? '✅' : '❌';
 
         review.innerHTML += `
             <div class="review-card ${statusColor} p-5 rounded-lg shadow-sm border mb-4 border-l-8">
@@ -221,7 +311,6 @@ function finalizarExamen() {
                     <span>${icon}</span>
                 </div>
                 <p class="text-gray-800 font-medium mb-3">${p.pregunta}</p>
-                
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
                     <div class="p-2 rounded ${esCorrecta ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}">
                         <strong>Tu respuesta:</strong><br>
@@ -233,24 +322,24 @@ function finalizarExamen() {
                         ${p.opciones[p.respuestaCorrecta]}
                     </div>` : ''}
                 </div>
-                
                 <div class="mt-3 text-xs text-gray-500 bg-white p-2 rounded border italic">
                     <strong>Justificación técnica:</strong> ${p.explicacion}
                 </div>
             </div>`;
     });
 
-    const total = preguntasSeleccionadas.length;
-    const aprobacion = rolSeleccionado === 'primaria' ? 28 : 25; // 70% aprox
+    const total      = preguntasSeleccionadas.length;
+    const aprobacion = CONFIG[rolSeleccionado].aprobacion;
     const porcentaje = ((puntos / total) * 100).toFixed(1);
+
     document.getElementById('final-score').textContent = `${puntos} / ${total}`;
     document.getElementById('score-percentage').innerHTML = `
         <div class="text-2xl font-bold ${puntos >= aprobacion ? 'text-green-300' : 'text-red-300'}">
             ${porcentaje}% de Precisión
         </div>
         <p class="opacity-75 mt-1">${puntos >= aprobacion
-            ? '¡Excelente! Estás listo/a para el concurso.'
-            : 'Te recomendamos seguir repasando los marcos legales.'}</p>
+            ? '¡Excelente desempeño! Sigue preparándote con este simulador.'
+            : 'Te recomendamos seguir repasando el marco normativo y los casos pedagógicos.'}</p>
     `;
     window.scrollTo(0, 0);
 }
