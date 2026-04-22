@@ -1,93 +1,105 @@
+
 /* ═══════════════════════════════════════════════════════════
-   MINERD — Simulador EDD 2025-2026 | app.js (Versión Final Móvil)
+   MINERD — Simulador EDD 2025-2026 | app.js (Versión Final)
    ═══════════════════════════════════════════════════════════ */
 
-// ── CONFIGURACIÓN DE ACCESO ─────────────────────────────────
+// ── ACCESO ──────────────────────────────────────────────────
 const ACCESO = {
   marileidy: ['psicologo', 'psicologoExterno'],
-  fatima:    ['primaria'],
+  fatima:    ['primaria',  'rimariaFiltrada'],
   katherine: ['tecnicoProfesional'],
   olga:      ['tecnicoDistrital']
 };
 
-// ── CONFIGURACIÓN POR ROL ────────────────────────────────────
+// ── CONFIGURACIÓN POR ROL (Colores e Iconos Originales) ──────
 const CONFIG = {
   psicologo: {
-    banco: () => (typeof bancoPreguntas !== 'undefined' ? bancoPreguntas : []),
-    preguntas: 35,
-    tiempo: (52 * 60) + 30,
-    icon: '🧠',
-    titulo: 'Evaluación Inicial - Psicología',
-    color: '#7c3aed'
+    banco:      () => (typeof bancoPreguntas !== 'undefined' ? bancoPreguntas : []),
+    preguntas:  35,
+    tiempo:     (52*60)+30,
+    tiempoLabel:'52:30',
+    icon:       '🧠',
+    titulo:     'Evaluación Inicial',
+    subtitulo:  'Psicología Escolar — Prueba de Juicio Situacional.',
+    aprobacion: 25,
+    color:      '#7c3aed',
+    colorL:     '#ede9fe',
+    chipLabel:  '35 preguntas',
+    chipTime:   '52:30 min'
+  },
+  psicologoExterno: {
+    banco:      () => (typeof bancoFormularios !== 'undefined' ? bancoFormularios : []),
+    preguntas:  35,
+    tiempo:     (52*60)+30,
+    tiempoLabel:'52:30',
+    icon:       '📝',
+    titulo:     'Evaluación de Formularios Externos',
+    subtitulo:  'Psicología Escolar — Formularios.',
+    aprobacion: 25,
+    color:      '#0d9488',
+    colorL:     '#ccfbf1',
+    chipLabel:  '35 preguntas',
+    chipTime:   'Complementario'
   },
   primaria: {
-    banco: () => (typeof bancoPrimaria !== 'undefined' ? bancoPrimaria : []),
-    preguntas: 40,
-    tiempo: 60 * 60,
-    icon: '📚',
-    titulo: 'Evaluación Inicial - Primaria',
-    color: '#2563eb'
+    banco:      () => (typeof bancoPrimaria !== 'undefined' ? bancoPrimaria : []),
+    preguntas:  40,
+    tiempo:     60*60,
+    tiempoLabel:'60:00',
+    icon:       '📚',
+    titulo:     'Evaluación Inicial',
+    subtitulo:  'Nivel Primario — Análisis de Casos Pedagógicos.',
+    aprobacion: 28,
+    color:      '#2563eb',
+    colorL:     '#dbeafe',
+    chipLabel:  '40 preguntas',
+    chipTime:   '60:00 min'
   },
   tecnicoDistrital: {
-    banco: () => (typeof bancoTecnicoDistrital !== 'undefined' ? bancoTecnicoDistrital : []),
-    preguntas: 35,
-    tiempo: (52 * 60) + 30,
-    icon: '🏛️',
-    titulo: 'Evaluación Inicial - Técnico/a',
-    color: '#003876'
+    banco:      () => (typeof bancoTecnicoDistrital !== 'undefined' ? bancoTecnicoDistrital : []),
+    preguntas:  35,
+    tiempo:     (52*60)+30,
+    tiempoLabel:'52:30',
+    icon:       '🏛️',
+    titulo:     'Evaluación Inicial',
+    subtitulo:  'Técnico/a Distrital — Gestión y Asesoría.',
+    aprobacion: 25,
+    color:      '#003876',
+    colorL:     '#dbeafe',
+    chipLabel:  '35 preguntas',
+    chipTime:   '52:30 min'
   }
 };
 
-// ── ESTADO DE LA APLICACIÓN ──────────────────────────────────
-let nombreUsuario = '';
-let rolSeleccionado = null;
-let preguntasSeleccionadas = [];
-let mapaOpcionesAll = [];
-let indiceActual = 0;
-let respuestasUsuario = {};
-let tiempoRestante = 0;
-let intervaloTimer = null;
+const USER_INFO = {
+  marileidy: { avatar:'🧠', greeting:'¡Bienvenida, Marileidy!', sub:'Psicóloga Escolar' },
+  fatima:    { avatar:'📚', greeting:'¡Bienvenida, Fátima!',    sub:'Maestra de Primaria' },
+  katherine: { avatar:'🔧', greeting:'¡Bienvenida, Katherine!', sub:'Docente Técnico Profesional' },
+  olga:      { avatar:'🏛️', greeting:'¡Bienvenida, Olga!',      sub:'Técnica Distrital' }
+};
 
-// Cargar pool de preguntas usadas (Persistencia a largo plazo)
+// ── ESTADO Y PERSISTENCIA ────────────────────────────────────
+let nombreUsuario     = '';
+let rolesPermitidos   = [];
+let rolSeleccionado   = null;
+let preguntasSeleccionadas = [];
+let mapaOpcionesAll   = [];
+let indiceActual      = 0;
+let respuestasUsuario = {};
+let tiempoRestante    = 0;
+let intervaloTimer    = null;
+
+// Pool persistente de preguntas usadas
 let poolUsado = JSON.parse(localStorage.getItem('poolUsado_EDD')) || {};
 
-// ── GESTIÓN DE DISCO (STORAGE) ───────────────────────────────
-
-function guardarProgresoEnDisco() {
-  const estado = {
-    nombreUsuario,
-    rolSeleccionado,
-    preguntasSeleccionadas,
-    mapaOpcionesAll,
-    indiceActual,
-    respuestasUsuario,
-    tiempoRestante,
-    enCurso: true
-  };
-  localStorage.setItem('sesion_activa_EDD', JSON.stringify(estado));
-  localStorage.setItem('poolUsado_EDD', JSON.stringify(poolUsado));
-}
-
-function limpiarSesionDisco() {
-  localStorage.removeItem('sesion_activa_EDD');
-}
-
-// ── LÓGICA DE RECUPERACIÓN AL CARGAR ─────────────────────────
-
+// ── RECUPERACIÓN AL CARGAR ───────────────────────────────────
 window.onload = () => {
   const guardado = localStorage.getItem('sesion_activa_EDD');
-  
   if (guardado) {
     const d = JSON.parse(guardado);
+    const continuar = confirm(`Hola ${d.nombreUsuario}, ¿deseas continuar donde dejaste el examen de ${d.rolSeleccionado}?`);
     
-    // Preguntar al usuario si desea retomar
-    const retomar = confirm(
-      `Hola ${d.nombreUsuario}, tienes un examen de "${d.rolSeleccionado}" pendiente.\n\n` +
-      `¿Deseas continuar donde lo dejaste?\n` +
-      `(Si cancelas, el progreso actual se borrará)`
-    );
-
-    if (retomar) {
+    if (continuar) {
       nombreUsuario = d.nombreUsuario;
       rolSeleccionado = d.rolSeleccionado;
       preguntasSeleccionadas = d.preguntasSeleccionadas;
@@ -96,62 +108,139 @@ window.onload = () => {
       respuestasUsuario = d.respuestasUsuario;
       tiempoRestante = d.tiempoRestante;
       
-      iniciarUIExamen();
+      mostrarSolo('quiz-screen');
+      mostrarHeaderQuiz();
+      iniciarTimer();
+      mostrarPregunta();
+      actualizarHeaderProg();
     } else {
-      limpiarSesionDisco();
-      // Opcional: Redirigir a pantalla de inicio si es necesario
+      localStorage.removeItem('sesion_activa_EDD');
     }
   }
 };
 
-// ── MOTOR DEL EXAMEN ─────────────────────────────────────────
+function guardarProgreso() {
+  const estado = {
+    nombreUsuario, rolSeleccionado, preguntasSeleccionadas,
+    mapaOpcionesAll, indiceActual, respuestasUsuario, tiempoRestante
+  };
+  localStorage.setItem('sesion_activa_EDD', JSON.stringify(estado));
+}
 
+// ── NAVEGACIÓN ───────────────────────────────────────────────
+function mostrarSolo(id) {
+  const screens = ['access-screen','profile-screen','start-screen','quiz-screen','result-screen'];
+  screens.forEach(s => document.getElementById(s)?.classList.add('hidden'));
+  document.getElementById(id)?.classList.remove('hidden');
+}
+
+function norm(str) {
+  return str.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z]/g,'');
+}
+
+// ── ACCESO ───────────────────────────────────────────────────
+function verificarAcceso() {
+  const inp = document.getElementById('access-input');
+  const err = document.getElementById('access-error');
+  const key = norm(inp.value);
+  if (!key || !ACCESO[key]) {
+    err.textContent = 'Nombre no encontrado.';
+    return;
+  }
+  nombreUsuario = key;
+  rolesPermitidos = ACCESO[key];
+  mostrarPerfil();
+}
+
+document.getElementById('access-input')?.addEventListener('keydown', e => {
+  if (e.key === 'Enter') verificarAcceso();
+});
+
+// ── PANTALLA PERFIL ──────────────────────────────────────────
+function mostrarPerfil() {
+  const info = USER_INFO[nombreUsuario] || { avatar:'🎓', greeting:'¡Bienvenida!', sub:'EDD 2025' };
+  document.getElementById('welcome-avatar').textContent = info.avatar;
+  document.getElementById('welcome-name').textContent   = info.greeting;
+  document.getElementById('welcome-sub').textContent    = info.sub;
+
+  const grid = document.getElementById('eval-grid');
+  grid.innerHTML = '';
+
+  rolesPermitidos.forEach((rol, idx) => {
+    const cfg = CONFIG[rol];
+    if (!cfg) return;
+
+    if (!poolUsado[rol]) poolUsado[rol] = [];
+    const banco = cfg.banco();
+    const disp = banco.length - poolUsado[rol].length;
+
+    const card = document.createElement('div');
+    card.className = 'eval-card';
+    card.style.setProperty('--c', cfg.color);
+    card.style.setProperty('--c-l', cfg.colorL);
+    card.innerHTML = `
+      <div class="e-ill" style="background:${cfg.colorL}">${cfg.icon}</div>
+      <div class="e-name">${cfg.titulo}</div>
+      <div class="e-meta">
+        <span class="chip">${cfg.chipLabel}</span>
+        <span class="chip">${cfg.chipTime}</span>
+      </div>
+      <div class="e-pool">Disponibles: ${disp > 0 ? disp : 'Reiniciado'}</div>
+    `;
+    card.onclick = () => abrirStart(rol);
+    grid.appendChild(card);
+  });
+  mostrarSolo('profile-screen');
+}
+
+function abrirStart(rol) {
+  rolSeleccionado = rol;
+  const cfg = CONFIG[rol];
+  document.getElementById('start-icon').textContent = cfg.icon;
+  document.getElementById('start-title').textContent = cfg.titulo;
+  
+  const banco = cfg.banco();
+  const usados = poolUsado[rol]?.length || 0;
+  document.getElementById('pool-status').innerHTML = 
+    `Banco total: <b>${banco.length}</b> · Practicadas: <b>${usados}</b>`;
+  
+  mostrarSolo('start-screen');
+}
+
+// ── MOTOR DEL POOL ───────────────────────────────────────────
 function sacarDelPool(rol, cantidad) {
   const banco = CONFIG[rol].banco();
-  if (!poolUsado[rol]) poolUsado[rol] = [];
+  if (!poolUsado[rol] || poolUsado[rol].length >= banco.length) poolUsado[rol] = [];
 
-  // Si ya se usaron todas, reiniciar el historial del banco
-  if (poolUsado[rol].length >= banco.length) {
-    alert("¡Felicidades! Completaste todas las preguntas del banco. El historial se reiniciará para que puedas practicar de nuevo.");
-    poolUsado[rol] = [];
-  }
-
-  // Filtrar preguntas que NO han sido usadas
   const disponibles = banco.filter((_, i) => !poolUsado[rol].includes(i));
   const barajadas = [...disponibles].sort(() => Math.random() - 0.5);
-  const seleccion = barajadas.slice(0, Math.min(cantidad, barajadas.length));
+  const sel = barajadas.slice(0, Math.min(cantidad, barajadas.length));
 
-  // Marcar como usadas
-  seleccion.forEach(p => {
-    const idxOriginal = banco.indexOf(p);
-    poolUsado[rol].push(idxOriginal);
+  sel.forEach(p => {
+    const originalIdx = banco.indexOf(p);
+    poolUsado[rol].push(originalIdx);
   });
 
   localStorage.setItem('poolUsado_EDD', JSON.stringify(poolUsado));
-  return seleccion;
+  return sel;
 }
 
+// ── EXAMEN ───────────────────────────────────────────────────
 function iniciarExamen() {
   const cfg = CONFIG[rolSeleccionado];
   const sel = sacarDelPool(rolSeleccionado, cfg.preguntas);
 
-  if (!sel.length) return alert("No hay preguntas disponibles.");
-
   preguntasSeleccionadas = sel;
   mapaOpcionesAll = preguntasSeleccionadas.map(p => {
-    const indices = Array.from({length: p.opciones.length}, (_, i) => i).sort(() => Math.random() - 0.5);
+    const n = p.opciones.length;
+    const indices = Array.from({length: n}, (_, i) => i).sort(() => Math.random() - 0.5);
     return { opciones: indices.map(i => p.opciones[i]), mapa: indices };
   });
-  
+
   indiceActual = 0;
   respuestasUsuario = {};
   tiempoRestante = cfg.tiempo;
-  
-  iniciarUIExamen();
-  guardarProgresoEnDisco();
-}
 
-function iniciarUIExamen() {
   mostrarSolo('quiz-screen');
   mostrarHeaderQuiz();
   iniciarTimer();
@@ -162,32 +251,54 @@ function iniciarUIExamen() {
 function mostrarPregunta() {
   const p = preguntasSeleccionadas[indiceActual];
   const { opciones } = mapaOpcionesAll[indiceActual];
-  
-  document.getElementById('question-text').textContent = p.pregunta;
-  document.getElementById('question-counter').textContent = `Pregunta ${indiceActual + 1} de ${preguntasSeleccionadas.length}`;
+  const letras = ['A','B','C','D','E'];
 
+  document.getElementById('question-counter').textContent = `Pregunta ${indiceActual + 1} de ${preguntasSeleccionadas.length}`;
+  document.getElementById('question-text').textContent = p.pregunta;
+
+  // Botones de navegación
+  document.getElementById('prev-btn').style.visibility = indiceActual === 0 ? 'hidden' : 'visible';
+  const esUltima = indiceActual === preguntasSeleccionadas.length - 1;
+  document.getElementById('next-btn').textContent = esUltima ? 'Finalizar ✓' : 'Siguiente →';
+
+  // Contenedor de opciones
   const container = document.getElementById('options-container');
   container.innerHTML = '';
   
+  const respondida = respuestasUsuario[indiceActual] !== undefined;
+  setNextEnabled(respondida);
+
   opciones.forEach((opc, j) => {
     const btn = document.createElement('button');
     btn.className = `opt-btn ${respuestasUsuario[indiceActual] === j ? 'selected' : ''}`;
-    btn.textContent = opc;
+    btn.innerHTML = `<span class="opt-letter">${letras[j]}</span><span>${opc}</span>`;
     btn.onclick = () => {
       respuestasUsuario[indiceActual] = j;
       document.querySelectorAll('.opt-btn').forEach(b => b.classList.remove('selected'));
       btn.classList.add('selected');
-      guardarProgresoEnDisco(); // Guardar cada respuesta
+      setNextEnabled(true);
+      actualizarNav();
+      actualizarHeaderProg();
+      guardarProgreso();
     };
     container.appendChild(btn);
   });
+
+  actualizarNav();
+}
+
+function setNextEnabled(on) {
+  const btn = document.getElementById('next-btn');
+  const btnM = document.getElementById('next-btn-m');
+  [btn, btnM].forEach(b => { if(b) b.disabled = !on; });
 }
 
 function siguientePregunta() {
   if (indiceActual < preguntasSeleccionadas.length - 1) {
     indiceActual++;
     mostrarPregunta();
-    guardarProgresoEnDisco();
+    window.scrollTo({top:0, behavior:'smooth'});
+    guardarProgreso();
   } else {
     finalizarExamen();
   }
@@ -197,22 +308,32 @@ function anteriorPregunta() {
   if (indiceActual > 0) {
     indiceActual--;
     mostrarPregunta();
-    guardarProgresoEnDisco();
+    guardarProgreso();
   }
 }
 
-// ── CRONÓMETRO ───────────────────────────────────────────────
+function actualizarNav() {
+  const nav = document.getElementById('questions-nav');
+  if (!nav) return;
+  nav.innerHTML = '';
+  preguntasSeleccionadas.forEach((_, i) => {
+    const btn = document.createElement('button');
+    btn.className = `nav-btn ${i === indiceActual ? 'current' : ''} ${respuestasUsuario[i] !== undefined ? 'answered' : ''}`;
+    btn.textContent = i + 1;
+    btn.onclick = () => { indiceActual = i; mostrarPregunta(); };
+    nav.appendChild(btn);
+  });
+}
 
+// ── TIMER ────────────────────────────────────────────────────
 function iniciarTimer() {
   if (intervaloTimer) clearInterval(intervaloTimer);
   actualizarTimer();
-
   intervaloTimer = setInterval(() => {
     if (tiempoRestante > 0) {
       tiempoRestante--;
       actualizarTimer();
-      // Guardar en disco cada 10 seg para asegurar el tiempo en el móvil
-      if (tiempoRestante % 10 === 0) guardarProgresoEnDisco();
+      if (tiempoRestante % 5 === 0) guardarProgreso();
     } else {
       finalizarExamen();
     }
@@ -226,54 +347,81 @@ function actualizarTimer() {
   if (el) el.textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
 }
 
-// ── FINALIZACIÓN ─────────────────────────────────────────────
-
+// ── RESULTADOS Y ANIMACIONES ─────────────────────────────────
 function finalizarExamen() {
   clearInterval(intervaloTimer);
-  limpiarSesionDisco(); // Importante: Borramos sesión temporal al terminar
-  
-  mostrarSolo('result-screen');
+  localStorage.removeItem('sesion_activa_EDD');
   ocultarHeaderQuiz();
+  mostrarSolo('result-screen');
 
   let puntos = 0;
+  const review = document.getElementById('review-container');
+  review.innerHTML = '';
+
   preguntasSeleccionadas.forEach((p, i) => {
     const visIdx = respuestasUsuario[i];
-    const originalIdx = visIdx !== undefined ? mapaOpcionesAll[i].map[visIdx] : -1;
-    if (originalIdx === p.respuestaCorrecta) puntos++;
+    const { opciones, mapa } = mapaOpcionesAll[i];
+    const correctIdx = mapa.indexOf(p.respuestaCorrecta);
+    const esCorrecta = visIdx === correctIdx;
+    if (esCorrecta) puntos++;
+
+    const card = document.createElement('div');
+    card.className = `rev-card ${esCorrecta ? 'ok' : 'fail'}`;
+    card.innerHTML = `
+      <div class="rev-hdr"><span>Pregunta ${i+1}</span> <span>${esCorrecta ? '✅' : '❌'}</span></div>
+      <p class="rev-q">${p.pregunta}</p>
+      <div class="rev-exp"><b>Justificación:</b> ${p.explicacion || 'Revisa el marco normativo.'}</div>
+    `;
+    review.appendChild(card);
   });
 
-  const total = preguntasSeleccionadas.length;
-  document.getElementById('final-score').innerHTML = `${puntos} <span>/ ${total}</span>`;
+  const pct = (puntos / preguntasSeleccionadas.length * 100);
+  document.getElementById('final-score').textContent = `${puntos} / ${preguntasSeleccionadas.length}`;
+  document.getElementById('score-pct').textContent = `${pct.toFixed(1)}% de precisión`;
+
+  if (pct >= 80) lanzarConfeti();
+  else if (pct >= 60) lanzarEstrellas();
+  else lanzarAnimoFail();
 }
 
-// ── NAVEGACIÓN DE PANTALLAS ──────────────────────────────────
-
-function mostrarSolo(id) {
-  const screens = ['access-screen','profile-screen','start-screen','quiz-screen','result-screen'];
-  screens.forEach(s => {
-    const el = document.getElementById(s);
-    if (el) el.classList.add('hidden');
-  });
-  const target = document.getElementById(id);
-  if (target) target.classList.remove('hidden');
+// ── ANIMACIONES ORIGINALES ───────────────────────────────────
+function lanzarConfeti() {
+  const overlay = document.getElementById('celebration-overlay');
+  if(!overlay) return;
+  overlay.innerHTML = ''; overlay.classList.remove('hidden');
+  for (let i = 0; i < 80; i++) {
+    const p = document.createElement('div');
+    p.className = 'conf';
+    p.style.left = Math.random() * 100 + 'vw';
+    p.style.background = ['#f9b233','#003876','#22c55e','#ef4444'][Math.floor(Math.random()*4)];
+    p.style.animationDuration = (2 + Math.random() * 3) + 's';
+    overlay.appendChild(p);
+  }
+  setTimeout(() => overlay.classList.add('hidden'), 5000);
 }
+
+function lanzarEstrellas() { /* Tu lógica original de estrellas */ }
+function lanzarAnimoFail() { /* Tu lógica original de ánimo */ }
 
 function mostrarHeaderQuiz() {
   document.getElementById('hdr-timer-wrap')?.classList.remove('hidden');
   document.getElementById('hdr-prog-wrap')?.classList.remove('hidden');
 }
-
 function ocultarHeaderQuiz() {
   document.getElementById('hdr-timer-wrap')?.classList.add('hidden');
   document.getElementById('hdr-prog-wrap')?.classList.add('hidden');
 }
-
 function actualizarHeaderProg() {
   const total = preguntasSeleccionadas.length;
   const resp = Object.keys(respuestasUsuario).length;
   const fill = document.getElementById('hdr-prog-fill');
-  if (fill) fill.style.width = total > 0 ? (resp / total * 100) + '%' : '0%';
+  if (fill) fill.style.width = (resp / total * 100) + '%';
 }
+
+
+
+
+
 
 
 
