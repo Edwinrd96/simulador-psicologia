@@ -1,356 +1,623 @@
-// --- ESTADO ---
-let rolSeleccionado = null;
-let rolPrincipal = null; // Para saber a qué sub-pantalla regresar
-let preguntasSeleccionadas = [];
-let indiceActual = 0;
-let respuestasUsuario = {};
-let tiempoRestante = 0;
-let intervaloTimer;
+/* ═══════════════════════════════════════════════════════════
+   MINERD — Simulador EDD 2025-2026 | app.js
+   ═══════════════════════════════════════════════════════════ */
 
-// Configuración por rol
+// ── ACCESO ──────────────────────────────────────────────────
+// nombre normalizado → lista de roles permitidos (directos, sin sub-menú duplicado)
+const ACCESO = {
+  marileidy: ['psicologo', 'psicologoExterno'],
+  fatima:    ['primaria',  'rimariaFiltrada'],
+  katherine: ['tecnicoProfesional'],
+  olga:      ['tecnicoDistrital']
+};
+
+// ── CONFIGURACIÓN POR ROL ────────────────────────────────────
 const CONFIG = {
-    psicologo: {
-        banco: () => bancoPreguntas,
-        preguntas: 35,
-        tiempo: (52 * 60) + 30,
-        tiempoLabel: '52:30 min',
-        icon: '🧠',
-        titulo: 'Psicólogo/a Escolar',
-        subtitulo: 'Banco General — Prueba de Juicio Situacional. Marco legal dominicano.',
-        aprobacion: 25
-    },
-    psicologoExterno: {
-        banco: () => bancoFormularios,
-        preguntas: 35,
-        tiempo: (52 * 60) + 30,
-        tiempoLabel: '52:30 min',
-        icon: '🧠',
-        titulo: 'Psicólogo/a Escolar — Banco Complementario',
-        subtitulo: 'Banco adicional basado en formularios y situaciones de evaluación profesional.',
-        aprobacion: 25
-    },
-    primaria: {
-        banco: () => bancoPrimaria,
-        preguntas: 40,
-        tiempo: 60 * 60,
-        tiempoLabel: '60:00 min',
-        icon: '📚',
-        titulo: 'Maestro/a de Nivel Primario',
-        subtitulo: 'Banco General — Análisis de Casos Pedagógicos. Ordenanza 04-2023 y marco normativo MINERD.',
-        aprobacion: 28
-    },
-    rimariaFiltrada: {
-        banco: () => bancoFiltrado,
-        preguntas: 40,
-        tiempo: 60 * 60,
-        tiempoLabel: '60:00 min',
-        icon: '📚',
-        titulo: 'Maestro/a de Primaria — Banco Filtrado',
-        subtitulo: 'Banco filtrado con preguntas sobre inclusión y casos pedagógicos específicos.',
-        aprobacion: 8
-    },
-    tecnicoDistrital: {
-        banco: () => bancoTecnicoDistrital,
-        preguntas: 35,
-        tiempo: (52 * 60) + 30,
-        tiempoLabel: '52:30 min',
-        icon: '🏛️',
-        titulo: 'Técnico/a Distrital',
-        subtitulo: 'Prueba de Rendimiento Profesional — Gestión y Asesoría Técnica Distrital.',
-        aprobacion: 25
-    },
-    tecnicoProfesional: {
-        banco: () => bancoTecnicoProfesional,
-         preguntas: 40,
-        tiempo: 60 * 60,
-        tiempoLabel: '60:00 min',
-        icon: '🔧',
-        titulo: 'Docente Técnico Profesional',
-        subtitulo: 'Prueba de Rendimiento Profesional — Modalidad Técnico Profesional (MTP).',
-        aprobacion: 14
-    }
+  psicologo: {
+    banco:      () => bancoPreguntas,
+    preguntas:  35,
+    tiempo:     (52*60)+30,
+    tiempoLabel:'52:30',
+    icon:       '🧠',
+    titulo:     'Evaluación Inicial',
+    subtitulo:  'Psicología Escolar — Prueba de Juicio Situacional. Marco legal dominicano.',
+    aprobacion: 25,
+    color:      '#7c3aed',
+    colorL:     '#ede9fe',
+    chipLabel:  '35 preguntas',
+    chipTime:   '52:30 min'
+  },
+  psicologoExterno: {
+    banco:      () => bancoFormularios,
+    preguntas:  35,
+    tiempo:     (52*60)+30,
+    tiempoLabel:'52:30',
+    icon:       '📝',
+    titulo:     'Evaluación de Formularios Externos',
+    subtitulo:  'Psicología Escolar — Formularios y situaciones de evaluación profesional.',
+    aprobacion: 25,
+    color:      '#0d9488',
+    colorL:     '#ccfbf1',
+    chipLabel:  '35 preguntas',
+    chipTime:   'Complementario'
+  },
+  primaria: {
+    banco:      () => bancoPrimaria,
+    preguntas:  40,
+    tiempo:     60*60,
+    tiempoLabel:'60:00',
+    icon:       '📚',
+    titulo:     'Evaluación Inicial',
+    subtitulo:  'Nivel Primario — Análisis de Casos Pedagógicos. Ordenanza 04-2023.',
+    aprobacion: 28,
+    color:      '#2563eb',
+    colorL:     '#dbeafe',
+    chipLabel:  '40 preguntas',
+    chipTime:   '60:00 min'
+  },
+  rimariaFiltrada: {
+    banco:      () => bancoFiltrado,
+    preguntas:  40,
+    tiempo:     60*60,
+    tiempoLabel:'60:00',
+    icon:       '🔍',
+    titulo:     'Evaluación Filtrada',
+    subtitulo:  'Nivel Primario — Inclusión y casos pedagógicos específicos.',
+    aprobacion: 8,
+    color:      '#d97706',
+    colorL:     '#fef3c7',
+    chipLabel:  '40 preguntas',
+    chipTime:   'Filtrado'
+  },
+  tecnicoDistrital: {
+    banco:      () => bancoTecnicoDistrital,
+    preguntas:  35,
+    tiempo:     (52*60)+30,
+    tiempoLabel:'52:30',
+    icon:       '🏛️',
+    titulo:     'Evaluación Inicial',
+    subtitulo:  'Técnico/a Distrital — Gestión y Asesoría Técnica Distrital.',
+    aprobacion: 25,
+    color:      '#003876',
+    colorL:     '#dbeafe',
+    chipLabel:  '35 preguntas',
+    chipTime:   '52:30 min'
+  },
+  tecnicoProfesional: {
+    banco:      () => bancoTecnicoProfesional,
+    preguntas:  40,
+    tiempo:     60*60,
+    tiempoLabel:'60:00',
+    icon:       '🔧',
+    titulo:     'Evaluación Inicial',
+    subtitulo:  'Docente Técnico Profesional — Modalidad Técnico Profesional (MTP).',
+    aprobacion: 14,
+    color:      '#059669',
+    colorL:     '#d1fae5',
+    chipLabel:  '40 preguntas',
+    chipTime:   '60:00 min'
+  }
 };
 
-// Roles que tienen sub-pantalla de selección
-const ROLES_CON_SUB = {
-    psicologo: 'sub-screen-psicologo',
-    primaria: 'sub-screen-primaria'
+// Avatares e info del usuario por nombre
+const USER_INFO = {
+  marileidy: { avatar:'🧠', greeting:'¡Bienvenida, Marileidy!', sub:'Psicóloga Escolar — EDD 2025-2026' },
+  fatima:    { avatar:'📚', greeting:'¡Bienvenida, Fátima!',    sub:'Maestra de Primaria — EDD 2025-2026' },
+  katherine: { avatar:'🔧', greeting:'¡Bienvenida, Katherine!', sub:'Docente Técnico Profesional — EDD 2025-2026' },
+  olga:      { avatar:'🏛️', greeting:'¡Bienvenida, Olga!',      sub:'Técnica Distrital — EDD 2025-2026' }
 };
 
-// --- ELEMENTOS ---
-const roleScreen    = document.getElementById('role-screen');
-const startScreen   = document.getElementById('start-screen');
-const quizScreen    = document.getElementById('quiz-screen');
-const resultScreen  = document.getElementById('result-screen');
-const nextBtn       = document.getElementById('next-btn');
-const prevBtn       = document.getElementById('prev-btn');
-const navContainer  = document.getElementById('questions-nav');
+// ── ESTADO ───────────────────────────────────────────────────
+let nombreUsuario     = '';
+let rolesPermitidos   = [];
+let rolSeleccionado   = null;
 
-// --- EVENTOS ---
-document.getElementById('start-btn').onclick  = iniciarExamen;
-document.getElementById('prev-btn').onclick   = anteriorPregunta;
-document.getElementById('next-btn').onclick   = siguientePregunta;
-document.getElementById('restart-btn').onclick = () => {
-    resetEstado();
-    resultScreen.classList.add('hidden');
-    startScreen.classList.remove('hidden');
-};
+let preguntasSeleccionadas = [];
+let mapaOpcionesAll   = [];
+let indiceActual      = 0;
+let respuestasUsuario = {};
+let tiempoRestante    = 0;
+let intervaloTimer    = null;
 
-// --- SELECCIÓN DE ROL PRINCIPAL (con sub-pantalla) ---
-function seleccionarRolPrincipal(rolBase) {
-    rolPrincipal = rolBase;
-    const subScreenId = ROLES_CON_SUB[rolBase];
-    ocultarTodasLasPantallas();
-    document.getElementById(subScreenId).classList.remove('hidden');
+// Pool por rol (evitar repetición hasta agotar banco)
+const poolUsado = {};
+
+// ── PANTALLAS ────────────────────────────────────────────────
+const SCREENS = ['access-screen','profile-screen','start-screen','quiz-screen','result-screen'];
+
+function mostrarSolo(id) {
+  SCREENS.forEach(s => {
+    const el = document.getElementById(s);
+    if (el) el.classList.add('hidden');
+  });
+  document.getElementById(id).classList.remove('hidden');
 }
 
-// --- SELECCIÓN DIRECTA DE ROL (sin sub-pantalla) ---
-function seleccionarRol(rol) {
-    rolSeleccionado = rol;
+// ── NORMALIZAR ───────────────────────────────────────────────
+function norm(str) {
+  return str.trim().toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .replace(/[^a-z]/g,'');
+}
+
+// ── ACCESS ───────────────────────────────────────────────────
+function verificarAcceso() {
+  const inp = document.getElementById('access-input');
+  const err = document.getElementById('access-error');
+  const key = norm(inp.value);
+  err.textContent = '';
+  inp.classList.remove('err');
+
+  if (!key) {
+    mostrarError(inp, err, 'Por favor escribe tu nombre.');
+    return;
+  }
+  const roles = ACCESO[key];
+  if (!roles) {
+    mostrarError(inp, err, 'Nombre no encontrado. Verifica que escribiste correctamente.');
+    return;
+  }
+  nombreUsuario   = key;
+  rolesPermitidos = roles;
+  mostrarPerfil();
+}
+
+function mostrarError(inp, err, msg) {
+  err.textContent = msg;
+  inp.classList.add('err');
+  setTimeout(() => inp.classList.remove('err'), 600);
+}
+
+document.getElementById('access-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter') verificarAcceso();
+});
+
+// ── PROFILE SCREEN ───────────────────────────────────────────
+function mostrarPerfil() {
+  const info = USER_INFO[nombreUsuario] || { avatar:'🎓', greeting:'¡Bienvenido/a!', sub:'Simulador EDD 2025-2026' };
+  document.getElementById('welcome-avatar').textContent = info.avatar;
+  document.getElementById('welcome-name').textContent   = info.greeting;
+  document.getElementById('welcome-sub').textContent    = info.sub;
+
+  const grid = document.getElementById('eval-grid');
+  grid.innerHTML = '';
+
+  rolesPermitidos.forEach((rol, idx) => {
     const cfg = CONFIG[rol];
-    tiempoRestante = cfg.tiempo;
+    if (!cfg) return;
 
-    document.getElementById('start-icon').textContent   = cfg.icon;
-    document.getElementById('start-title').textContent  = cfg.titulo;
-    document.getElementById('start-subtitle').textContent = cfg.subtitulo;
-    document.getElementById('info-preguntas').textContent = `${cfg.preguntas} preguntas`;
-    document.getElementById('info-tiempo').textContent    = cfg.tiempoLabel;
+    // Calcular pool
+    if (!poolUsado[rol]) poolUsado[rol] = [];
+    const banco = cfg.banco ? cfg.banco() : [];
+    const total = banco ? banco.length : 0;
+    const usados = poolUsado[rol].length;
+    const disp = total - usados;
 
-    ocultarTodasLasPantallas();
-    startScreen.classList.remove('hidden');
+    const card = document.createElement('div');
+    card.className = 'eval-card';
+    card.style.setProperty('--c', cfg.color);
+    card.style.setProperty('--c-l', cfg.colorL);
+    card.style.animationDelay = `${idx * 0.08}s`;
+
+    card.innerHTML = `
+      <div class="e-ill" style="background:${cfg.colorL}">${cfg.icon}</div>
+      <div class="e-name">${cfg.titulo}</div>
+      <div class="e-desc">${cfg.subtitulo}</div>
+      <div class="e-meta">
+        <span class="chip">${cfg.chipLabel}</span>
+        <span class="chip ${idx === 1 ? 'gold' : ''}">${cfg.chipTime}</span>
+      </div>
+      <div class="e-pool">
+        <span class="pool-dot"></span>
+        ${disp} preguntas disponibles sin repetir (de ${total})
+      </div>
+    `;
+    card.onclick = () => abrirStart(rol);
+    grid.appendChild(card);
+  });
+
+  mostrarSolo('profile-screen');
 }
 
-function ocultarTodasLasPantallas() {
-    roleScreen.classList.add('hidden');
-    startScreen.classList.add('hidden');
-    quizScreen.classList.add('hidden');
-    resultScreen.classList.add('hidden');
-    // Ocultar sub-pantallas
-    Object.values(ROLES_CON_SUB).forEach(id => {
-        document.getElementById(id).classList.add('hidden');
-    });
+function volverPerfil() {
+  resetEstado();
+  rolSeleccionado = null;
+  ocultarHeaderQuiz();
+  mostrarPerfil();
 }
 
-function volverSeleccion() {
-    resetEstado();
-    rolSeleccionado = null;
-    rolPrincipal = null;
-    ocultarTodasLasPantallas();
-    roleScreen.classList.remove('hidden');
+// ── START SCREEN ─────────────────────────────────────────────
+function abrirStart(rol) {
+  rolSeleccionado = rol;
+  const cfg = CONFIG[rol];
+  tiempoRestante = cfg.tiempo;
+
+  document.getElementById('start-icon').textContent     = cfg.icon;
+  document.getElementById('start-title').textContent    = cfg.titulo;
+  document.getElementById('start-subtitle').textContent = cfg.subtitulo;
+  document.getElementById('info-preguntas').textContent = cfg.preguntas + ' preguntas';
+  document.getElementById('info-tiempo').textContent    = cfg.tiempoLabel + ' min';
+
+  if (!poolUsado[rol]) poolUsado[rol] = [];
+  const banco = cfg.banco ? cfg.banco() : [];
+  const total = banco ? banco.length : 0;
+  const usados = poolUsado[rol].length;
+  const disp = total - usados;
+
+  document.getElementById('pool-status').innerHTML =
+    `📦 Banco total: <strong>${total}</strong> preguntas &nbsp;·&nbsp;
+     ✅ Ya practicadas: <strong>${usados}</strong> &nbsp;·&nbsp;
+     🔄 Disponibles sin repetir: <strong>${disp}</strong>
+     ${disp === 0 ? '<br>⚡ El banco se reiniciará automáticamente.' : ''}`;
+
+  mostrarSolo('start-screen');
 }
 
-function volverSubSeleccion() {
-    // Si el rol viene de una sub-pantalla, volver a ella; si no, volver a la pantalla principal
-    if (rolPrincipal && ROLES_CON_SUB[rolPrincipal]) {
-        resetEstado();
-        rolSeleccionado = null;
-        ocultarTodasLasPantallas();
-        document.getElementById(ROLES_CON_SUB[rolPrincipal]).classList.remove('hidden');
-    } else {
-        volverSeleccion();
-    }
+// ── POOL SIN REPETICIÓN ──────────────────────────────────────
+function sacarDelPool(rol, cantidad) {
+  const banco = CONFIG[rol].banco();
+  if (!banco || banco.length === 0) return [];
+  if (!poolUsado[rol]) poolUsado[rol] = [];
+
+  // Si ya usamos todo, reiniciar
+  if (poolUsado[rol].length >= banco.length) {
+    poolUsado[rol] = [];
+  }
+
+  const disponibles = banco.filter(p => {
+    const id = p.id !== undefined ? p.id : banco.indexOf(p);
+    return !poolUsado[rol].includes(id);
+  });
+
+  const barajadas = [...disponibles].sort(() => Math.random() - 0.5);
+  const sel = barajadas.slice(0, Math.min(cantidad, barajadas.length));
+
+  sel.forEach(p => {
+    const id = p.id !== undefined ? p.id : banco.indexOf(p);
+    if (!poolUsado[rol].includes(id)) poolUsado[rol].push(id);
+  });
+
+  return sel;
 }
 
-function resetEstado() {
-    clearInterval(intervaloTimer);
-    preguntasSeleccionadas = [];
-    indiceActual = 0;
-    respuestasUsuario = {};
-    tiempoRestante = rolSeleccionado ? CONFIG[rolSeleccionado].tiempo : 0;
+// ── MEZCLAR OPCIONES ─────────────────────────────────────────
+function mezclarOpciones(pregunta) {
+  const n = pregunta.opciones.length;
+  const indices = Array.from({length: n}, (_, i) => i);
+  for (let i = n - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [indices[i], indices[j]] = [indices[j], indices[i]];
+  }
+  return { opciones: indices.map(i => pregunta.opciones[i]), mapa: indices };
 }
 
-// --- INICIAR EXAMEN ---
+// ── INICIAR EXAMEN ───────────────────────────────────────────
 function iniciarExamen() {
-    const cfg = CONFIG[rolSeleccionado];
-    const banco = cfg.banco();
+  const cfg = CONFIG[rolSeleccionado];
+  const sel = sacarDelPool(rolSeleccionado, cfg.preguntas);
 
-    if (!banco || banco.length === 0) {
-        alert('Error: No se encontró el banco de preguntas. Verifica que todos los archivos .js estén cargados.');
-        return;
-    }
+  if (!sel || sel.length === 0) {
+    alert('Error: No se encontró el banco de preguntas. Verifica que todos los archivos .js estén cargados.');
+    return;
+  }
 
-    const totalDisponible = banco.length;
-    const totalSolicitar  = Math.min(cfg.preguntas, totalDisponible);
+  preguntasSeleccionadas = sel;
+  mapaOpcionesAll = preguntasSeleccionadas.map(p => mezclarOpciones(p));
+  indiceActual    = 0;
+  respuestasUsuario = {};
 
-    const barajadas = [...banco].sort(() => Math.random() - 0.5);
-    preguntasSeleccionadas = barajadas.slice(0, totalSolicitar);
-
-    ocultarTodasLasPantallas();
-    quizScreen.classList.remove('hidden');
-
-    iniciarTimer();
-    mostrarPregunta();
+  mostrarSolo('quiz-screen');
+  mostrarHeaderQuiz();
+  iniciarTimer();
+  mostrarPregunta();
+  actualizarHeaderProg();
 }
 
-// --- MOSTRAR PREGUNTA ---
+// ── MOSTRAR PREGUNTA ─────────────────────────────────────────
 function mostrarPregunta() {
-    const pregunta = preguntasSeleccionadas[indiceActual];
-    const total    = preguntasSeleccionadas.length;
+  const p     = preguntasSeleccionadas[indiceActual];
+  const total = preguntasSeleccionadas.length;
+  const { opciones } = mapaOpcionesAll[indiceActual];
+  const letras = ['A','B','C','D','E','F'];
 
-    document.getElementById('question-counter').textContent = `Pregunta ${indiceActual + 1} de ${total}`;
-    document.getElementById('category-badge').textContent   = pregunta.categoria || 'General';
-    document.getElementById('question-text').textContent    = pregunta.pregunta;
-    document.getElementById('progress-bar').style.width     = `${((indiceActual + 1) / total) * 100}%`;
+  document.getElementById('question-counter').textContent = `Pregunta ${indiceActual + 1} de ${total}`;
+  document.getElementById('category-badge').textContent   = p.categoria || 'General';
+  document.getElementById('question-text').textContent    = p.pregunta;
+  document.getElementById('mobile-counter').textContent   = `${indiceActual + 1}/${total}`;
 
-    prevBtn.style.visibility = indiceActual === 0 ? 'hidden' : 'visible';
-    nextBtn.textContent = indiceActual === total - 1 ? 'Finalizar Prueba' : 'Siguiente';
+  const esUltima = indiceActual === total - 1;
+  const lblSig   = esUltima ? 'Finalizar ✓' : 'Siguiente →';
+  const lblSigM  = esUltima ? 'Fin ✓' : 'Sig. →';
 
-    if (respuestasUsuario[indiceActual] !== undefined) activarBoton();
-    else desactivarBoton();
+  ['prev-btn','prev-btn-m'].forEach(id => {
+    const b = document.getElementById(id);
+    if (b) b.style.visibility = indiceActual === 0 ? 'hidden' : 'visible';
+  });
 
-    const container = document.getElementById('options-container');
-    container.innerHTML = '';
+  document.getElementById('next-btn').textContent   = lblSig;
+  const bm = document.getElementById('next-btn-m');
+  if (bm) bm.textContent = lblSigM;
 
-    pregunta.opciones.forEach((opc, i) => {
-        const btn = document.createElement('button');
-        btn.className = `option-btn ${respuestasUsuario[indiceActual] === i ? 'selected' : ''}`;
-        btn.textContent = opc;
-        btn.onclick = () => seleccionarOpcion(i, btn);
-        container.appendChild(btn);
-    });
+  const respondida = respuestasUsuario[indiceActual] !== undefined;
+  setNextEnabled(respondida);
 
-    actualizarMenuLateral();
+  const container = document.getElementById('options-container');
+  container.innerHTML = '';
+  const selVis = respuestasUsuario[indiceActual];
+
+  opciones.forEach((opc, j) => {
+    const btn = document.createElement('button');
+    btn.className = `opt-btn${selVis === j ? ' selected' : ''}`;
+    btn.innerHTML = `<span class="opt-letter">${letras[j] || j}</span><span>${opc}</span>`;
+    btn.onclick = () => seleccionarOpcion(j, btn);
+    container.appendChild(btn);
+  });
+
+  actualizarNav();
+  actualizarHeaderProg();
 }
 
-function seleccionarOpcion(index, btnReferencia) {
-    respuestasUsuario[indiceActual] = index;
-    document.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
-    btnReferencia.classList.add('selected');
-    actualizarMenuLateral();
-    activarBoton();
+function seleccionarOpcion(index, btnRef) {
+  respuestasUsuario[indiceActual] = index;
+  document.querySelectorAll('.opt-btn').forEach(b => b.classList.remove('selected'));
+  btnRef.classList.add('selected');
+  actualizarNav();
+  setNextEnabled(true);
+  actualizarHeaderProg();
 }
 
-function actualizarMenuLateral() {
-    navContainer.innerHTML = '';
-    preguntasSeleccionadas.forEach((_, i) => {
-        const btn = document.createElement('button');
-        btn.className = `nav-num-btn ${i === indiceActual ? 'current' : ''} ${respuestasUsuario[i] !== undefined ? 'answered' : ''}`;
-        btn.textContent = i + 1;
-        btn.onclick = () => { indiceActual = i; mostrarPregunta(); };
-        navContainer.appendChild(btn);
-    });
+function actualizarNav() {
+  const nav   = document.getElementById('questions-nav');
+  nav.innerHTML = '';
+  const total = preguntasSeleccionadas.length;
+  const resp  = Object.keys(respuestasUsuario).length;
+
+  preguntasSeleccionadas.forEach((_, i) => {
+    const btn = document.createElement('button');
+    let cls = 'nav-btn';
+    if (i === indiceActual) cls += ' current';
+    else if (respuestasUsuario[i] !== undefined) cls += ' answered';
+    btn.className = cls;
+    btn.textContent = i + 1;
+    btn.onclick = () => { indiceActual = i; mostrarPregunta(); };
+    nav.appendChild(btn);
+  });
+
+  document.getElementById('sidebar-prog').textContent = `${resp}/${total}`;
+}
+
+function setNextEnabled(on) {
+  const ids = ['next-btn','next-btn-m'];
+  const esUltima = indiceActual === preguntasSeleccionadas.length - 1;
+  ids.forEach(id => {
+    const b = document.getElementById(id);
+    if (!b) return;
+    b.disabled = !on;
+    b.classList.remove('btn-fin');
+    if (on && esUltima) b.classList.add('btn-fin');
+  });
 }
 
 function siguientePregunta() {
-    const total = preguntasSeleccionadas.length;
-    if (indiceActual < total - 1) {
-        indiceActual++;
-        mostrarPregunta();
-        window.scrollTo(0, 0);
-    } else {
-        finalizarExamen();
-    }
+  const total = preguntasSeleccionadas.length;
+  if (indiceActual < total - 1) {
+    indiceActual++;
+    mostrarPregunta();
+    window.scrollTo({top:0, behavior:'smooth'});
+  } else {
+    finalizarExamen();
+  }
 }
 
 function anteriorPregunta() {
-    if (indiceActual > 0) {
-        indiceActual--;
-        mostrarPregunta();
-    }
+  if (indiceActual > 0) {
+    indiceActual--;
+    mostrarPregunta();
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
 }
 
-// --- TIMER ---
+// ── HEADER QUIZ ──────────────────────────────────────────────
+function mostrarHeaderQuiz() {
+  document.getElementById('hdr-timer-wrap').classList.remove('hidden');
+  document.getElementById('hdr-prog-wrap').classList.remove('hidden');
+}
+
+function ocultarHeaderQuiz() {
+  document.getElementById('hdr-timer-wrap').classList.add('hidden');
+  document.getElementById('hdr-prog-wrap').classList.add('hidden');
+}
+
+function actualizarHeaderProg() {
+  const total = preguntasSeleccionadas.length;
+  const resp  = Object.keys(respuestasUsuario).length;
+  const pct   = total > 0 ? Math.round((resp / total) * 100) : 0;
+  document.getElementById('hdr-prog-label').textContent  = `${resp} / ${total} respondidas`;
+  document.getElementById('hdr-prog-fill').style.width   = pct + '%';
+}
+
+// ── TIMER ────────────────────────────────────────────────────
 function iniciarTimer() {
-    if (intervaloTimer) clearInterval(intervaloTimer);
-    actualizarDisplayTimer();
-
-    intervaloTimer = setInterval(() => {
-        if (tiempoRestante > 0) {
-            tiempoRestante--;
-            actualizarDisplayTimer();
-            manejarAlertasVisuales();
-        } else {
-            clearInterval(intervaloTimer);
-            finalizarExamen();
-        }
-    }, 1000);
+  if (intervaloTimer) clearInterval(intervaloTimer);
+  actualizarTimer();
+  intervaloTimer = setInterval(() => {
+    if (tiempoRestante > 0) { tiempoRestante--; actualizarTimer(); }
+    else { clearInterval(intervaloTimer); finalizarExamen(); }
+  }, 1000);
 }
 
-function actualizarDisplayTimer() {
-    const timerDisplay = document.getElementById('timer');
-    if (!timerDisplay) return;
-    const min = Math.floor(tiempoRestante / 60);
-    const seg = tiempoRestante % 60;
-    timerDisplay.textContent = `${min.toString().padStart(2, '0')}:${seg.toString().padStart(2, '0')}`;
+function actualizarTimer() {
+  const el = document.getElementById('hdr-timer');
+  if (!el) return;
+  const m = Math.floor(tiempoRestante / 60);
+  const s = tiempoRestante % 60;
+  el.textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+  el.className = tiempoRestante <= 60 ? 'crit' : tiempoRestante <= 300 ? 'warn' : '';
 }
 
-function manejarAlertasVisuales() {
-    const timerDisplay = document.getElementById('timer');
-    if (!timerDisplay) return;
-    if (tiempoRestante <= 60) {
-        timerDisplay.className = "text-4xl font-mono font-black timer-critical";
-    } else if (tiempoRestante <= 300) {
-        timerDisplay.className = "text-4xl font-mono font-black timer-warning";
-    } else {
-        timerDisplay.className = "text-4xl font-mono font-black text-[#003876]";
-    }
-}
-
-// --- RESULTADOS ---
+// ── RESULTADO ────────────────────────────────────────────────
 function finalizarExamen() {
-    clearInterval(intervaloTimer);
-    ocultarTodasLasPantallas();
-    resultScreen.classList.remove('hidden');
+  clearInterval(intervaloTimer);
+  ocultarHeaderQuiz();
+  mostrarSolo('result-screen');
 
-    let puntos = 0;
-    const review = document.getElementById('review-container');
-    review.innerHTML = '';
+  let puntos = 0;
+  const review = document.getElementById('review-container');
+  review.innerHTML = '';
 
-    preguntasSeleccionadas.forEach((p, i) => {
-        const respuestaUser = respuestasUsuario[i];
-        const esCorrecta    = respuestaUser === p.respuestaCorrecta;
-        if (esCorrecta) puntos++;
+  preguntasSeleccionadas.forEach((p, i) => {
+    const visUsuario = respuestasUsuario[i];
+    const { opciones, mapa } = mapaOpcionesAll[i];
+    const origUsuario  = visUsuario !== undefined ? mapa[visUsuario] : undefined;
+    const esCorrecta   = origUsuario === p.respuestaCorrecta;
+    if (esCorrecta) puntos++;
 
-        const statusColor = esCorrecta ? 'border-green-500 bg-green-50' : 'border-red-500 bg-red-50';
-        const icon        = esCorrecta ? '✅' : '❌';
+    const posCorrecta = mapa.indexOf(p.respuestaCorrecta);
+    const textoUser   = visUsuario !== undefined ? opciones[visUsuario] : '<em>No respondida</em>';
+    const textoCorr   = opciones[posCorrecta];
 
-        review.innerHTML += `
-            <div class="review-card ${statusColor} p-5 rounded-lg shadow-sm border mb-4 border-l-8">
-                <div class="flex justify-between items-start mb-2">
-                    <span class="font-bold text-gray-700">Pregunta ${i + 1}</span>
-                    <span>${icon}</span>
-                </div>
-                <p class="text-gray-800 font-medium mb-3">${p.pregunta}</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
-                    <div class="p-2 rounded ${esCorrecta ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}">
-                        <strong>Tu respuesta:</strong><br>
-                        ${respuestaUser !== undefined ? p.opciones[respuestaUser] : 'No respondida'}
-                    </div>
-                    ${!esCorrecta ? `
-                    <div class="p-2 rounded bg-blue-100 text-blue-800">
-                        <strong>Respuesta correcta:</strong><br>
-                        ${p.opciones[p.respuestaCorrecta]}
-                    </div>` : ''}
-                </div>
-                <div class="mt-3 text-xs text-gray-500 bg-white p-2 rounded border italic">
-                    <strong>Justificación técnica:</strong> ${p.explicacion}
-                </div>
-            </div>`;
-    });
-
-    const total      = preguntasSeleccionadas.length;
-    const aprobacion = CONFIG[rolSeleccionado].aprobacion;
-    const porcentaje = ((puntos / total) * 100).toFixed(1);
-
-    document.getElementById('final-score').textContent = `${puntos} / ${total}`;
-    document.getElementById('score-percentage').innerHTML = `
-        <div class="text-2xl font-bold ${puntos >= aprobacion ? 'text-green-300' : 'text-red-300'}">
-            ${porcentaje}% de Precisión
-        </div>
-        <p class="opacity-75 mt-1">${puntos >= aprobacion
-            ? '¡Excelente desempeño! Sigue preparándote con este simulador.'
-            : 'Te recomendamos seguir repasando el marco normativo y los casos pedagógicos.'}</p>
+    const card = document.createElement('div');
+    card.className = `rev-card ${esCorrecta ? 'ok' : 'fail'}`;
+    card.innerHTML = `
+      <div class="rev-hdr">
+        <span class="rev-num">Pregunta ${i+1} · ${p.categoria||'General'}</span>
+        <span>${esCorrecta ? '✅' : '❌'}</span>
+      </div>
+      <p class="rev-q">${p.pregunta}</p>
+      <div class="rev-ag">
+        <div class="rev-ab ${esCorrecta?'uok':'ufail'}"><strong>Tu respuesta</strong>${textoUser}</div>
+        ${!esCorrecta ? `<div class="rev-ab corr"><strong>Respuesta correcta</strong>${textoCorr}</div>` : ''}
+      </div>
+      <div class="rev-exp"><strong>📌 Justificación:</strong> ${p.explicacion||'No disponible.'}</div>
     `;
-    window.scrollTo(0, 0);
+    review.appendChild(card);
+  });
+
+  const total    = preguntasSeleccionadas.length;
+  const aprobMin = CONFIG[rolSeleccionado].aprobacion;
+  const pct      = ((puntos / total) * 100).toFixed(1);
+  const pctNum   = parseFloat(pct);
+
+  // Determinar nivel de resultado
+  let nivel, icon, msg, clsHero, verdad;
+  if (pctNum >= 80) {
+    nivel = 'win'; icon = '🏆'; msg = '¡Felicitaciones, sobresaliste!';
+    clsHero = 'win';
+    verdad = 'Rendimiento excepcional. Estás más que lista/o para la evaluación real. ¡Sigue así!';
+  } else if (pctNum >= 60) {
+    nivel = 'ok'; icon = '🎯'; msg = '¡Buen trabajo!';
+    clsHero = 'ok';
+    verdad = 'Resultado sólido. Refuerza las áreas donde tuviste errores y estarás lista/o.';
+  } else if (pctNum >= 40) {
+    nivel = 'med'; icon = '📖'; msg = 'Vas por buen camino';
+    clsHero = 'ok';
+    verdad = 'Tienes una base, pero hay temas que necesitan más repaso. ¡No te rindas!';
+  } else {
+    nivel = 'fail'; icon = '💪'; msg = '¡Tú puedes mejorar!';
+    clsHero = 'fail';
+    verdad = 'Esta es tu señal para revisar el marco normativo y los casos pedagógicos. ¡Cada intento cuenta!';
+  }
+
+  document.getElementById('result-hero').className = `result-hero ${clsHero}`;
+  document.getElementById('result-icon').textContent = icon;
+  document.getElementById('result-msg').textContent  = msg;
+  document.getElementById('final-score').innerHTML   = `${puntos} <span>/ ${total}</span>`;
+  document.getElementById('score-pct').textContent   = `${pct}% de precisión`;
+  document.getElementById('score-verdict').textContent = verdad;
+
+  // Celebración / animación motivacional
+  if (nivel === 'win') lanzarConfeti();
+  else if (nivel === 'ok' || nivel === 'med') lanzarEstrellas();
+  else lanzarAnimoFail();
+
+  window.scrollTo({top:0, behavior:'smooth'});
 }
 
-// --- HELPERS ---
-function activarBoton() {
-    nextBtn.disabled = false;
-    nextBtn.className = "bg-[#003876] text-white font-bold py-2 px-8 rounded-lg shadow-md cursor-pointer hover:bg-blue-800 transition-all";
+// ── ANIMACIONES MOTIVACIONALES ───────────────────────────────
+function lanzarConfeti() {
+  const overlay = document.getElementById('celebration-overlay');
+  overlay.innerHTML = '';
+  overlay.classList.remove('hidden');
+  const colores = ['#f9b233','#003876','#22c55e','#a855f7','#ef4444','#3b82f6','#fbbf24'];
+  for (let i = 0; i < 80; i++) {
+    const p = document.createElement('div');
+    p.className = 'conf';
+    p.style.left = Math.random() * 100 + 'vw';
+    p.style.background = colores[Math.floor(Math.random() * colores.length)];
+    p.style.width = (8 + Math.random() * 8) + 'px';
+    p.style.height = (12 + Math.random() * 10) + 'px';
+    p.style.animationDuration = (2 + Math.random() * 3) + 's';
+    p.style.animationDelay = (Math.random() * 2) + 's';
+    p.style.borderRadius = Math.random() > .5 ? '50%' : '2px';
+    overlay.appendChild(p);
+  }
+  setTimeout(() => overlay.classList.add('hidden'), 5500);
 }
 
-function desactivarBoton() {
-    nextBtn.disabled = true;
-    nextBtn.className = "bg-gray-300 text-gray-500 font-bold py-2 px-8 rounded-lg cursor-not-allowed";
+function lanzarEstrellas() {
+  const overlay = document.getElementById('celebration-overlay');
+  overlay.innerHTML = '';
+  overlay.classList.remove('hidden');
+  const emojis = ['⭐','🌟','✨','💫','🎉'];
+  for (let i = 0; i < 18; i++) {
+    const s = document.createElement('span');
+    s.style.cssText = `
+      position:absolute;font-size:${1.5+Math.random()*2}rem;
+      left:${Math.random()*90+5}%;top:${Math.random()*80+10}%;
+      animation:cfall ${3+Math.random()*2}s linear ${Math.random()*1.5}s forwards;
+      opacity:0;transform:scale(0);
+    `;
+    s.textContent = emojis[Math.floor(Math.random()*emojis.length)];
+    // Use keyframe via inline style trick
+    s.style.animation = `starPop .6s cubic-bezier(.34,1.56,.64,1) ${i*0.1}s both`;
+    overlay.appendChild(s);
+  }
+  // Add keyframe if needed
+  if (!document.getElementById('star-kf')) {
+    const st = document.createElement('style');
+    st.id = 'star-kf';
+    st.textContent = '@keyframes starPop{from{transform:scale(0) rotate(-180deg);opacity:0}to{transform:scale(1) rotate(0deg);opacity:1}}';
+    document.head.appendChild(st);
+  }
+  setTimeout(() => {
+    overlay.classList.add('hidden');
+    overlay.innerHTML = '';
+  }, 3500);
+}
+
+function lanzarAnimoFail() {
+  const overlay = document.getElementById('celebration-overlay');
+  overlay.innerHTML = '';
+  overlay.classList.remove('hidden');
+  const emojis = ['💪','📚','🌱','✏️','🎯'];
+  for (let i = 0; i < 12; i++) {
+    const s = document.createElement('span');
+    s.style.cssText = `
+      position:absolute;font-size:${1.8+Math.random()*1.5}rem;
+      left:${Math.random()*90+5}%;top:${Math.random()*80+10}%;
+    `;
+    s.style.animation = `starPop .7s cubic-bezier(.34,1.56,.64,1) ${i*0.12}s both`;
+    s.textContent = emojis[Math.floor(Math.random()*emojis.length)];
+    overlay.appendChild(s);
+  }
+  setTimeout(() => {
+    overlay.classList.add('hidden');
+    overlay.innerHTML = '';
+  }, 3000);
+}
+
+// ── HELPERS ──────────────────────────────────────────────────
+function resetEstado() {
+  clearInterval(intervaloTimer);
+  intervaloTimer = null;
+  preguntasSeleccionadas = [];
+  mapaOpcionesAll   = [];
+  indiceActual      = 0;
+  respuestasUsuario = {};
+  tiempoRestante    = 0;
+}
+
+function repetirExamen() {
+  resetEstado();
+  abrirStart(rolSeleccionado);
 }
