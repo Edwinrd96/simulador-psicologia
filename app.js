@@ -568,7 +568,7 @@ function finalizarExamen() {
     card.innerHTML = `
       <div class="rev-hdr">
         <span class="rev-num">Pregunta ${i+1} · ${p.categoria||'General'}</span>
-        <span>${esCorrecta ? '✅' :
+        <span>${esCorrecta ? '✅' :*/
 
 
 
@@ -588,7 +588,7 @@ function finalizarExamen() {
    ═══════════════════════════════════════════════════════════
 
 // ── ACCESO ──────────────────────────────────────────────────
-// nombre normalizado → lista de roles permitidos (directos, sin sub-menú duplicado)
+// nombre normalizado → lista de roles permitidos (directos, sin sub-menú duplicado)*/
 const ACCESO = {
   marileidy: ['psicologo', 'psicologoExterno'],
   fatima:    ['primaria',  'rimariaFiltrada'],
@@ -1205,4 +1205,4 @@ function resetEstado() {
 function repetirExamen() {
   resetEstado();
   abrirStart(rolSeleccionado);
-} */
+}
