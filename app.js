@@ -1,3 +1,367 @@
+
+
+/* ═══════════════════════════════════════════════════════════
+   MINERD — Simulador EDD 2025-2026 | app.js (Persistente)
+   ═══════════════════════════════════════════════════════════ */
+
+// ── ACCESO ──────────────────────────────────────────────────
+const ACCESO = {
+  marileidy: ['psicologo', 'psicologoExterno'],
+  fatima:    ['primaria',  'rimariaFiltrada'],
+  katherine: ['tecnicoProfesional'],
+  olga:      ['tecnicoDistrital']
+};
+
+// ── CONFIGURACIÓN POR ROL ────────────────────────────────────
+const CONFIG = {
+  psicologo: {
+    banco:      () => typeof bancoPreguntas !== 'undefined' ? bancoPreguntas : [],
+    preguntas:  35,
+    tiempo:     (52*60)+30,
+    tiempoLabel:'52:30',
+    icon:       '🧠',
+    titulo:     'Evaluación Inicial',
+    subtitulo:  'Psicología Escolar — Prueba de Juicio Situacional.',
+    aprobacion: 25,
+    color:      '#7c3aed',
+    colorL:     '#ede9fe',
+    chipLabel:  '35 preguntas',
+    chipTime:   '52:30 min'
+  },
+  psicologoExterno: {
+    banco:      () => typeof bancoFormularios !== 'undefined' ? bancoFormularios : [],
+    preguntas:  35,
+    tiempo:     (52*60)+30,
+    tiempoLabel:'52:30',
+    icon:       '📝',
+    titulo:     'Evaluación de Formularios Externos',
+    subtitulo:  'Psicología Escolar — Situaciones de evaluación profesional.',
+    aprobacion: 25,
+    color:      '#0d9488',
+    colorL:     '#ccfbf1',
+    chipLabel:  '35 preguntas',
+    chipTime:   'Complementario'
+  },
+  primaria: {
+    banco:      () => typeof bancoPrimaria !== 'undefined' ? bancoPrimaria : [],
+    preguntas:  40,
+    tiempo:     60*60,
+    tiempoLabel:'60:00',
+    icon:       '📚',
+    titulo:     'Evaluación Inicial',
+    subtitulo:  'Nivel Primario — Análisis de Casos Pedagógicos.',
+    aprobacion: 28,
+    color:      '#2563eb',
+    colorL:     '#dbeafe',
+    chipLabel:  '40 preguntas',
+    chipTime:   '60:00 min'
+  },
+  tecnicoDistrital: {
+    banco:      () => typeof bancoTecnicoDistrital !== 'undefined' ? bancoTecnicoDistrital : [],
+    preguntas:  35,
+    tiempo:     (52*60)+30,
+    tiempoLabel:'52:30',
+    icon:       '🏛️',
+    titulo:     'Evaluación Inicial',
+    subtitulo:  'Técnico/a Distrital — Gestión y Asesoría.',
+    aprobacion: 25,
+    color:      '#003876',
+    colorL:     '#dbeafe',
+    chipLabel:  '35 preguntas',
+    chipTime:   '52:30 min'
+  }
+};
+
+const USER_INFO = {
+  marileidy: { avatar:'🧠', greeting:'¡Bienvenida, Marileidy!', sub:'Psicóloga Escolar' },
+  fatima:    { avatar:'📚', greeting:'¡Bienvenida, Fátima!',    sub:'Maestra de Primaria' },
+  katherine: { avatar:'🔧', greeting:'¡Bienvenida, Katherine!', sub:'Docente Técnico Profesional' },
+  olga:      { avatar:'🏛️', greeting:'¡Bienvenida, Olga!',      sub:'Técnica Distrital' }
+};
+
+// ── ESTADO Y PERSISTENCIA ────────────────────────────────────
+let nombreUsuario     = '';
+let rolesPermitidos   = [];
+let rolSeleccionado   = null;
+
+let preguntasSeleccionadas = [];
+let mapaOpcionesAll   = [];
+let indiceActual      = 0;
+let respuestasUsuario = {};
+let tiempoRestante    = 0;
+let intervaloTimer    = null;
+
+// Cargar historial de preguntas ya vistas desde el disco
+let poolUsado = JSON.parse(localStorage.getItem('poolUsado_EDD')) || {};
+
+// ── MANEJO DE SESIÓN ─────────────────────────────────────────
+function guardarProgresoEnDisco() {
+  const estado = {
+    nombreUsuario,
+    rolesPermitidos,
+    rolSeleccionado,
+    preguntasSeleccionadas,
+    mapaOpcionesAll,
+    indiceActual,
+    respuestasUsuario,
+    tiempoRestante,
+    fecha: new Date().getTime()
+  };
+  localStorage.setItem('sesion_activa_EDD', JSON.stringify(estado));
+}
+
+function limpiarSesionDisco() {
+  localStorage.removeItem('sesion_activa_EDD');
+}
+
+// ── PANTALLAS ────────────────────────────────────────────────
+const SCREENS = ['access-screen','profile-screen','start-screen','quiz-screen','result-screen'];
+
+function mostrarSolo(id) {
+  SCREENS.forEach(s => {
+    const el = document.getElementById(s);
+    if (el) el.classList.add('hidden');
+  });
+  const target = document.getElementById(id);
+  if (target) target.classList.remove('hidden');
+}
+
+function norm(str) {
+  return str.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z]/g,'');
+}
+
+// ── ACCESS ───────────────────────────────────────────────────
+function verificarAcceso() {
+  const inp = document.getElementById('access-input');
+  const err = document.getElementById('access-error');
+  const key = norm(inp.value);
+  if (!key || !ACCESO[key]) {
+    err.textContent = 'Nombre no encontrado.';
+    return;
+  }
+  nombreUsuario   = key;
+  rolesPermitidos = ACCESO[key];
+  mostrarPerfil();
+}
+
+// ── PROFILE SCREEN ───────────────────────────────────────────
+function mostrarPerfil() {
+  const info = USER_INFO[nombreUsuario] || { avatar:'🎓', greeting:'¡Bienvenida!', sub:'EDD 2025' };
+  document.getElementById('welcome-avatar').textContent = info.avatar;
+  document.getElementById('welcome-name').textContent   = info.greeting;
+  document.getElementById('welcome-sub').textContent    = info.sub;
+
+  const grid = document.getElementById('eval-grid');
+  grid.innerHTML = '';
+
+  rolesPermitidos.forEach((rol, idx) => {
+    const cfg = CONFIG[rol];
+    if (!cfg) return;
+
+    if (!poolUsado[rol]) poolUsado[rol] = [];
+    const banco = cfg.banco();
+    const total = banco.length;
+    const disp = total - poolUsado[rol].length;
+
+    const card = document.createElement('div');
+    card.className = 'eval-card';
+    card.style.setProperty('--c', cfg.color);
+    card.innerHTML = `
+      <div class="e-name">${cfg.titulo}</div>
+      <div class="e-desc">${cfg.subtitulo}</div>
+      <div class="e-pool">${disp} preguntas disponibles de ${total}</div>
+    `;
+    card.onclick = () => abrirStart(rol);
+    grid.appendChild(card);
+  });
+  mostrarSolo('profile-screen');
+}
+
+// ── START SCREEN ─────────────────────────────────────────────
+function abrirStart(rol) {
+  rolSeleccionado = rol;
+  const cfg = CONFIG[rol];
+  tiempoRestante = cfg.tiempo;
+  
+  const banco = cfg.banco();
+  const usados = poolUsado[rol] ? poolUsado[rol].length : 0;
+  const disp = banco.length - usados;
+
+  document.getElementById('start-title').textContent = cfg.titulo;
+  document.getElementById('pool-status').innerHTML = `Preguntas nuevas: ${disp} | Ya vistas: ${usados}`;
+  mostrarSolo('start-screen');
+}
+
+// ── POOL SIN REPETICIÓN ──────────────────────────────────────
+function sacarDelPool(rol, cantidad) {
+  const banco = CONFIG[rol].banco();
+  if (!poolUsado[rol]) poolUsado[rol] = [];
+
+  // Si se agotó el banco, reiniciar historial para este rol
+  if (poolUsado[rol].length >= banco.length) poolUsado[rol] = [];
+
+  const disponibles = banco.filter((_, i) => !poolUsado[rol].includes(i));
+  const barajadas = [...disponibles].sort(() => Math.random() - 0.5);
+  const sel = barajadas.slice(0, Math.min(cantidad, barajadas.length));
+
+  sel.forEach(p => {
+    const originalIndex = banco.indexOf(p);
+    poolUsado[rol].push(originalIndex);
+  });
+
+  localStorage.setItem('poolUsado_EDD', JSON.stringify(poolUsado));
+  return sel;
+}
+
+// ── INICIAR EXAMEN ───────────────────────────────────────────
+function iniciarExamen() {
+  const cfg = CONFIG[rolSeleccionado];
+  const sel = sacarDelPool(rolSeleccionado, cfg.preguntas);
+
+  preguntasSeleccionadas = sel;
+  mapaOpcionesAll = preguntasSeleccionadas.map(p => {
+    const indices = Array.from({length: p.opciones.length}, (_, i) => i).sort(() => Math.random() - 0.5);
+    return { opciones: indices.map(i => p.opciones[i]), mapa: indices };
+  });
+  
+  indiceActual = 0;
+  respuestasUsuario = {};
+  
+  iniciarUIExamen();
+  guardarProgresoEnDisco();
+}
+
+function iniciarUIExamen() {
+  mostrarSolo('quiz-screen');
+  mostrarHeaderQuiz();
+  iniciarTimer();
+  mostrarPregunta();
+  actualizarHeaderProg();
+}
+
+// ── MOSTRAR PREGUNTA ─────────────────────────────────────────
+function mostrarPregunta() {
+  const p = preguntasSeleccionadas[indiceActual];
+  const { opciones } = mapaOpcionesAll[indiceActual];
+  
+  document.getElementById('question-text').textContent = p.pregunta;
+  document.getElementById('question-counter').textContent = `Pregunta ${indiceActual + 1} de ${preguntasSeleccionadas.length}`;
+
+  const container = document.getElementById('options-container');
+  container.innerHTML = '';
+  
+  opciones.forEach((opc, j) => {
+    const btn = document.createElement('button');
+    btn.className = `opt-btn ${respuestasUsuario[indiceActual] === j ? 'selected' : ''}`;
+    btn.textContent = opc;
+    btn.onclick = () => {
+      respuestasUsuario[indiceActual] = j;
+      document.querySelectorAll('.opt-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      guardarProgresoEnDisco();
+      actualizarHeaderProg();
+    };
+    container.appendChild(btn);
+  });
+}
+
+function siguientePregunta() {
+  if (indiceActual < preguntasSeleccionadas.length - 1) {
+    indiceActual++;
+    mostrarPregunta();
+    guardarProgresoEnDisco();
+  } else {
+    finalizarExamen();
+  }
+}
+
+// ── TIMER ────────────────────────────────────────────────────
+function iniciarTimer() {
+  if (intervaloTimer) clearInterval(intervaloTimer);
+  actualizarTimer();
+  intervaloTimer = setInterval(() => {
+    if (tiempoRestante > 0) {
+      tiempoRestante--;
+      actualizarTimer();
+      // Guardar en disco cada 10 segundos para no saturar, o puedes quitar el IF para cada segundo
+      if (tiempoRestante % 10 === 0) guardarProgresoEnDisco(); 
+    } else {
+      finalizarExamen();
+    }
+  }, 1000);
+}
+
+function actualizarTimer() {
+  const el = document.getElementById('hdr-timer');
+  const m = Math.floor(tiempoRestante / 60);
+  const s = tiempoRestante % 60;
+  if (el) el.textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+}
+
+// ── RESULTADO ────────────────────────────────────────────────
+function finalizarExamen() {
+  clearInterval(intervaloTimer);
+  limpiarSesionDisco();
+  ocultarHeaderQuiz();
+  mostrarSolo('result-screen');
+  
+  let puntos = 0;
+  preguntasSeleccionadas.forEach((p, i) => {
+    const visIndex = respuestasUsuario[i];
+    const origIndex = visIndex !== undefined ? mapaOpcionesAll[i].map[visIndex] : -1;
+    if (origIndex === p.respuestaCorrecta) puntos++;
+  });
+
+  document.getElementById('final-score').textContent = `${puntos} / ${preguntasSeleccionadas.length}`;
+}
+
+// ── HELPERS UI ───────────────────────────────────────────────
+function mostrarHeaderQuiz() {
+  document.getElementById('hdr-timer-wrap').classList.remove('hidden');
+  document.getElementById('hdr-prog-wrap').classList.remove('hidden');
+}
+function ocultarHeaderQuiz() {
+  document.getElementById('hdr-timer-wrap').classList.add('hidden');
+  document.getElementById('hdr-prog-wrap').classList.add('hidden');
+}
+function actualizarHeaderProg() {
+  const total = preguntasSeleccionadas.length;
+  const resp = Object.keys(respuestasUsuario).length;
+  document.getElementById('hdr-prog-fill').style.width = (resp / total * 100) + '%';
+}
+
+// ── AUTO-RECUPERACIÓN AL CARGAR ──────────────────────────────
+window.onload = () => {
+  const guardado = localStorage.getItem('sesion_activa_EDD');
+  if (guardado) {
+    const d = JSON.parse(guardado);
+    // Solo recuperar si la sesión es de hoy (opcional, aquí permito siempre)
+    if (confirm("Se detectó un examen en curso. ¿Deseas continuar?")) {
+      nombreUsuario = d.nombreUsuario;
+      rolesPermitidos = d.rolesPermitidos;
+      rolSeleccionado = d.rolSeleccionado;
+      preguntasSeleccionadas = d.preguntasSeleccionadas;
+      mapaOpcionesAll = d.mapaOpcionesAll;
+      indiceActual = d.indiceActual;
+      respuestasUsuario = d.respuestasUsuario;
+      tiempoRestante = d.tiempoRestante;
+      
+      iniciarUIExamen();
+    } else {
+      limpiarSesionDisco();
+    }
+  }
+};
+
+
+
+
+
+
+
+
+
+
 /* ═══════════════════════════════════════════════════════════
    MINERD — Simulador EDD 2025-2026 | app.js
    ═══════════════════════════════════════════════════════════
