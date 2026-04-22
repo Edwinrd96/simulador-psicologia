@@ -1,13 +1,11 @@
-
-
 /* ═══════════════════════════════════════════════════════════
-   MINERD — Simulador EDD 2025-2026 | app.js (Persistente)
+   MINERD — Simulador EDD 2025-2026 | app.js (Versión Final Móvil)
    ═══════════════════════════════════════════════════════════ */
 
-// ── ACCESO ──────────────────────────────────────────────────
+// ── CONFIGURACIÓN DE ACCESO ─────────────────────────────────
 const ACCESO = {
   marileidy: ['psicologo', 'psicologoExterno'],
-  fatima:    ['primaria',  'rimariaFiltrada'],
+  fatima:    ['primaria'],
   katherine: ['tecnicoProfesional'],
   olga:      ['tecnicoDistrital']
 };
@@ -15,208 +13,129 @@ const ACCESO = {
 // ── CONFIGURACIÓN POR ROL ────────────────────────────────────
 const CONFIG = {
   psicologo: {
-    banco:      () => typeof bancoPreguntas !== 'undefined' ? bancoPreguntas : [],
-    preguntas:  35,
-    tiempo:     (52*60)+30,
-    tiempoLabel:'52:30',
-    icon:       '🧠',
-    titulo:     'Evaluación Inicial',
-    subtitulo:  'Psicología Escolar — Prueba de Juicio Situacional.',
-    aprobacion: 25,
-    color:      '#7c3aed',
-    colorL:     '#ede9fe',
-    chipLabel:  '35 preguntas',
-    chipTime:   '52:30 min'
-  },
-  psicologoExterno: {
-    banco:      () => typeof bancoFormularios !== 'undefined' ? bancoFormularios : [],
-    preguntas:  35,
-    tiempo:     (52*60)+30,
-    tiempoLabel:'52:30',
-    icon:       '📝',
-    titulo:     'Evaluación de Formularios Externos',
-    subtitulo:  'Psicología Escolar — Situaciones de evaluación profesional.',
-    aprobacion: 25,
-    color:      '#0d9488',
-    colorL:     '#ccfbf1',
-    chipLabel:  '35 preguntas',
-    chipTime:   'Complementario'
+    banco: () => (typeof bancoPreguntas !== 'undefined' ? bancoPreguntas : []),
+    preguntas: 35,
+    tiempo: (52 * 60) + 30,
+    icon: '🧠',
+    titulo: 'Evaluación Inicial - Psicología',
+    color: '#7c3aed'
   },
   primaria: {
-    banco:      () => typeof bancoPrimaria !== 'undefined' ? bancoPrimaria : [],
-    preguntas:  40,
-    tiempo:     60*60,
-    tiempoLabel:'60:00',
-    icon:       '📚',
-    titulo:     'Evaluación Inicial',
-    subtitulo:  'Nivel Primario — Análisis de Casos Pedagógicos.',
-    aprobacion: 28,
-    color:      '#2563eb',
-    colorL:     '#dbeafe',
-    chipLabel:  '40 preguntas',
-    chipTime:   '60:00 min'
+    banco: () => (typeof bancoPrimaria !== 'undefined' ? bancoPrimaria : []),
+    preguntas: 40,
+    tiempo: 60 * 60,
+    icon: '📚',
+    titulo: 'Evaluación Inicial - Primaria',
+    color: '#2563eb'
   },
   tecnicoDistrital: {
-    banco:      () => typeof bancoTecnicoDistrital !== 'undefined' ? bancoTecnicoDistrital : [],
-    preguntas:  35,
-    tiempo:     (52*60)+30,
-    tiempoLabel:'52:30',
-    icon:       '🏛️',
-    titulo:     'Evaluación Inicial',
-    subtitulo:  'Técnico/a Distrital — Gestión y Asesoría.',
-    aprobacion: 25,
-    color:      '#003876',
-    colorL:     '#dbeafe',
-    chipLabel:  '35 preguntas',
-    chipTime:   '52:30 min'
+    banco: () => (typeof bancoTecnicoDistrital !== 'undefined' ? bancoTecnicoDistrital : []),
+    preguntas: 35,
+    tiempo: (52 * 60) + 30,
+    icon: '🏛️',
+    titulo: 'Evaluación Inicial - Técnico/a',
+    color: '#003876'
   }
 };
 
-const USER_INFO = {
-  marileidy: { avatar:'🧠', greeting:'¡Bienvenida, Marileidy!', sub:'Psicóloga Escolar' },
-  fatima:    { avatar:'📚', greeting:'¡Bienvenida, Fátima!',    sub:'Maestra de Primaria' },
-  katherine: { avatar:'🔧', greeting:'¡Bienvenida, Katherine!', sub:'Docente Técnico Profesional' },
-  olga:      { avatar:'🏛️', greeting:'¡Bienvenida, Olga!',      sub:'Técnica Distrital' }
-};
-
-// ── ESTADO Y PERSISTENCIA ────────────────────────────────────
-let nombreUsuario     = '';
-let rolesPermitidos   = [];
-let rolSeleccionado   = null;
-
+// ── ESTADO DE LA APLICACIÓN ──────────────────────────────────
+let nombreUsuario = '';
+let rolSeleccionado = null;
 let preguntasSeleccionadas = [];
-let mapaOpcionesAll   = [];
-let indiceActual      = 0;
+let mapaOpcionesAll = [];
+let indiceActual = 0;
 let respuestasUsuario = {};
-let tiempoRestante    = 0;
-let intervaloTimer    = null;
+let tiempoRestante = 0;
+let intervaloTimer = null;
 
-// Cargar historial de preguntas ya vistas desde el disco
+// Cargar pool de preguntas usadas (Persistencia a largo plazo)
 let poolUsado = JSON.parse(localStorage.getItem('poolUsado_EDD')) || {};
 
-// ── MANEJO DE SESIÓN ─────────────────────────────────────────
+// ── GESTIÓN DE DISCO (STORAGE) ───────────────────────────────
+
 function guardarProgresoEnDisco() {
   const estado = {
     nombreUsuario,
-    rolesPermitidos,
     rolSeleccionado,
     preguntasSeleccionadas,
     mapaOpcionesAll,
     indiceActual,
     respuestasUsuario,
     tiempoRestante,
-    fecha: new Date().getTime()
+    enCurso: true
   };
   localStorage.setItem('sesion_activa_EDD', JSON.stringify(estado));
+  localStorage.setItem('poolUsado_EDD', JSON.stringify(poolUsado));
 }
 
 function limpiarSesionDisco() {
   localStorage.removeItem('sesion_activa_EDD');
 }
 
-// ── PANTALLAS ────────────────────────────────────────────────
-const SCREENS = ['access-screen','profile-screen','start-screen','quiz-screen','result-screen'];
+// ── LÓGICA DE RECUPERACIÓN AL CARGAR ─────────────────────────
 
-function mostrarSolo(id) {
-  SCREENS.forEach(s => {
-    const el = document.getElementById(s);
-    if (el) el.classList.add('hidden');
-  });
-  const target = document.getElementById(id);
-  if (target) target.classList.remove('hidden');
-}
-
-function norm(str) {
-  return str.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z]/g,'');
-}
-
-// ── ACCESS ───────────────────────────────────────────────────
-function verificarAcceso() {
-  const inp = document.getElementById('access-input');
-  const err = document.getElementById('access-error');
-  const key = norm(inp.value);
-  if (!key || !ACCESO[key]) {
-    err.textContent = 'Nombre no encontrado.';
-    return;
-  }
-  nombreUsuario   = key;
-  rolesPermitidos = ACCESO[key];
-  mostrarPerfil();
-}
-
-// ── PROFILE SCREEN ───────────────────────────────────────────
-function mostrarPerfil() {
-  const info = USER_INFO[nombreUsuario] || { avatar:'🎓', greeting:'¡Bienvenida!', sub:'EDD 2025' };
-  document.getElementById('welcome-avatar').textContent = info.avatar;
-  document.getElementById('welcome-name').textContent   = info.greeting;
-  document.getElementById('welcome-sub').textContent    = info.sub;
-
-  const grid = document.getElementById('eval-grid');
-  grid.innerHTML = '';
-
-  rolesPermitidos.forEach((rol, idx) => {
-    const cfg = CONFIG[rol];
-    if (!cfg) return;
-
-    if (!poolUsado[rol]) poolUsado[rol] = [];
-    const banco = cfg.banco();
-    const total = banco.length;
-    const disp = total - poolUsado[rol].length;
-
-    const card = document.createElement('div');
-    card.className = 'eval-card';
-    card.style.setProperty('--c', cfg.color);
-    card.innerHTML = `
-      <div class="e-name">${cfg.titulo}</div>
-      <div class="e-desc">${cfg.subtitulo}</div>
-      <div class="e-pool">${disp} preguntas disponibles de ${total}</div>
-    `;
-    card.onclick = () => abrirStart(rol);
-    grid.appendChild(card);
-  });
-  mostrarSolo('profile-screen');
-}
-
-// ── START SCREEN ─────────────────────────────────────────────
-function abrirStart(rol) {
-  rolSeleccionado = rol;
-  const cfg = CONFIG[rol];
-  tiempoRestante = cfg.tiempo;
+window.onload = () => {
+  const guardado = localStorage.getItem('sesion_activa_EDD');
   
-  const banco = cfg.banco();
-  const usados = poolUsado[rol] ? poolUsado[rol].length : 0;
-  const disp = banco.length - usados;
+  if (guardado) {
+    const d = JSON.parse(guardado);
+    
+    // Preguntar al usuario si desea retomar
+    const retomar = confirm(
+      `Hola ${d.nombreUsuario}, tienes un examen de "${d.rolSeleccionado}" pendiente.\n\n` +
+      `¿Deseas continuar donde lo dejaste?\n` +
+      `(Si cancelas, el progreso actual se borrará)`
+    );
 
-  document.getElementById('start-title').textContent = cfg.titulo;
-  document.getElementById('pool-status').innerHTML = `Preguntas nuevas: ${disp} | Ya vistas: ${usados}`;
-  mostrarSolo('start-screen');
-}
+    if (retomar) {
+      nombreUsuario = d.nombreUsuario;
+      rolSeleccionado = d.rolSeleccionado;
+      preguntasSeleccionadas = d.preguntasSeleccionadas;
+      mapaOpcionesAll = d.mapaOpcionesAll;
+      indiceActual = d.indiceActual;
+      respuestasUsuario = d.respuestasUsuario;
+      tiempoRestante = d.tiempoRestante;
+      
+      iniciarUIExamen();
+    } else {
+      limpiarSesionDisco();
+      // Opcional: Redirigir a pantalla de inicio si es necesario
+    }
+  }
+};
 
-// ── POOL SIN REPETICIÓN ──────────────────────────────────────
+// ── MOTOR DEL EXAMEN ─────────────────────────────────────────
+
 function sacarDelPool(rol, cantidad) {
   const banco = CONFIG[rol].banco();
   if (!poolUsado[rol]) poolUsado[rol] = [];
 
-  // Si se agotó el banco, reiniciar historial para este rol
-  if (poolUsado[rol].length >= banco.length) poolUsado[rol] = [];
+  // Si ya se usaron todas, reiniciar el historial del banco
+  if (poolUsado[rol].length >= banco.length) {
+    alert("¡Felicidades! Completaste todas las preguntas del banco. El historial se reiniciará para que puedas practicar de nuevo.");
+    poolUsado[rol] = [];
+  }
 
+  // Filtrar preguntas que NO han sido usadas
   const disponibles = banco.filter((_, i) => !poolUsado[rol].includes(i));
   const barajadas = [...disponibles].sort(() => Math.random() - 0.5);
-  const sel = barajadas.slice(0, Math.min(cantidad, barajadas.length));
+  const seleccion = barajadas.slice(0, Math.min(cantidad, barajadas.length));
 
-  sel.forEach(p => {
-    const originalIndex = banco.indexOf(p);
-    poolUsado[rol].push(originalIndex);
+  // Marcar como usadas
+  seleccion.forEach(p => {
+    const idxOriginal = banco.indexOf(p);
+    poolUsado[rol].push(idxOriginal);
   });
 
   localStorage.setItem('poolUsado_EDD', JSON.stringify(poolUsado));
-  return sel;
+  return seleccion;
 }
 
-// ── INICIAR EXAMEN ───────────────────────────────────────────
 function iniciarExamen() {
   const cfg = CONFIG[rolSeleccionado];
   const sel = sacarDelPool(rolSeleccionado, cfg.preguntas);
+
+  if (!sel.length) return alert("No hay preguntas disponibles.");
 
   preguntasSeleccionadas = sel;
   mapaOpcionesAll = preguntasSeleccionadas.map(p => {
@@ -226,6 +145,7 @@ function iniciarExamen() {
   
   indiceActual = 0;
   respuestasUsuario = {};
+  tiempoRestante = cfg.tiempo;
   
   iniciarUIExamen();
   guardarProgresoEnDisco();
@@ -239,7 +159,6 @@ function iniciarUIExamen() {
   actualizarHeaderProg();
 }
 
-// ── MOSTRAR PREGUNTA ─────────────────────────────────────────
 function mostrarPregunta() {
   const p = preguntasSeleccionadas[indiceActual];
   const { opciones } = mapaOpcionesAll[indiceActual];
@@ -258,8 +177,7 @@ function mostrarPregunta() {
       respuestasUsuario[indiceActual] = j;
       document.querySelectorAll('.opt-btn').forEach(b => b.classList.remove('selected'));
       btn.classList.add('selected');
-      guardarProgresoEnDisco();
-      actualizarHeaderProg();
+      guardarProgresoEnDisco(); // Guardar cada respuesta
     };
     container.appendChild(btn);
   });
@@ -275,16 +193,26 @@ function siguientePregunta() {
   }
 }
 
-// ── TIMER ────────────────────────────────────────────────────
+function anteriorPregunta() {
+  if (indiceActual > 0) {
+    indiceActual--;
+    mostrarPregunta();
+    guardarProgresoEnDisco();
+  }
+}
+
+// ── CRONÓMETRO ───────────────────────────────────────────────
+
 function iniciarTimer() {
   if (intervaloTimer) clearInterval(intervaloTimer);
   actualizarTimer();
+
   intervaloTimer = setInterval(() => {
     if (tiempoRestante > 0) {
       tiempoRestante--;
       actualizarTimer();
-      // Guardar en disco cada 10 segundos para no saturar, o puedes quitar el IF para cada segundo
-      if (tiempoRestante % 10 === 0) guardarProgresoEnDisco(); 
+      // Guardar en disco cada 10 seg para asegurar el tiempo en el móvil
+      if (tiempoRestante % 10 === 0) guardarProgresoEnDisco();
     } else {
       finalizarExamen();
     }
@@ -298,60 +226,54 @@ function actualizarTimer() {
   if (el) el.textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
 }
 
-// ── RESULTADO ────────────────────────────────────────────────
+// ── FINALIZACIÓN ─────────────────────────────────────────────
+
 function finalizarExamen() {
   clearInterval(intervaloTimer);
-  limpiarSesionDisco();
-  ocultarHeaderQuiz();
-  mostrarSolo('result-screen');
+  limpiarSesionDisco(); // Importante: Borramos sesión temporal al terminar
   
+  mostrarSolo('result-screen');
+  ocultarHeaderQuiz();
+
   let puntos = 0;
   preguntasSeleccionadas.forEach((p, i) => {
-    const visIndex = respuestasUsuario[i];
-    const origIndex = visIndex !== undefined ? mapaOpcionesAll[i].map[visIndex] : -1;
-    if (origIndex === p.respuestaCorrecta) puntos++;
+    const visIdx = respuestasUsuario[i];
+    const originalIdx = visIdx !== undefined ? mapaOpcionesAll[i].map[visIdx] : -1;
+    if (originalIdx === p.respuestaCorrecta) puntos++;
   });
 
-  document.getElementById('final-score').textContent = `${puntos} / ${preguntasSeleccionadas.length}`;
+  const total = preguntasSeleccionadas.length;
+  document.getElementById('final-score').innerHTML = `${puntos} <span>/ ${total}</span>`;
 }
 
-// ── HELPERS UI ───────────────────────────────────────────────
+// ── NAVEGACIÓN DE PANTALLAS ──────────────────────────────────
+
+function mostrarSolo(id) {
+  const screens = ['access-screen','profile-screen','start-screen','quiz-screen','result-screen'];
+  screens.forEach(s => {
+    const el = document.getElementById(s);
+    if (el) el.classList.add('hidden');
+  });
+  const target = document.getElementById(id);
+  if (target) target.classList.remove('hidden');
+}
+
 function mostrarHeaderQuiz() {
-  document.getElementById('hdr-timer-wrap').classList.remove('hidden');
-  document.getElementById('hdr-prog-wrap').classList.remove('hidden');
+  document.getElementById('hdr-timer-wrap')?.classList.remove('hidden');
+  document.getElementById('hdr-prog-wrap')?.classList.remove('hidden');
 }
+
 function ocultarHeaderQuiz() {
-  document.getElementById('hdr-timer-wrap').classList.add('hidden');
-  document.getElementById('hdr-prog-wrap').classList.add('hidden');
+  document.getElementById('hdr-timer-wrap')?.classList.add('hidden');
+  document.getElementById('hdr-prog-wrap')?.classList.add('hidden');
 }
+
 function actualizarHeaderProg() {
   const total = preguntasSeleccionadas.length;
   const resp = Object.keys(respuestasUsuario).length;
-  document.getElementById('hdr-prog-fill').style.width = (resp / total * 100) + '%';
+  const fill = document.getElementById('hdr-prog-fill');
+  if (fill) fill.style.width = total > 0 ? (resp / total * 100) + '%' : '0%';
 }
-
-// ── AUTO-RECUPERACIÓN AL CARGAR ──────────────────────────────
-window.onload = () => {
-  const guardado = localStorage.getItem('sesion_activa_EDD');
-  if (guardado) {
-    const d = JSON.parse(guardado);
-    // Solo recuperar si la sesión es de hoy (opcional, aquí permito siempre)
-    if (confirm("Se detectó un examen en curso. ¿Deseas continuar?")) {
-      nombreUsuario = d.nombreUsuario;
-      rolesPermitidos = d.rolesPermitidos;
-      rolSeleccionado = d.rolSeleccionado;
-      preguntasSeleccionadas = d.preguntasSeleccionadas;
-      mapaOpcionesAll = d.mapaOpcionesAll;
-      indiceActual = d.indiceActual;
-      respuestasUsuario = d.respuestasUsuario;
-      tiempoRestante = d.tiempoRestante;
-      
-      iniciarUIExamen();
-    } else {
-      limpiarSesionDisco();
-    }
-  }
-};
 
 
 
