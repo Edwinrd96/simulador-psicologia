@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════════
    MINERD — Simulador EDD 2025-2026 | app.js
-   ═══════════════════════════════════════════════════════════ */
+   ═══════════════════════════════════════════════════════════
 
 // ── ACCESO ──────────────────────────────────────────────────
 // nombre normalizado → lista de roles permitidos (directos, sin sub-menú duplicado)
@@ -620,4 +620,4 @@ function resetEstado() {
 function repetirExamen() {
   resetEstado();
   abrirStart(rolSeleccionado);
-}
+} */
