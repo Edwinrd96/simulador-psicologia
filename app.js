@@ -1,11 +1,8 @@
-@@ -1,615 +1,32 @@
-
-
-/* ═══════════════════════════════════════════════════════════
-   MINERD — Simulador EDD 2025-2026 | app.js
+MINERD — Simulador EDD 2025-2026 | app.js
    ═══════════════════════════════════════════════════════════
 
 // ── ACCESO ──────────────────────────────────────────────────
+// nombre normalizado → lista de roles permitidos (directos, sin sub-menú duplicado)*/
 const ACCESO = {
   marileidy: ['psicologo', 'psicologoExterno'],
   fatima:    ['primaria',  'rimariaFiltrada'],
@@ -16,7 +13,7 @@ const ACCESO = {
 // ── CONFIGURACIÓN POR ROL ────────────────────────────────────
 const CONFIG = {
   psicologo: {
-    banco:      () => typeof bancoPreguntas !== 'undefined' ? bancoPreguntas : [],
+    banco:      () => bancoPreguntas,
     preguntas:  35,
     tiempo:     (52*60)+30,
     tiempoLabel:'52:30',
@@ -30,7 +27,7 @@ const CONFIG = {
     chipTime:   '52:30 min'
   },
   psicologoExterno: {
-    banco:      () => typeof bancoFormularios !== 'undefined' ? bancoFormularios : [],
+    banco:      () => bancoFormularios,
     preguntas:  35,
     tiempo:     (52*60)+30,
     tiempoLabel:'52:30',
@@ -44,7 +41,7 @@ const CONFIG = {
     chipTime:   'Complementario'
   },
   primaria: {
-    banco:      () => typeof bancoPrimaria !== 'undefined' ? bancoPrimaria : [],
+    banco:      () => bancoPrimaria,
     preguntas:  40,
     tiempo:     60*60,
     tiempoLabel:'60:00',
@@ -58,7 +55,7 @@ const CONFIG = {
     chipTime:   '60:00 min'
   },
   rimariaFiltrada: {
-    banco:      () => typeof bancoFiltrado !== 'undefined' ? bancoFiltrado : [],
+    banco:      () => bancoFiltrado,
     preguntas:  40,
     tiempo:     60*60,
     tiempoLabel:'60:00',
@@ -72,7 +69,7 @@ const CONFIG = {
     chipTime:   'Filtrado'
   },
   tecnicoDistrital: {
-    banco:      () => typeof bancoTecnicoDistrital !== 'undefined' ? bancoTecnicoDistrital : [],
+    banco:      () => bancoTecnicoDistrital,
     preguntas:  35,
     tiempo:     (52*60)+30,
     tiempoLabel:'52:30',
@@ -86,7 +83,7 @@ const CONFIG = {
     chipTime:   '52:30 min'
   },
   tecnicoProfesional: {
-    banco:      () => typeof bancoTecnicoProfesional !== 'undefined' ? bancoTecnicoProfesional : [],
+    banco:      () => bancoTecnicoProfesional,
     preguntas:  40,
     tiempo:     60*60,
     tiempoLabel:'60:00',
@@ -101,6 +98,7 @@ const CONFIG = {
   }
 };
 
+// Avatares e info del usuario por nombre
 const USER_INFO = {
   marileidy: { avatar:'🧠', greeting:'¡Bienvenida, Marileidy!', sub:'Psicóloga Escolar — EDD 2025-2026' },
   fatima:    { avatar:'📚', greeting:'¡Bienvenida, Fátima!',    sub:'Maestra de Primaria — EDD 2025-2026' },
@@ -108,7 +106,7 @@ const USER_INFO = {
   olga:      { avatar:'🏛️', greeting:'¡Bienvenida, Olga!',      sub:'Técnica Distrital — EDD 2025-2026' }
 };
 
-// ── ESTADO Y PERSISTENCIA ────────────────────────────────────
+// ── ESTADO ───────────────────────────────────────────────────
 let nombreUsuario     = '';
 let rolesPermitidos   = [];
 let rolSeleccionado   = null;
@@ -120,71 +118,8 @@ let respuestasUsuario = {};
 let tiempoRestante    = 0;
 let intervaloTimer    = null;
 
-// Pool por rol (evita repetición de preguntas). Se carga de memoria
-let poolUsado = JSON.parse(localStorage.getItem('poolUsado_EDD')) || {};
-
-function guardarProgresoActual() {
-  const sesion = {
-    nombreUsuario, rolSeleccionado, rolesPermitidos,
-    preguntasSeleccionadas, mapaOpcionesAll, 
-    indiceActual, respuestasUsuario, tiempoRestante
-  };
-  localStorage.setItem('sesion_activa_EDD', JSON.stringify(sesion));
-}
-
-function borrarProgresoActual() {
-  localStorage.removeItem('sesion_activa_EDD');
-}
-
-// ── VENTANA DINÁMICA DE RECUPERACIÓN ─────────────────────────
-window.onload = () => {
-  const guardado = localStorage.getItem('sesion_activa_EDD');
-  if (guardado) {
-    const d = JSON.parse(guardado);
-    
-    // Crear un modal dinámico bonito
-    const overlay = document.createElement('div');
-    overlay.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(5px);';
-    overlay.innerHTML = `
-      <div style="background:#fff;padding:30px;border-radius:15px;max-width:350px;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,0.2);font-family:sans-serif;">
-        <div style="font-size:3rem;margin-bottom:10px;">⏳</div>
-        <h3 style="color:#003876;margin:0 0 10px;font-size:1.3rem;">¡Tienes un examen en pausa!</h3>
-        <p style="color:#4b5563;margin-bottom:20px;font-size:0.95rem;">
-          Hola <b>${d.nombreUsuario}</b>, tienes una práctica pendiente de <b>${d.rolSeleccionado}</b>.<br><br>
-          Quedaste en la pregunta <b>${d.indiceActual + 1} de ${d.preguntasSeleccionadas.length}</b>. ¿Qué deseas hacer?
-        </p>
-        <div style="display:flex;gap:10px;flex-direction:column;">
-          <button id="btn-retomar" style="background:#2563eb;color:#fff;border:none;padding:12px;border-radius:8px;font-weight:bold;cursor:pointer;font-size:1rem;">Continuar donde lo dejé</button>
-          <button id="btn-reiniciar" style="background:#ef4444;color:#fff;border:none;padding:12px;border-radius:8px;font-weight:bold;cursor:pointer;font-size:1rem;">Borrar e iniciar de cero</button>
-        </div>
-      </div>
-    `;
-    document.body.appendChild(overlay);
-
-    document.getElementById('btn-retomar').onclick = () => {
-      document.body.removeChild(overlay);
-      nombreUsuario = d.nombreUsuario;
-      rolesPermitidos = d.rolesPermitidos;
-      rolSeleccionado = d.rolSeleccionado;
-      preguntasSeleccionadas = d.preguntasSeleccionadas;
-      mapaOpcionesAll = d.mapaOpcionesAll;
-      indiceActual = d.indiceActual;
-      respuestasUsuario = d.respuestasUsuario;
-      tiempoRestante = d.tiempoRestante;
-      
-      mostrarSolo('quiz-screen');
-      mostrarHeaderQuiz();
-      iniciarTimer();
-      mostrarPregunta();
-      actualizarHeaderProg();
-    };
-
-    document.getElementById('btn-reiniciar').onclick = () => {
-      document.body.removeChild(overlay);
-      borrarProgresoActual();
-    };
-  }
-};
+// Pool por rol (evitar repetición hasta agotar banco)
+const poolUsado = {};
 
 // ── PANTALLAS ────────────────────────────────────────────────
 const SCREENS = ['access-screen','profile-screen','start-screen','quiz-screen','result-screen'];
@@ -194,8 +129,7 @@ function mostrarSolo(id) {
     const el = document.getElementById(s);
     if (el) el.classList.add('hidden');
   });
-  const target = document.getElementById(id);
-  if (target) target.classList.remove('hidden');
+  document.getElementById(id).classList.remove('hidden');
 }
 
 // ── NORMALIZAR ───────────────────────────────────────────────
@@ -211,7 +145,7 @@ function verificarAcceso() {
   const err = document.getElementById('access-error');
   const key = norm(inp.value);
   err.textContent = '';
-  if (inp) inp.classList.remove('err');
+  inp.classList.remove('err');
 
   if (!key) {
     mostrarError(inp, err, 'Por favor escribe tu nombre.');
@@ -229,18 +163,13 @@ function verificarAcceso() {
 
 function mostrarError(inp, err, msg) {
   err.textContent = msg;
-  if(inp) {
-    inp.classList.add('err');
-    setTimeout(() => inp.classList.remove('err'), 600);
-  }
+  inp.classList.add('err');
+  setTimeout(() => inp.classList.remove('err'), 600);
 }
 
-const inpAccess = document.getElementById('access-input');
-if(inpAccess) {
-  inpAccess.addEventListener('keydown', e => {
-    if (e.key === 'Enter') verificarAcceso();
-  });
-}
+document.getElementById('access-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter') verificarAcceso();
+});
 
 // ── PROFILE SCREEN ───────────────────────────────────────────
 function mostrarPerfil() {
@@ -256,6 +185,7 @@ function mostrarPerfil() {
     const cfg = CONFIG[rol];
     if (!cfg) return;
 
+    // Calcular pool
     if (!poolUsado[rol]) poolUsado[rol] = [];
     const banco = cfg.banco ? cfg.banco() : [];
     const total = banco ? banco.length : 0;
@@ -322,7 +252,7 @@ function abrirStart(rol) {
   mostrarSolo('start-screen');
 }
 
-// ── POOL SIN REPETICIÓN (AHORA CON MEMORIA) ──────────────────
+// ── POOL SIN REPETICIÓN ──────────────────────────────────────
 function sacarDelPool(rol, cantidad) {
   const banco = CONFIG[rol].banco();
   if (!banco || banco.length === 0) return [];
@@ -346,7 +276,6 @@ function sacarDelPool(rol, cantidad) {
     if (!poolUsado[rol].includes(id)) poolUsado[rol].push(id);
   });
 
-  localStorage.setItem('poolUsado_EDD', JSON.stringify(poolUsado));
   return sel;
 }
 
@@ -367,7 +296,7 @@ function iniciarExamen() {
   const sel = sacarDelPool(rolSeleccionado, cfg.preguntas);
 
   if (!sel || sel.length === 0) {
-    alert('Error: No se encontró el banco de preguntas.');
+    alert('Error: No se encontró el banco de preguntas. Verifica que todos los archivos .js estén cargados.');
     return;
   }
 
@@ -381,7 +310,6 @@ function iniciarExamen() {
   iniciarTimer();
   mostrarPregunta();
   actualizarHeaderProg();
-  guardarProgresoActual();
 }
 
 // ── MOSTRAR PREGUNTA ─────────────────────────────────────────
@@ -394,8 +322,7 @@ function mostrarPregunta() {
   document.getElementById('question-counter').textContent = `Pregunta ${indiceActual + 1} de ${total}`;
   document.getElementById('category-badge').textContent   = p.categoria || 'General';
   document.getElementById('question-text').textContent    = p.pregunta;
-  const mc = document.getElementById('mobile-counter');
-  if(mc) mc.textContent   = `${indiceActual + 1}/${total}`;
+  document.getElementById('mobile-counter').textContent   = `${indiceActual + 1}/${total}`;
 
   const esUltima = indiceActual === total - 1;
   const lblSig   = esUltima ? 'Finalizar ✓' : 'Siguiente →';
@@ -406,8 +333,7 @@ function mostrarPregunta() {
     if (b) b.style.visibility = indiceActual === 0 ? 'hidden' : 'visible';
   });
 
-  const nextBtn = document.getElementById('next-btn');
-  if(nextBtn) nextBtn.textContent = lblSig;
+  document.getElementById('next-btn').textContent   = lblSig;
   const bm = document.getElementById('next-btn-m');
   if (bm) bm.textContent = lblSigM;
 
@@ -430,7 +356,6 @@ function mostrarPregunta() {
   actualizarHeaderProg();
 }
 
-// ── INTERACCIÓN DE BOTONES (COMO EL ORIGINAL) ────────────────
 function seleccionarOpcion(index, btnRef) {
   respuestasUsuario[indiceActual] = index;
   document.querySelectorAll('.opt-btn').forEach(b => b.classList.remove('selected'));
@@ -438,12 +363,10 @@ function seleccionarOpcion(index, btnRef) {
   actualizarNav();
   setNextEnabled(true);
   actualizarHeaderProg();
-  guardarProgresoActual();
 }
 
 function actualizarNav() {
   const nav   = document.getElementById('questions-nav');
-  if(!nav) return;
   nav.innerHTML = '';
   const total = preguntasSeleccionadas.length;
   const resp  = Object.keys(respuestasUsuario).length;
@@ -459,8 +382,7 @@ function actualizarNav() {
     nav.appendChild(btn);
   });
 
-  const sp = document.getElementById('sidebar-prog');
-  if(sp) sp.textContent = `${resp}/${total}`;
+  document.getElementById('sidebar-prog').textContent = `${resp}/${total}`;
 }
 
 function setNextEnabled(on) {
@@ -481,7 +403,6 @@ function siguientePregunta() {
     indiceActual++;
     mostrarPregunta();
     window.scrollTo({top:0, behavior:'smooth'});
-    guardarProgresoActual();
   } else {
     finalizarExamen();
   }
@@ -492,30 +413,26 @@ function anteriorPregunta() {
     indiceActual--;
     mostrarPregunta();
     window.scrollTo({top:0, behavior:'smooth'});
-    guardarProgresoActual();
   }
 }
 
 // ── HEADER QUIZ ──────────────────────────────────────────────
 function mostrarHeaderQuiz() {
-  document.getElementById('hdr-timer-wrap')?.classList.remove('hidden');
-  document.getElementById('hdr-prog-wrap')?.classList.remove('hidden');
+  document.getElementById('hdr-timer-wrap').classList.remove('hidden');
+  document.getElementById('hdr-prog-wrap').classList.remove('hidden');
 }
 
 function ocultarHeaderQuiz() {
-  document.getElementById('hdr-timer-wrap')?.classList.add('hidden');
-  document.getElementById('hdr-prog-wrap')?.classList.add('hidden');
+  document.getElementById('hdr-timer-wrap').classList.add('hidden');
+  document.getElementById('hdr-prog-wrap').classList.add('hidden');
 }
 
 function actualizarHeaderProg() {
   const total = preguntasSeleccionadas.length;
   const resp  = Object.keys(respuestasUsuario).length;
   const pct   = total > 0 ? Math.round((resp / total) * 100) : 0;
-  
-  const hL = document.getElementById('hdr-prog-label');
-  if(hL) hL.textContent = `${resp} / ${total} respondidas`;
-  const hF = document.getElementById('hdr-prog-fill');
-  if(hF) hF.style.width = pct + '%';
+  document.getElementById('hdr-prog-label').textContent  = `${resp} / ${total} respondidas`;
+  document.getElementById('hdr-prog-fill').style.width   = pct + '%';
 }
 
 // ── TIMER ────────────────────────────────────────────────────
@@ -523,11 +440,7 @@ function iniciarTimer() {
   if (intervaloTimer) clearInterval(intervaloTimer);
   actualizarTimer();
   intervaloTimer = setInterval(() => {
-    if (tiempoRestante > 0) { 
-      tiempoRestante--; 
-      actualizarTimer(); 
-      if (tiempoRestante % 5 === 0) guardarProgresoActual();
-    }
+    if (tiempoRestante > 0) { tiempoRestante--; actualizarTimer(); }
     else { clearInterval(intervaloTimer); finalizarExamen(); }
   }, 1000);
 }
@@ -544,13 +457,12 @@ function actualizarTimer() {
 // ── RESULTADO ────────────────────────────────────────────────
 function finalizarExamen() {
   clearInterval(intervaloTimer);
-  borrarProgresoActual(); // ¡Limpia la sesión al terminar!
   ocultarHeaderQuiz();
   mostrarSolo('result-screen');
 
   let puntos = 0;
   const review = document.getElementById('review-container');
-  if(review) review.innerHTML = '';
+  review.innerHTML = '';
 
   preguntasSeleccionadas.forEach((p, i) => {
     const visUsuario = respuestasUsuario[i];
@@ -559,7 +471,6 @@ function finalizarExamen() {
     const esCorrecta   = origUsuario === p.respuestaCorrecta;
     if (esCorrecta) puntos++;
 
-    if(!review) return;
     const posCorrecta = mapa.indexOf(p.respuestaCorrecta);
     const textoUser   = visUsuario !== undefined ? opciones[visUsuario] : '<em>No respondida</em>';
     const textoCorr   = opciones[posCorrecta];
@@ -569,4 +480,142 @@ function finalizarExamen() {
     card.innerHTML = `
       <div class="rev-hdr">
         <span class="rev-num">Pregunta ${i+1} · ${p.categoria||'General'}</span>
-        <span>${esCorrecta ? '✅' :*/
+        <span>${esCorrecta ? '✅' : '❌'}</span>
+      </div>
+      <p class="rev-q">${p.pregunta}</p>
+      <div class="rev-ag">
+        <div class="rev-ab ${esCorrecta?'uok':'ufail'}"><strong>Tu respuesta</strong>${textoUser}</div>
+        ${!esCorrecta ? `<div class="rev-ab corr"><strong>Respuesta correcta</strong>${textoCorr}</div>` : ''}
+      </div>
+      <div class="rev-exp"><strong>📌 Justificación:</strong> ${p.explicacion||'No disponible.'}</div>
+    `;
+    review.appendChild(card);
+  });
+
+  const total    = preguntasSeleccionadas.length;
+  const aprobMin = CONFIG[rolSeleccionado].aprobacion;
+  const pct      = ((puntos / total) * 100).toFixed(1);
+  const pctNum   = parseFloat(pct);
+
+  // Determinar nivel de resultado
+  let nivel, icon, msg, clsHero, verdad;
+  if (pctNum >= 80) {
+    nivel = 'win'; icon = '🏆'; msg = '¡Felicitaciones, sobresaliste!';
+    clsHero = 'win';
+    verdad = 'Rendimiento excepcional. Estás más que lista/o para la evaluación real. ¡Sigue así!';
+  } else if (pctNum >= 60) {
+    nivel = 'ok'; icon = '🎯'; msg = '¡Buen trabajo!';
+    clsHero = 'ok';
+    verdad = 'Resultado sólido. Refuerza las áreas donde tuviste errores y estarás lista/o.';
+  } else if (pctNum >= 40) {
+    nivel = 'med'; icon = '📖'; msg = 'Vas por buen camino';
+    clsHero = 'ok';
+    verdad = 'Tienes una base, pero hay temas que necesitan más repaso. ¡No te rindas!';
+  } else {
+    nivel = 'fail'; icon = '💪'; msg = '¡Tú puedes mejorar!';
+    clsHero = 'fail';
+    verdad = 'Esta es tu señal para revisar el marco normativo y los casos pedagógicos. ¡Cada intento cuenta!';
+  }
+
+  document.getElementById('result-hero').className = `result-hero ${clsHero}`;
+  document.getElementById('result-icon').textContent = icon;
+  document.getElementById('result-msg').textContent  = msg;
+  document.getElementById('final-score').innerHTML   = `${puntos} <span>/ ${total}</span>`;
+  document.getElementById('score-pct').textContent   = `${pct}% de precisión`;
+  document.getElementById('score-verdict').textContent = verdad;
+
+  // Celebración / animación motivacional
+  if (nivel === 'win') lanzarConfeti();
+  else if (nivel === 'ok' || nivel === 'med') lanzarEstrellas();
+  else lanzarAnimoFail();
+
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+// ── ANIMACIONES MOTIVACIONALES ───────────────────────────────
+function lanzarConfeti() {
+  const overlay = document.getElementById('celebration-overlay');
+  overlay.innerHTML = '';
+  overlay.classList.remove('hidden');
+  const colores = ['#f9b233','#003876','#22c55e','#a855f7','#ef4444','#3b82f6','#fbbf24'];
+  for (let i = 0; i < 80; i++) {
+    const p = document.createElement('div');
+    p.className = 'conf';
+    p.style.left = Math.random() * 100 + 'vw';
+    p.style.background = colores[Math.floor(Math.random() * colores.length)];
+    p.style.width = (8 + Math.random() * 8) + 'px';
+    p.style.height = (12 + Math.random() * 10) + 'px';
+    p.style.animationDuration = (2 + Math.random() * 3) + 's';
+    p.style.animationDelay = (Math.random() * 2) + 's';
+    p.style.borderRadius = Math.random() > .5 ? '50%' : '2px';
+    overlay.appendChild(p);
+  }
+  setTimeout(() => overlay.classList.add('hidden'), 5500);
+}
+
+function lanzarEstrellas() {
+  const overlay = document.getElementById('celebration-overlay');
+  overlay.innerHTML = '';
+  overlay.classList.remove('hidden');
+  const emojis = ['⭐','🌟','✨','💫','🎉'];
+  for (let i = 0; i < 18; i++) {
+    const s = document.createElement('span');
+    s.style.cssText = `
+      position:absolute;font-size:${1.5+Math.random()*2}rem;
+      left:${Math.random()*90+5}%;top:${Math.random()*80+10}%;
+      animation:cfall ${3+Math.random()*2}s linear ${Math.random()*1.5}s forwards;
+      opacity:0;transform:scale(0);
+    `;
+    s.textContent = emojis[Math.floor(Math.random()*emojis.length)];
+    // Use keyframe via inline style trick
+    s.style.animation = `starPop .6s cubic-bezier(.34,1.56,.64,1) ${i*0.1}s both`;
+    overlay.appendChild(s);
+  }
+  // Add keyframe if needed
+  if (!document.getElementById('star-kf')) {
+    const st = document.createElement('style');
+    st.id = 'star-kf';
+    st.textContent = '@keyframes starPop{from{transform:scale(0) rotate(-180deg);opacity:0}to{transform:scale(1) rotate(0deg);opacity:1}}';
+    document.head.appendChild(st);
+  }
+  setTimeout(() => {
+    overlay.classList.add('hidden');
+    overlay.innerHTML = '';
+  }, 3500);
+}
+
+function lanzarAnimoFail() {
+  const overlay = document.getElementById('celebration-overlay');
+  overlay.innerHTML = '';
+  overlay.classList.remove('hidden');
+  const emojis = ['💪','📚','🌱','✏️','🎯'];
+  for (let i = 0; i < 12; i++) {
+    const s = document.createElement('span');
+    s.style.cssText = `
+      position:absolute;font-size:${1.8+Math.random()*1.5}rem;
+      left:${Math.random()*90+5}%;top:${Math.random()*80+10}%;
+    `;
+    s.style.animation = `starPop .7s cubic-bezier(.34,1.56,.64,1) ${i*0.12}s both`;
+    s.textContent = emojis[Math.floor(Math.random()*emojis.length)];
+    overlay.appendChild(s);
+  }
+  setTimeout(() => {
+    overlay.classList.add('hidden');
+    overlay.innerHTML = '';
+  }, 3000);
+}
+
+// ── HELPERS ──────────────────────────────────────────────────
+function resetEstado() {
+  clearInterval(intervaloTimer);
+  intervaloTimer = null;
+  preguntasSeleccionadas = [];
+  mapaOpcionesAll   = [];
+  indiceActual      = 0;
+  respuestasUsuario = {};
+  tiempoRestante    = 0;
+}
+
+function repetirExamen() {
+  resetEstado();
+  abrirStart(rolSeleccionado);
