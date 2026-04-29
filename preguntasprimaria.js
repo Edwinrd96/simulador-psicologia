@@ -8264,7 +8264,268 @@ const bancoPrimaria = [
     respuestaCorrecta: 1,
     explicacion:
       "Base Legal: Ley 136-03 (Art. 15: Derecho del menor a la privacidad de su información personal, académica y familiar) y Orden Departamental 22-2023 (Art. 10: Confidencialidad de la información de los estudiantes; Art. 14: Responsabilidad del docente ante conductas que vulneran los derechos de los estudiantes; Art. 17: Deber de intervención oportuna). La normativa establece que la información académica y familiar de los estudiantes es confidencial y que su exposición pública, especialmente con tono discriminatorio, viola los derechos del menor. La Orden Departamental 22-2023 no se limita a establecer lo que el docente no debe hacer, sino que establece el deber de intervención cuando presencia vulneraciones. Retirarse (opción C) es pasividad ética. Reportar sin intervención inmediata (opción D) dilata la protección del derecho vulnerado.",
-  }
+  },
+    {
+        id: 631,
+        categoria: "Planificación Pedagógica",
+        pregunta: "Una maestra de 5to grado diseña una Situación de Aprendizaje sobre 'La prevención del dengue en el sector'. En su secuencia didáctica, el producto final es que los estudiantes llenen un cuestionario impreso con definiciones sobre el mosquito transmisor. Un técnico distrital le señala que este diseño no se alinea con el Enfoque por Competencias. ¿Cuál es la razón técnica de esta observación?",
+        opciones: [
+            "A) Porque el tema del dengue es exclusivo de Ciencias Naturales y no permite la articulación con otras áreas del saber.",
+            "B) Porque el producto final (un cuestionario de memoria) no moviliza competencias ni resuelve el problema planteado en el contexto; el estudiante debe asumir un rol activo, por ejemplo, creando una campaña de descacharrización comunitaria.",
+            "C) Porque las Situaciones de Aprendizaje solo deben durar una semana y un cuestionario toma menos tiempo.",
+            "D) Porque debió utilizar un examen oral en lugar de un cuestionario escrito para evaluar las competencias comunicativas."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Adecuación Curricular 2023. Una Situación de Aprendizaje parte de un problema del entorno y exige un 'producto' que evidencie el 'saber hacer'. Un cuestionario memorístico representa el enfoque tradicional centrado en contenidos (saber pasivo), fallando en movilizar la capacidad de acción del estudiante frente al problema real."
+    },
+    {
+        id: 632,
+        categoria: "Inclusión",
+        pregunta: "En un aula de 4to grado hay un estudiante con Discapacidad Intelectual Leve. Al impartir el tema de las fracciones, el estudiante muestra niveles severos de frustración con las operaciones simbólicas abstractas. Como garante de los derechos educativos, ¿qué ajuste curricular de proceso debe implementar la docente?",
+        opciones: [
+            "A) Modificar el indicador de logro bajando el nivel de complejidad, permitiéndole operar con material concreto (regletas de Cuisenaire, pizzas recortables) para que adquiera el concepto de 'parte-todo' a su ritmo, evaluando su progreso desde ese nivel.",
+            "B) Evaluarlo con la misma prueba escrita que al resto del grupo, pero multiplicando su calificación final por dos para compensar su dificultad intelectual.",
+            "C) Solicitar que sea retirado de la clase de Matemáticas y enviado a la biblioteca a colorear mandalas para evitar que sufra estrés emocional.",
+            "D) Exigirle que memorice las tablas de multiplicar como requisito indispensable antes de permitirle trabajar con fracciones."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Legal: Ordenanza 05-2024. El DUA (Diseño Universal para el Aprendizaje) y los ajustes razonables exigen adaptar el medio de representación y acción. Para la discapacidad intelectual, el uso de material concreto y la flexibilización de la exigencia abstracta permiten que el niño desarrolle la competencia lógica desde sus propias posibilidades, sin ser segregado (C) ni sometido a equidad falsa (B)."
+    },
+    {
+        id: 633,
+        categoria: "Evaluación",
+        pregunta: "Durante la entrega de informes de progreso (boletines), una madre de 6to grado compara el reporte de su hijo con el de otro compañero y le reclama al docente: '¿Por qué mi hijo tiene EP (En Proceso) si hizo todas las mismas tareas que Juan, que tiene L (Logrado)?'. ¿Cómo debe fundamentar el docente su respuesta basándose en el sistema de evaluación vigente?",
+        opciones: [
+            "A) Explicar que la calificación depende del comportamiento en el aula, y Juan es mucho más disciplinado que su hijo.",
+            "B) Argumentar que hubo un error de cálculo matemático al promediar las tareas y ofrecer revisar la libreta de calificaciones.",
+            "C) Indicar que el MINERD exige tener una cuota de estudiantes en 'EP' para demostrar que el maestro es estricto evaluando.",
+            "D) Explicar que la evaluación es 'Criterial' y no normativa; no se evalúa por la simple entrega de tareas o por comparación con otros, sino por el nivel de dominio evidenciado frente al Indicador de Logro, apoyándose en la rúbrica personal del estudiante."
+        ],
+        respuestaCorrecta: 3,
+        explicacion: "Base Legal: Ordenanza 04-2023. La evaluación en el sistema dominicano es criterial. Esto significa que el referente es el indicador de logro, no el grupo. La simple 'entrega de tareas' no garantiza la competencia si estas no reflejan la calidad y profundidad del desempeño esperado en la rúbrica."
+    },
+    {
+        id: 634,
+        categoria: "Ética y Comportamientos Profesionales",
+        pregunta: "En la sala de profesores, una maestra de 3er grado comenta en voz alta detalles confidenciales sobre el diagnóstico psiquiátrico de la madre de uno de sus alumnos, justificando con ello el mal comportamiento del niño frente a otros colegas que no le dan clases a ese estudiante. ¿Qué falta profesional está cometiendo?",
+        opciones: [
+            "A) Ninguna, el diálogo entre colegas es un espacio seguro para el desahogo pedagógico y ayuda a comprender los contextos familiares.",
+            "B) Falta de solidaridad profesional, ya que debió enviar un memorándum a la dirección antes de hablar.",
+            "C) Vulneración grave del Secreto Profesional, la Ética Docente y el derecho a la intimidad del estudiante y su familia, ya que la información sensible solo debe ser manejada institucionalmente y con el personal directamente implicado en el apoyo al menor.",
+            "D) Una falta administrativa leve que se resuelve pidiendo disculpas en la próxima reunión de maestros."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Estatuto Docente y Ley 136-03 (Protección de la intimidad). El docente maneja información altamente sensible. Divulgar diagnósticos médicos, psiquiátricos o situaciones de vulnerabilidad familiar fuera de los protocolos institucionales (Orientación/Dirección) constituye una falta ética grave por violación a la confidencialidad."
+    },
+    {
+        id:635,
+        categoria: "Gestión del Aprendizaje",
+        pregunta: "Al realizar un experimento de Ciencias en 5to grado, la clase se sale de control: los niños no respetan los turnos para usar los materiales, el ruido es ensordecedor y dos estudiantes rompen un termómetro. Al reflexionar sobre su práctica, ¿qué elemento clave de la gestión de aula omitió el docente?",
+        opciones: [
+            "A) No haber amenazado al grupo con reprobar la asignatura si rompían algo antes de comenzar.",
+            "B) Omitir el establecimiento y modelado previo de normas, rutinas claras y roles específicos (quién busca material, quién anota, niveles de voz permitidos) necesarios para estructurar el trabajo colaborativo complejo.",
+            "C) Haber elegido un experimento aburrido que no captó la atención de los estudiantes más imperactivos.",
+            "D) No haber solicitado que los padres estuvieran presentes para vigilar el comportamiento de sus hijos."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Estándares de Desempeño (Gestión de Aula). El trabajo práctico o colaborativo genera caos si no hay 'andamiaje conductual'. El docente efectivo invierte tiempo previo en modelar rutinas y asignar roles claros, creando una estructura predecible que permite el aprendizaje activo sin derivar en desorden."
+    },
+    {
+        id: 636,
+        categoria: "Alfabetización Inicial",
+        pregunta: "En el 1er grado, la docente nota que un estudiante no logra diferenciar el sonido inicial de las palabras (ej. no sabe que 'Mesa' y 'Mano' empiezan con el mismo sonido). ¿Qué tipo de intervención pedagógica es prioritaria para evitar un rezago severo en su alfabetización?",
+        opciones: [
+            "A) Implementar rutinas lúdicas intensivas centradas en la Conciencia Fonológica, utilizando rimas, canciones, juegos de aliteración y segmentación de sonidos, antes de forzar la lectura de textos complejos.",
+            "B) Asignarle cien planas de la letra 'M' en mayúscula y minúscula para que logre grabarla en su memoria visual.",
+            "C) Referirlo de inmediato a un neurólogo porque la incapacidad de escuchar letras es síntoma de daño cerebral irreversible.",
+            "D) Avanzar al siguiente tema, ya que la conciencia de los sonidos se adquiere de forma natural cuando el niño madura en 3er grado."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Legal: Ordenanza 01-2023. La conciencia fonológica es el pilar de la decodificación. Si un niño no identifica fonemas (sonidos), no podrá asociarlos a los grafemas (letras). Obligar a hacer planas visuales (B) o ignorar el problema (D) genera lagunas graves. La intervención a través del juego oral es urgente y necesaria."
+    },
+    {
+        id: 637,
+        categoria: "Convivencia",
+        pregunta: "Una niña de 4to grado llega al aula llorando porque compañeros de grados superiores le quitaron su merienda en el pasillo y la amenazaron para que no diga nada. La maestra de la niña confronta a los agresores en el patio y los castiga obligándolos a darle su propio dinero a la niña. ¿Es este el procedimiento correcto según el MINERD?",
+        opciones: [
+            "A) Sí, porque enseña a los agresores el principio de restitución del daño de forma inmediata y empática.",
+            "B) Sí, la intervención rápida del docente de aula evita que el acoso escale a situaciones de mayor violencia física.",
+            "C) No. Como se trata de alumnos de otro grado, la maestra debió ignorar la situación y dejar que la niña lo resuelva sola para fomentar su resiliencia.",
+            "D) No. Constituye una violación al debido proceso. La maestra debe contener a la víctima, documentar el hecho y reportarlo a la Dirección y Orientación para que intervengan formalmente con las familias y apliquen las medidas disciplinarias institucionales, evitando actuar como juez y parte."
+        ],
+        respuestaCorrecta: 3,
+        explicacion: "Base Legal: Manual de Convivencia (OD 22-2023). Un docente no tiene potestad para aplicar sanciones económicas (confiscar dinero) ni saltarse el debido proceso disciplinario, especialmente con alumnos que no son de su grado. El acoso/extorsión es una falta grave que activa un protocolo institucional estricto, no una medida improvisada de patio."
+    },
+    {
+        id: 638,
+        categoria: "Comportamientos Profesionales",
+        pregunta: "Durante la aplicación del Ejercicio de Rendimiento Profesional (ERP), un docente descubre que olvidó su Cédula de Identidad en casa y exige que le permitan realizar la prueba mostrando una foto de la cédula en su celular. ¿Cuál debe ser la respuesta del equipo aplicador según las normas de la Etapa V?",
+        opciones: [
+            "A) Permitirle el acceso validando su identidad con la foto digital, demostrando flexibilidad y empatía magisterial.",
+            "B) Denegar el acceso y no permitirle realizar la prueba, ya que la presentación del documento de identidad original es un requisito de seguridad innegociable para habilitar la plataforma.",
+            "C) Dejarlo entrar pero ponerle una nota condicional en el sistema hasta que envíe el documento físico por correo al día siguiente.",
+            "D) Buscar su nombre en la nómina de la escuela sede para que el director valide que él es verdaderamente docente y dejarlo tomar el ERP."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Instructivo Etapa V ERP. En los procesos de evaluación estandarizada y certificación (como el ERP o Pruebas Nacionales), la identidad debe comprobarse con documento original (cédula física) sin excepciones. El uso de celulares está prohibido en el recinto, por lo que la foto digital es doblemente invalidante."
+    },
+    {
+        id: 639,
+        categoria: "Planificación",
+        pregunta: "El equipo docente de primaria decide trabajar un Proyecto de Intervención de Aula centrado en la problemática: 'Violencia y vocabulario inadecuado durante el recreo'. Para que el proyecto promueva eficazmente la Competencia Ética y Ciudadana, ¿qué estrategia deben implementar con los estudiantes?",
+        opciones: [
+            "A) Obligar a los estudiantes a memorizar el Manual de Convivencia del MINERD completo y evaluarlos con un examen escrito.",
+            "B) Diseñar afiches sobre la paz y pegarlos en las paredes del aula, dejando el patio en manos de los directores.",
+            "C) Promover que los propios estudiantes investiguen las causas de la violencia, debatan consecuencias y diseñen acuerdos de mediación y una 'Campaña de Buen Trato' que ellos mismos lideren en la escuela.",
+            "D) Instaurar un sistema de castigos severos donde cada mala palabra cueste puntos menos en las calificaciones finales del grado."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Adecuación Curricular 2023. La Competencia Ética y Ciudadana exige empoderamiento y agencia cívica. Imponer normas (A) o castigos (D) es un enfoque conductista heterónomo. El enfoque por competencias requiere que el estudiante analice el problema social y construya (co-cree) las soluciones ciudadanas de forma proactiva."
+    },
+    {
+        id: 640,
+        categoria: "Evaluación",
+        pregunta: "Una maestra de 6to grado está preocupada porque, a tres semanas de terminar el año escolar, un estudiante transferido recientemente carece de varias evidencias en su portafolio de evaluación. El estudiante ha demostrado dominar los indicadores de logro en las clases recientes. ¿Cómo debe proceder la maestra para asentar la calificación final?",
+        opciones: [
+            "A) Calificarlo con 'En Proceso' (EP) obligatoriamente, porque no cuenta con el 100% de las tareas acumulativas requeridas desde el inicio de año.",
+            "B) Diseñar una 'Situación de Aprendizaje' integradora de cierre o una rúbrica de desempeño final que permita al estudiante evidenciar el nivel de dominio actual de la competencia, validando su conocimiento sin penalizarlo por el tiempo no cursado en el centro.",
+            "C) Dejar la calificación en blanco y enviar al estudiante a que el Ministerio de Educación le asigne una nota administrativa.",
+            "D) Promediar con cero (0) las notas de los meses que no asistió, para ser justo con los estudiantes que sí estuvieron todo el año escolar."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 04-2023. La evaluación por competencias no es una sumatoria acumulativa y punitiva de tareas (D). Si un estudiante demuestra al final del proceso que posee la capacidad de resolver el problema y domina el indicador, se le debe reconocer el logro (L). La maestra debe priorizar la demostración de la competencia actual."
+    },
+    {
+        id:641,
+        categoria: "Inclusión",
+        pregunta: "En una sesión de 5to grado, una alumna presenta mutismo selectivo (no habla en la escuela por un trastorno de ansiedad severa, pero sí comprende y escribe). El currículo demanda evaluar la competencia de 'Expresión Oral' mediante una exposición sobre la Independencia Nacional. ¿Qué ajuste razonable es ética y técnicamente correcto?",
+        opciones: [
+            "A) Forzar a la alumna a pararse frente al grupo, asumiendo que enfrentar sus miedos es la única forma de que logre superar su trastorno y alcance la competencia oral.",
+            "B) Adaptar el medio de expresión: permitirle grabar su exposición en video desde su casa, utilizar un programa de texto-a-voz en el aula, o realizar la exposición exclusivamente frente al docente, garantizando que demuestre el dominio del tema sin detonar crisis de ansiedad.",
+            "C) Exonerarla totalmente de la exposición y colocarle la calificación máxima por compasión, ya que no es su culpa tener ese trastorno psicológico.",
+            "D) Reprobarla en el indicador de expresión oral, argumentando que el currículo nacional es estricto y si no habla, no hay forma legal de ponerle 'Logrado'."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Ordenanza 05-2024 (Ajustes Razonables - DUA). El mutismo selectivo es una barrera neurobiológica y emocional. Forzar la exposición (A) es negligencia pedagógica. Reprobarla (D) es discriminación. El DUA permite múltiples medios de expresión. Un video pregrabado o texto-a-voz demuestran la estructuración de ideas (competencia) saltando la barrera de la ansiedad fóbica."
+    },
+    {
+        id: 642,
+        categoria: "Gestión del Aprendizaje",
+        pregunta: "Durante el trabajo de grupos en 4to grado, la maestra nota que el nivel cognitivo de las discusiones es muy bajo. Los estudiantes solo copian del libro sin analizar. Ella decide intervenir aplicando la 'Mediación Cognitiva'. ¿Cuál de estas acciones corresponde a dicha estrategia?",
+        opciones: [
+            "A) Caminar por el aula y dictarles las respuestas correctas al oído a cada grupo para que terminen la tarea a tiempo.",
+            "B) Detener la clase y amenazar con bajar puntos si no piensan de forma más crítica y analítica.",
+            "C) Acercarse a los grupos y realizar preguntas andamiadas y socráticas (ej. '¿Qué pasaría si cambiamos este elemento?', '¿Por qué creen que el autor dice esto?'), obligando a los estudiantes a argumentar y elevar el nivel de pensamiento sin darles la respuesta.",
+            "D) Cambiar la actividad a una de dibujo libre, porque los niños no tienen madurez para el análisis crítico."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Enfoque Constructivista Histórico-Cultural (Vygotsky). El docente es un mediador. Cuando el estudiante se estanca en un nivel inferior, el docente interviene en la Zona de Desarrollo Próximo no para dar respuestas (A), sino para 'movilizar' el pensamiento mediante preguntas reflexivas que fuercen la reestructuración cognitiva."
+    },
+    {
+        id: 643,
+        categoria: "Comportamientos Profesionales",
+        pregunta: "La dirección del centro educativo informa a los docentes que, por una contingencia comunitaria (ej. lluvias extremas que aislaron el sector), las clases serán virtuales durante tres días. Un docente de 6to grado se niega a enviar actividades o contactar a sus estudiantes, argumentando que su contrato es solo presencial. ¿Qué dimensión del perfil docente se infringe con esta negativa?",
+        opciones: [
+            "A) La dimensión de 'Compromiso Ético y Vocación', ya que el docente ignora el derecho superior del niño a la continuidad educativa ante emergencias, demostrando falta de flexibilidad, resiliencia y adaptación a contextos de crisis.",
+            "B) Ninguna, porque el MINERD no puede obligar a usar internet y planes de datos personales para la docencia.",
+            "C) La dimensión de 'Gestión Financiera', por no querer invertir en recursos tecnológicos propios.",
+            "D) El derecho a la desconexión digital establecido en las leyes laborales dominicanas."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Legal: Estándares Profesionales Docentes (Dimensión Compromiso Personal y Profesional). El docente como servidor público tiene un compromiso de resiliencia y adaptabilidad para garantizar el derecho a la educación (Constitución / Ley 66-97). Negarse a aplicar planes de contingencia (previamente estandarizados pospandemia) vulnera el mandato ético de continuidad."
+    },
+    {
+        id: 644,
+        categoria: "Planificación",
+        pregunta: "Al diseñar una clase, un docente inexperto confunde la función de los 'Criterios de Evaluación' y las 'Estrategias de Aprendizaje'. Para aclararlo basándose en el diseño curricular, ¿cuál de las siguientes explicaciones es la correcta?",
+        opciones: [
+            "A) Las estrategias son los exámenes y pruebas, y los criterios son las dinámicas y juegos que se hacen en el patio.",
+            "B) Los criterios de evaluación dictan el qué se va a enseñar, y las estrategias de aprendizaje definen cómo se va a calificar numéricamente al estudiante.",
+            "C) Las estrategias de aprendizaje son las rutas o métodos pedagógicos (ej. ABP, Indagación) para construir el saber, mientras que los criterios de evaluación son los referentes de calidad que indican qué tan bien el estudiante logró adquirir ese saber frente a la competencia esperada.",
+            "D) Ambos términos son sinónimos absolutos y se pueden colocar en la misma casilla de la planificación del MINERD."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Bases de la Revisión y Actualización Curricular. Esta es una distinción fundamental. La estrategia (el 'cómo' aprendo: debate, juego de roles, proyecto) es la mediación didáctica. El criterio de evaluación es el estándar de calidad (el 'qué y qué tan bien' aprendo: argumenta con fluidez, resuelve operaciones). Confundirlos anula la lógica del diseño."
+    },
+    {
+        id:645,
+        categoria: "Alfabetización",
+        pregunta: "En 2do grado, una maestra realiza una lectura interactiva de un texto informativo sobre los dinosaurios. Al final, pide a los estudiantes que ubiquen en el texto el nombre del dinosaurio más grande, el cual está escrito explícitamente en el segundo párrafo. ¿Qué tipo de habilidad de comprensión lectora está evaluando?",
+        opciones: [
+            "A) Habilidad Inferencial, ya que el niño debe deducir la respuesta leyendo entre líneas.",
+            "B) Habilidad Literal, ya que requiere localizar y recuperar información explícita y directa del texto.",
+            "C) Habilidad Crítica o Valorativa, porque el niño debe emitir su opinión sobre el tamaño del dinosaurio.",
+            "D) Habilidad de Decodificación Fonológica, ya que el objetivo es que el niño pronuncie la palabra 'dinosaurio' correctamente."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Fascículos de Comprensión Lectora (Ordenanza 01-2023). La comprensión literal es el primer nivel. Consiste en la retención y recuperación de información que aparece explícitamente escrita en la superficie del texto (datos, nombres, fechas). Es un nivel básico pero fundamental para luego poder inferir."
+    },
+    {
+        id: 646,
+        categoria: "Evaluación",
+        pregunta: "Una maestra utiliza una 'Lista de Cotejo' para observar la participación de sus alumnos en un proyecto. Sin embargo, todos los indicadores están redactados de manera negativa (ej. 'No interrumpe a sus compañeros', 'No tira basura'). ¿Por qué esta práctica es técnicamente incorrecta en el enfoque formativo?",
+        opciones: [
+            "A) Porque es metodológicamente correcto; la disciplina debe controlarse resaltando lo que el estudiante no debe hacer.",
+            "B) Porque las listas de cotejo solo sirven para evaluar Matemáticas y Ciencias, no comportamientos.",
+            "C) Porque en la evaluación de competencias, los indicadores o criterios deben redactarse en positivo, describiendo el desempeño o la conducta esperada que el estudiante SÍ debe alcanzar (ej. 'Escucha con respeto el turno de sus compañeros').",
+            "D) Porque la lista de cotejo no es un instrumento aprobado por el MINERD para el Nivel Primario."
+        ],
+        respuestaCorrecta: 2,
+        explicacion: "Base Legal: Manual de Elaboración de Instrumentos (Ordenanza 04-2023). Un indicador de logro o criterio evalúa la presencia de una capacidad o competencia. Redactar en negativo no orienta al estudiante hacia lo que debe hacer (desempeño esperado), sino que lo estigmatiza. La evaluación formativa se centra en los logros (enfoque positivo)."
+    },
+    {
+        id: 647,
+        categoria: "Inclusión",
+        pregunta: "Llega al aula de 3er grado una estudiante que pertenece a una comunidad religiosa que no permite saludar a la bandera nacional por motivos de fe. La directora y varios maestros quieren sancionar a la niña y obligarla a cantar el himno 'por respeto a la Patria'. ¿Cómo debe intervenir el docente a cargo fundamentado en el marco legal dominicano?",
+        opciones: [
+            "A) Expulsar a la niña de su clase todos los días durante el acto cívico para evitar que contamine al resto de los estudiantes con ideas antinacionales.",
+            "B) Obligar a la niña a cantar el himno bajo amenaza de reprobarla en Ciencias Sociales, ya que el currículo nacional está por encima de cualquier religión.",
+            "C) Burlarse de las creencias de la familia frente a la niña para que sienta vergüenza y decida cantar.",
+            "D) Exigir el respeto a la libertad de culto y conciencia garantizada en la Constitución. La niña debe mantener una actitud de respeto y orden durante el acto cívico, pero no se le puede obligar ni coaccionar a realizar actos contrarios a sus creencias religiosas, prohibiendo cualquier tipo de sanción académica o disciplinaria por esta causa."
+        ],
+        respuestaCorrecta: 3,
+        explicacion: "Base Legal: Constitución de la República Dominicana, Ley 136-03 y Ley General de Educación. La libertad de culto es un derecho fundamental. El Tribunal Constitucional y el MINERD han dictaminado que obligar a un niño a cantar el himno contra sus creencias religiosas es inconstitucional. El deber cívico se cumple manteniendo una postura respetuosa."
+    },
+    {
+        id: 648,
+        categoria: "Gestión del Aprendizaje",
+        pregunta: "En una clase de 5to grado, el profesor hace una pregunta sobre fracciones y Juan levanta la mano, pero da una respuesta completamente errónea. Algunos compañeros se ríen. El profesor le dice a Juan: 'Totalmente mal, siéntate y presta atención'. Acto seguido, señala a la niña más inteligente para que dé la respuesta correcta. ¿Qué impacto profundo tiene esta gestión del error en el clima de aprendizaje?",
+        opciones: [
+            "A) Fomenta un 'clima de aula punitivo', donde el error es penalizado y humillado, lo que genera ansiedad, bloquea la participación futura de los estudiantes por miedo al ridículo y destruye la confianza necesaria para asumir retos cognitivos.",
+            "B) Impacto positivo, porque ahorra tiempo y permite que la clase avance rápidamente hacia la respuesta correcta.",
+            "C) Ningún impacto, los niños olvidan rápido y saben que el maestro es la autoridad.",
+            "D) Fomenta la competitividad sana, motivando a Juan a estudiar más duro en su casa para no volver a equivocarse en público."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Legal: Clima de Aula (Estándares de Desempeño y Constructivismo). El aprendizaje requiere seguridad emocional. Si el error es sancionado y humillado públicamente, el cerebro infantil activa mecanismos de defensa (silencio/evasión). El docente efectivo 'celebra' el error como un paso lógico hacia el aprendizaje, utilizando preguntas para guiar al niño hacia la respuesta."
+    },
+    {
+        id:649,
+        categoria: "Comportamientos Profesionales",
+        pregunta: "Un docente está inconforme con los resultados de su evaluación en el Ejercicio de Rendimiento Profesional (ERP) y planea no asistir al centro educativo en forma de protesta individual. Según las normativas del MINERD y los procedimientos de la Etapa V, ¿cuál es la vía correcta e institucional si existe inconformidad?",
+        opciones: [
+            "A) El docente debe agotar los recursos de revisión y apelación establecidos en el Reglamento de Evaluación del Desempeño a través de las instancias formales del MINERD (Distrito, Dirección de Evaluación), sin abandonar sus responsabilidades laborales y garantizando el derecho a la educación de sus alumnos.",
+            "B) Iniciar una protesta abandonando el aula, ya que la huelga es la única vía reconocida para revisar evaluaciones docentes.",
+            "C) Convocar a los padres para que firmen cartas pidiendo que le modifiquen la nota.",
+            "D) Modificar su planificación para no dar clases completas hasta que le resuelvan el problema administrativo."
+        ],
+        respuestaCorrecta: 0,
+        explicacion: "Base Legal: Estatuto Docente y Reglamentación ERP. El abandono de aula por inconformidades personales o de evaluación es una falta grave. El sistema cuenta con mecanismos de apelación e instancias de revisión técnica (debido proceso) que el docente debe utilizar manteniendo la ética, su rol como servidor público y el interés superior del niño."
+    },
+    {
+        id:650,
+        categoria: "Planificación",
+        pregunta: "El equipo de gestión escolar orienta a los maestros de primaria a no usar 'Contenidos Conceptuales' en sus planificaciones, argumentando que 'con el enfoque por competencias los conceptos ya no importan, solo importa lo procedimental y actitudinal'. ¿Cómo debe rebatir técnicamente un docente esta indicación errónea?",
+        opciones: [
+            "A) Aceptar la indicación del equipo de gestión, ya que ellos son la autoridad y el docente debe obedecer sin cuestionar.",
+            "B) Argumentar que la competencia se define como la movilización integral de 'saber', 'saber hacer' y 'saber ser'. Los contenidos conceptuales (el saber) son imprescindibles porque constituyen la base teórica y cognitiva sobre la cual se apoyan los procedimientos y actitudes para resolver problemas.",
+            "C) Sugerir que los conceptos solo se enseñen el último viernes del mes como un repaso extracurricular.",
+            "D) Estar de acuerdo, ya que los conceptos se buscan en Google hoy en día y no vale la pena enseñarlos en la escuela."
+        ],
+        respuestaCorrecta: 1,
+        explicacion: "Base Legal: Diseño Curricular Dominicano (Naturaleza de las Competencias). Es un mito común creer que las competencias eliminan el contenido. No hay pensamiento crítico ni saber hacer sin un sustrato de conocimientos conceptuales sólidos. El cambio radica en que el concepto no es el fin último a memorizar, sino la herramienta (mediador) para actuar eficazmente."
+    }
+    
 ];
     
 
